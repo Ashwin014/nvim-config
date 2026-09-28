@@ -15,7 +15,7 @@ end, { desc = "oil float" })
 require("which-key").setup({
 	-- delay = 0,
 	win = {
-		border = "single", -- single | double | solid
+		border = "rounded", -- single | double | solid | rounded
 		col = 0.99, -- push the window to the right edge
 		width = { min = 30, max = 60 }, -- cap the width instead of full-width
 	},
