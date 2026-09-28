@@ -59,9 +59,9 @@ for _, ft in ipairs({ "typescript", "typescriptreact" }) do
 	}
 end
 
-vim.keymap.set("n", "<F5>", dap.continue, { desc = "Debug: continue" })
-vim.keymap.set("n", "<F10>", dap.step_over, { desc = "Debug: step over" })
-vim.keymap.set("n", "<F11>", dap.step_into, { desc = "Debug: step into" })
-vim.keymap.set("n", "<S-F11>", dap.step_out, { desc = "Debug: step out" })
-vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "Breakpoint" })
-vim.keymap.set("n", "<leader>du", dapui.toggle, { desc = "Debug UI" })
+vim.keymap.set("n", "<F5>", dap.continue, { desc = "debug: continue" })
+vim.keymap.set("n", "<F10>", dap.step_over, { desc = "debug: step over" })
+vim.keymap.set("n", "<F11>", dap.step_into, { desc = "debug: step into" })
+vim.keymap.set("n", "<S-F11>", dap.step_out, { desc = "debug: step out" })
+vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "breakpoint" })
+vim.keymap.set("n", "<leader>du", dapui.toggle, { desc = "debug UI" })

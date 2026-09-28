@@ -32,6 +32,6 @@ opt.undofile = true
 opt.winborder = "rounded"
 opt.cmdheight = 0
 opt.inccommand = "split"
-opt.breakindent = true
+-- opt.breakindent = true
 opt.backspace = { "start", "eol", "indent" }
 opt.laststatus = 3

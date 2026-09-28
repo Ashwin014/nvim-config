@@ -6,28 +6,40 @@ require("oil").setup({
 	skip_confirm_for_simple_edits = true,
 	delete_to_trash = true,
 })
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-vim.keymap.set("n", "<leader>O", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
-vim.keymap.set("n", "<leader>_", function()
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "open parent directory" })
+vim.keymap.set("n", "<leader>_o", "<CMD>Oil --preview<CR>", { desc = "oil with preview" })
+vim.keymap.set("n", "<leader>_f", function()
 	require("oil").toggle_float()
-end, { desc = "Oil float" })
+end, { desc = "oil float" })
 
-require("which-key").setup({})
-
--- Statusline: mode, git branch, diagnostics, LSP, file info, position
--- Set use_icons = true if you use a Nerd Font
-require("mini.statusline").setup({ use_icons = true })
+require("which-key").setup({
+	win = {
+		col = 0.99, -- push the window to the right edge
+		width = { min = 30, max = 60 }, -- cap the width instead of full-width
+	},
+	layout = {
+		align = "right",
+	},
+})
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
-vim.keymap.set("n", "<leader>t", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+vim.keymap.set("n", "<leader>t", "<cmd>botright 12split | terminal<cr>", { desc = "terminal" })
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>", { desc = "exit terminal mode" })
 
 --
 
 -- Jump to errors specifically, skipping warnings
 vim.keymap.set("n", "]e", function()
 	vim.diagnostic.jump({ count = 1, severity = vim.diagnostic.severity.ERROR })
-end, { desc = "Next error" })
+end, { desc = "next error" })
 vim.keymap.set("n", "[e", function()
 	vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.ERROR })
-end, { desc = "Prev error" })
+end, { desc = "prev error" })
+
+-- no-neck-pain.nvim
+require("no-neck-pain").setup({
+	width = 100, -- text column width; 80-100 reads well for prose
+})
+vim.keymap.set("n", "<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "center buffer" })
+
+require("nvim-web-devicons").setup({})

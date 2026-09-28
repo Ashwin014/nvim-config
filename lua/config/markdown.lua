@@ -4,6 +4,22 @@ require("render-markdown").setup({
 	heading = { icons = {} }, -- no Nerd Font needed
 	code = { sign = false },
 	latex = { enabled = false },
+	bullet = {
+		icons = { "•", "◦", "▪", "▫" },
+	},
+	dash = { enabled = false }, -- disables the rendered horizontal rule line
+	html = {
+		comment = {
+			conceal = false, -- show HTML comments instead of hiding them
+		},
+	},
+	link = {
+		enabled = true,
+		image = "📷",
+		email = "",
+		hyperlink = "🌐",
+		wiki = { icon = "🔗" },
+	},
 })
 
 vim.api.nvim_create_autocmd("FileType", {
@@ -13,6 +29,9 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.linebreak = true
 		vim.opt_local.spell = true
 		vim.opt_local.conceallevel = 2
+		-- be list/outline aware
+		-- vim.opt_local.comments = "b:-,b:*,b:+,n:>"
+		vim.opt_local.formatoptions:append({ "r", "o" })
 
 		-- <leader>x: toggle "- [ ]" / "- [x]" (adds a checkbox on a plain list item)
 		vim.keymap.set("n", "<leader>x", function()
@@ -26,25 +45,28 @@ vim.api.nvim_create_autocmd("FileType", {
 				new = line:gsub("^(%s*[-*+] )", "%1[ ] ", 1)
 			end
 			vim.api.nvim_set_current_line(new)
-		end, { buffer = ev.buf, desc = "Toggle checkbox" })
+		end, { buffer = ev.buf, desc = "toggle checkbox" })
 	end,
 })
 
 -- timestamping
 vim.keymap.set("n", "<leader>it", function()
 	vim.api.nvim_put({ os.date("%Y-%m-%d-T%H%M%S") }, "c", true, true)
-end, { desc = "Insert timestamp" })
+end, { desc = "insert timestamp" })
 
 vim.keymap.set("n", "<leader>iT", function()
 	vim.api.nvim_put({ os.date("[[%Y-%m-%d]]-T%H%M%S") }, "c", true, true)
-end, { desc = "Insert timestamp (Wiki)" })
+end, { desc = "insert timestamp (wiki)" })
 
 -- set ctrl+t as keymap in insert mode
 vim.keymap.set("i", "<C-t>", function()
 	return os.date("%Y-%m-%d-T%H%M%S")
-end, { expr = true, desc = "Insert timestamp" })
+end, { expr = true, desc = "insert timestamp" })
 
 -- add timestamping as :command
 vim.api.nvim_create_user_command("Timestamp", function()
 	vim.api.nvim_put({ os.date("[[%Y-%m-%d]]-T%H%M%S") }, "c", true, true)
 end, {})
+
+-- open browser with rendered markdown
+vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreviewToggle<cr>", { desc = "markdown preview (browser)" })

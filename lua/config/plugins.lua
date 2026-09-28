@@ -12,6 +12,13 @@ vim.api.nvim_create_autocmd("PackChanged", {
 			end
 			vim.cmd("TSUpdate")
 		end
+		-- new: build markdown-preview after install/update
+		if d.spec.name == "markdown-preview.nvim" and (d.kind == "install" or d.kind == "update") then
+			if not d.active then
+				vim.cmd.packadd("markdown-preview.nvim")
+			end
+			vim.fn["mkdp#util#install"]()
+		end
 	end,
 })
 
@@ -25,12 +32,15 @@ vim.pack.add({
 
 	{ src = "https://github.com/folke/which-key.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
-	{ src = "https://github.com/nvim-mini/mini.statusline" },
+	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
+	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 	{ src = "https://github.com/folke/snacks.nvim" }, -- inline images
 	{ src = "https://github.com/smoka7/hop.nvim" }, -- Helix-style label jump
 	{ src = "https://github.com/kylechui/nvim-surround" },
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
-	{ src = "https://github.com/akinsho/bufferline.nvim" },
+	--{ src = "https://github.com/akinsho/bufferline.nvim" },
+	--
+	{ src = "https://github.com/iamcco/markdown-preview.nvim" },
 
 	-- LSP + installer
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
@@ -68,5 +78,9 @@ vim.pack.add({
 	{ src = "https://github.com/MagicDuck/grug-far.nvim" },
 	{ src = "https://github.com/MunifTanjim/nui.nvim" }, -- noice dependency
 	{ src = "https://github.com/folke/noice.nvim" },
-})
 
+	-- QoL
+	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
+	{ src = "https://github.com/shortcuts/no-neck-pain.nvim" },
+	{ src = "https://github.com/kylechui/nvim-surround" },
+})

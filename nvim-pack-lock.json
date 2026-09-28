@@ -41,9 +41,26 @@
       "rev": "154eb5ff5b96d0641307113fa385eaf0d36d9796",
       "src": "https://github.com/ellisonleao/gruvbox.nvim"
     },
+    "harpoon": {
+      "rev": "87b1a3506211538f460786c23f98ec63ad9af4e5",
+      "src": "https://github.com/ThePrimeagen/harpoon",
+      "version": "'harpoon2'"
+    },
     "hop.nvim": {
       "rev": "6e83486f351066e38c3ae9daad2a4f01dfb262ad",
       "src": "https://github.com/smoka7/hop.nvim"
+    },
+    "lua-utils.nvim": {
+      "rev": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd",
+      "src": "https://github.com/nvim-neorg/lua-utils.nvim"
+    },
+    "lualine.nvim": {
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
+    "markdown-preview.nvim": {
+      "rev": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
+      "src": "https://github.com/iamcco/markdown-preview.nvim"
     },
     "mason-lspconfig.nvim": {
       "rev": "49b16d699f9ca83184330c6eb886737a27f23bdd",
@@ -69,6 +86,14 @@
       "rev": "f3f3bf73414e400cf9fc13fda50f00404a8f8ab1",
       "src": "https://github.com/nvim-neo-tree/neo-tree.nvim",
       "version": "3.0.0 - 4.0.0"
+    },
+    "neorg": {
+      "rev": "6fda795b0108c92840fd32db6d5dd54e7f997fa8",
+      "src": "https://github.com/nvim-neorg/neorg"
+    },
+    "no-neck-pain.nvim": {
+      "rev": "55f69b7ff536303dcd37460d7cbced9691b3f0a2",
+      "src": "https://github.com/shortcuts/no-neck-pain.nvim"
     },
     "noice.nvim": {
       "rev": "7bfd942445fb63089b59f97ca487d605e715f155",
@@ -143,6 +168,10 @@
     "onedarkpro.nvim": {
       "rev": "24c806cb85c1f84d9faaff457cf7aa87c685a070",
       "src": "https://github.com/olimorris/onedarkpro.nvim"
+    },
+    "pathlib.nvim": {
+      "rev": "a0d3dbbe00ce6a546426b1aed3838a82fe6bfc42",
+      "src": "https://github.com/pysan3/pathlib.nvim"
     },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",

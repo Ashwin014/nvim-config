@@ -1,26 +1,26 @@
 vim.keymap.set("n", "<leader>ui", function()
 	Snacks.image.hover()
-end, { desc = "Preview image under cursor" })
+end, { desc = "preview image under cursor" })
 
 vim.keymap.set("n", "<leader>z", function()
 	Snacks.zen({ win = { width = 100 } }) -- change 100 to set the text width
-end, { desc = "Zen mode (centered text)" })
+end, { desc = "zen mode (centered text)" })
 
 vim.keymap.set("n", "<leader>fi", function()
 	Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
-end, { desc = "Find images / PDFs (with preview)" })
+end, { desc = "find images / pdfs (with preview)" })
 
 vim.keymap.set("n", "<leader>d", function()
 	Snacks.dashboard()
-end, { desc = "Open dashboard" })
+end, { desc = "open dashboard" })
 
 vim.keymap.set("n", "<leader>e", function()
 	Snacks.explorer()
-end, { desc = "File tree" })
+end, { desc = "file tree" })
 
 vim.keymap.set("n", "<leader>gg", function()
 	Snacks.lazygit()
-end, { desc = "Lazygit" })
+end, { desc = "lazygit" })
 
 ---------------------------------------------------------------------
 -- Images / media
@@ -33,19 +33,55 @@ require("snacks").setup({
 		enabled = true,
 		preset = {
 			header = [[
-███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
-████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
-██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
-██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
-██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
-╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
+			███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+			████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+			██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+			██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+			██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+			╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
+			-- 			header = [[
+			--                    █
+			--                   ███
+			--                  █████
+			--                 ███████
+			--                ████ ████
+			--               ████   ████
+			--              ████     ████
+			--             ████  ███  ████
+			--            ████  █████  ████
+			--           ████ █████████ ████
+			--          █████████  ██████████
+			--         █████████     █████████
+			--        ████████         ████████
+			--       ███████             ███████
+			--      ██████                 ██████
+			--     █████                     █████
+			--    ████                         ████
+			--   ███                             ███
+			--  ██                                 ██
+			-- █                                     █
+			-- ]],
+			--
+			-- 			header = [[
+			-- ┌─╔═════════════════════╗─┐
+			-- │╔╝          #          ╚╗│
+			-- │║          ###          ║│
+			-- │║         #####         ║│
+			-- │║        ##   ##        ║│
+			-- │║       ## ·#· ##       ║│
+			-- │║      ## ##### ##      ║│
+			-- │║     #####" "#####     ║│
+			-- │║    ###"       "###    ║│
+			-- │║   ##"           "##   ║│
+			-- │╚╗ #"               "# ╔╝│
+			-- └─╚═════════════════════╝─┘]],
 			keys = {
-				{ icon = " ", key = "f", desc = "Find file", action = ":Telescope find_files" },
-				{ icon = " ", key = "n", desc = "New file", action = ":ene | startinsert" },
-				{ icon = " ", key = "g", desc = "Find text", action = ":Telescope live_grep" },
-				{ icon = " ", key = "r", desc = "Recent files", action = ":Telescope oldfiles" },
-				{ icon = " ", key = "c", desc = "Config", action = ":e $MYVIMRC" },
-				{ icon = " ", key = "q", desc = "Quit", action = ":qa" },
+				{ icon = " ", key = "f", desc = "find file", action = ":Telescope find_files" },
+				{ icon = " ", key = "n", desc = "new file", action = ":ene | startinsert" },
+				{ icon = " ", key = "g", desc = "find text", action = ":Telescope live_grep" },
+				{ icon = " ", key = "r", desc = "recent files", action = ":Telescope oldfiles" },
+				{ icon = " ", key = "c", desc = "config", action = ":e $MYVIMRC" },
+				{ icon = " ", key = "q", desc = "quit", action = ":qa" },
 			},
 		},
 		sections = {
@@ -59,6 +95,8 @@ require("snacks").setup({
 		enabled = true,
 		sources = {
 			explorer = {
+				hidden = true,
+				ignored = true,
 				layout = {
 					layout = {
 						position = "left",

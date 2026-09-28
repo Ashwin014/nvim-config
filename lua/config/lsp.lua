@@ -69,20 +69,20 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.keymap.set("n", lhs, rhs, { buffer = buf, desc = desc })
 		end
 
-		map("gd", vim.lsp.buf.definition, "Go to definition")
-		map("gD", vim.lsp.buf.declaration, "Go to declaration")
-		map("<leader>ld", vim.diagnostic.open_float, "Line diagnostics")
-		map("<leader>lq", vim.diagnostic.setqflist, "Diagnostics to quickfix")
-		map("gR", vim.lsp.buf.references, "Go to references")
-		map("gi", vim.lsp.buf.implementation, "Go to implementation")
-		map("<leader>ch", vim.lsp.buf.incoming_calls, "Incoming calls")
-		map("<leader>co", vim.lsp.buf.outgoing_calls, "Outgoing calls")
+		map("gd", vim.lsp.buf.definition, "go to definition")
+		map("gD", vim.lsp.buf.declaration, "go to declaration")
+		map("<leader>ld", vim.diagnostic.open_float, "line diagnostics")
+		map("<leader>lq", vim.diagnostic.setqflist, "diagnostics to quickfix")
+		map("gR", vim.lsp.buf.references, "go to references")
+		map("gi", vim.lsp.buf.implementation, "go to implementation")
+		map("<leader>ch", vim.lsp.buf.incoming_calls, "incoming calls")
+		map("<leader>co", vim.lsp.buf.outgoing_calls, "outgoing calls")
 
 		if client and client:supports_method("textDocument/inlayHint") then
 			vim.lsp.inlay_hint.enable(true, { bufnr = buf })
 			map("<leader>ti", function()
 				vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = buf }), { bufnr = buf })
-			end, "Toggle inlay hints")
+			end, "toggle inlay hints")
 		end
 
 		-- ruff = lint/format only; let pyright handle hover
