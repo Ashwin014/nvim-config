@@ -38,6 +38,12 @@ vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
 vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "none" })
 vim.api.nvim_set_hl(0, "MsgArea", { bg = "none" })
 
+vim.api.nvim_set_hl(0, "WinSeparator", { bg = "none" })
+
+vim.api.nvim_set_hl(0, "TabLineFill", { bg = "none" })
+vim.api.nvim_set_hl(0, "TabLine", { bg = "none" })
+vim.api.nvim_set_hl(0, "TabLineSel", { bg = "none", bold = true })
+
 vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
 vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "TelescopePromptNormal", { bg = "none" })
@@ -47,8 +53,6 @@ vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "TelescopePreviewNormal", { bg = "none" })
 vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "TelescopeSelection", { bg = "none" })
-
-vim.api.nvim_set_hl(0, "WinSeparator", { bg = "none" })
 
 -- which-key
 vim.api.nvim_set_hl(0, "WhichKeyBorder", { bg = "none" })
