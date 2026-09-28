@@ -116,4 +116,8 @@ require("snacks").setup({
 		enabled = true,
 		doc = { inline = true, float = true, max_width = 80, max_height = 40 },
 	},
+	scroll = {
+		enabled = true,
+		animate = { duration = { step = 10, total = 200 }, easing = "linear" },
+	},
 })
