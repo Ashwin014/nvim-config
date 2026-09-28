@@ -1,4 +1,10 @@
-require("telescope").setup({})
+require("telescope").setup({
+	defaults = {
+		sorting_strategy = "ascending",
+		layout_config = { prompt_position = "top" },
+	},
+})
+
 local tb = require("telescope.builtin")
 local map = vim.keymap.set
 
