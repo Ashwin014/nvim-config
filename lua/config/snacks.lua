@@ -120,4 +120,9 @@ require("snacks").setup({
 		enabled = true,
 		animate = { duration = { step = 10, total = 200 }, easing = "linear" },
 	},
+	notifier = {
+		enabled = true,
+		timeout = 3000, -- ms a notification stays visible
+		style = "compact", -- also "fancy" and "minimal"
+	},
 })
