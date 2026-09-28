@@ -38,3 +38,5 @@ opt.laststatus = 3
 opt.showcmd = true
 opt.showcmdloc = "statusline"
 opt.timeoutlen = 200
+opt.list = true
+opt.listchars:append("leadmultispace:│   ") -- the vertical line for each indent level
