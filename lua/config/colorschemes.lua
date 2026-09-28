@@ -1,4 +1,4 @@
--- vim.cmd.colorscheme("ember")
+vim.cmd.colorscheme("ember-soft")
 
 -- vim.cmd.colorscheme("mytheme")
 
@@ -22,7 +22,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-dark")
 -- vim.cmd.colorscheme("soviet-light")
 
-vim.cmd.colorscheme("onedark-zed")
+-- vim.cmd.colorscheme("onedark-zed")
 
 -- =================================================================================
 -- Change background colors to none
@@ -47,3 +47,7 @@ vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "TelescopeSelection", { bg = "none" })
 
 vim.api.nvim_set_hl(0, "WinSeparator", { bg = "none" })
+
+-- which-key
+vim.api.nvim_set_hl(0, "WhichKeyBorder", { bg = "none" })
+vim.api.nvim_set_hl(0, "WhichKeyNormal", { bg = "none" })
