@@ -36,3 +36,4 @@ opt.inccommand = "split"
 opt.backspace = { "start", "eol", "indent" }
 opt.laststatus = 3
 opt.showcmd = true
+opt.showcmdloc = "statusline"

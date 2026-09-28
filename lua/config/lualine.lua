@@ -11,11 +11,7 @@ require("lualine").setup({
 	sections = {
 		lualine_c = { { "filename", path = 1 } },
 		lualine_x = {
-			{
-				require("noice").api.statusline.command.get,
-				cond = require("noice").api.statusline.command.has,
-				color = { fg = "#ff9e64" },
-			},
+			"%S",
 			function()
 				local r = vim.fn.reg_recording()
 				return r ~= "" and ("recording @" .. r) or ""

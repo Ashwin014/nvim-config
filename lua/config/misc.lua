@@ -13,6 +13,7 @@ vim.keymap.set("n", "<leader>_f", function()
 end, { desc = "oil float" })
 
 require("which-key").setup({
+	delay = 0,
 	win = {
 		col = 0.99, -- push the window to the right edge
 		width = { min = 30, max = 60 }, -- cap the width instead of full-width
