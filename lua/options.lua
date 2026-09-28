@@ -35,3 +35,4 @@ opt.inccommand = "split"
 -- opt.breakindent = true
 opt.backspace = { "start", "eol", "indent" }
 opt.laststatus = 3
+opt.showcmd = true
