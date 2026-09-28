@@ -10,5 +10,14 @@ require("lualine").setup({
 	},
 	sections = {
 		lualine_c = { { "filename", path = 1 } },
+		lualine_x = {
+			function()
+				local r = vim.fn.reg_recording()
+				return r ~= "" and ("recording @" .. r) or ""
+			end,
+			"encoding",
+			"fileformat",
+			"filetype",
+		},
 	},
 })
