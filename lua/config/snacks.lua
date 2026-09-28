@@ -1,27 +1,32 @@
-vim.keymap.set("n", "<leader>ui", function()
+local map = vim.keymap.set
+
+map("n", "<leader>ui", function()
 	Snacks.image.hover()
 end, { desc = "preview image under cursor" })
 
-vim.keymap.set("n", "<leader>z", function()
+map("n", "<leader>z", function()
 	Snacks.zen({ win = { width = 100 } }) -- change 100 to set the text width
 end, { desc = "zen mode (centered text)" })
 
-vim.keymap.set("n", "<leader>fi", function()
+map("n", "<leader>fi", function()
 	Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
 end, { desc = "find images / pdfs (with preview)" })
 
-vim.keymap.set("n", "<leader>d", function()
+map("n", "<leader>d", function()
 	Snacks.dashboard()
 end, { desc = "open dashboard" })
 
-vim.keymap.set("n", "<leader>e", function()
+map("n", "<leader>e", function()
 	Snacks.explorer()
 end, { desc = "file tree" })
 
-vim.keymap.set("n", "<leader>gg", function()
+map("n", "<leader>gg", function()
 	Snacks.lazygit()
 end, { desc = "lazygit" })
 
+map("n", "<leader>un", function()
+	Snacks.notifier.show_history()
+end, { desc = "notification history" })
 ---------------------------------------------------------------------
 -- Images / media
 ---------------------------------------------------------------------
