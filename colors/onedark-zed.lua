@@ -242,6 +242,11 @@ hl(0, "TelescopeResultsBorder", { fg = c.light_gray, bg = bg })
 hl(0, "TelescopePreviewNormal", { fg = fg, bg = bg })
 hl(0, "TelescopePreviewBorder", { fg = c.light_gray, bg = bg })
 
+-- noice
+hl(0, "NoiceCmdline", { fg = fg, bg = bg })
+hl(0, "NoiceCmdlinePopup", { fg = c.light_gray, bg = bg })
+hl(0, "NoiceCmdlinePopupBorder", { fg = c.light_gray, bg = bg })
+
 -- which-key
 hl(0, "WhichKeyNormal", { fg = fg, bg = bg })
 hl(0, "WhichKeyBorder", { fg = c.light_gray, bg = bg })
