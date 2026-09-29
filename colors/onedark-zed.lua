@@ -269,10 +269,10 @@ hl(0, "BlinkCmpDocBorder", { fg = c.light_gray, bg = bg })
 hl(0, "BlinkCmpDocSeparator", { fg = c.light_gray, bg = bg })
 
 -- harpoon
-vim.api.nvim_set_hl(0, "HarpoonNormal", { fg = fg, bg = bg })
-vim.api.nvim_set_hl(0, "HarpoonBorderX", { fg = c.light_gray, bg = bg })
-vim.api.nvim_set_hl(0, "HarpoonTitleX", { fg = c.light_gray, bg = bg, bold = true })
-vim.api.nvim_set_hl(0, "HarpoonSel", { fg = bg, bg = c.blue })
+hl(0, "HarpoonNormal", { fg = fg, bg = bg })
+hl(0, "HarpoonBorderX", { fg = c.light_gray, bg = bg })
+hl(0, "HarpoonTitleX", { fg = c.light_gray, bg = bg })
+hl(0, "HarpoonSel", { fg = bg, bg = c.blue })
 
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "harpoon",
