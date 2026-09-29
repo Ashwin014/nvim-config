@@ -163,7 +163,7 @@ hl(0, "DiagnosticVirtualTextHint", { fg = c.green, bg = c.gray })
 hl(0, "LspReferenceText", { bg = c.faint_gray })
 hl(0, "LspReferenceRead", { bg = c.faint_gray })
 hl(0, "LspReferenceWrite", { bg = c.faint_gray })
-hl(0, "LspInlayHint", { fg = c.blue_gray, bold = true, bg = c.faint_gray })
+hl(0, "LspInlayHint", { fg = c.blue_gray, italic = true, bg = c.faint_gray })
 hl(0, "LspCodeLens", { fg = c.light_gray })
 
 -- treesitter
