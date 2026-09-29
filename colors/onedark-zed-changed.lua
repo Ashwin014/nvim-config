@@ -13,7 +13,7 @@ vim.g.colors_name = "onedark-zed"
 
 -- palette (alpha stripped from source hex values)
 local c = {
-	yellow = "#dfc184",
+	yellow = "#c9b89e",
 	orange = "#b09d86",
 	blue = "#96afd0",
 	blue_gray = "#5a6f89",
@@ -22,10 +22,10 @@ local c = {
 	green = "#a3b596",
 	cyan = "#6eb4bf",
 	gray = "#323439",
-	light_gray = "#5d636f",
+	light_gray = "#6a6d73",
 	faint_gray = "#3b4048",
 	linenr = "#5d636f",
-	white = "#c8ccd4",
+	white = "#ced0d4",
 	black = "#282c33",
 	selection = "#293b5b",
 	frameline = "#97202a",
