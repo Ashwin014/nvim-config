@@ -1,5 +1,7 @@
 vim.cmd.colorscheme("ember")
 
+-- vim.cmd.colorscheme("Catppuccin")
+
 -- vim.cmd.colorscheme("mytheme")
 
 -- vim.lsp.semantic_tokens.enable(false)
