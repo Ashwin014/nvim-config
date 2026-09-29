@@ -269,6 +269,7 @@ hl(0, "BlinkCmpDocBorder", { fg = c.light_gray, bg = bg })
 hl(0, "BlinkCmpDocSeparator", { fg = c.light_gray, bg = bg })
 
 -- harpoon
-hl(0, "HarpoonWindow", { fg = "#c0caf5", bg = "#1a1b26" }) -- menu body
-hl(0, "HarpoonBorder", { fg = "#7aa2f7", bg = "#1a1b26" }) -- border
-hl(0, "HarpoonTitle", { fg = "#1a1b26", bg = "#7aa2f7", bold = true }) -- title, if your version has it
+vim.api.nvim_set_hl(0, "HarpoonWindow", { fg = "#c0caf5", bg = "#1a1b26" })
+vim.api.nvim_set_hl(0, "HarpoonBorder", { fg = "#7aa2f7", bg = "#1a1b26" })
+vim.api.nvim_set_hl(0, "HarpoonTitle", { fg = "#1a1b26", bg = "#7aa2f7", bold = true })
+vim.api.nvim_set_hl(0, "HarpoonSel", { fg = "#1a1b26", bg = "#7aa2f7" })
