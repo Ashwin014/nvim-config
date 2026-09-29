@@ -1,4 +1,4 @@
--- vim.cmd.colorscheme("ember-soft")
+vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("mytheme")
 
@@ -8,7 +8,7 @@ require("vscode").setup({
 	style = "dark", -- or "light"
 	italic_comments = true,
 })
-vim.cmd.colorscheme("vscode")
+-- vim.cmd.colorscheme("vscode")
 
 -- vim.cmd.colorscheme("synth")
 
