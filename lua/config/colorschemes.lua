@@ -8,7 +8,7 @@ require("vscode").setup({
 	style = "dark", -- or "light"
 	italic_comments = true,
 })
--- vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vscode")
 
 -- vim.cmd.colorscheme("synth")
 
@@ -24,7 +24,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 
 -- vim.cmd.colorscheme("onedark-zed")
 
-vim.cmd.colorscheme("onedark-zed-changed")
+-- vim.cmd.colorscheme("onedark-zed-changed")
 
 -- vim.cmd.colorscheme("retrobox")
 
