@@ -71,7 +71,7 @@ hl(0, "TabLine", { fg = c.light_gray, bg = c.gray })
 hl(0, "TabLineFill", { bg = c.gray })
 hl(0, "TabLineSel", { fg = fg, bg = c.blue_gray })
 
-hl(0, "Pmenu", { fg = fg, bg = c.gray })
+hl(0, "Pmenu", { fg = fg, bg = bg })
 hl(0, "PmenuSel", { fg = bg, bg = c.blue })
 hl(0, "PmenuSbar", { bg = c.gray })
 hl(0, "PmenuThumb", { bg = c.light_gray })
@@ -253,3 +253,13 @@ hl(0, "NoiceCmdlinePrompt", { fg = fg, bold = true })
 -- which-key
 hl(0, "WhichKeyNormal", { fg = fg, bg = bg })
 hl(0, "WhichKeyBorder", { fg = c.light_gray, bg = bg })
+
+-- blink.cmp
+hl(0, "BlinkCmpMenu", { fg = fg, bg = bg })
+hl(0, "BlinkCmpMenuBorder", { fg = "#7aa2f7", bg = "#1a1b26" })
+hl(0, "BlinkCmpMenuSelection", { fg = "#1a1b26", bg = "#7aa2f7" })
+hl(0, "BlinkCmpLabel", { fg = "#c0caf5" })
+hl(0, "BlinkCmpLabelMatch", { fg = "#e0af68", bold = true }) -- matched chars
+hl(0, "BlinkCmpKind", { fg = "#bb9af7" })
+hl(0, "BlinkCmpScrollBarThumb", { bg = "#565f89" })
+hl(0, "BlinkCmpScrollBarGutter", { bg = "#24283b" })
