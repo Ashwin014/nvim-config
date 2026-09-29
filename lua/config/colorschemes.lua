@@ -30,8 +30,8 @@ vim.cmd.colorscheme("onedark-zed")
 -- Change background colors to none
 -- =================================================================================
 
--- local set_hl = vim.api.nvim_set_hl
---
+local set_hl = vim.api.nvim_set_hl
+
 -- set_hl(0, "Normal", { bg = "none" })
 -- set_hl(0, "NormalFloat", { bg = "none" })
 -- set_hl(0, "NormalNC", { bg = "none" })
@@ -57,5 +57,5 @@ vim.cmd.colorscheme("onedark-zed")
 -- set_hl(0, "TelescopeSelection", { bg = "none" })
 --
 -- -- which-key
--- set_hl(0, "WhichKeyBorder", { bg = "none" })
--- set_hl(0, "WhichKeyNormal", { bg = "none" })
+set_hl(0, "WhichKeyBorder", { bg = "none" })
+set_hl(0, "WhichKeyNormal", { bg = "none" })
