@@ -289,12 +289,12 @@ vim.api.nvim_create_autocmd("FileType", {
 
 -- snacks
 -- explorer
-hl(0, "SnacksPicker", { fg = "#c0caf5", bg = "#1a1b26" }) -- list body
-hl(0, "SnacksPickerBorder", { fg = "#7aa2f7", bg = "#1a1b26" }) -- border
-hl(0, "SnacksPickerTitle", { fg = "#1a1b26", bg = "#7aa2f7", bold = true })
+hl(0, "SnacksPicker", { fg = fg, bg = bg }) -- list body
+hl(0, "SnacksPickerBorder", { fg = c.light_gray, bg = bg }) -- border
+hl(0, "SnacksPickerTitle", { fg = "#1a1b26", bg = c.red, bold = true })
 hl(0, "SnacksPickerListCursorLine", { fg = "#1a1b26", bg = "#7aa2f7" }) -- selected row
-hl(0, "SnacksPickerDir", { fg = "#7aa2f7" }) -- folder names
+hl(0, "SnacksPickerDir", { fg = c.blue }) -- folder names
 hl(0, "SnacksPickerFile", { fg = "#c0caf5" }) -- file names
-hl(0, "SnacksPickerTree", { fg = "#3b4261" }) -- tree indent lines
-hl(0, "SnacksPickerPathHidden", { fg = "#565f89" }) -- dotfiles
-hl(0, "SnacksPickerPathIgnored", { fg = "#565f89" }) -- gitignored
+hl(0, "SnacksPickerTree", { fg = c.faint_gray }) -- tree indent lines
+hl(0, "SnacksPickerPathHidden", { fg = c.light_gray }) -- dotfiles
+hl(0, "SnacksPickerPathIgnored", { fg = c.light_gray }) -- gitignored
