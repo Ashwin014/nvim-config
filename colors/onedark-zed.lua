@@ -262,7 +262,8 @@ hl(0, "BlinkCmpLabel", { fg = c.light_gray })
 hl(0, "BlinkCmpLabelMatch", { fg = c.blue, bold = true }) -- matched chars
 hl(0, "BlinkCmpKind", { fg = c.light_gray })
 hl(0, "BlinkCmpScrollBarThumb", { bg = c.light_gray })
-hl(0, "BlinkCmpScrollBarGutter", { bg = bg })
+hl(0, "BlinkCmpScrollBarGutter", { bg = c.none })
 -- blink docs popup
-hl(0, "BlinkCmpDoc", { fg = "#c0caf5", bg = "#16161e" })
-hl(0, "BlinkCmpDocBorder", { fg = "#7aa2f7", bg = "#16161e" })
+hl(0, "BlinkCmpDoc", { fg = fg, bg = bg })
+hl(0, "BlinkCmpDocBorder", { fg = c.light_gray, bg = bg })
+hl(0, "BlinkCmpDocSeparator", { fg = c.light_gray, bg = bg })
