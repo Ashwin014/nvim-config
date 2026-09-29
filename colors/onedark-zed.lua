@@ -257,9 +257,12 @@ hl(0, "WhichKeyBorder", { fg = c.light_gray, bg = bg })
 -- blink.cmp
 hl(0, "BlinkCmpMenu", { fg = fg, bg = bg })
 hl(0, "BlinkCmpMenuBorder", { fg = c.light_gray, bg = bg })
-hl(0, "BlinkCmpMenuSelection", { fg = fg, bg = "#7aa2f7" })
-hl(0, "BlinkCmpLabel", { fg = "#c0caf5" })
+hl(0, "BlinkCmpMenuSelection", { fg = fg, bg = c.faint_gray })
+hl(0, "BlinkCmpLabel", { fg = c.light_gray })
 hl(0, "BlinkCmpLabelMatch", { fg = c.blue, bold = true }) -- matched chars
 hl(0, "BlinkCmpKind", { fg = c.light_gray })
 hl(0, "BlinkCmpScrollBarThumb", { bg = c.light_gray })
-hl(0, "BlinkCmpScrollBarGutter", { bg = "#24283b" })
+hl(0, "BlinkCmpScrollBarGutter", { bg = bg })
+-- blink docs popup
+hl(0, "BlinkCmpDoc", { fg = "#c0caf5", bg = "#16161e" })
+hl(0, "BlinkCmpDocBorder", { fg = "#7aa2f7", bg = "#16161e" })
