@@ -50,6 +50,10 @@
       "rev": "6e83486f351066e38c3ae9daad2a4f01dfb262ad",
       "src": "https://github.com/smoka7/hop.nvim"
     },
+    "indent-blankline.nvim": {
+      "rev": "f1e186e44d3b7f9ae918008e2c28ce37c6023d2d",
+      "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
+    },
     "lua-utils.nvim": {
       "rev": "e565749421f4bbb5d2e85e37c3cef9d56553d8bd",
       "src": "https://github.com/nvim-neorg/lua-utils.nvim"
