@@ -59,5 +59,3 @@ set_hl(0, "TelescopeSelection", { bg = "none" })
 -- which-key
 set_hl(0, "WhichKeyBorder", { bg = "none" })
 set_hl(0, "WhichKeyNormal", { bg = "none" })
-
-set_hl(0, "Whitespace", { fg = "#3b3f4c" }) -- a subtle, muted color
