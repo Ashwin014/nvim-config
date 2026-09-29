@@ -25,7 +25,7 @@ require("which-key").setup({
 })
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
-vim.keymap.set("n", "<leader>t", "<cmd>botright 12split | terminal<cr>", { desc = "terminal" })
+vim.keymap.set("n", "<leader>T", "<cmd>botright 12split | terminal<cr>", { desc = "terminal" })
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>", { desc = "exit terminal mode" })
 
 --
