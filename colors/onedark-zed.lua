@@ -269,7 +269,20 @@ hl(0, "BlinkCmpDocBorder", { fg = c.light_gray, bg = bg })
 hl(0, "BlinkCmpDocSeparator", { fg = c.light_gray, bg = bg })
 
 -- harpoon
-vim.api.nvim_set_hl(0, "HarpoonInactive", { fg = "#c0caf5", bg = "#1a1b26" })
-vim.api.nvim_set_hl(0, "HarpoonActive", { fg = "#7aa2f7", bg = "#1a1b26" })
-vim.api.nvim_set_hl(0, "HarpoonNumber", { fg = "#1a1b26", bg = "#7aa2f7", bold = true })
-vim.api.nvim_set_hl(0, "HarpoonSel", { fg = "#1a1b26", bg = "#7aa2f7" })
+vim.api.nvim_set_hl(0, "HarpoonNormal", { fg = fg, bg = bg })
+vim.api.nvim_set_hl(0, "HarpoonBorderX", { fg = c.light_gray, bg = bg })
+vim.api.nvim_set_hl(0, "HarpoonTitleX", { fg = c.light_gray, bg = bg, bold = true })
+vim.api.nvim_set_hl(0, "HarpoonSel", { fg = bg, bg = c.blue })
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "harpoon",
+	callback = function()
+		vim.wo.winhighlight = table.concat({
+			"Normal:HarpoonNormal",
+			"NormalFloat:HarpoonNormal",
+			"FloatBorder:HarpoonBorderX",
+			"FloatTitle:HarpoonTitleX",
+			"CursorLine:HarpoonSel",
+		}, ",")
+	end,
+})
