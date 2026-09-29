@@ -231,8 +231,9 @@ hl(0, "GitSignsChange", { fg = c.yellow })
 hl(0, "GitSignsDelete", { fg = c.red })
 
 -- telescope
--- hl(0, "TelescopeNormal",       { fg = fg, bg = c.gray })
--- hl(0, "TelescopeBorder",       { fg = c.gray, bg = c.gray })
+-- hl(0, "TelescopeNormal", { fg = fg, bg = c.gray })
+-- hl(0, "TelescopeBorder", { fg = c.gray, bg = c.gray })
+hl(0, "TelescopeBorder", { fg = c.light_gray, bg = bg })
 -- hl(0, "TelescopeSelection",    { bg = c.faint_gray })
 -- hl(0, "TelescopePromptNormal", { fg = fg, bg = c.gray })
--- hl(0, "TelescopeMatching",     { fg = c.blue, bold = true })
+hl(0, "TelescopeMatching", { fg = c.blue, bold = true })
