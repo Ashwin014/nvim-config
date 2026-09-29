@@ -246,6 +246,9 @@ hl(0, "TelescopePreviewBorder", { fg = c.light_gray, bg = bg })
 hl(0, "NoiceCmdline", { fg = fg, bg = bg })
 hl(0, "NoiceCmdlinePopup", { fg = c.light_gray, bg = bg })
 hl(0, "NoiceCmdlinePopupBorder", { fg = c.light_gray, bg = bg })
+hl(0, "NoiceCmdlinePopupTitle", { fg = c.red, bg = c.green, bold = true })
+hl(0, "NoiceCmdlineIcon", { fg = c.light_gray })
+hl(0, "NoiceCmdlinePrompt", { fg = fg, bold = true })
 
 -- which-key
 hl(0, "WhichKeyNormal", { fg = fg, bg = bg })
