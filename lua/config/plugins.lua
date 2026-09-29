@@ -85,4 +85,7 @@ vim.pack.add({
 	{ src = "https://github.com/kylechui/nvim-surround" },
 
 	{ src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
+
+	-- prog-lanaguages
+	{ src = "https://github.com/mmikeww/autohotkey.vim" },
 })

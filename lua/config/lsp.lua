@@ -91,3 +91,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		end
 	end,
 })
+
+-- AutoHotkey v2
+vim.lsp.config("ahk2", {
+	cmd = { "node", "C:/Users/ashwi/vscode-autohotkey2-lsp/server/dist/server.js", "--stdio" },
+	filetypes = { "autohotkey" },
+	root_markers = { ".git" },
+})
+vim.lsp.enable("ahk2")
+
+vim.filetype.add({
+	extension = { ahk = "autohotkey" },
+})
