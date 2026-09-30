@@ -11,5 +11,3 @@ require("blink.cmp").setup({
 
 require("nvim-autopairs").setup({})
 require("nvim-surround").setup({}) -- ys{motion}{char}, ds{char}, cs{old}{new}
-
---
