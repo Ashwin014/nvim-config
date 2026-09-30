@@ -253,6 +253,7 @@ hl(0, "NoiceCmdlinePrompt", { fg = fg, bold = true })
 -- which-key
 hl(0, "WhichKeyNormal", { fg = fg, bg = bg })
 hl(0, "WhichKeyBorder", { fg = c.light_gray, bg = bg })
+hl(0, "WhichKeyTitle", { fg = c.light_gray })
 
 -- blink.cmp
 hl(0, "BlinkCmpMenu", { fg = fg, bg = bg })
