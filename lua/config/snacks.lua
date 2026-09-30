@@ -82,12 +82,12 @@ require("snacks").setup({
 			-- │╚╗ #"               "# ╔╝│
 			-- └─╚═════════════════════╝─┘]],
 			keys = {
-				{ icon = " ", key = "f", desc = "find file", action = ":Telescope find_files" },
-				{ icon = " ", key = "n", desc = "new file", action = ":ene | startinsert" },
-				{ icon = " ", key = "g", desc = "find text", action = ":Telescope live_grep" },
-				{ icon = " ", key = "r", desc = "recent files", action = ":Telescope oldfiles" },
-				{ icon = " ", key = "c", desc = "config", action = ":e $MYVIMRC" },
-				{ icon = " ", key = "q", desc = "quit", action = ":qa" },
+				{ icon = " ", key = "f", desc = "Find file", action = ":Telescope find_files" },
+				{ icon = " ", key = "n", desc = "New file", action = ":ene | startinsert" },
+				{ icon = " ", key = "g", desc = "Find text", action = ":Telescope live_grep" },
+				{ icon = " ", key = "r", desc = "Recent files", action = ":Telescope oldfiles" },
+				{ icon = " ", key = "c", desc = "Config", action = ":e $MYVIMRC" },
+				{ icon = " ", key = "q", desc = "Quit", action = ":qa" },
 			},
 		},
 		sections = {
