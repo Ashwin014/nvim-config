@@ -298,3 +298,9 @@ hl(0, "SnacksPickerFile", { fg = fg }) -- file names
 hl(0, "SnacksPickerTree", { fg = c.faint_gray }) -- tree indent lines
 hl(0, "SnacksPickerPathHidden", { fg = c.light_gray }) -- dotfiles
 hl(0, "SnacksPickerPathIgnored", { fg = c.light_gray }) -- gitignored
+
+-- lualine
+hl(0, "lualine_transparent", { fg = c.red, bg = c.green })
+hl(0, "lualine_a_terminal", { fg = c.purple, bg = c.blue })
+hl(0, "lualine_b_terminal", { fg = c.purple, bg = c.blue })
+hl(0, "lualine_c_terminal", { fg = c.purple, bg = c.blue })
