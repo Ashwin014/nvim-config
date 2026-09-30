@@ -39,7 +39,7 @@ local hl = vim.api.nvim_set_hl
 
 -- editor UI
 hl(0, "Normal", { fg = fg, bg = bg })
-hl(0, "NormalFloat", { fg = fg, bg = c.gray })
+hl(0, "NormalFloat", { fg = fg, bg = bg })
 hl(0, "NormalNC", { fg = fg, bg = bg })
 hl(0, "SignColumn", { fg = fg, bg = bg })
 hl(0, "FoldColumn", { fg = c.light_gray, bg = bg })
