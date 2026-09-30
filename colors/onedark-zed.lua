@@ -76,7 +76,7 @@ hl(0, "Pmenu", { fg = fg, bg = bg })
 hl(0, "PmenuSel", { fg = bg, bg = c.blue })
 hl(0, "PmenuSbar", { bg = c.gray })
 hl(0, "PmenuThumb", { bg = c.light_gray })
-hl(0, "PmenuBorder", { bg = c.red })
+hl(0, "PmenuBorder", { bg = c.light_gray })
 
 hl(0, "WildMenu", { fg = bg, bg = c.blue })
 hl(0, "MsgArea", { fg = fg, bg = bg })
