@@ -30,4 +30,4 @@ require("noice").setup({
 	},
 })
 
-vim.keymap.set("n", "<leader>nh", "<cmd>Noice telescope<cr>", { desc = "message history" })
+vim.keymap.set("n", "<leader>nh", "<cmd>Noice telescope<cr>", { desc = "Message history" })

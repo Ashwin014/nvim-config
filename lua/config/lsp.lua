@@ -82,7 +82,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.lsp.inlay_hint.enable(true, { bufnr = buf })
 			map("<leader>ti", function()
 				vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = buf }), { bufnr = buf })
-			end, "toggle inlay hints")
+			end, "Toggle inlay hints")
 		end
 
 		-- ruff = lint/format only; let pyright handle hover

@@ -196,25 +196,25 @@ vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
 ---------------------------------------------------------------------
 -- { key, :Obsidian subcommand, description }  ->  <leader>o<key>
 local commands = {
-	{ "n", "new", "new note" },
-	{ "t", "today", "today's note" },
-	{ "y", "yesterday", "yesterday's note" },
-	{ "m", "tomorrow", "tomorrow's note" },
-	{ "d", "dailies", "pick a daily note" },
-	{ "f", "quick_switch", "find note" },
-	{ "s", "search", "search notes" },
-	{ "b", "backlinks", "backlinks" },
-	{ "l", "links", "links in this note" },
-	{ "g", "tags", "find by tag" },
-	{ "r", "rename", "rename note" },
-	{ "T", "template", "insert template" },
-	{ "i", "paste_img", "paste image" },
-	{ "o", "open", "open in obsidian app" },
+	{ "n", "new", "New note" },
+	{ "t", "today", "Today's note" },
+	{ "y", "yesterday", "Yesterday's note" },
+	{ "m", "tomorrow", "Tomorrow's note" },
+	{ "d", "dailies", "Pick a daily note" },
+	{ "f", "quick_switch", "Find note" },
+	{ "s", "search", "Search notes" },
+	{ "b", "backlinks", "Backlinks" },
+	{ "l", "links", "Links in this note" },
+	{ "g", "tags", "Find by tag" },
+	{ "r", "rename", "Rename note" },
+	{ "T", "template", "Insert template" },
+	{ "i", "paste_img", "Paste image" },
+	{ "o", "open", "Open in Obsidian app" },
 }
 for _, c in ipairs(commands) do
 	vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = "obsd: " .. c[3] })
 end
 
 -- these two work on a visual selection
-vim.keymap.set("v", "<leader>ok", ":Obsidian link<cr>", { desc = "obsd: link selection" })
-vim.keymap.set("v", "<leader>oe", ":Obsidian extract_note<cr>", { desc = "obsd: extract to new note" })
+vim.keymap.set("v", "<leader>ok", ":Obsidian link<cr>", { desc = "obsd: Link selection" })
+vim.keymap.set("v", "<leader>oe", ":Obsidian extract_note<cr>", { desc = "obsd: Extract to new note" })
