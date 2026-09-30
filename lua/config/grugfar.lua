@@ -24,8 +24,8 @@ require("grug-far").setup({
 
 vim.keymap.set("n", "<leader>sr", function()
 	require("grug-far").open()
-end, { desc = "search and replace" })
+end, { desc = "Search and replace" })
 
 vim.keymap.set("v", "<leader>sr", function()
 	require("grug-far").with_visual_selection()
-end, { desc = "search and replace (selection)" })
+end, { desc = "Search and replace (selection)" })
