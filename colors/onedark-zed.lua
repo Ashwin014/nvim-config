@@ -213,8 +213,7 @@ hl(0, "@property", { fg = c.red })
 hl(0, "@tag", { fg = fg })
 hl(0, "@tag.attribute", { fg = c.yellow })
 hl(0, "@tag.delimiter", { fg = fg })
--- hl(0, "@comment", { fg = c.light_gray, italic = true })
-hl(0, "@comment", { fg = c.light_gray })
+hl(0, "@comment", { fg = c.light_gray, italic = true })
 
 hl(0, "@markup.heading", { fg = c.red, bold = true })
 hl(0, "@markup.list", { fg = c.red })
@@ -225,6 +224,8 @@ hl(0, "@markup.raw", { fg = c.green })
 hl(0, "@markup.quote", { fg = c.yellow })
 hl(0, "@markup.link.url", { fg = c.cyan, underline = true })
 hl(0, "@markup.link.label", { fg = c.purple })
+
+hl(0, "@spell.lua", { fg = c.purple, bg = c.red })
 
 -- gitsigns / git
 hl(0, "GitSignsAdd", { fg = c.green })
