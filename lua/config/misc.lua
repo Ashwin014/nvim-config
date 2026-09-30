@@ -12,6 +12,9 @@ vim.keymap.set("n", "<leader>_f", function()
 	require("oil").toggle_float()
 end, { desc = "oil float" })
 
+-- oil.nvim dep
+require("nvim-web-devicons").setup({})
+
 require("which-key").setup({
 	-- delay = 0,
 	win = {
@@ -43,5 +46,3 @@ require("no-neck-pain").setup({
 	width = 100, -- text column width; 80-100 reads well for prose
 })
 vim.keymap.set("n", "<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "center buffer" })
-
-require("nvim-web-devicons").setup({})
