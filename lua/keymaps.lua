@@ -62,3 +62,11 @@ map("v", "<leader>lc", "Uv$~", { desc = "toggle to lowercased" })
 -- quickly jump to init.lua & wezterm.lua
 map("n", "<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "edit init.lua" })
 map("n", "<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "edit wezterm.lua" })
+
+-- tab keymaps
+map("n", "<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
+map("n", "<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
+map("n", "<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
+map("n", "<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
+map("n", "<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
+map("n", "<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
