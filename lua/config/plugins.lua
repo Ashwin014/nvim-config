@@ -88,7 +88,4 @@ vim.pack.add({
 
 	-- prog-lanaguages
 	{ src = "https://github.com/mmikeww/autohotkey.vim" },
-
-	-- editing
-	{ src = "https://github.com/mg979/vim-visual-multi" },
 })
