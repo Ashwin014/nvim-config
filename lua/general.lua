@@ -5,7 +5,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- sourced from https://youtu.be/v36vLiFVOXY
+--#region sourced from https://youtu.be/v36vLiFVOXY
 -- restore cursor to file position in previous editing session
 vim.api.nvim_create_autocmd("BufReadPost", {
 	callback = function(args)
@@ -73,3 +73,5 @@ vim.api.nvim_create_autocmd("CursorHoldI", {
 		vim.lsp.buf.clear_references()
 	end,
 })
+
+--#endregion
