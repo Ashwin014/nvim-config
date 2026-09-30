@@ -225,8 +225,6 @@ hl(0, "@markup.quote", { fg = c.yellow })
 hl(0, "@markup.link.url", { fg = c.cyan, underline = true })
 hl(0, "@markup.link.label", { fg = c.purple })
 
-hl(0, "@spell.lua", { fg = c.purple, bg = c.red })
-
 -- gitsigns / git
 hl(0, "GitSignsAdd", { fg = c.green })
 hl(0, "GitSignsChange", { fg = c.yellow })
