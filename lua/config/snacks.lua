@@ -2,31 +2,31 @@ local map = vim.keymap.set
 
 map("n", "<leader>ui", function()
 	Snacks.image.hover()
-end, { desc = "preview image under cursor" })
+end, { desc = "Snacks: Preview image under cursor" })
 
 map("n", "<leader>z", function()
 	Snacks.zen({ win = { width = 100 } }) -- change 100 to set the text width
-end, { desc = "zen mode (centered text)" })
+end, { desc = "Snacks: Zen mode" })
 
 map("n", "<leader>fi", function()
 	Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
-end, { desc = "find images / pdfs (with preview)" })
+end, { desc = "Snacks: Find images / pdfs (with preview)" })
 
 map("n", "<leader>d", function()
 	Snacks.dashboard()
-end, { desc = "open dashboard" })
+end, { desc = "Snacks: Open dashboard" })
 
 map("n", "<leader>e", function()
 	Snacks.explorer()
-end, { desc = "file tree" })
+end, { desc = "Snacks: File tree" })
 
 map("n", "<leader>gg", function()
 	Snacks.lazygit()
-end, { desc = "lazygit" })
+end, { desc = "Snacks: Lazygit" })
 
 map("n", "<leader>un", function()
 	Snacks.notifier.show_history()
-end, { desc = "notification history" })
+end, { desc = "Snacks: Notification history" })
 ---------------------------------------------------------------------
 -- Images / media
 ---------------------------------------------------------------------
