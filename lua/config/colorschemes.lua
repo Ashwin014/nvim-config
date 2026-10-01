@@ -26,6 +26,8 @@ require("soviet").setup({}) -- Optional; add your settings here.
 
 -- vim.cmd.colorscheme("retrobox")
 
+vim.cmd.colorscheme("blueberry-peach")
+
 -- =================================================================================
 -- Change background colors to none
 -- =================================================================================
