@@ -197,6 +197,10 @@
       "rev": "6dd84e174d0104f22adbdc62eb5fbd6c7684ad8d",
       "src": "https://github.com/rezniqov/soviet.nvim"
     },
+    "suannhai.nvim": {
+      "rev": "378aaf55ef667ac3ff1d013f5bb0ecf75d8aa1b1",
+      "src": "https://github.com/WeiTing1991/suannhai.nvim"
+    },
     "telescope.nvim": {
       "rev": "427b576c16792edad01a92b89721d923c19ad60f",
       "src": "https://github.com/nvim-telescope/telescope.nvim"

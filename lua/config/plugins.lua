@@ -39,6 +39,8 @@ vim.pack.add({
 	{ src = "https://github.com/kylechui/nvim-surround" },
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 	--{ src = "https://github.com/akinsho/bufferline.nvim" },
+
+	{ src = "https://github.com/WeiTing1991/suannhai.nvim" },
 	--
 	{ src = "https://github.com/iamcco/markdown-preview.nvim" },
 
