@@ -302,4 +302,5 @@ hl(0, "SnacksPickerTree", { fg = c.faint_gray }) -- tree indent lines
 hl(0, "SnacksPickerPathHidden", { fg = c.light_gray }) -- dotfiles
 hl(0, "SnacksPickerPathIgnored", { fg = c.light_gray }) -- gitignored
 -- notifier
-hl(0, "SnacksNotifierHistory", { fg = fg, bg = bg }) -- list body
+hl(0, "SnacksNotifierHistory", { fg = fg, bg = c.red }) -- list body
+-- hl(0, "SnackPickerListCursorLine", { fg = fg, bg = bg }) -- list body
