@@ -40,6 +40,7 @@ vim.pack.add({
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 	--{ src = "https://github.com/akinsho/bufferline.nvim" },
 
+	{ src = "https://github.com/rktjmp/lush.nvim" },
 	--
 	{ src = "https://github.com/iamcco/markdown-preview.nvim" },
 
