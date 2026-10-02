@@ -23,7 +23,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-light")
 
 -- vim.cmd.colorscheme("onedark-zed")
-vim.cmd.colorscheme("masks")
+vim.cmd.colorscheme("xray")
 
 -- vim.cmd.colorscheme("retrobox")
 
