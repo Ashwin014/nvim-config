@@ -262,6 +262,7 @@ hl.WhichKeySeparator = { fg = c.muted }
 hl.WhichKeyFloat = { bg = c.bg }
 hl.WhichKeyBorder = { fg = c.border, bg = c.bg }
 hl.WhichKeyValue = { fg = c.muted }
+hl.WhichKeyTitle = { fg = c.muted }
 
 -- Snacks (dashboard, picker, explorer, zen, notifier, indent) -------
 hl.SnacksNormal = { fg = c.fg, bg = c.bg_alt }
