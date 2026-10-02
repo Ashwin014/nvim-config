@@ -63,6 +63,8 @@ map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
 map("x", "<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
+-- keep last yanked when pasting
+map("v", "p", '"_dP', { noremap = true, silent = true })
 
 map("n", "<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
 map("v", "<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
@@ -85,9 +87,6 @@ map("i", "<C-d>", "<Esc>ddi", { desc = "Delete line" })
 
 -- delete single character without copying into register/clipboard
 map("n", "x", '"_x', { noremap = true, silent = true })
-
--- keep laste yanked when pasting
-map("v", "p", '"_dP', { noremap = true, silent = true })
 
 -- LINES
 
