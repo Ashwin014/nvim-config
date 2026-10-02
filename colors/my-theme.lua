@@ -27,6 +27,10 @@ local cp = {
 	space_indigo = "#1C2D4E",
 	lavender_purple = "#B35AD8",
 	sky_aqua = "#3CCAF2",
+
+	base00 = "#181818",
+	base01 = "#242424",
+	base02 = "#303030",
 }
 
 local c = {
@@ -40,22 +44,30 @@ local c = {
 	-- muted = "#5c6370", -- comments, line numbers, delimiters
 	-- border = "#3b3f4c",
 
-	bg = cp.black,
+	bg = cp.base00,
 	bg_alt = "#1e2128", -- floats, statusline, cursorline
 	bg_sel = "#2e3440", -- selection, popup selection, visual
 	bg_dark = "#101217", -- dashboard, dimmer panels
-	fg = "#d4d8e0",
+	fg = cp.dusty_lavender,
 	fg_alt = "#b0a898", -- secondary text, inactive items
-	muted = "#5c6370", -- comments, line numbers, delimiters
-	border = "#3b3f4c",
+	muted = cp.charcoal_brown, -- comments, line numbers, delimiters
+	border = cp.space_indigo,
 
-	red = "#e06c75",
+	-- red = "#e06c75",
+	-- orange = "#d19a66",
+	-- yellow = "#e5c07b",
+	-- green = "#98c379",
+	-- cyan = "#56b6c2",
+	-- blue = "#61afef",
+	-- purple = "#c678dd",
+
+	red = cp.burgundy,
 	orange = "#d19a66",
 	yellow = "#e5c07b",
 	green = "#98c379",
-	cyan = "#56b6c2",
-	blue = "#61afef",
-	purple = "#c678dd",
+	cyan = cp.baltic_blue,
+	blue = cp.sky_aqua,
+	purple = cp.lavender_purple,
 
 	-- diff/git backgrounds (dark, desaturated tints)
 	diff_add_bg = "#20301f",
