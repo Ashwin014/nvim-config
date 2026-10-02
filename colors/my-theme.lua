@@ -185,13 +185,14 @@ hl["@markup.italic"] = { italic = true }
 hl["@markup.strikethrough"] = { strikethrough = true }
 hl["@markup.link.url"] = { fg = c.cyan, underline = true }
 hl["@markup.link.label"] = { fg = c.blue }
-hl["@markup.list"] = { fg = c.purple }
+hl["@markup.list"] = { fg = c.muted }
 hl["@markup.raw"] = { fg = c.green } -- inline/fenced code
 hl["@string.escape"] = { fg = c.cyan }
 hl["@string.regexp"] = { fg = c.cyan }
 hl["@keyword.function"] = { fg = c.purple }
 hl["@keyword.return"] = { fg = c.purple }
 hl["@keyword.operator"] = { fg = c.cyan }
+hl["@keyword.directive.markdown"] = { fg = c.cyan }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
 --   vim.lsp.semantic_tokens.enable(false)
