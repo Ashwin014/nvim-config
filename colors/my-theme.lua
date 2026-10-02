@@ -28,9 +28,13 @@ local cp = {
 	lavender_purple = "#B35AD8",
 	sky_aqua = "#3CCAF2",
 
-	base00 = "#181818",
-	base01 = "#242424",
-	base02 = "#303030",
+	base00 = "#212121",
+	base01 = "#272727",
+	base02 = "#333333",
+	base03 = "#393939",
+	base04 = "#484848",
+
+	base05 = "#cccccc",
 }
 
 local c = {
@@ -48,7 +52,7 @@ local c = {
 	bg_alt = "#1e2128", -- floats, statusline, cursorline
 	bg_sel = "#2e3440", -- selection, popup selection, visual
 	bg_dark = "#101217", -- dashboard, dimmer panels
-	fg = cp.dusty_lavender,
+	fg = cp.base05,
 	fg_alt = "#b0a898", -- secondary text, inactive items
 	muted = cp.charcoal_brown, -- comments, line numbers, delimiters
 	border = cp.space_indigo,
