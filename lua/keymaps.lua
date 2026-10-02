@@ -2,11 +2,33 @@ local map = vim.keymap.set
 
 vim.g.mapleader = " "
 
+-- ================================================================================================
+-- WINDOW
+-- ================================================================================================
+
 -- Window navigation
 map("n", "<C-h>", "<C-w>h")
 map("n", "<C-l>", "<C-w>l")
 map("n", "<C-j>", "<C-w>j")
 map("n", "<C-k>", "<C-w>k")
+
+-- Window resize
+map("n", "<C-Up>", "<cmd>resize +5<cr>", { desc = "Resize up" })
+map("n", "<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
+map("n", "<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
+map("n", "<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
+
+-- Tabs keymaps
+map("n", "<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
+map("n", "<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
+map("n", "<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
+map("n", "<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
+map("n", "<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
+map("n", "<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
+
+-- ================================================================================================
+-- EDITOR
+-- ================================================================================================
 
 map("n", "<Esc>", "<cmd>nohlsearch<CR>") -- clear search highlight
 map("v", "J", ":m '>+1<CR>gv=gv") -- move selected lines down
@@ -33,11 +55,6 @@ end, { desc = "Open current file externally" })
 
 map("i", "<C-BS>", "<C-w>", { desc = "Delete word back" })
 
-map("n", "<C-Up>", "<cmd>resize +5<cr>", { desc = "Resize up" })
-map("n", "<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
-map("n", "<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
-map("n", "<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
-
 -- Move line(s) up/down — Alt+Up/Down and Alt+j/k
 map("n", "<A-Down>", "<cmd>m .+1<cr>==", { desc = "Move line down" })
 map("n", "<A-Up>", "<cmd>m .-2<cr>==", { desc = "Move line up" })
@@ -62,14 +79,6 @@ map("v", "<leader>lc", "Uv$~", { desc = "Toggle to lowercased" })
 -- quickly jump to init.lua & wezterm.lua
 map("n", "<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
 map("n", "<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
-
--- tab keymaps
-map("n", "<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
-map("n", "<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
-map("n", "<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
-map("n", "<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
-map("n", "<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
-map("n", "<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
 
 -- select all
 map("n", "<C-a>", "gg<S-v>G", { desc = "Select all text" })
