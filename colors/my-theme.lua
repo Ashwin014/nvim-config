@@ -318,7 +318,7 @@ hl.RenderMarkdownH4Bg = { bg = c.bg }
 hl.RenderMarkdownH5Bg = { bg = c.bg }
 hl.RenderMarkdownH6Bg = { bg = c.bg }
 hl.RenderMarkdownCode = { bg = c.bg_alt }
-hl.RenderMarkdownCodeInline = { bg = c.bg_sel, fg = c.orange }
+hl.RenderMarkdownCodeInline = { bg = c.bg_sel, fg = c.fg }
 hl.RenderMarkdownBullet = { fg = c.muted }
 hl.RenderMarkdownQuote = { fg = c.muted, italic = true }
 hl.RenderMarkdownDash = { fg = c.muted }
