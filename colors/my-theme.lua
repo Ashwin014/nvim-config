@@ -188,6 +188,8 @@ hl["@markup.link.label"] = { fg = c.blue }
 hl["@markup.list"] = { fg = c.muted }
 hl["@markup.raw"] = { fg = c.green } -- inline/fenced code
 hl["@markup.quote.markdown"] = { fg = c.fg }
+hl["@lsp.type.class.markdown"] = { fg = c.purple }
+hl["@lsp.type.enumMember.markdown"] = { fg = c.purple }
 hl["@string.escape"] = { fg = c.cyan }
 hl["@string.regexp"] = { fg = c.cyan }
 hl["@keyword.function"] = { fg = c.purple }
