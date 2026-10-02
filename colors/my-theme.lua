@@ -241,7 +241,7 @@ hl.GitSignsCurrentLineBlame = { fg = c.muted }
 hl.TelescopeNormal = { fg = c.fg, bg = c.bg }
 hl.TelescopeBorder = { fg = c.border, bg = c.bg }
 hl.TelescopePromptNormal = { fg = c.fg, bg = c.bg }
-hl.TelescopePromptBorder = { fg = c.border, bg = c.bg_sel }
+hl.TelescopePromptBorder = { fg = c.border, bg = c.bg }
 hl.TelescopePromptPrefix = { fg = c.orange }
 hl.TelescopePromptTitle = { fg = c.fg, bg = c.bg, bold = true }
 hl.TelescopeResultsNormal = { fg = c.fg, bg = c.bg }
@@ -265,8 +265,8 @@ hl.WhichKeyValue = { fg = c.muted }
 hl.WhichKeyTitle = { fg = c.muted }
 
 -- Snacks (dashboard, picker, explorer, zen, notifier, indent) -------
-hl.SnacksNormal = { fg = c.fg, bg = c.bg_alt }
-hl.SnacksWinBar = { fg = c.fg, bg = c.bg_alt }
+hl.SnacksNormal = { fg = c.fg, bg = c.bg }
+hl.SnacksWinBar = { fg = c.fg, bg = c.bg }
 hl.SnacksDashboardHeader = { fg = c.blue }
 hl.SnacksDashboardDesc = { fg = c.fg }
 hl.SnacksDashboardIcon = { fg = c.orange }
@@ -274,8 +274,8 @@ hl.SnacksDashboardKey = { fg = c.yellow }
 hl.SnacksDashboardSpecial = { fg = c.muted }
 hl.SnacksDashboardFile = { fg = c.fg_alt }
 hl.SnacksDashboardDir = { fg = c.muted }
-hl.SnacksPicker = { fg = c.fg, bg = c.bg_alt }
-hl.SnacksPickerBorder = { fg = c.border, bg = c.bg_alt }
+hl.SnacksPicker = { fg = c.fg, bg = c.bg }
+hl.SnacksPickerBorder = { fg = c.border, bg = c.bg }
 hl.SnacksPickerMatch = { fg = c.yellow, bold = true }
 hl.SnacksPickerDir = { fg = c.muted }
 hl.SnacksIndent = { fg = c.bg_sel }
