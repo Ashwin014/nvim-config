@@ -6,7 +6,7 @@
 
 require("vscode").setup({
 	style = "dark", -- or "light"
-	-- italic_comments = true,
+	italic_comments = true,
 })
 vim.cmd.colorscheme("vscode")
 
@@ -25,8 +25,6 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
-
-vim.cmd.colorscheme("blueberry-peach")
 
 -- =================================================================================
 -- Change background colors to none
