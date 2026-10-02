@@ -187,7 +187,6 @@ hl["@markup.link.url"] = { fg = c.cyan, underline = true }
 hl["@markup.link.label"] = { fg = c.blue }
 hl["@markup.list"] = { fg = c.muted }
 hl["@markup.raw"] = { fg = c.green } -- inline/fenced code
--- hl["@markup.strong.markdown_inline"] = { fg = c.green }
 hl["@markup.quote.markdown"] = { fg = c.fg }
 hl["@string.escape"] = { fg = c.cyan }
 hl["@string.regexp"] = { fg = c.cyan }
