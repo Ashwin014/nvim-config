@@ -64,8 +64,8 @@ map("n", "N", "Nzzzv")
 
 map("x", "<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 
-map("n", "<leader>c", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
-map("v", "<leader>c", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+map("n", "<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+map("v", "<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- TEXT
 map("i", "<C-BS>", "<C-w>", { desc = "Delete word back" })
