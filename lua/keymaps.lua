@@ -72,7 +72,7 @@ map("i", "<C-BS>", "<C-w>", { desc = "Delete word back" })
 
 -- Convert current selection or run a specific transformation sequence
 -- Example: map <leader>lc to your lowercase/uppercase toggle sequence
-map("v", "<leader>lc", "Uv$~", { desc = "Toggle to lowercased" })
+-- map("v", "<leader>lc", "Uv$~", { desc = "Toggle to lowercased" })
 
 -- select all
 map("n", "<C-a>", "gg<S-v>G", { desc = "Select all text" })
