@@ -54,19 +54,12 @@ local c = {
 	-- blue = "#61afef",
 	-- purple = "#c678dd",
 
-	-- red = "#e06c75",
 	red = "#b85860",
-	-- orange = "#d19a66",
 	orange = "#b58559",
-	-- yellow = "#e5c07b",
 	yellow = "#ccab6e",
-	-- green = "#98c379",
 	green = "#83a868",
-	-- cyan = "#56b6c2",
 	cyan = "#4a9da8",
-	-- blue = "#61afef",
 	blue = "#589dd6",
-	-- purple = "#c678dd",
 	purple = "#af6ac4",
 
 	-- diff/git backgrounds (dark, desaturated tints)
@@ -99,7 +92,7 @@ hl.Search = { fg = c.bg, bg = c.yellow }
 hl.IncSearch = { fg = c.bg, bg = c.orange }
 hl.CurSearch = { fg = c.bg, bg = c.orange }
 hl.MatchParen = { fg = c.orange, bold = true }
-hl.Pmenu = { fg = c.fg, bg = c.bg_alt }
+hl.Pmenu = { fg = c.fg, bg = c.bg }
 hl.PmenuSel = { bg = c.bg_sel }
 hl.PmenuSbar = { bg = c.bg_alt }
 hl.PmenuThumb = { bg = c.border }
@@ -125,7 +118,7 @@ hl.Question = { fg = c.green }
 hl.ErrorMsg = { fg = c.red }
 hl.WarningMsg = { fg = c.yellow }
 hl.MsgArea = { fg = c.fg, bg = c.bg }
-hl.MsgSeparator = { fg = c.muted, bg = c.bg_alt }
+hl.MsgSeparator = { fg = c.muted, bg = c.bg }
 hl.WildMenu = { fg = c.bg, bg = c.blue }
 hl.Conceal = { fg = c.muted }
 hl.Cursor = { fg = c.bg, bg = c.fg }
