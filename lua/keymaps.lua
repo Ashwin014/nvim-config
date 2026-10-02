@@ -46,17 +46,12 @@ map("n", "<C-u>", "<C-u>zz")
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
--- paste over selection without losing your yank
-map("x", "<leader>p", '"_dP')
+map("x", "<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 
-map("i", "jk", "<Esc>", { desc = "Exit insert mode" })
-
--- Toggle comment (native gc)
-map("n", "<leader>c", "gcc", { remap = true, silent = true })
-map("v", "<leader>c", "gc", { remap = true, silent = true })
+map("n", "<leader>c", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+map("v", "<leader>c", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- TEXT
-
 map("i", "<C-BS>", "<C-w>", { desc = "Delete word back" })
 
 -- Convert current selection or run a specific transformation sequence
@@ -102,3 +97,5 @@ end, { desc = "Open current file externally" })
 -- quickly jump to init.lua & wezterm.lua
 map("n", "<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
 map("n", "<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
+
+map("i", "jk", "<Esc>", { desc = "Exit insert mode" })
