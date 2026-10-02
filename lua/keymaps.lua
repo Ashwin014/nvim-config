@@ -105,11 +105,14 @@ map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 -- Duplicate a line and comment out the first line
 map("n", "yc", "yygccp", { remap = true })
 
--- From the Vim wiki: https://bit.ly/4eLAARp
--- Search and replace word under the cursor
-vim.keymap.set("n", "<Leader>r", [[:%s/\<<C-r><C-w>\>//g<Left><Left>]])
 --
+vim.keymap.set("n", "<left>", "zh")
+vim.keymap.set("n", "<down>", "<c-e>")
+vim.keymap.set("n", "<up>", "<c-y>")
+vim.keymap.set("n", "<right>", "zl")
 
+vim.keymap.set("n", "<S-left>", "zH")
+vim.keymap.set("n", "<S-right>", "zL")
 -- ================================================================================================
 -- UTILS
 -- ================================================================================================
