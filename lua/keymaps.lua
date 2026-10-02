@@ -29,17 +29,25 @@ map("n", "<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hin
 -- ================================================================================================
 -- EDITOR
 -- ================================================================================================
+-- clear search highlight
+map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
-map("n", "<Esc>", "<cmd>nohlsearch<CR>") -- clear search highlight
-map("v", "J", ":m '>+1<CR>gv=gv") -- move selected lines down
-map("v", "K", ":m '<-2<CR>gv=gv") -- move selected lines up
-map("v", "<", "<gv") -- keep selection when indenting
+-- move selected lines down/up
+map("v", "J", ":m '>+1<CR>gv=gv")
+map("v", "K", ":m '<-2<CR>gv=gv")
+-- keep selection when indenting
+map("v", "<", "<gv")
 map("v", ">", ">gv")
-map("n", "<C-d>", "<C-d>zz") -- keep cursor centered on scroll
+
+-- keep cursor centered on scroll
+map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
-map("n", "n", "nzzzv") -- same for search jumps
+-- same for search jumps
+map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
-map("x", "<leader>p", '"_dP') -- paste over selection without losing your yank
+
+-- paste over selection without losing your yank
+map("x", "<leader>p", '"_dP')
 
 map("i", "jk", "<Esc>", { desc = "Exit insert mode" })
 
@@ -58,8 +66,11 @@ map("v", "<leader>lc", "Uv$~", { desc = "Toggle to lowercased" })
 -- select all
 map("n", "<C-a>", "gg<S-v>G", { desc = "Select all text" })
 
--- inser-mode paste
+-- Insert-Mode: paste
 map("i", "<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
+
+-- Insert-Mode: delete line
+map("i", "<C-d>", "<Esc>ddi", { desc = "Delete line" })
 
 -- LINES
 
