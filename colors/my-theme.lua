@@ -311,8 +311,8 @@ hl.RenderMarkdownH3 = { fg = c.yellow, bold = true }
 hl.RenderMarkdownH4 = { fg = c.green, bold = true }
 hl.RenderMarkdownH5 = { fg = c.cyan, bold = true }
 hl.RenderMarkdownH6 = { fg = c.blue, bold = true }
-hl.RenderMarkdownH1Bg = { bg = c.bg_alt }
-hl.RenderMarkdownH2Bg = { bg = c.bg_alt }
+hl.RenderMarkdownH1Bg = { bg = c.bg }
+hl.RenderMarkdownH2Bg = { bg = c.bg }
 hl.RenderMarkdownCode = { bg = c.bg_alt }
 hl.RenderMarkdownCodeInline = { bg = c.bg_sel, fg = c.orange }
 hl.RenderMarkdownBullet = { fg = c.muted }
@@ -332,11 +332,11 @@ hl.RenderMarkdownTodo = { fg = c.yellow }
 -- since "auto" already derives from the groups above.
 
 -- Completion (blink.cmp) ----------------------------------------------
-hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg_alt }
-hl.BlinkCmpMenuBorder = { fg = c.border, bg = c.bg_alt }
+hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg }
+hl.BlinkCmpMenuBorder = { fg = c.border, bg = c.bg }
 hl.BlinkCmpMenuSelection = { bg = c.bg_sel }
-hl.BlinkCmpDoc = { fg = c.fg, bg = c.bg_alt }
-hl.BlinkCmpDocBorder = { fg = c.border, bg = c.bg_alt }
+hl.BlinkCmpDoc = { fg = c.fg, bg = c.bg }
+hl.BlinkCmpDocBorder = { fg = c.border, bg = c.bg }
 hl.BlinkCmpLabel = { fg = c.fg }
 hl.BlinkCmpLabelMatch = { fg = c.yellow, bold = true }
 hl.BlinkCmpKind = { fg = c.muted }
