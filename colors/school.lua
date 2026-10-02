@@ -27,16 +27,6 @@ local cp = {
 }
 
 local c = {
-
-	-- bg = "#16181d",
-	-- bg_alt = "#1e2128", -- floats, statusline, cursorline
-	-- bg_sel = "#2e3440", -- selection, popup selection, visual
-	-- bg_dark = "#101217", -- dashboard, dimmer panels
-	-- fg = "#d4d8e0",
-	-- fg_alt = "#b0a898", -- secondary text, inactive items
-	-- muted = "#5c6370", -- comments, line numbers, delimiters
-	-- border = "#3b3f4c",
-
 	bg = cp.base01,
 	bg_alt = cp.base00, -- floats, statusline, cursorline
 	bg_sel = cp.base02, -- selection, popup selection, visual
@@ -45,14 +35,6 @@ local c = {
 	fg_alt = cp.base05, -- secondary text, inactive items
 	muted = cp.base03, -- comments, line numbers, delimiters
 	border = cp.base02,
-
-	-- red = "#e06c75",
-	-- orange = "#d19a66",
-	-- yellow = "#e5c07b",
-	-- green = "#98c379",
-	-- cyan = "#56b6c2",
-	-- blue = "#61afef",
-	-- purple = "#c678dd",
 
 	red = "#b85860",
 	orange = "#b58559",
