@@ -26,6 +26,17 @@ local c = {
 	muted = "#5c6370", -- comments, line numbers, delimiters
 	border = "#3b3f4c",
 
+	night_bordeaux = "#4C1418",
+	charcoal_brown = "#37392C",
+	burgundy = "#821725",
+	clay_soil = "#6F4433",
+	black = "#0C070B",
+	dusty_lavender = "#766682",
+	baltic_blue = "#265A7D",
+	space_indigo = "#1C2D4E",
+	lavender_purple = "#B35AD8",
+	sky_aqua = "#3CCAF2",
+
 	red = "#e06c75",
 	orange = "#d19a66",
 	yellow = "#e5c07b",
