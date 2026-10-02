@@ -338,6 +338,25 @@ hl.BlinkCmpSource = { fg = c.muted, italic = true }
 hl.FidgetTitle = { fg = c.blue, bold = true }
 hl.FidgetTask = { fg = c.muted }
 
+-- harpoon -------------------------------------------------------------
+hl.HarpoonNormal = { fg = c.fg, bg = c.bg }
+hl.HarpoonBorderX = { fg = c.border, bg = c.bg }
+hl.HarpoonTitleX = { fg = c.border, bg = c.bg }
+hl.HarpoonSel = { fg = c.bg, bg = c.blue }
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "harpoon",
+	callback = function()
+		vim.wo.winhighlight = table.concat({
+			"Normal:HarpoonNormal",
+			"NormalFloat:HarpoonNormal",
+			"FloatBorder:HarpoonBorderX",
+			"FloatTitle:HarpoonTitleX",
+			"CursorLine:HarpoonSel",
+		}, ",")
+	end,
+})
+
 ---------------------------------------------------------------------
 -- 3. Apply
 ---------------------------------------------------------------------
