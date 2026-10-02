@@ -29,12 +29,12 @@ local cp = {
 	sky_aqua = "#3CCAF2",
 
 	base00 = "#212121",
-	base01 = "#272727",
-	base02 = "#333333",
-	base03 = "#393939",
-	base04 = "#484848",
-	base05 = "#757575",
-	base06 = "#848484",
+	base01 = "#303030",
+	base02 = "#424242",
+	base03 = "#515151",
+	base04 = "#606060",
+	base05 = "#727272",
+	base06 = "#818181",
 }
 
 local c = {
@@ -48,30 +48,22 @@ local c = {
 	-- muted = "#5c6370", -- comments, line numbers, delimiters
 	-- border = "#3b3f4c",
 
-	bg = cp.base00,
-	bg_alt = "#1e2128", -- floats, statusline, cursorline
+	bg = cp.base01,
+	bg_alt = cp.base00, -- floats, statusline, cursorline
 	bg_sel = "#2e3440", -- selection, popup selection, visual
-	bg_dark = "#101217", -- dashboard, dimmer panels
+	bg_dark = cp.base01, -- dashboard, dimmer panels
 	fg = cp.base06,
 	fg_alt = "#b0a898", -- secondary text, inactive items
-	muted = cp.base04, -- comments, line numbers, delimiters
-	border = cp.space_indigo,
+	muted = cp.base03, -- comments, line numbers, delimiters
+	border = cp.base02,
 
-	-- red = "#e06c75",
-	-- orange = "#d19a66",
-	-- yellow = "#e5c07b",
-	-- green = "#98c379",
-	-- cyan = "#56b6c2",
-	-- blue = "#61afef",
-	-- purple = "#c678dd",
-
-	red = cp.burgundy,
+	red = "#e06c75",
 	orange = "#d19a66",
 	yellow = "#e5c07b",
 	green = "#98c379",
-	cyan = cp.baltic_blue,
-	blue = cp.sky_aqua,
-	purple = cp.lavender_purple,
+	cyan = "#56b6c2",
+	blue = "#61afef",
+	purple = "#c678dd",
 
 	-- diff/git backgrounds (dark, desaturated tints)
 	diff_add_bg = "#20301f",
