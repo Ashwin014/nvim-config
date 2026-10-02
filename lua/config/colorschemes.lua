@@ -1,6 +1,6 @@
 -- vim.cmd.colorscheme("ember")
 
--- vim.cmd.colorscheme("mytheme")
+-- vim.cmd.colorscheme("my-theme")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
@@ -23,7 +23,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-light")
 
 -- vim.cmd.colorscheme("onedark-zed")
-vim.cmd.colorscheme("mytheme")
+-- vim.cmd.colorscheme("mytheme")
 
 -- vim.cmd.colorscheme("retrobox")
 
