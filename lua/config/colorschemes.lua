@@ -1,6 +1,6 @@
 -- vim.cmd.colorscheme("ember")
 
--- vim.cmd.colorscheme("my-theme")
+vim.cmd.colorscheme("my-theme")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
@@ -23,13 +23,6 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-light")
 
 -- vim.cmd.colorscheme("onedark-zed")
-
--- require("lush")(require("lush_theme.mytheme"))
-require("lush").setup({
-	dir = "C:/Users/ashwi/AppData/Local/nvim/lua/lush_theme/mytheme.lua",
-})
---(require("lush_theme.mytheme"))
--- vim.cmd.colorscheme("mytheme")
 
 -- vim.cmd.colorscheme("retrobox")
 
