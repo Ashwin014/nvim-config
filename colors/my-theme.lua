@@ -69,8 +69,8 @@ local hl = {}
 -- Editor UI ----------------------------------------------------------
 hl.Normal = { fg = c.fg, bg = c.bg }
 hl.NormalNC = { fg = c.fg, bg = c.bg } -- inactive windows; set bg="none" to dim them
-hl.NormalFloat = { fg = c.fg, bg = c.bg_alt }
-hl.FloatBorder = { fg = c.border, bg = c.bg_alt }
+hl.NormalFloat = { fg = c.fg, bg = c.bg }
+hl.FloatBorder = { fg = c.border, bg = c.bg }
 hl.FloatTitle = { fg = c.blue, bg = c.bg_alt, bold = true }
 hl.CursorLine = { bg = c.bg_alt }
 hl.CursorLineNr = { fg = c.yellow, bold = true }
@@ -230,8 +230,8 @@ hl.GitSignsDeleteLn = { bg = c.diff_delete_bg }
 hl.GitSignsCurrentLineBlame = { fg = c.muted }
 
 -- Telescope ------------------------------------------------------------
-hl.TelescopeNormal = { fg = c.fg, bg = c.bg_alt }
-hl.TelescopeBorder = { fg = c.border, bg = c.bg_alt }
+hl.TelescopeNormal = { fg = c.fg, bg = c.bg }
+hl.TelescopeBorder = { fg = c.border, bg = c.bg }
 hl.TelescopePromptNormal = { fg = c.fg, bg = c.bg_sel }
 hl.TelescopePromptBorder = { fg = c.border, bg = c.bg_sel }
 hl.TelescopePromptPrefix = { fg = c.orange }
@@ -251,8 +251,8 @@ hl.WhichKey = { fg = c.blue }
 hl.WhichKeyGroup = { fg = c.cyan }
 hl.WhichKeyDesc = { fg = c.fg }
 hl.WhichKeySeparator = { fg = c.muted }
-hl.WhichKeyFloat = { bg = c.bg_alt }
-hl.WhichKeyBorder = { fg = c.border, bg = c.bg_alt }
+hl.WhichKeyFloat = { bg = c.bg }
+hl.WhichKeyBorder = { fg = c.border, bg = c.bg }
 hl.WhichKeyValue = { fg = c.muted }
 
 -- Snacks (dashboard, picker, explorer, zen, notifier, indent) -------
