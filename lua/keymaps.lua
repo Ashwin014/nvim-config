@@ -70,3 +70,6 @@ map("n", "<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
 map("n", "<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
 map("n", "<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
 map("n", "<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
+
+-- select all
+map("n", "<C-a>", "gg<S-v>G", { desc = "Select all text" })
