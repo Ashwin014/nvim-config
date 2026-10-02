@@ -88,6 +88,10 @@ map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 
 --
 
+-- ================================================================================================
+-- UTILS
+-- ================================================================================================
+
 -- Video, audio and everything else: open with the system app.
 -- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
 map("n", "<leader>E", function()
@@ -99,3 +103,8 @@ map("n", "<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
 map("n", "<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
 
 map("i", "jk", "<Esc>", { desc = "Exit insert mode" })
+
+map("n", "<leader>cf", function()
+	vim.fn.setreg("+", vim.fn.expand("%"))
+	print("Copied relative path!")
+end)
