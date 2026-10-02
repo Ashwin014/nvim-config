@@ -46,8 +46,18 @@ local c = {
 	muted = cp.base03, -- comments, line numbers, delimiters
 	border = cp.base02,
 
-	red = "#e06c75",
-	orange = "#d19a66",
+	-- red = "#e06c75",
+	-- orange = "#d19a66",
+	-- yellow = "#e5c07b",
+	-- green = "#98c379",
+	-- cyan = "#56b6c2",
+	-- blue = "#61afef",
+	-- purple = "#c678dd",
+
+	-- red = "#e06c75",
+	red = "#b85860",
+	-- orange = "#d19a66",
+	orange = "#b58559",
 	yellow = "#e5c07b",
 	green = "#98c379",
 	cyan = "#56b6c2",
