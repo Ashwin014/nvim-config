@@ -188,7 +188,7 @@ hl["@markup.link.url.markdown_inline"] = { fg = c.purple }
 hl["@markup.link.label"] = { fg = c.blue }
 hl["@markup.link.label.markdown_inline"] = { fg = c.purple }
 hl["@markup.list"] = { fg = c.muted }
-hl["@markup.raw"] = { fg = c.green } -- inline/fenced code
+hl["@markup.raw"] = { fg = c.fg } -- inline/fenced code
 hl["@markup.quote.markdown"] = { fg = c.fg }
 hl["@lsp.type.class.markdown"] = { fg = c.purple }
 hl["@lsp.type.enumMember.markdown"] = { fg = c.purple }
