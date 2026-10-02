@@ -240,16 +240,16 @@ hl.GitSignsCurrentLineBlame = { fg = c.muted }
 -- Telescope ------------------------------------------------------------
 hl.TelescopeNormal = { fg = c.fg, bg = c.bg }
 hl.TelescopeBorder = { fg = c.border, bg = c.bg }
-hl.TelescopePromptNormal = { fg = c.fg, bg = c.bg_sel }
+hl.TelescopePromptNormal = { fg = c.fg, bg = c.bg }
 hl.TelescopePromptBorder = { fg = c.border, bg = c.bg_sel }
 hl.TelescopePromptPrefix = { fg = c.orange }
-hl.TelescopePromptTitle = { fg = c.bg, bg = c.orange, bold = true }
-hl.TelescopeResultsNormal = { fg = c.fg, bg = c.bg_alt }
-hl.TelescopeResultsBorder = { fg = c.border, bg = c.bg_alt }
-hl.TelescopeResultsTitle = { fg = c.bg, bg = c.blue, bold = true }
-hl.TelescopePreviewNormal = { fg = c.fg, bg = c.bg_alt }
-hl.TelescopePreviewBorder = { fg = c.border, bg = c.bg_alt }
-hl.TelescopePreviewTitle = { fg = c.bg, bg = c.green, bold = true }
+hl.TelescopePromptTitle = { fg = c.fg, bg = c.bg, bold = true }
+hl.TelescopeResultsNormal = { fg = c.fg, bg = c.bg }
+hl.TelescopeResultsBorder = { fg = c.border, bg = c.bg }
+hl.TelescopeResultsTitle = { fg = c.fg, bg = c.bg, bold = true }
+hl.TelescopePreviewNormal = { fg = c.fg, bg = c.bg }
+hl.TelescopePreviewBorder = { fg = c.border, bg = c.bg }
+hl.TelescopePreviewTitle = { fg = c.fg, bg = c.bg, bold = true }
 hl.TelescopeSelection = { bg = c.bg_sel }
 hl.TelescopeSelectionCaret = { fg = c.orange, bg = c.bg_sel }
 hl.TelescopeMatching = { fg = c.yellow, bold = true }
@@ -285,8 +285,8 @@ hl.SnacksNotifierWarn = { fg = c.yellow }
 hl.SnacksNotifierError = { fg = c.red }
 
 -- Noice --------------------------------------------------------------
-hl.NoiceCmdlinePopup = { fg = c.fg, bg = c.bg_alt }
-hl.NoiceCmdlinePopupBorder = { fg = c.border, bg = c.bg_alt }
+hl.NoiceCmdlinePopup = { fg = c.fg, bg = c.bg }
+hl.NoiceCmdlinePopupBorder = { fg = c.border, bg = c.bg }
 hl.NoiceCmdlineIcon = { fg = c.blue }
 hl.NoicePopupmenuSelected = { bg = c.bg_sel }
 hl.NoiceMini = { fg = c.fg, bg = c.bg_alt }
