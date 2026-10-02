@@ -1,7 +1,7 @@
--- Save as: <config>/colors/mytheme.lua
---   Windows: %LOCALAPPDATA%\nvim\colors\mytheme.lua
--- Use with: vim.cmd.colorscheme("mytheme")
--- Reload after edits: :colorscheme mytheme
+-- Save as: <config>/colors/school.lua
+--   Windows: %LOCALAPPDATA%\nvim\colors\school.lua
+-- Use with: vim.cmd.colorscheme("school")
+-- Reload after edits: :colorscheme school
 -- Inspect what's under the cursor: :Inspect
 -- List every group currently defined, to check your work: :hi
 
@@ -9,7 +9,7 @@ vim.cmd("highlight clear")
 if vim.fn.exists("syntax_on") == 1 then
 	vim.cmd("syntax reset")
 end
-vim.g.colors_name = "mytheme"
+vim.g.colors_name = "school"
 vim.o.termguicolors = true
 vim.o.background = "dark"
 
@@ -336,7 +336,7 @@ hl.RenderMarkdownChecked = { fg = c.green }
 hl.RenderMarkdownUnchecked = { fg = c.muted }
 hl.RenderMarkdownTodo = { fg = c.yellow }
 
--- lualine (if you set theme = "mytheme" instead of "auto") ----------
+-- lualine (if you set theme = "school" instead of "auto") ----------
 -- lualine builds its own groups per mode when theme="auto"; only needed
 -- if you want a dedicated lualine theme table instead. Left out here
 -- since "auto" already derives from the groups above.
