@@ -16,16 +16,7 @@ vim.o.background = "dark"
 ---------------------------------------------------------------------
 -- 1. Palette — change these, everything below follows
 ---------------------------------------------------------------------
-local c = {
-	bg = "#16181d",
-	bg_alt = "#1e2128", -- floats, statusline, cursorline
-	bg_sel = "#2e3440", -- selection, popup selection, visual
-	bg_dark = "#101217", -- dashboard, dimmer panels
-	fg = "#d4d8e0",
-	fg_alt = "#b0a898", -- secondary text, inactive items
-	muted = "#5c6370", -- comments, line numbers, delimiters
-	border = "#3b3f4c",
-
+local cp = {
 	night_bordeaux = "#4C1418",
 	charcoal_brown = "#37392C",
 	burgundy = "#821725",
@@ -36,6 +27,27 @@ local c = {
 	space_indigo = "#1C2D4E",
 	lavender_purple = "#B35AD8",
 	sky_aqua = "#3CCAF2",
+}
+
+local c = {
+
+	-- bg = "#16181d",
+	-- bg_alt = "#1e2128", -- floats, statusline, cursorline
+	-- bg_sel = "#2e3440", -- selection, popup selection, visual
+	-- bg_dark = "#101217", -- dashboard, dimmer panels
+	-- fg = "#d4d8e0",
+	-- fg_alt = "#b0a898", -- secondary text, inactive items
+	-- muted = "#5c6370", -- comments, line numbers, delimiters
+	-- border = "#3b3f4c",
+
+	bg = cp.black,
+	bg_alt = "#1e2128", -- floats, statusline, cursorline
+	bg_sel = "#2e3440", -- selection, popup selection, visual
+	bg_dark = "#101217", -- dashboard, dimmer panels
+	fg = "#d4d8e0",
+	fg_alt = "#b0a898", -- secondary text, inactive items
+	muted = "#5c6370", -- comments, line numbers, delimiters
+	border = "#3b3f4c",
 
 	red = "#e06c75",
 	orange = "#d19a66",
