@@ -21,6 +21,9 @@ map("n", "<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 -- Buffer keymaps
 map("n", "<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
 map("n", "<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
+
+map("n", "<leader>bn", ":bn<CR>", { desc = "Go to next buffer" })
+map("n", "<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
 map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 
 -- Tabs keymaps
