@@ -38,3 +38,4 @@ o.laststatus = 3
 o.showcmd = true
 o.showcmdloc = "statusline"
 o.timeoutlen = 200
+o.colorcolumn = "100"
