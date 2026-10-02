@@ -83,6 +83,12 @@ map("i", "<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
 -- Insert-Mode: delete line
 map("i", "<C-d>", "<Esc>ddi", { desc = "Delete line" })
 
+-- delete single character without copying into register/clipboard
+map("n", "x", '"_x', { noremap = true, silent = true })
+
+-- keep laste yanked when pasting
+map("v", "p", '"_dP', { noremap = true, silent = true })
+
 -- LINES
 
 -- Move line(s) up/down — Alt+Up/Down and Alt+j/k
