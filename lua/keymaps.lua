@@ -18,6 +18,11 @@ map("n", "<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
 map("n", "<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
 map("n", "<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 
+-- Buffer keymaps
+map("n", "<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
+map("n", "<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
+map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
+
 -- Tabs keymaps
 map("n", "<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
 map("n", "<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
