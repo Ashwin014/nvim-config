@@ -18,6 +18,12 @@ map("n", "<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
 map("n", "<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
 map("n", "<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 
+-- Window splits
+map("n", "<leader>|", "<C-w>v", { desc = "Split vertically" })
+map("n", "<leader>\\", "<C-w>s", { desc = "Split horizontally" })
+
+--
+
 -- Buffer keymaps
 map("n", "<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
 map("n", "<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
@@ -25,6 +31,8 @@ map("n", "<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
 map("n", "<leader>bn", ":bn<CR>", { desc = "Go to next buffer" })
 map("n", "<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
 map("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
+
+--
 
 -- Tabs keymaps
 map("n", "<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
