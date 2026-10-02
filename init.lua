@@ -25,3 +25,4 @@ require("config.harpoon")
 require("config.surround")
 require("config.lualine")
 require("config.indent-blankline")
+

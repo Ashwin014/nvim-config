@@ -23,7 +23,9 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-light")
 
 -- vim.cmd.colorscheme("onedark-zed")
--- vim.cmd.colorscheme("mytheme")
+
+require("lush")(require("lush_theme.mytheme"))
+vim.cmd.colorscheme("mytheme")
 
 -- vim.cmd.colorscheme("retrobox")
 
