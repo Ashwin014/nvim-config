@@ -17,24 +17,13 @@ vim.o.background = "dark"
 -- 1. Palette — change these, everything below follows
 ---------------------------------------------------------------------
 local cp = {
-	night_bordeaux = "#4C1418",
-	charcoal_brown = "#37392C",
-	burgundy = "#821725",
-	clay_soil = "#6F4433",
-	black = "#0C070B",
-	dusty_lavender = "#766682",
-	baltic_blue = "#265A7D",
-	space_indigo = "#1C2D4E",
-	lavender_purple = "#B35AD8",
-	sky_aqua = "#3CCAF2",
-
 	base00 = "#212121",
 	base01 = "#303030",
 	base02 = "#424242",
-	base03 = "#515151",
-	base04 = "#606060",
+	base03 = "#545454",
+	base04 = "#636363",
 	base05 = "#727272",
-	base06 = "#818181",
+	base06 = "#878787",
 }
 
 local c = {
@@ -50,10 +39,10 @@ local c = {
 
 	bg = cp.base01,
 	bg_alt = cp.base00, -- floats, statusline, cursorline
-	bg_sel = "#2e3440", -- selection, popup selection, visual
+	bg_sel = cp.base02, -- selection, popup selection, visual
 	bg_dark = cp.base01, -- dashboard, dimmer panels
 	fg = cp.base06,
-	fg_alt = "#b0a898", -- secondary text, inactive items
+	fg_alt = cp.base05, -- secondary text, inactive items
 	muted = cp.base03, -- comments, line numbers, delimiters
 	border = cp.base02,
 
