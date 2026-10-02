@@ -102,6 +102,9 @@ map("v", "<A-Up>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
 map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 
+-- Duplicate a line and comment out the first line
+map("n", "yc", "yygccp")
+
 --
 
 -- ================================================================================================
