@@ -33,8 +33,8 @@ local cp = {
 	base02 = "#333333",
 	base03 = "#393939",
 	base04 = "#484848",
-
-	base05 = "#cccccc",
+	base05 = "#757575",
+	base06 = "#848484",
 }
 
 local c = {
@@ -52,9 +52,9 @@ local c = {
 	bg_alt = "#1e2128", -- floats, statusline, cursorline
 	bg_sel = "#2e3440", -- selection, popup selection, visual
 	bg_dark = "#101217", -- dashboard, dimmer panels
-	fg = cp.base05,
+	fg = cp.base06,
 	fg_alt = "#b0a898", -- secondary text, inactive items
-	muted = cp.charcoal_brown, -- comments, line numbers, delimiters
+	muted = cp.base04, -- comments, line numbers, delimiters
 	border = cp.space_indigo,
 
 	-- red = "#e06c75",
