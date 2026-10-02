@@ -313,6 +313,10 @@ hl.RenderMarkdownH5 = { fg = c.cyan, bold = true }
 hl.RenderMarkdownH6 = { fg = c.blue, bold = true }
 hl.RenderMarkdownH1Bg = { bg = c.bg }
 hl.RenderMarkdownH2Bg = { bg = c.bg }
+hl.RenderMarkdownH3Bg = { bg = c.bg }
+hl.RenderMarkdownH4Bg = { bg = c.bg }
+hl.RenderMarkdownH5Bg = { bg = c.bg }
+hl.RenderMarkdownH6Bg = { bg = c.bg }
 hl.RenderMarkdownCode = { bg = c.bg_alt }
 hl.RenderMarkdownCodeInline = { bg = c.bg_sel, fg = c.orange }
 hl.RenderMarkdownBullet = { fg = c.muted }
