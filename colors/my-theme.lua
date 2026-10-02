@@ -182,7 +182,7 @@ hl["@comment"] = { fg = c.muted, italic = true }
 hl["@markup.heading"] = { fg = c.blue, bold = true }
 hl["@markup.bold"] = { bold = true }
 hl["@markup.italic"] = { italic = true }
-hl["@markup.strikethrough"] = { fg = c.blue, strikethrough = true }
+hl["@markup.strikethrough"] = { strikethrough = true }
 hl["@markup.link.url"] = { fg = c.cyan, underline = true }
 hl["@markup.link.label"] = { fg = c.blue }
 hl["@markup.list"] = { fg = c.muted }
