@@ -7,13 +7,13 @@ vim.o.termguicolors = true
 vim.o.background = "dark"
 vim.g.colors_name = "earth"
 
--- Exact palette (used for backgrounds, UI and the two readable accents)
+-- Palette (bg, graphite, shadow and moss are raised in value from the original)
 local p = {
-	carbon = "#1A1917",
-	graphite = "#2A2928",
-	shadow = "#2B211F",
+	carbon = "#443f3c",
+	graphite = "#4c4743",
+	shadow = "#4f423e",
 	charcoal = "#5F5A56",
-	moss = "#44493F", -- charcoal brown
+	moss = "#5b6151", -- charcoal brown
 	pine = "#315144",
 	slate = "#385C6D",
 	espresso = "#472019",
@@ -21,15 +21,16 @@ local p = {
 	toffee = "#8D5F4A",
 }
 
--- Lifted tints of the same hues, for text only. Palette colors that dark
--- are too low-contrast to read as syntax on carbon.
+-- Lifted tints of the same hues, for text only, so they read on the lighter bg.
 local t = {
-	fg = "#a39e99", -- lifted charcoal
+	fg = "#aca69f", -- lifted charcoal
 	green = "#6a9e88", -- lifted pine
 	blue = "#749fb4", -- lifted slate
 	sage = "#8c9c7c", -- lifted moss
 	rust = "#b5675a", -- lifted espresso
-	toffee = "#c08b72", -- lifted toffee
+	toffee = "#d0a48b", -- lifted toffee (constants)
+	cyan = "#67b2c1", -- lifted pacific cyan
+	kw = "#bd866b", -- lifted toffee (keywords)
 }
 
 local c = {
@@ -38,10 +39,10 @@ local c = {
 	bg_sel = p.moss,
 	line = p.shadow,
 	fg = t.fg,
-	fg_dim = p.charcoal,
-	comment = p.charcoal,
-	cyan = p.cyan,
-	toffee = p.toffee,
+	fg_dim = "#8a827d",
+	comment = "#7a736e",
+	cyan = t.cyan,
+	toffee = t.kw,
 	toffee2 = t.toffee,
 	green = t.green,
 	blue = t.blue,
@@ -119,10 +120,10 @@ hl("DiagnosticHint", { fg = c.sage })
 hl("DiagnosticUnderlineError", { undercurl = true, sp = c.rust })
 hl("DiagnosticUnderlineWarn", { undercurl = true, sp = c.toffee2 })
 
--- Git / diff (palette colors used directly as backgrounds)
-hl("DiffAdd", { bg = p.pine })
-hl("DiffChange", { bg = p.slate })
-hl("DiffDelete", { bg = p.espresso })
+-- Git / diff (lifted so they show against the lighter bg)
+hl("DiffAdd", { bg = "#37624f" })
+hl("DiffChange", { bg = "#3e5865" })
+hl("DiffDelete", { bg = "#60352e" })
 hl("DiffText", { bg = p.moss })
 hl("Added", { fg = c.green })
 hl("Changed", { fg = c.blue })
