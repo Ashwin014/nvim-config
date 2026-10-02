@@ -1,7 +1,7 @@
 require("oil").setup({
 	view_options = { show_hidden = true },
 	skip_confirm_for_simple_edits = true,
-	delete_to_trash = true,
+	-- delete_to_trash = true,
 })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<leader>_o", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
