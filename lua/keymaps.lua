@@ -106,13 +106,15 @@ map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 map("n", "yc", "yygccp", { remap = true })
 
 --
-vim.keymap.set("n", "<left>", "zh")
-vim.keymap.set("n", "<down>", "<c-e>")
-vim.keymap.set("n", "<up>", "<c-y>")
-vim.keymap.set("n", "<right>", "zl")
+-- sourced from https://www.reddit.com/r/neovim/comments/1gryk36/what_are_some_of_your_favorite_small_custom/
+map("n", "<left>", "zh")
+map("n", "<down>", "<c-e>")
+map("n", "<up>", "<c-y>")
+map("n", "<right>", "zl")
 
-vim.keymap.set("n", "<S-left>", "zH")
-vim.keymap.set("n", "<S-right>", "zL")
+map("n", "<S-left>", "zH")
+map("n", "<S-right>", "zL")
+
 -- ================================================================================================
 -- UTILS
 -- ================================================================================================
