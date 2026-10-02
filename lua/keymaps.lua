@@ -47,13 +47,21 @@ map("i", "jk", "<Esc>", { desc = "Exit insert mode" })
 map("n", "<leader>c", "gcc", { remap = true, silent = true })
 map("v", "<leader>c", "gc", { remap = true, silent = true })
 
--- Video, audio and everything else: open with the system app.
--- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
-map("n", "<leader>E", function()
-	vim.ui.open(vim.fn.expand("%:p"))
-end, { desc = "Open current file externally" })
+-- TEXT
 
 map("i", "<C-BS>", "<C-w>", { desc = "Delete word back" })
+
+-- Convert current selection or run a specific transformation sequence
+-- Example: map <leader>lc to your lowercase/uppercase toggle sequence
+map("v", "<leader>lc", "Uv$~", { desc = "Toggle to lowercased" })
+
+-- select all
+map("n", "<C-a>", "gg<S-v>G", { desc = "Select all text" })
+
+-- inser-mode paste
+map("i", "<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
+
+-- LINES
 
 -- Move line(s) up/down — Alt+Up/Down and Alt+j/k
 map("n", "<A-Down>", "<cmd>m .+1<cr>==", { desc = "Move line down" })
@@ -72,13 +80,14 @@ map("v", "<A-Up>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
 map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 
--- Convert current selection or run a specific transformation sequence
--- Example: map <leader>lc to your lowercase/uppercase toggle sequence
-map("v", "<leader>lc", "Uv$~", { desc = "Toggle to lowercased" })
+--
+
+-- Video, audio and everything else: open with the system app.
+-- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
+map("n", "<leader>E", function()
+	vim.ui.open(vim.fn.expand("%:p"))
+end, { desc = "Open current file externally" })
 
 -- quickly jump to init.lua & wezterm.lua
 map("n", "<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
 map("n", "<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
-
--- select all
-map("n", "<C-a>", "gg<S-v>G", { desc = "Select all text" })
