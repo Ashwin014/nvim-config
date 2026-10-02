@@ -118,6 +118,8 @@ map("n", "<S-right>", "zL")
 -- ================================================================================================
 -- UTILS
 -- ================================================================================================
+-- map undo "U"
+map("n", "U", "<C-r>")
 
 -- Video, audio and everything else: open with the system app.
 -- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
