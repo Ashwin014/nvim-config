@@ -1,10 +1,10 @@
 local map = require("map")
 local nmap = map.nmap
+local tmap = map.tmap
 
 require("oil").setup({
 	view_options = { show_hidden = true },
 	skip_confirm_for_simple_edits = true,
-	-- delete_to_trash = true,
 })
 -- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 -- vim.keymap.set("n", "<leader>_o", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
@@ -34,7 +34,7 @@ require("which-key").setup({
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
 nmap("<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
-vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
+tmap("<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
 
 --
 
@@ -45,8 +45,12 @@ nmap("]e", function()
 		severity = vim.diagnostic.severity.ERROR,
 	})
 end, { desc = "next error" })
+
 nmap("[e", function()
-	vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.ERROR })
+	vim.diagnostic.jump({
+		count = -1,
+		severity = vim.diagnostic.severity.ERROR,
+	})
 end, { desc = "prev error" })
 
 -- no-neck-pain.nvim
