@@ -5,8 +5,7 @@ require("telescope").setup({
 	},
 })
 
-local tb = require("telescope.builtin")
-local map = require("map")
+local tb, map = require("telescope.builtin"), require("map")
 local nmap = map.nmap
 
 -- map("n", "<leader>ff", tb.find_files, { desc = "Telescope: Files" })
