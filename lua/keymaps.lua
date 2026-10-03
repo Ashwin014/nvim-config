@@ -77,7 +77,7 @@ map("i", "<C-BS>", "<C-w>", { desc = "Delete word back" })
 -- map("v", "<leader>lc", "Uv$~", { desc = "Toggle to lowercased" })
 
 -- select all
-map("n", "<C-a>", "gg<S-v>G", { desc = "Select all text" })
+map("n", "<leader>a", "gg<S-v>G", { desc = "Select all text" })
 
 -- Insert-Mode: paste
 map("i", "<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
