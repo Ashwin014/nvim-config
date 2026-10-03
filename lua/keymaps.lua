@@ -4,7 +4,8 @@ local vmap = m.vmap
 local imap = m.imap
 local xmap = m.xmap
 
-vim.g.mapleader = " "
+-- vim.g.mapleader = " "
+-- vim.g.mapleader = "\\"
 
 -- ================================================================================================
 -- WINDOW
