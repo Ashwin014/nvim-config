@@ -51,6 +51,7 @@ local maps = {
 	fS = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
 	fd = { tb.diagnostics, "Diagnostics" },
 	fR = { tb.lsp_references, "References" },
+	fk = { tb.keymaps, "Keymaps" },
 }
 
 for key, spec in pairs(maps) do
