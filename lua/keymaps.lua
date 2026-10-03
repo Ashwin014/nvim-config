@@ -2,15 +2,46 @@ local map = vim.keymap.set
 
 vim.g.mapleader = " "
 
+local function map(mode, lhs, rhs, opts)
+	opts = opts or {}
+	opts.silent = opts.silent ~= false -- default silent = true
+	-- opts.noremap is already the default of vim.keymap.set
+	vim.keymap.set(mode, lhs, rhs, opts)
+end
+
+local function nmap(lhs, rhs, opts)
+	map("n", lhs, rhs, opts)
+end
+local function vmap(lhs, rhs, opts)
+	map("v", lhs, rhs, opts)
+end
+local function imap(lhs, rhs, opts)
+	map("i", lhs, rhs, opts)
+end
+local function xmap(lhs, rhs, opts)
+	map("x", lhs, rhs, opts)
+end -- visual block
+local function tmap(lhs, rhs, opts)
+	map("t", lhs, rhs, opts)
+end -- terminal
+local function cmap(lhs, rhs, opts)
+	map("c", lhs, rhs, opts)
+end -- command-line
+
 -- ================================================================================================
 -- WINDOW
 -- ================================================================================================
 
 -- Window navigation
-map("n", "<C-h>", "<C-w>h")
-map("n", "<C-l>", "<C-w>l")
-map("n", "<C-j>", "<C-w>j")
-map("n", "<C-k>", "<C-w>k")
+-- map("n", "<C-h>", "<C-w>h")
+-- map("n", "<C-l>", "<C-w>l")
+-- map("n", "<C-j>", "<C-w>j")
+-- map("n", "<C-k>", "<C-w>k")
+
+nmap("<C-h>", "<C-w>h")
+nmap("<C-l>", "<C-w>l")
+nmap("<C-j>", "<C-w>j")
+nmap("<C-k>", "<C-w>k")
 
 -- Window resize
 map("n", "<C-Up>", "<cmd>resize +5<cr>", { desc = "Resize up" })
