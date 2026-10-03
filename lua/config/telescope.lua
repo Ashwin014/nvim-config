@@ -8,11 +8,9 @@ require("telescope").setup({
 local tb = require("telescope.builtin")
 local map = vim.keymap.set
 
-map("n", "<leader>ff", tb.find_files, { desc = "Telescope: Telescope: Files" })
+map("n", "<leader>ff", tb.find_files, { desc = "Telescope: Files" })
 map("n", "<leader>fg", tb.live_grep, { desc = "Telescope: Grep" })
 map("n", "<leader>fb", tb.buffers, { desc = "Telescope: Buffers" })
--- TEMP
-map("n", "<leader><leader>", tb.buffers, { desc = "Telescope: Buffers" })
 map("n", "<leader>fr", tb.oldfiles, { desc = "Telescope: Recent files" })
 map("n", "<leader>fw", tb.grep_string, { desc = "Telescope: Grep word" })
 map("n", "<leader>fh", tb.help_tags, { desc = "Telescope: Help" })
