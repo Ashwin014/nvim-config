@@ -1,6 +1,3 @@
----------------------------------------------------------------------
--- Completion (blink.cmp)
----------------------------------------------------------------------
 require("blink.cmp").setup({
 	keymap = { preset = "enter" }, -- <CR> accept, <C-n>/<C-p> move, <C-space> open, <Tab> snippet jump
 	completion = { documentation = { auto_show = true, auto_show_delay_ms = 200 } },
