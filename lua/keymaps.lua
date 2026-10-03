@@ -1,40 +1,18 @@
-local map = vim.keymap.set
+-- local map = vim.keymap.set
 
 vim.g.mapleader = " "
 
-local function map(mode, lhs, rhs, opts)
-	opts = opts or {}
-	opts.silent = opts.silent ~= false -- default silent = true
-	-- opts.noremap is already the default of vim.keymap.set
-	vim.keymap.set(mode, lhs, rhs, opts)
-end
+local map = require("map")
 
-local function nmap(lhs, rhs, opts)
-	map("n", lhs, rhs, opts)
-end
-local function vmap(lhs, rhs, opts)
-	map("v", lhs, rhs, opts)
-end
-local function imap(lhs, rhs, opts)
-	map("i", lhs, rhs, opts)
-end
-local function xmap(lhs, rhs, opts)
-	map("x", lhs, rhs, opts)
-end -- visual block
-local function tmap(lhs, rhs, opts)
-	map("t", lhs, rhs, opts)
-end -- terminal
-local function cmap(lhs, rhs, opts)
-	map("c", lhs, rhs, opts)
-end -- command-line
-
--- Multi-mode helpers (very useful)
-local function nvmap(lhs, rhs, opts)
-	map({ "n", "v" }, lhs, rhs, opts)
-end
-local function nxmap(lhs, rhs, opts)
-	map({ "n", "x" }, lhs, rhs, opts)
-end
+local nmap = map.nmap
+local vmap = map.vmap
+local imap = map.imap
+local xmap = map.xmap
+local tmap = map.tmap
+local cmap = map.cmap
+local xmap = map.xmap
+local nvmap = map.nvmap
+local nxmap = map.nxmap
 
 -- ================================================================================================
 -- WINDOW
@@ -96,7 +74,7 @@ nmap("<C-u>", "<C-u>zz")
 nmap("n", "nzzzv")
 nmap("N", "Nzzzv")
 
-map("x", "<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
+xmap("x", "<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 -- keep last yanked when pasting
 vmap("p", '"_dP', { noremap = true, silent = true })
 
