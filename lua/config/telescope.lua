@@ -9,12 +9,11 @@ local tb = require("telescope.builtin")
 local map = vim.keymap.set
 
 -- map("n", "<leader>ff", tb.find_files, { desc = "Telescope: Files" })
-
 map("n", "<leader>ff", function()
 	tb.find_files({
 		cwd = vim.fn.expand("%:p:h"),
 	})
-end, { desc = "Find files in current buffer directory" })
+end, { desc = "Telescope: Find files in current buffer directory" })
 
 map("n", "<leader>fg", tb.live_grep, { desc = "Telescope: Grep" })
 map("n", "<leader>fb", tb.buffers, { desc = "Telescope: Buffers" })
