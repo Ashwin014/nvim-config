@@ -142,3 +142,19 @@ map("n", "<leader>cf", function()
 	vim.fn.setreg("+", vim.fn.expand("%"))
 	print("Copied relative path!")
 end)
+
+-- Custom commands --------------------------------------------------------------------------------
+
+-- 1. Edit Configuration (:EditConfig)
+-- Opens your main init.lua file from anywhere in Neovim
+vim.api.nvim_create_user_command("ConfigEdit", function()
+	local config_file = vim.fn.stdpath("config") .. "/init.lua"
+	vim.cmd("edit " .. vim.fn.fnameescape(config_file))
+end, { desc = "Open Neovim init.lua configuration file" })
+
+-- 2. Reload Configuration (:ReloadConfig)
+-- Sources your init file and refreshes your runtime path
+vim.api.nvim_create_user_command("ConfigReload", function()
+	vim.cmd("source $MYVIMRC")
+	print("Neovim configuration reloaded!")
+end, { desc = "Reload Neovim configuration" })
