@@ -142,3 +142,9 @@ map("n", "<leader>cf", function()
 	vim.fn.setreg("+", vim.fn.expand("%"))
 	print("Copied relative path!")
 end)
+
+-- custom commands
+
+vim.api.nvim_create_user_command("Hello", function(opts)
+	print("hi " .. opts.args)
+end, { nargs = 1 })
