@@ -10,25 +10,25 @@ vim.g.mapleader = " "
 -- WINDOW
 -- ================================================================================================
 
--- Window navigation
+-- window navigation
 nmap("<C-h>", "<C-w>h")
 nmap("<C-l>", "<C-w>l")
 nmap("<C-j>", "<C-w>j")
 nmap("<C-k>", "<C-w>k")
 
--- Window resize
+-- window resize
 nmap("<C-Up>", "<cmd>resize +5<cr>", { desc = "Resize up" })
 nmap("<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
 nmap("<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
 nmap("<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 
--- Window splits
+-- window splits
 nmap("<leader>|", "<C-w>v", { desc = "Split vertically" })
 nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 
 --
 
--- Buffer keymaps
+-- buffer
 nmap("<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
 nmap("<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
 
@@ -38,7 +38,7 @@ nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 
 --
 
--- Tabs keymaps
+-- tabs
 nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
 nmap("<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
 nmap("<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
@@ -77,13 +77,10 @@ vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" }
 
 imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
 
--- select all
 nmap("<leader>a", "gg<S-v>G", { desc = "Select all text" })
 
--- Insert-Mode: paste
 imap("<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
 
--- Insert-Mode: delete line
 imap("<C-d>", "<Esc>ddi", { desc = "Delete line" })
 
 -- delete single character without copying into register/clipboard
