@@ -54,5 +54,7 @@ local maps = {
 }
 
 for key, spec in pairs(maps) do
-	nmap("<leader>" .. key, spec[1], { desc = "Telescope: " .. spec[2] })
+	nmap("<leader>" .. key, spec[1], {
+		desc = "Telescope: " .. spec[2],
+	})
 end
