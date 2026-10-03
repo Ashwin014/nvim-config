@@ -1,3 +1,6 @@
+local map = require("map")
+local nmap = map.nmap
+
 require("oil").setup({
 	view_options = { show_hidden = true },
 	skip_confirm_for_simple_edits = true,
@@ -9,8 +12,8 @@ require("oil").setup({
 -- 	require("oil").toggle_float()
 -- end, { desc = "Oil float" })
 
-vim.keymap.set("n", "_", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
-vim.keymap.set("n", "-", function()
+nmap("_", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
+nmap("-", function()
 	require("oil").toggle_float()
 end, { desc = "Oil float" })
 
@@ -30,16 +33,19 @@ require("which-key").setup({
 })
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
-vim.keymap.set("n", "<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
+nmap("<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
 
 --
 
 -- Jump to errors specifically, skipping warnings
-vim.keymap.set("n", "]e", function()
-	vim.diagnostic.jump({ count = 1, severity = vim.diagnostic.severity.ERROR })
+nmap("]e", function()
+	vim.diagnostic.jump({
+		count = 1,
+		severity = vim.diagnostic.severity.ERROR,
+	})
 end, { desc = "next error" })
-vim.keymap.set("n", "[e", function()
+nmap("[e", function()
 	vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.ERROR })
 end, { desc = "prev error" })
 
@@ -47,4 +53,4 @@ end, { desc = "prev error" })
 require("no-neck-pain").setup({
 	width = 100, -- text column width; 80-100 reads well for prose
 })
-vim.keymap.set("n", "<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })
+nmap("<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })

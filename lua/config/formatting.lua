@@ -15,8 +15,8 @@ require("conform").setup({
 })
 
 vim.keymap.set({ "n", "v" }, "<leader>lf", function()
-	local conform = require("conform")
-	conform.format({
+	local c = require("conform")
+	c.format({
 		async = true,
 		lsp_format = "fallback",
 	})
