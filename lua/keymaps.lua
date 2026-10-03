@@ -99,14 +99,14 @@ imap("<A-Up>", "<Esc><cmd>m .-2<cr>==gi", { desc = "Move line up" })
 imap("<A-j>", "<Esc><cmd>m .+1<cr>==gi", { desc = "Move line down" })
 imap("<A-k>", "<Esc><cmd>m .-2<cr>==gi", { desc = "Move line up" })
 
+-- Duplicate a line and comment out the first line
+nmap("yc", "yygccp", { remap = true })
+
 -- This solution flickers the cmdline
 vmap("<A-Down>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
 vmap("<A-Up>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 vmap("<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
 vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
-
--- Duplicate a line and comment out the first line
-nmap("yc", "yygccp", { remap = true })
 
 --
 -- sourced from https://www.reddit.com/r/neovim/comments/1gryk36/what_are_some_of_your_favorite_small_custom/
@@ -124,6 +124,8 @@ nmap("<S-right>", "zL")
 -- map undo "U"
 nmap("U", "<C-r>")
 
+imap("jk", "<Esc>")
+
 -- Video, audio and everything else: open with the system app.
 -- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
 nmap("<leader>E", function()
@@ -133,8 +135,6 @@ end, { desc = "Open current file externally" })
 -- quickly jump to init.lua & wezterm.lua
 nmap("<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
 nmap("<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
-
-imap("jk", "<Esc>", { desc = "Exit insert mode" })
 
 nmap("<leader>cf", function()
 	vim.fn.setreg("+", vim.fn.expand("%"))
