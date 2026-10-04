@@ -9,7 +9,6 @@ o.smartindent = true
 o.smarttab = true
 o.autoindent = true
 o.wrap = true
-o.wrap = false
 o.ignorecase = true
 o.smartcase = true
 o.termguicolors = true

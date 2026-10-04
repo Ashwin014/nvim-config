@@ -49,24 +49,5 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
--- timestamping
-vim.keymap.set("n", "<leader>it", function()
-	vim.api.nvim_put({ os.date("%Y-%m-%d-T%H%M%S") }, "c", true, true)
-end, { desc = "Insert timestamp" })
-
-vim.keymap.set("n", "<leader>iT", function()
-	vim.api.nvim_put({ os.date("[[%Y-%m-%d]]-T%H%M%S") }, "c", true, true)
-end, { desc = "Insert timestamp (wiki)" })
-
--- set ctrl+t as keymap in insert mode
-vim.keymap.set("i", "<C-t>", function()
-	return os.date("%Y-%m-%d-T%H%M%S")
-end, { expr = true, desc = "Insert timestamp" })
-
--- add timestamping as :command
-vim.api.nvim_create_user_command("Timestamp", function()
-	vim.api.nvim_put({ os.date("[[%Y-%m-%d]]-T%H%M%S") }, "c", true, true)
-end, {})
-
 -- open browser with rendered markdown
 vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreviewToggle<cr>", { desc = "Markdown preview (browser)" })

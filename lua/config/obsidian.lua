@@ -217,5 +217,24 @@ for _, c in ipairs(commands) do
 end
 
 -- these two work on a visual selection
-vim.keymap.set("v", "<leader>ok", ":Obsidian link<cr>", { desc = "obsd: Link selection" })
-vim.keymap.set("v", "<leader>oe", ":Obsidian extract_note<cr>", { desc = "obsd: Extract to new note" })
+vim.keymap.set("v", "<leader>ok", ":Obsidian link<cr>", { desc = "Link selection" })
+vim.keymap.set("v", "<leader>oe", ":Obsidian extract_note<cr>", { desc = "Extract to new note" })
+
+-- timestamping
+vim.keymap.set("n", "<leader>oit", function()
+	vim.api.nvim_put({ os.date("%Y-%m-%d-T%H%M%S") }, "c", true, true)
+end, { desc = "Insert timestamp" })
+
+vim.keymap.set("n", "<leader>oiT", function()
+	vim.api.nvim_put({ os.date("[[%Y-%m-%d]]-T%H%M%S") }, "c", true, true)
+end, { desc = "Insert timestamp (wiki)" })
+
+-- set ctrl+t as keymap in insert mode
+vim.keymap.set("i", "<C-t>", function()
+	return os.date("%Y-%m-%d-T%H%M%S")
+end, { expr = true, desc = "Insert timestamp" })
+
+-- add timestamping as :command
+vim.api.nvim_create_user_command("Timestamp", function()
+	vim.api.nvim_put({ os.date("[[%Y-%m-%d]]-T%H%M%S") }, "c", true, true)
+end, {})
