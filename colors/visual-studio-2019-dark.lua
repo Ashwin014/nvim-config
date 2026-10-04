@@ -31,7 +31,7 @@ local bp = {
 
 local c = {
 	bg = bp.black,
-	bg_alt = bp.base00, -- floats, statusline, cursorline
+	bg_alt = "#3c3c3c", -- floats, cursorline
 	bg_sel = "#264f78", -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
 	fg = bp.white,
@@ -58,6 +58,8 @@ local c = {
 	pink = "#da70d6",
 	comments = "#6a9955",
 	numbers = "#b5cea8",
+
+	statusline_bg = "#007acc",
 
 	-- diff/git backgrounds (dark, desaturated tints)
 	diff_add_bg = "#20301f",
@@ -93,10 +95,10 @@ hl.VisualNOS = { bg = c.bg_sel }
 -- hl.PmenuSel = { bg = c.bg_sel }
 -- hl.PmenuSbar = { bg = c.bg_alt }
 -- hl.PmenuThumb = { bg = c.border }
--- hl.StatusLine = { fg = c.fg, bg = c.bg_alt }
+hl.StatusLine = { fg = c.fg, bg = c.statusline_bg }
 -- hl.StatusLineNC = { fg = c.muted, bg = c.bg_alt }
--- hl.WinSeparator = { fg = c.bg_sel }
--- hl.WinBar = { fg = c.fg_alt, bg = c.bg }
+hl.WinSeparator = { fg = c.bg_alt }
+hl.WinBar = { fg = c.fg_alt, bg = c.bg }
 -- hl.WinBarNC = { fg = c.muted, bg = c.bg }
 -- hl.TabLine = { fg = c.muted, bg = c.bg_alt }
 -- hl.TabLineSel = { fg = c.fg, bg = c.bg_sel, bold = true }
