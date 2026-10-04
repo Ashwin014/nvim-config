@@ -164,16 +164,18 @@ hl.WinSeparator = { fg = c.bg_alt }
 -- hl.Todo = { fg = c.bg, bg = c.yellow, bold = true }
 
 -- Treesitter overrides (only where you want to differ from classic) -
--- hl["@variable"] = { fg = c.variables }
+hl["@variable"] = { fg = c.variables }
 -- hl["@variable.builtin"] = { fg = c.red }
 -- hl["@variable.parameter"] = { fg = c.variables }
--- hl["@variable.member"] = { fg = c.variable_member }
+hl["@variable.member"] = { fg = c.variable_member }
+
 -- hl["@property"] = { fg = c.variable_property }
 -- hl["@field"] = { fg = c.red }
 -- hl["@constructor"] = { fg = c.yellow }
 -- hl["@tag"] = { fg = c.red }
 -- hl["@tag.attribute"] = { fg = c.orange }
 -- hl["@tag.delimiter"] = { fg = c.muted }
+
 hl["@punctuation.bracket"] = { fg = c.brackets }
 -- hl["@punctuation.delimiter"] = { fg = c.fg }
 -- hl["@punctuation.special"] = { fg = c.fg }
@@ -206,7 +208,7 @@ hl["@string"] = { fg = c.strings }
 hl["@keyword"] = { fg = c.keywords }
 hl["@keyword.function"] = { fg = c.keywords_alt }
 hl["@keyword.type"] = { fg = c.keywords_alt }
--- hl["@keyword.operator"] = { fg = c.keywords_alt }
+hl["@keyword.operator"] = { fg = c.keywords_alt }
 -- hl["@keyword.return"] = { fg = c.keywords }
 -- hl["@keyword.conditional"] = { fg = c.fg }
 -- hl["@keyword.directive.markdown"] = { fg = c.muted }
