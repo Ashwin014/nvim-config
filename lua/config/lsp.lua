@@ -44,7 +44,8 @@ require("mason-tool-installer").setup({
 
 vim.diagnostic.config({
 	-- virtual_text = { spacing = 2, prefix = "●" },
-	virtual_text = { spacing = 2, prefix = "·" },
+	-- virtual_text = { spacing = 2, prefix = "◆" },
+	virtual_text = { spacing = 2, prefix = "—" },
 	severity_sort = true,
 	update_in_insert = false,
 	float = { source = true },
