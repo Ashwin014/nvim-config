@@ -24,6 +24,8 @@ local bp = {
 	base04 = "#636363",
 	base05 = "#727272",
 	base06 = "#878787",
+
+	white = "#d4d4d4",
 }
 
 local c = {
@@ -31,19 +33,20 @@ local c = {
 	bg_alt = bp.base00, -- floats, statusline, cursorline
 	bg_sel = bp.base02, -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
-	fg = "#d4d4d4",
+	fg = bp.white,
 	fg_alt = bp.base05, -- secondary text, inactive items
 	muted = bp.base03, -- comments, line numbers, delimiters
 	border = bp.base02,
 
 	red = "#b85860",
+	variables = bp.white,
 	strings = "#ce9178", --
 	brackets = "#ffd700", --
 	functions = "#dcdcaa",
 	types = "#4ec9b0", --
 	cyan = "#4a9da8",
 	blue = "#9cdcfe", --
-	blue_dark = "#569cd6",
+	keyword_type = "#569cd6",
 	keywords = "#c586c0", --
 	pink = "#da70d6",
 	comments = "#6a9955",
@@ -117,8 +120,8 @@ hl.SpellLocal = { undercurl = true, sp = c.cyan }
 
 -- Syntax (classic groups; treesitter falls back to these) -----------
 hl.Comment = { fg = c.comment, italic = true }
-hl.Constant = { fg = c.orange }
-hl.String = { fg = c.green }
+hl.Constant = { fg = c.variables }
+hl.String = { fg = c.strings }
 hl.Character = { fg = c.green }
 hl.Number = { fg = c.orange }
 hl.Boolean = { fg = c.orange }
@@ -126,10 +129,10 @@ hl.Float = { fg = c.orange }
 hl.Identifier = { fg = c.fg }
 hl.Function = { fg = c.functions }
 hl.Statement = { fg = c.purple }
-hl.Conditional = { fg = c.purple }
+hl.Conditional = { fg = c.keywords }
 hl.Repeat = { fg = c.purple }
 hl.Label = { fg = c.purple }
-hl.Keyword = { fg = c.purple }
+hl.Keyword = { fg = c.keywords }
 hl.Exception = { fg = c.purple }
 hl.Operator = { fg = c.fg }
 hl.PreProc = { fg = c.cyan }
@@ -161,7 +164,7 @@ hl["@constructor"] = { fg = c.yellow }
 hl["@tag"] = { fg = c.red }
 hl["@tag.attribute"] = { fg = c.orange }
 hl["@tag.delimiter"] = { fg = c.muted }
-hl["@punctuation.bracket"] = { fg = c.yellow }
+hl["@punctuation.bracket"] = { fg = c.brackets }
 hl["@punctuation.delimiter"] = { fg = c.muted }
 hl["@punctuation.special"] = { fg = c.cyan }
 hl["@comment"] = { fg = c.comments, italic = true }
@@ -183,6 +186,7 @@ hl["@string.regexp"] = { fg = c.cyan }
 hl["@keyword.function"] = { fg = c.functions }
 hl["@keyword.return"] = { fg = c.keywords }
 hl["@keyword.operator"] = { fg = c.keywords }
+hl["@keyword.type"] = { fg = c.keyword_type }
 hl["@keyword.directive.markdown"] = { fg = c.muted }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
