@@ -35,6 +35,9 @@ require("which-key").setup({
 require("which-key").add({
 	{ "<leader>f", group = "Find" },
 	{ "<leader>o", group = "Obsidian" },
+	{ "<leader>b", group = "Buffers" },
+	{ "<leader>t", group = "Tabs" },
+	{ "<leader>g", group = "Git" },
 	{ "g", group = "Go to" },
 })
 

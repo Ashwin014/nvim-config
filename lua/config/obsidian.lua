@@ -212,7 +212,8 @@ local commands = {
 	{ "o", "open", "Open in Obsidian app" },
 }
 for _, c in ipairs(commands) do
-	vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = "obsd: " .. c[3] })
+	-- vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = "obsd: " .. c[3] })
+	vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = c[3] })
 end
 
 -- these two work on a visual selection
