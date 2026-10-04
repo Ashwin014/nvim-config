@@ -171,7 +171,7 @@ hl["@variable.member"] = { fg = c.variable_member }
 
 -- hl["@property"] = { fg = c.variable_property }
 -- hl["@field"] = { fg = c.red }
--- hl["@constructor"] = { fg = c.yellow }
+hl["@constructor"] = { fg = c.yellow }
 -- hl["@tag"] = { fg = c.red }
 -- hl["@tag.attribute"] = { fg = c.orange }
 -- hl["@tag.delimiter"] = { fg = c.muted }
