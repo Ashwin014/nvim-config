@@ -174,7 +174,7 @@ hl.WinSeparator = { fg = c.bg_alt }
 -- hl["@tag"] = { fg = c.red }
 -- hl["@tag.attribute"] = { fg = c.orange }
 -- hl["@tag.delimiter"] = { fg = c.muted }
--- hl["@punctuation.bracket"] = { fg = c.brackets }
+hl["@punctuation.bracket"] = { fg = c.brackets }
 -- hl["@punctuation.delimiter"] = { fg = c.fg }
 -- hl["@punctuation.special"] = { fg = c.fg }
 
@@ -191,6 +191,7 @@ hl["@comment"] = { fg = c.comments, italic = true }
 -- hl["@markup.list"] = { fg = c.muted }
 -- hl["@markup.raw"] = { fg = c.fg } -- inline/fenced code
 -- hl["@markup.quote.markdown"] = { fg = c.fg }
+
 -- hl["@lsp.type.parameter"] = { fg = c.variables }
 -- hl["@lsp.type.variable"] = { fg = c.fg }
 -- hl["@lsp.typemod.parameter"] = { fg = c.variables }
@@ -202,21 +203,21 @@ hl["@string"] = { fg = c.strings }
 -- hl["@string.escape"] = { fg = c.cyan }
 -- hl["@string.regexp"] = { fg = c.cyan }
 
--- hl["@keyword"] = { fg = c.keywords }
+hl["@keyword"] = { fg = c.keywords }
+hl["@keyword.function"] = { fg = c.keywords_alt }
+hl["@keyword.type"] = { fg = c.keywords_alt }
 -- hl["@keyword.operator"] = { fg = c.keywords_alt }
--- hl["@keyword.function"] = { fg = c.keywords_alt }
 -- hl["@keyword.return"] = { fg = c.keywords }
--- hl["@keyword.type"] = { fg = c.keywords_alt }
 -- hl["@keyword.conditional"] = { fg = c.fg }
 -- hl["@keyword.directive.markdown"] = { fg = c.muted }
 -- hl["@type.builtin"] = { fg = c.types }
 
--- hl["@type"] = { fg = c.types }
+hl["@type"] = { fg = c.types }
 
 -- hl["@constant.builtin"] = { fg = c.keywords_alt }
 -- hl["@operator"] = { fg = c.fg }
 
--- hl["@function"] = { fg = c.functions }
+hl["@function"] = { fg = c.functions }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
 --   vim.lsp.semantic_tokens.enable(false)
