@@ -85,8 +85,8 @@ hl.FloatBorder = { fg = c.border, bg = c.bg }
 hl.LineNr = { fg = c.muted }
 -- hl.SignColumn = { bg = c.bg }
 -- hl.ColorColumn = { bg = c.bg_alt }
-hl.Visual = { bg = c.bg_sel }
-hl.VisualNOS = { bg = c.bg_sel }
+-- hl.Visual = { bg = c.bg_sel }
+-- hl.VisualNOS = { bg = c.bg_sel }
 -- hl.Search = { fg = c.bg, bg = c.yellow }
 -- hl.IncSearch = { fg = c.bg, bg = c.orange }
 -- hl.CurSearch = { fg = c.bg, bg = c.orange }
@@ -129,7 +129,7 @@ hl.WinSeparator = { fg = c.bg_alt }
 -- hl.SpellLocal = { undercurl = true, sp = c.cyan }
 
 -- Syntax (classic groups; treesitter falls back to these) -----------
-hl.Comment = { fg = c.comment, italic = true }
+-- hl.Comment = { fg = c.comment, italic = true }
 -- hl.Constant = { fg = c.variables }
 -- hl.String = { fg = c.strings }
 -- hl.Character = { fg = c.green }
@@ -202,8 +202,8 @@ hl["@string"] = { fg = c.strings }
 -- hl["@string.escape"] = { fg = c.cyan }
 -- hl["@string.regexp"] = { fg = c.cyan }
 
-hl["@keyword"] = { fg = c.keywords }
-hl["@keyword.operator"] = { fg = c.keywords_alt }
+-- hl["@keyword"] = { fg = c.keywords }
+-- hl["@keyword.operator"] = { fg = c.keywords_alt }
 -- hl["@keyword.function"] = { fg = c.keywords_alt }
 -- hl["@keyword.return"] = { fg = c.keywords }
 -- hl["@keyword.type"] = { fg = c.keywords_alt }
@@ -211,12 +211,12 @@ hl["@keyword.operator"] = { fg = c.keywords_alt }
 -- hl["@keyword.directive.markdown"] = { fg = c.muted }
 -- hl["@type.builtin"] = { fg = c.types }
 
-hl["@type"] = { fg = c.types }
+-- hl["@type"] = { fg = c.types }
 
 -- hl["@constant.builtin"] = { fg = c.keywords_alt }
 -- hl["@operator"] = { fg = c.fg }
 
-hl["@function"] = { fg = c.functions }
+-- hl["@function"] = { fg = c.functions }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
 --   vim.lsp.semantic_tokens.enable(false)
