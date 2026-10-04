@@ -46,8 +46,8 @@ local c = {
 	types = "#4ec9b0", --
 	cyan = "#4a9da8",
 	blue = "#9cdcfe", --
-	keyword_type = "#569cd6",
 	keywords = "#c586c0", --
+	keywords_alt = "#569cd6",
 	pink = "#da70d6",
 	comments = "#6a9955",
 
@@ -143,7 +143,7 @@ hl.Type = { fg = c.types }
 hl.StorageClass = { fg = c.yellow }
 hl.Structure = { fg = c.yellow }
 hl.Typedef = { fg = c.yellow }
-hl.Special = { fg = c.cyan }
+hl.Special = { fg = c.types }
 hl.SpecialChar = { fg = c.cyan }
 hl.Tag = { fg = c.red }
 hl.Delimiter = { fg = c.muted }
@@ -185,9 +185,10 @@ hl["@string.escape"] = { fg = c.cyan }
 hl["@string.regexp"] = { fg = c.cyan }
 hl["@keyword.function"] = { fg = c.functions }
 hl["@keyword.return"] = { fg = c.keywords }
-hl["@keyword.operator"] = { fg = c.keywords }
-hl["@keyword.type"] = { fg = c.keyword_type }
+hl["@keyword.operator"] = { fg = c.keywords_alt }
+hl["@keyword.type"] = { fg = c.keywords_alt }
 hl["@keyword.directive.markdown"] = { fg = c.muted }
+hl["@type.builtin"] = { fg = c.types }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
 --   vim.lsp.semantic_tokens.enable(false)
