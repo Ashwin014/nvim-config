@@ -31,18 +31,22 @@ local c = {
 	bg_alt = bp.base00, -- floats, statusline, cursorline
 	bg_sel = bp.base02, -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
-	fg = bp.base06,
+	fg = "#d4d4d4",
 	fg_alt = bp.base05, -- secondary text, inactive items
 	muted = bp.base03, -- comments, line numbers, delimiters
 	border = bp.base02,
 
 	red = "#b85860",
-	orange = "#b58559",
-	yellow = "#ccab6e",
-	green = "#83a868",
+	orange = "#ce9178", --
+	yellow = "#ffd700", --
+	yellow_light = "#dcdcaa",
+	types = "#4ec9b0", --
 	cyan = "#4a9da8",
-	blue = "#589dd6",
-	purple = "#af6ac4",
+	blue = "#9cdcfe", --
+	blue_dark = "#569cd6",
+	purple = "#c586c0", --
+	pink = "#da70d6",
+	comments = "#6a9955",
 
 	-- diff/git backgrounds (dark, desaturated tints)
 	diff_add_bg = "#20301f",
@@ -112,7 +116,7 @@ hl.SpellRare = { undercurl = true, sp = c.purple }
 hl.SpellLocal = { undercurl = true, sp = c.cyan }
 
 -- Syntax (classic groups; treesitter falls back to these) -----------
-hl.Comment = { fg = c.muted, italic = true }
+hl.Comment = { fg = c.comment, italic = true }
 hl.Constant = { fg = c.orange }
 hl.String = { fg = c.green }
 hl.Character = { fg = c.green }
@@ -160,7 +164,7 @@ hl["@tag.delimiter"] = { fg = c.muted }
 hl["@punctuation.bracket"] = { fg = c.yellow }
 hl["@punctuation.delimiter"] = { fg = c.muted }
 hl["@punctuation.special"] = { fg = c.cyan }
-hl["@comment"] = { fg = c.muted, italic = true }
+hl["@comment"] = { fg = c.comments, italic = true }
 hl["@markup.heading"] = { fg = c.blue, bold = true }
 hl["@markup.bold"] = { bold = true }
 hl["@markup.italic"] = { italic = true }
