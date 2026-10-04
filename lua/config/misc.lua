@@ -34,6 +34,8 @@ require("which-key").setup({
 
 require("which-key").add({
 	{ "<leader>f", group = "Find" },
+	{ "<leader>o", group = "Obsidian" },
+	{ "g", group = "Go to" },
 })
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
