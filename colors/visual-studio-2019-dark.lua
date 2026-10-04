@@ -39,17 +39,18 @@ local c = {
 	border = bp.base02,
 
 	red = "#b85860",
-	variables = bp.white,
+	variables_ = bp.white,
+	variables = "#9cdcfe", --
 	strings = "#ce9178", --
 	brackets = "#ffd700", --
 	functions = "#dcdcaa",
 	types = "#4ec9b0", --
 	cyan = "#4a9da8",
-	blue = "#9cdcfe", --
 	keywords = "#c586c0", --
 	keywords_alt = "#569cd6",
 	pink = "#da70d6",
 	comments = "#6a9955",
+	numbers = "#b5cea8",
 
 	-- diff/git backgrounds (dark, desaturated tints)
 	diff_add_bg = "#20301f",
@@ -123,7 +124,7 @@ hl.Comment = { fg = c.comment, italic = true }
 hl.Constant = { fg = c.variables }
 hl.String = { fg = c.strings }
 hl.Character = { fg = c.green }
-hl.Number = { fg = c.orange }
+hl.Number = { fg = c.numbers }
 hl.Boolean = { fg = c.orange }
 hl.Float = { fg = c.orange }
 hl.Identifier = { fg = c.fg }
