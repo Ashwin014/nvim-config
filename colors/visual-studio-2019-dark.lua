@@ -37,14 +37,14 @@ local c = {
 	border = bp.base02,
 
 	red = "#b85860",
-	orange = "#ce9178", --
-	yellow = "#ffd700", --
-	yellow_light = "#dcdcaa",
+	strings = "#ce9178", --
+	brackets = "#ffd700", --
+	functions = "#dcdcaa",
 	types = "#4ec9b0", --
 	cyan = "#4a9da8",
 	blue = "#9cdcfe", --
 	blue_dark = "#569cd6",
-	purple = "#c586c0", --
+	keywords = "#c586c0", --
 	pink = "#da70d6",
 	comments = "#6a9955",
 
@@ -124,19 +124,19 @@ hl.Number = { fg = c.orange }
 hl.Boolean = { fg = c.orange }
 hl.Float = { fg = c.orange }
 hl.Identifier = { fg = c.fg }
-hl.Function = { fg = c.blue }
+hl.Function = { fg = c.functions }
 hl.Statement = { fg = c.purple }
 hl.Conditional = { fg = c.purple }
 hl.Repeat = { fg = c.purple }
 hl.Label = { fg = c.purple }
 hl.Keyword = { fg = c.purple }
 hl.Exception = { fg = c.purple }
-hl.Operator = { fg = c.cyan }
+hl.Operator = { fg = c.fg }
 hl.PreProc = { fg = c.cyan }
 hl.Include = { fg = c.cyan }
 hl.Define = { fg = c.cyan }
 hl.Macro = { fg = c.cyan }
-hl.Type = { fg = c.yellow }
+hl.Type = { fg = c.types }
 hl.StorageClass = { fg = c.yellow }
 hl.Structure = { fg = c.yellow }
 hl.Typedef = { fg = c.yellow }
@@ -180,9 +180,9 @@ hl["@lsp.type.class.markdown"] = { fg = c.purple }
 hl["@lsp.type.enumMember.markdown"] = { fg = c.purple }
 hl["@string.escape"] = { fg = c.cyan }
 hl["@string.regexp"] = { fg = c.cyan }
-hl["@keyword.function"] = { fg = c.purple }
-hl["@keyword.return"] = { fg = c.purple }
-hl["@keyword.operator"] = { fg = c.cyan }
+hl["@keyword.function"] = { fg = c.functions }
+hl["@keyword.return"] = { fg = c.keywords }
+hl["@keyword.operator"] = { fg = c.keywords }
 hl["@keyword.directive.markdown"] = { fg = c.muted }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
