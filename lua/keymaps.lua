@@ -11,7 +11,9 @@ vim.g.mapleader = " "
 -- ================================================================================================
 
 nmap("<leader>q", ":q<CR>", { desc = "Quit" })
+nmap("<leader>Q", ":q!<CR>", { desc = "Quit (forced)" })
 nmap("<leader>w", ":w<CR>", { desc = "Save" })
+nmap("<leader>W", ":w!<CR>", { desc = "Save (forced)" })
 nmap("<leader>R", ":restart<CR>", { desc = "Restart" })
 
 -- window navigation
@@ -30,7 +32,7 @@ nmap("<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 nmap("<leader>|", "<C-w>v", { desc = "Split vertically" })
 nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 
---
+---------------------------------------------------------------------------------------------------
 
 -- buffer
 nmap("<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
@@ -40,7 +42,7 @@ nmap("<leader>bn", ":bn<CR>", { desc = "Go to next buffer" })
 nmap("<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
 nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 
---
+---------------------------------------------------------------------------------------------------
 
 -- tabs
 nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
