@@ -27,7 +27,7 @@ local bp = {
 }
 
 local c = {
-	bg = bp.base01,
+	bg = "#1e1e1e",
 	bg_alt = bp.base00, -- floats, statusline, cursorline
 	bg_sel = bp.base02, -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
