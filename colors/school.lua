@@ -32,9 +32,9 @@ local c = {
 	bg_alt = bp.base00, -- floats, statusline, cursorline
 	bg_sel = bp.base02, -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
-	fg = bp.base07,
-	fg_alt = bp.base06, -- secondary text, inactive items
-	fg_alter = bp.base05,
+	fg = bp.base06,
+	fg_alt = bp.base05, -- secondary text, inactive items
+	fg_accent = bp.base07,
 	muted = bp.base03, -- comments, line numbers, delimiters
 	border = bp.base02,
 
@@ -149,7 +149,7 @@ hl.Error = { fg = c.red }
 hl.Todo = { fg = c.bg, bg = c.yellow, bold = true }
 
 -- Treesitter overrides (only where you want to differ from classic) -
-hl["@variable"] = { fg = c.fg }
+hl["@variable"] = { fg = c.fg_accent }
 hl["@variable.builtin"] = { fg = c.red }
 hl["@variable.parameter"] = { fg = c.fg }
 hl["@variable.member"] = { fg = c.red }
