@@ -24,6 +24,7 @@ local bp = {
 	base04 = "#636363",
 	base05 = "#727272",
 	base06 = "#878787",
+	base07 = "#969696",
 }
 
 local c = {
@@ -31,8 +32,9 @@ local c = {
 	bg_alt = bp.base00, -- floats, statusline, cursorline
 	bg_sel = bp.base02, -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
-	fg = bp.base06,
-	fg_alt = bp.base05, -- secondary text, inactive items
+	fg = bp.base07,
+	fg_alt = bp.base06, -- secondary text, inactive items
+	fg_alter = bp.base05,
 	muted = bp.base03, -- comments, line numbers, delimiters
 	border = bp.base02,
 
