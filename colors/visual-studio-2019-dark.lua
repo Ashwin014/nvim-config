@@ -32,12 +32,13 @@ local bp = {
 local c = {
 	bg = bp.black,
 	bg_alt = bp.base00, -- floats, statusline, cursorline
-	bg_sel = bp.base02, -- selection, popup selection, visual
+	bg_sel = "#264f78", -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
 	fg = bp.white,
 	fg_alt = bp.base05, -- secondary text, inactive items
-	muted = bp.base03, -- comments, line numbers, delimiters
-	border = bp.base02,
+	muted = "#858585", -- comments, line numbers, delimiters
+	-- border = bp.base02,
+	border = "#404040",
 
 	red = "#b85860",
 	variables_ = bp.white,
@@ -72,18 +73,18 @@ local hl = {}
 
 -- Editor UI ----------------------------------------------------------
 hl.Normal = { fg = c.fg, bg = c.bg }
--- hl.NormalNC = { fg = c.fg, bg = c.bg } -- inactive windows; set bg="none" to dim them
--- hl.NormalFloat = { fg = c.fg, bg = c.bg }
--- hl.FloatBorder = { fg = c.border, bg = c.bg }
+hl.NormalNC = { fg = c.fg, bg = c.bg } -- inactive windows; set bg="none" to dim them
+hl.NormalFloat = { fg = c.fg, bg = c.bg }
+hl.FloatBorder = { fg = c.border, bg = c.bg }
 -- hl.FloatTitle = { fg = c.blue, bg = c.bg_alt, bold = true }
 -- hl.CursorLine = { bg = c.bg_alt }
 -- hl.CursorLineNr = { fg = c.yellow, bold = true }
 -- hl.CursorColumn = { bg = c.bg_alt }
--- hl.LineNr = { fg = c.muted }
+hl.LineNr = { fg = c.muted }
 -- hl.SignColumn = { bg = c.bg }
 -- hl.ColorColumn = { bg = c.bg_alt }
--- hl.Visual = { bg = c.bg_sel }
--- hl.VisualNOS = { bg = c.bg_sel }
+hl.Visual = { bg = c.bg_sel }
+hl.VisualNOS = { bg = c.bg_sel }
 -- hl.Search = { fg = c.bg, bg = c.yellow }
 -- hl.IncSearch = { fg = c.bg, bg = c.orange }
 -- hl.CurSearch = { fg = c.bg, bg = c.orange }
