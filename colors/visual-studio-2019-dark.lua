@@ -215,6 +215,7 @@ hl["@keyword.operator"] = { fg = c.keywords_alt }
 
 hl["@type"] = { fg = c.types }
 hl["@type.builtin"] = { fg = c.types }
+hl["@lsp.type.interface"] = { fg = "#ff0000" }
 
 hl["@constant.builtin"] = { fg = c.keywords_alt }
 
