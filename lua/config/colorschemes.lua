@@ -1,6 +1,7 @@
 -- vim.cmd.colorscheme("ember")
 
-vim.cmd.colorscheme("school")
+-- vim.cmd.colorscheme("school")
+vim.cmd.colorscheme("visual-studio-2019-dark")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
