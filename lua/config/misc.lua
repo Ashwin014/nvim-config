@@ -32,6 +32,10 @@ require("which-key").setup({
 	},
 })
 
+require("which-key").add({
+	{ "<leader>f", group = "Find" },
+})
+
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
 nmap("<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
 tmap("<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
