@@ -26,10 +26,11 @@ local bp = {
 	base06 = "#878787",
 
 	white = "#d4d4d4",
+	black = "#1e1e1e",
 }
 
 local c = {
-	bg = "#1e1e1e",
+	bg = bp.black,
 	bg_alt = bp.base00, -- floats, statusline, cursorline
 	bg_sel = bp.base02, -- selection, popup selection, visual
 	bg_dark = bp.base01, -- dashboard, dimmer panels
@@ -71,93 +72,93 @@ local hl = {}
 
 -- Editor UI ----------------------------------------------------------
 hl.Normal = { fg = c.fg, bg = c.bg }
-hl.NormalNC = { fg = c.fg, bg = c.bg } -- inactive windows; set bg="none" to dim them
-hl.NormalFloat = { fg = c.fg, bg = c.bg }
-hl.FloatBorder = { fg = c.border, bg = c.bg }
-hl.FloatTitle = { fg = c.blue, bg = c.bg_alt, bold = true }
-hl.CursorLine = { bg = c.bg_alt }
-hl.CursorLineNr = { fg = c.yellow, bold = true }
-hl.CursorColumn = { bg = c.bg_alt }
-hl.LineNr = { fg = c.muted }
-hl.SignColumn = { bg = c.bg }
-hl.ColorColumn = { bg = c.bg_alt }
-hl.Visual = { bg = c.bg_sel }
-hl.VisualNOS = { bg = c.bg_sel }
-hl.Search = { fg = c.bg, bg = c.yellow }
-hl.IncSearch = { fg = c.bg, bg = c.orange }
-hl.CurSearch = { fg = c.bg, bg = c.orange }
-hl.MatchParen = { fg = c.orange, bold = true }
-hl.Pmenu = { fg = c.fg, bg = c.bg }
-hl.PmenuSel = { bg = c.bg_sel }
-hl.PmenuSbar = { bg = c.bg_alt }
-hl.PmenuThumb = { bg = c.border }
-hl.StatusLine = { fg = c.fg, bg = c.bg_alt }
-hl.StatusLineNC = { fg = c.muted, bg = c.bg_alt }
-hl.WinSeparator = { fg = c.bg_sel }
-hl.WinBar = { fg = c.fg_alt, bg = c.bg }
-hl.WinBarNC = { fg = c.muted, bg = c.bg }
-hl.TabLine = { fg = c.muted, bg = c.bg_alt }
-hl.TabLineSel = { fg = c.fg, bg = c.bg_sel, bold = true }
-hl.TabLineFill = { bg = c.bg }
-hl.Folded = { fg = c.muted, bg = c.bg_alt }
-hl.FoldColumn = { fg = c.muted, bg = c.bg }
-hl.NonText = { fg = c.bg_sel }
-hl.Whitespace = { fg = c.bg_sel }
-hl.SpecialKey = { fg = c.muted }
-hl.EndOfBuffer = { fg = c.bg }
-hl.Directory = { fg = c.blue }
-hl.Title = { fg = c.blue, bold = true }
-hl.ModeMsg = { fg = c.fg_alt }
-hl.MoreMsg = { fg = c.green }
-hl.Question = { fg = c.green }
-hl.ErrorMsg = { fg = c.red }
-hl.WarningMsg = { fg = c.yellow }
-hl.MsgArea = { fg = c.fg, bg = c.bg }
-hl.MsgSeparator = { fg = c.muted, bg = c.bg }
-hl.WildMenu = { fg = c.bg, bg = c.blue }
-hl.Conceal = { fg = c.muted }
-hl.Cursor = { fg = c.bg, bg = c.fg }
-hl.TermCursor = { fg = c.bg, bg = c.fg }
-hl.QuickFixLine = { bg = c.bg_sel }
-hl.SpellBad = { undercurl = true, sp = c.red }
-hl.SpellCap = { undercurl = true, sp = c.yellow }
-hl.SpellRare = { undercurl = true, sp = c.purple }
-hl.SpellLocal = { undercurl = true, sp = c.cyan }
+-- hl.NormalNC = { fg = c.fg, bg = c.bg } -- inactive windows; set bg="none" to dim them
+-- hl.NormalFloat = { fg = c.fg, bg = c.bg }
+-- hl.FloatBorder = { fg = c.border, bg = c.bg }
+-- hl.FloatTitle = { fg = c.blue, bg = c.bg_alt, bold = true }
+-- hl.CursorLine = { bg = c.bg_alt }
+-- hl.CursorLineNr = { fg = c.yellow, bold = true }
+-- hl.CursorColumn = { bg = c.bg_alt }
+-- hl.LineNr = { fg = c.muted }
+-- hl.SignColumn = { bg = c.bg }
+-- hl.ColorColumn = { bg = c.bg_alt }
+-- hl.Visual = { bg = c.bg_sel }
+-- hl.VisualNOS = { bg = c.bg_sel }
+-- hl.Search = { fg = c.bg, bg = c.yellow }
+-- hl.IncSearch = { fg = c.bg, bg = c.orange }
+-- hl.CurSearch = { fg = c.bg, bg = c.orange }
+-- hl.MatchParen = { fg = c.orange, bold = true }
+-- hl.Pmenu = { fg = c.fg, bg = c.bg }
+-- hl.PmenuSel = { bg = c.bg_sel }
+-- hl.PmenuSbar = { bg = c.bg_alt }
+-- hl.PmenuThumb = { bg = c.border }
+-- hl.StatusLine = { fg = c.fg, bg = c.bg_alt }
+-- hl.StatusLineNC = { fg = c.muted, bg = c.bg_alt }
+-- hl.WinSeparator = { fg = c.bg_sel }
+-- hl.WinBar = { fg = c.fg_alt, bg = c.bg }
+-- hl.WinBarNC = { fg = c.muted, bg = c.bg }
+-- hl.TabLine = { fg = c.muted, bg = c.bg_alt }
+-- hl.TabLineSel = { fg = c.fg, bg = c.bg_sel, bold = true }
+-- hl.TabLineFill = { bg = c.bg }
+-- hl.Folded = { fg = c.muted, bg = c.bg_alt }
+-- hl.FoldColumn = { fg = c.muted, bg = c.bg }
+-- hl.NonText = { fg = c.bg_sel }
+-- hl.Whitespace = { fg = c.bg_sel }
+-- hl.SpecialKey = { fg = c.muted }
+-- hl.EndOfBuffer = { fg = c.bg }
+-- hl.Directory = { fg = c.blue }
+-- hl.Title = { fg = c.blue, bold = true }
+-- hl.ModeMsg = { fg = c.fg_alt }
+-- hl.MoreMsg = { fg = c.green }
+-- hl.Question = { fg = c.green }
+-- hl.ErrorMsg = { fg = c.red }
+-- hl.WarningMsg = { fg = c.yellow }
+-- hl.MsgArea = { fg = c.fg, bg = c.bg }
+-- hl.MsgSeparator = { fg = c.muted, bg = c.bg }
+-- hl.WildMenu = { fg = c.bg, bg = c.blue }
+-- hl.Conceal = { fg = c.muted }
+-- hl.Cursor = { fg = c.bg, bg = c.fg }
+-- hl.TermCursor = { fg = c.bg, bg = c.fg }
+-- hl.QuickFixLine = { bg = c.bg_sel }
+-- hl.SpellBad = { undercurl = true, sp = c.red }
+-- hl.SpellCap = { undercurl = true, sp = c.yellow }
+-- hl.SpellRare = { undercurl = true, sp = c.purple }
+-- hl.SpellLocal = { undercurl = true, sp = c.cyan }
 
 -- Syntax (classic groups; treesitter falls back to these) -----------
-hl.Comment = { fg = c.comment, italic = true }
-hl.Constant = { fg = c.variables }
-hl.String = { fg = c.strings }
-hl.Character = { fg = c.green }
-hl.Number = { fg = c.numbers }
-hl.Boolean = { fg = c.orange }
-hl.Float = { fg = c.orange }
-hl.Identifier = { fg = c.fg }
-hl.Function = { fg = c.functions }
-hl.Statement = { fg = c.purple }
-hl.Conditional = { fg = c.keywords }
-hl.Repeat = { fg = c.purple }
-hl.Label = { fg = c.purple }
-hl.Keyword = { fg = c.keywords }
-hl.Exception = { fg = c.purple }
-hl.Operator = { fg = c.operator }
-hl.PreProc = { fg = c.cyan }
-hl.Include = { fg = c.cyan }
-hl.Define = { fg = c.cyan }
-hl.Macro = { fg = c.cyan }
-hl.Type = { fg = c.types }
-hl.StorageClass = { fg = c.yellow }
-hl.Structure = { fg = c.yellow }
-hl.Typedef = { fg = c.yellow }
-hl.Special = { fg = c.types }
-hl.SpecialChar = { fg = c.cyan }
-hl.Tag = { fg = c.red }
-hl.Delimiter = { fg = c.muted }
-hl.Underlined = { underline = true }
-hl.Bold = { bold = true }
-hl.Italic = { italic = true }
-hl.Error = { fg = c.red }
-hl.Todo = { fg = c.bg, bg = c.yellow, bold = true }
+-- hl.Comment = { fg = c.comment, italic = true }
+-- hl.Constant = { fg = c.variables }
+-- hl.String = { fg = c.strings }
+-- hl.Character = { fg = c.green }
+-- hl.Number = { fg = c.numbers }
+-- hl.Boolean = { fg = c.orange }
+-- hl.Float = { fg = c.orange }
+-- hl.Identifier = { fg = c.fg }
+-- hl.Function = { fg = c.functions }
+-- hl.Statement = { fg = c.purple }
+-- hl.Conditional = { fg = c.keywords }
+-- hl.Repeat = { fg = c.purple }
+-- hl.Label = { fg = c.purple }
+-- hl.Keyword = { fg = c.keywords }
+-- hl.Exception = { fg = c.purple }
+-- hl.Operator = { fg = c.operator }
+-- hl.PreProc = { fg = c.cyan }
+-- hl.Include = { fg = c.cyan }
+-- hl.Define = { fg = c.cyan }
+-- hl.Macro = { fg = c.cyan }
+-- hl.Type = { fg = c.types }
+-- hl.StorageClass = { fg = c.yellow }
+-- hl.Structure = { fg = c.yellow }
+-- hl.Typedef = { fg = c.yellow }
+-- hl.Special = { fg = c.types }
+-- hl.SpecialChar = { fg = c.cyan }
+-- hl.Tag = { fg = c.red }
+-- hl.Delimiter = { fg = c.muted }
+-- hl.Underlined = { underline = true }
+-- hl.Bold = { bold = true }
+-- hl.Italic = { italic = true }
+-- hl.Error = { fg = c.red }
+-- hl.Todo = { fg = c.bg, bg = c.yellow, bold = true }
 
 -- Treesitter overrides (only where you want to differ from classic) -
 -- hl["@variable"] = { fg = c.variables }
@@ -209,136 +210,136 @@ hl.Todo = { fg = c.bg, bg = c.yellow, bold = true }
 -- hl["@lsp.type.variable"] = {}
 
 -- Diagnostics (LSP) --------------------------------------------------
-hl.DiagnosticError = { fg = c.red }
-hl.DiagnosticWarn = { fg = c.yellow }
-hl.DiagnosticInfo = { fg = c.blue }
-hl.DiagnosticHint = { fg = c.cyan }
-hl.DiagnosticOk = { fg = c.green }
-hl.DiagnosticUnderlineError = { undercurl = true, sp = c.red }
-hl.DiagnosticUnderlineWarn = { undercurl = true, sp = c.yellow }
-hl.DiagnosticUnderlineInfo = { undercurl = true, sp = c.blue }
-hl.DiagnosticUnderlineHint = { undercurl = true, sp = c.cyan }
-hl.DiagnosticVirtualTextError = { fg = c.red, bg = c.diff_delete_bg }
-hl.DiagnosticVirtualTextWarn = { fg = c.yellow, bg = c.diff_change_bg }
-hl.DiagnosticVirtualTextInfo = { fg = c.blue, bg = c.diff_change_bg }
-hl.DiagnosticVirtualTextHint = { fg = c.cyan, bg = c.diff_change_bg }
-hl.DiagnosticFloatingError = { fg = c.red }
-hl.DiagnosticFloatingWarn = { fg = c.yellow }
-hl.DiagnosticSignError = { fg = c.red }
-hl.DiagnosticSignWarn = { fg = c.yellow }
-hl.DiagnosticSignInfo = { fg = c.blue }
-hl.DiagnosticSignHint = { fg = c.cyan }
-hl.LspReferenceText = { bg = c.bg_sel }
-hl.LspReferenceRead = { bg = c.bg_sel }
-hl.LspReferenceWrite = { bg = c.bg_sel, underline = true }
-hl.LspSignatureActiveParameter = { fg = c.orange, bold = true }
-hl.LspInlayHint = { fg = c.muted, italic = true }
+-- hl.DiagnosticError = { fg = c.red }
+-- hl.DiagnosticWarn = { fg = c.yellow }
+-- hl.DiagnosticInfo = { fg = c.blue }
+-- hl.DiagnosticHint = { fg = c.cyan }
+-- hl.DiagnosticOk = { fg = c.green }
+-- hl.DiagnosticUnderlineError = { undercurl = true, sp = c.red }
+-- hl.DiagnosticUnderlineWarn = { undercurl = true, sp = c.yellow }
+-- hl.DiagnosticUnderlineInfo = { undercurl = true, sp = c.blue }
+-- hl.DiagnosticUnderlineHint = { undercurl = true, sp = c.cyan }
+-- hl.DiagnosticVirtualTextError = { fg = c.red, bg = c.diff_delete_bg }
+-- hl.DiagnosticVirtualTextWarn = { fg = c.yellow, bg = c.diff_change_bg }
+-- hl.DiagnosticVirtualTextInfo = { fg = c.blue, bg = c.diff_change_bg }
+-- hl.DiagnosticVirtualTextHint = { fg = c.cyan, bg = c.diff_change_bg }
+-- hl.DiagnosticFloatingError = { fg = c.red }
+-- hl.DiagnosticFloatingWarn = { fg = c.yellow }
+-- hl.DiagnosticSignError = { fg = c.red }
+-- hl.DiagnosticSignWarn = { fg = c.yellow }
+-- hl.DiagnosticSignInfo = { fg = c.blue }
+-- hl.DiagnosticSignHint = { fg = c.cyan }
+-- hl.LspReferenceText = { bg = c.bg_sel }
+-- hl.LspReferenceRead = { bg = c.bg_sel }
+-- hl.LspReferenceWrite = { bg = c.bg_sel, underline = true }
+-- hl.LspSignatureActiveParameter = { fg = c.orange, bold = true }
+-- hl.LspInlayHint = { fg = c.muted, italic = true }
 
 -- Diff / Git -----------------------------------------------------------
-hl.DiffAdd = { bg = c.diff_add_bg }
-hl.DiffChange = { bg = c.diff_change_bg }
-hl.DiffDelete = { bg = c.diff_delete_bg }
-hl.DiffText = { bg = c.diff_text_bg }
-hl.GitSignsAdd = { fg = c.green }
-hl.GitSignsChange = { fg = c.yellow }
-hl.GitSignsDelete = { fg = c.red }
-hl.GitSignsAddLn = { bg = c.diff_add_bg }
-hl.GitSignsChangeLn = { bg = c.diff_change_bg }
-hl.GitSignsDeleteLn = { bg = c.diff_delete_bg }
-hl.GitSignsCurrentLineBlame = { fg = c.muted }
-
+-- hl.DiffAdd = { bg = c.diff_add_bg }
+-- hl.DiffChange = { bg = c.diff_change_bg }
+-- hl.DiffDelete = { bg = c.diff_delete_bg }
+-- hl.DiffText = { bg = c.diff_text_bg }
+-- hl.GitSignsAdd = { fg = c.green }
+-- hl.GitSignsChange = { fg = c.yellow }
+-- hl.GitSignsDelete = { fg = c.red }
+-- hl.GitSignsAddLn = { bg = c.diff_add_bg }
+-- hl.GitSignsChangeLn = { bg = c.diff_change_bg }
+-- hl.GitSignsDeleteLn = { bg = c.diff_delete_bg }
+-- hl.GitSignsCurrentLineBlame = { fg = c.muted }
+--
 -- Telescope ------------------------------------------------------------
-hl.TelescopeNormal = { fg = c.fg, bg = c.bg }
-hl.TelescopeBorder = { fg = c.border, bg = c.bg }
-hl.TelescopePromptNormal = { fg = c.fg, bg = c.bg }
-hl.TelescopePromptBorder = { fg = c.border, bg = c.bg }
-hl.TelescopePromptPrefix = { fg = c.orange }
-hl.TelescopePromptTitle = { fg = c.fg, bg = c.bg, bold = true }
-hl.TelescopeResultsNormal = { fg = c.fg, bg = c.bg }
-hl.TelescopeResultsBorder = { fg = c.border, bg = c.bg }
-hl.TelescopeResultsTitle = { fg = c.fg, bg = c.bg, bold = true }
-hl.TelescopePreviewNormal = { fg = c.fg, bg = c.bg }
-hl.TelescopePreviewBorder = { fg = c.border, bg = c.bg }
-hl.TelescopePreviewTitle = { fg = c.fg, bg = c.bg, bold = true }
-hl.TelescopeSelection = { bg = c.bg_sel }
-hl.TelescopeSelectionCaret = { fg = c.orange, bg = c.bg_sel }
-hl.TelescopeMatching = { fg = c.yellow, bold = true }
+-- hl.TelescopeNormal = { fg = c.fg, bg = c.bg }
+-- hl.TelescopeBorder = { fg = c.border, bg = c.bg }
+-- hl.TelescopePromptNormal = { fg = c.fg, bg = c.bg }
+-- hl.TelescopePromptBorder = { fg = c.border, bg = c.bg }
+-- hl.TelescopePromptPrefix = { fg = c.orange }
+-- hl.TelescopePromptTitle = { fg = c.fg, bg = c.bg, bold = true }
+-- hl.TelescopeResultsNormal = { fg = c.fg, bg = c.bg }
+-- hl.TelescopeResultsBorder = { fg = c.border, bg = c.bg }
+-- hl.TelescopeResultsTitle = { fg = c.fg, bg = c.bg, bold = true }
+-- hl.TelescopePreviewNormal = { fg = c.fg, bg = c.bg }
+-- hl.TelescopePreviewBorder = { fg = c.border, bg = c.bg }
+-- hl.TelescopePreviewTitle = { fg = c.fg, bg = c.bg, bold = true }
+-- hl.TelescopeSelection = { bg = c.bg_sel }
+-- hl.TelescopeSelectionCaret = { fg = c.orange, bg = c.bg_sel }
+-- hl.TelescopeMatching = { fg = c.yellow, bold = true }
 
 -- which-key --------------------------------------------------------
-hl.WhichKey = { fg = c.blue }
-hl.WhichKeyGroup = { fg = c.cyan }
-hl.WhichKeyDesc = { fg = c.fg }
-hl.WhichKeySeparator = { fg = c.muted }
-hl.WhichKeyFloat = { bg = c.bg }
-hl.WhichKeyBorder = { fg = c.border, bg = c.bg }
-hl.WhichKeyValue = { fg = c.muted }
-hl.WhichKeyTitle = { fg = c.muted }
+-- hl.WhichKey = { fg = c.blue }
+-- hl.WhichKeyGroup = { fg = c.cyan }
+-- hl.WhichKeyDesc = { fg = c.fg }
+-- hl.WhichKeySeparator = { fg = c.muted }
+-- hl.WhichKeyFloat = { bg = c.bg }
+-- hl.WhichKeyBorder = { fg = c.border, bg = c.bg }
+-- hl.WhichKeyValue = { fg = c.muted }
+-- hl.WhichKeyTitle = { fg = c.muted }
 
 -- Snacks (dashboard, picker, explorer, zen, notifier, indent) -------
-hl.SnacksNormal = { fg = c.fg, bg = c.bg }
-hl.SnacksWinBar = { fg = c.fg, bg = c.bg }
-hl.SnacksDashboardHeader = { fg = c.blue }
-hl.SnacksDashboardDesc = { fg = c.fg }
-hl.SnacksDashboardIcon = { fg = c.orange }
-hl.SnacksDashboardKey = { fg = c.yellow }
-hl.SnacksDashboardSpecial = { fg = c.muted }
-hl.SnacksDashboardFile = { fg = c.fg_alt }
-hl.SnacksDashboardDir = { fg = c.muted }
-hl.SnacksPicker = { fg = c.fg, bg = c.bg }
-hl.SnacksPickerBorder = { fg = c.border, bg = c.bg }
-hl.SnacksPickerMatch = { fg = c.yellow, bold = true }
-hl.SnacksPickerDir = { fg = c.muted }
-hl.SnacksIndent = { fg = c.bg_sel }
-hl.SnacksIndentScope = { fg = c.blue }
-hl.SnacksNotifierInfo = { fg = c.blue }
-hl.SnacksNotifierWarn = { fg = c.yellow }
-hl.SnacksNotifierError = { fg = c.red }
+-- hl.SnacksNormal = { fg = c.fg, bg = c.bg }
+-- hl.SnacksWinBar = { fg = c.fg, bg = c.bg }
+-- hl.SnacksDashboardHeader = { fg = c.blue }
+-- hl.SnacksDashboardDesc = { fg = c.fg }
+-- hl.SnacksDashboardIcon = { fg = c.orange }
+-- hl.SnacksDashboardKey = { fg = c.yellow }
+-- hl.SnacksDashboardSpecial = { fg = c.muted }
+-- hl.SnacksDashboardFile = { fg = c.fg_alt }
+-- hl.SnacksDashboardDir = { fg = c.muted }
+-- hl.SnacksPicker = { fg = c.fg, bg = c.bg }
+-- hl.SnacksPickerBorder = { fg = c.border, bg = c.bg }
+-- hl.SnacksPickerMatch = { fg = c.yellow, bold = true }
+-- hl.SnacksPickerDir = { fg = c.muted }
+-- hl.SnacksIndent = { fg = c.bg_sel }
+-- hl.SnacksIndentScope = { fg = c.blue }
+-- hl.SnacksNotifierInfo = { fg = c.blue }
+-- hl.SnacksNotifierWarn = { fg = c.yellow }
+-- hl.SnacksNotifierError = { fg = c.red }
 
 -- Noice --------------------------------------------------------------
-hl.NoiceCmdlinePopup = { fg = c.fg, bg = c.bg }
-hl.NoiceCmdlinePopupBorder = { fg = c.border, bg = c.bg }
-hl.NoiceCmdlineIcon = { fg = c.blue }
-hl.NoicePopupmenuSelected = { bg = c.bg_sel }
-hl.NoiceMini = { fg = c.fg, bg = c.bg_alt }
-
+-- hl.NoiceCmdlinePopup = { fg = c.fg, bg = c.bg }
+-- hl.NoiceCmdlinePopupBorder = { fg = c.border, bg = c.bg }
+-- hl.NoiceCmdlineIcon = { fg = c.blue }
+-- hl.NoicePopupmenuSelected = { bg = c.bg_sel }
+-- hl.NoiceMini = { fg = c.fg, bg = c.bg_alt }
+--
 -- Oil ------------------------------------------------------------------
-hl.OilDir = { fg = c.blue, bold = true }
-hl.OilFile = { fg = c.fg }
-hl.OilLink = { fg = c.cyan }
-hl.OilCreate = { fg = c.green }
-hl.OilDelete = { fg = c.red }
-hl.OilMove = { fg = c.yellow }
-hl.OilCopy = { fg = c.cyan }
-hl.OilPermissionNone = { fg = c.muted }
-hl.OilPermissionRead = { fg = c.yellow }
-hl.OilPermissionWrite = { fg = c.red }
-hl.OilPermissionExecute = { fg = c.green }
+-- hl.OilDir = { fg = c.blue, bold = true }
+-- hl.OilFile = { fg = c.fg }
+-- hl.OilLink = { fg = c.cyan }
+-- hl.OilCreate = { fg = c.green }
+-- hl.OilDelete = { fg = c.red }
+-- hl.OilMove = { fg = c.yellow }
+-- hl.OilCopy = { fg = c.cyan }
+-- hl.OilPermissionNone = { fg = c.muted }
+-- hl.OilPermissionRead = { fg = c.yellow }
+-- hl.OilPermissionWrite = { fg = c.red }
+-- hl.OilPermissionExecute = { fg = c.green }
 
 -- render-markdown ------------------------------------------------------
-hl.RenderMarkdownH1 = { fg = c.red, bold = true }
-hl.RenderMarkdownH2 = { fg = c.orange, bold = true }
-hl.RenderMarkdownH3 = { fg = c.yellow, bold = true }
-hl.RenderMarkdownH4 = { fg = c.green, bold = true }
-hl.RenderMarkdownH5 = { fg = c.cyan, bold = true }
-hl.RenderMarkdownH6 = { fg = c.blue, bold = true }
-hl.RenderMarkdownH1Bg = { bg = c.bg }
-hl.RenderMarkdownH2Bg = { bg = c.bg }
-hl.RenderMarkdownH3Bg = { bg = c.bg }
-hl.RenderMarkdownH4Bg = { bg = c.bg }
-hl.RenderMarkdownH5Bg = { bg = c.bg }
-hl.RenderMarkdownH6Bg = { bg = c.bg }
-hl.RenderMarkdownCode = { bg = c.bg_alt }
-hl.RenderMarkdownCodeInline = { bg = c.bg_sel, fg = c.fg }
-hl.RenderMarkdownBullet = { fg = c.muted }
-hl.RenderMarkdownQuote = { fg = c.muted, italic = true }
-hl.RenderMarkdownDash = { fg = c.muted }
-hl.RenderMarkdownLink = { fg = c.cyan, underline = true }
-hl.RenderMarkdownWikiLink = { fg = c.blue }
-hl.RenderMarkdownTableHead = { fg = c.blue }
-hl.RenderMarkdownTableRow = { fg = c.fg }
-hl.RenderMarkdownChecked = { fg = c.green }
-hl.RenderMarkdownUnchecked = { fg = c.muted }
-hl.RenderMarkdownTodo = { fg = c.yellow }
+-- hl.RenderMarkdownH1 = { fg = c.red, bold = true }
+-- hl.RenderMarkdownH2 = { fg = c.orange, bold = true }
+-- hl.RenderMarkdownH3 = { fg = c.yellow, bold = true }
+-- hl.RenderMarkdownH4 = { fg = c.green, bold = true }
+-- hl.RenderMarkdownH5 = { fg = c.cyan, bold = true }
+-- hl.RenderMarkdownH6 = { fg = c.blue, bold = true }
+-- hl.RenderMarkdownH1Bg = { bg = c.bg }
+-- hl.RenderMarkdownH2Bg = { bg = c.bg }
+-- hl.RenderMarkdownH3Bg = { bg = c.bg }
+-- hl.RenderMarkdownH4Bg = { bg = c.bg }
+-- hl.RenderMarkdownH5Bg = { bg = c.bg }
+-- hl.RenderMarkdownH6Bg = { bg = c.bg }
+-- hl.RenderMarkdownCode = { bg = c.bg_alt }
+-- hl.RenderMarkdownCodeInline = { bg = c.bg_sel, fg = c.fg }
+-- hl.RenderMarkdownBullet = { fg = c.muted }
+-- hl.RenderMarkdownQuote = { fg = c.muted, italic = true }
+-- hl.RenderMarkdownDash = { fg = c.muted }
+-- hl.RenderMarkdownLink = { fg = c.cyan, underline = true }
+-- hl.RenderMarkdownWikiLink = { fg = c.blue }
+-- hl.RenderMarkdownTableHead = { fg = c.blue }
+-- hl.RenderMarkdownTableRow = { fg = c.fg }
+-- hl.RenderMarkdownChecked = { fg = c.green }
+-- hl.RenderMarkdownUnchecked = { fg = c.muted }
+-- hl.RenderMarkdownTodo = { fg = c.yellow }
 
 -- lualine (if you set theme = "school" instead of "auto") ----------
 -- lualine builds its own groups per mode when theme="auto"; only needed
@@ -346,38 +347,38 @@ hl.RenderMarkdownTodo = { fg = c.yellow }
 -- since "auto" already derives from the groups above.
 
 -- Completion (blink.cmp) ----------------------------------------------
-hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg }
-hl.BlinkCmpMenuBorder = { fg = c.border, bg = c.bg }
-hl.BlinkCmpMenuSelection = { bg = c.bg_sel }
-hl.BlinkCmpDoc = { fg = c.fg, bg = c.bg }
-hl.BlinkCmpDocBorder = { fg = c.border, bg = c.bg }
-hl.BlinkCmpLabel = { fg = c.fg }
-hl.BlinkCmpLabelMatch = { fg = c.yellow, bold = true }
-hl.BlinkCmpKind = { fg = c.muted }
-hl.BlinkCmpSource = { fg = c.muted, italic = true }
+-- hl.BlinkCmpMenu = { fg = c.fg, bg = c.bg }
+-- hl.BlinkCmpMenuBorder = { fg = c.border, bg = c.bg }
+-- hl.BlinkCmpMenuSelection = { bg = c.bg_sel }
+-- hl.BlinkCmpDoc = { fg = c.fg, bg = c.bg }
+-- hl.BlinkCmpDocBorder = { fg = c.border, bg = c.bg }
+-- hl.BlinkCmpLabel = { fg = c.fg }
+-- hl.BlinkCmpLabelMatch = { fg = c.yellow, bold = true }
+-- hl.BlinkCmpKind = { fg = c.muted }
+-- hl.BlinkCmpSource = { fg = c.muted, italic = true }
 
 -- Quiz / misc UI widgets you've added ---------------------------------
-hl.FidgetTitle = { fg = c.blue, bold = true }
-hl.FidgetTask = { fg = c.muted }
+-- hl.FidgetTitle = { fg = c.blue, bold = true }
+-- hl.FidgetTask = { fg = c.muted }
 
 -- harpoon -------------------------------------------------------------
-hl.HarpoonNormal = { fg = c.fg, bg = c.bg }
-hl.HarpoonBorderX = { fg = c.border, bg = c.bg }
-hl.HarpoonTitleX = { fg = c.border, bg = c.bg }
-hl.HarpoonSel = { fg = c.bg, bg = c.blue }
-
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = "harpoon",
-	callback = function()
-		vim.wo.winhighlight = table.concat({
-			"Normal:HarpoonNormal",
-			"NormalFloat:HarpoonNormal",
-			"FloatBorder:HarpoonBorderX",
-			"FloatTitle:HarpoonTitleX",
-			"CursorLine:HarpoonSel",
-		}, ",")
-	end,
-})
+-- hl.HarpoonNormal = { fg = c.fg, bg = c.bg }
+-- hl.HarpoonBorderX = { fg = c.border, bg = c.bg }
+-- hl.HarpoonTitleX = { fg = c.border, bg = c.bg }
+-- hl.HarpoonSel = { fg = c.bg, bg = c.blue }
+--
+-- vim.api.nvim_create_autocmd("FileType", {
+-- 	pattern = "harpoon",
+-- 	callback = function()
+-- 		vim.wo.winhighlight = table.concat({
+-- 			"Normal:HarpoonNormal",
+-- 			"NormalFloat:HarpoonNormal",
+-- 			"FloatBorder:HarpoonBorderX",
+-- 			"FloatTitle:HarpoonTitleX",
+-- 			"CursorLine:HarpoonSel",
+-- 		}, ",")
+-- 	end,
+-- })
 
 ---------------------------------------------------------------------
 -- 3. Apply
