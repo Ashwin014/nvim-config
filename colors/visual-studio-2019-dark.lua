@@ -203,15 +203,20 @@ hl["@string"] = { fg = c.strings }
 -- hl["@string.regexp"] = { fg = c.cyan }
 
 hl["@keyword"] = { fg = c.keywords }
+hl["@keyword.operator"] = { fg = c.keywords_alt }
 -- hl["@keyword.function"] = { fg = c.keywords_alt }
 -- hl["@keyword.return"] = { fg = c.keywords }
--- hl["@keyword.operator"] = { fg = c.keywords_alt }
 -- hl["@keyword.type"] = { fg = c.keywords_alt }
 -- hl["@keyword.conditional"] = { fg = c.fg }
 -- hl["@keyword.directive.markdown"] = { fg = c.muted }
 -- hl["@type.builtin"] = { fg = c.types }
+
+hl["@type"] = { fg = c.types }
+
 -- hl["@constant.builtin"] = { fg = c.keywords_alt }
 -- hl["@operator"] = { fg = c.fg }
+
+hl["@function"] = { fg = c.functions }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
 --   vim.lsp.semantic_tokens.enable(false)
