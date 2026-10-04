@@ -38,5 +38,6 @@ o.backspace = { "start", "eol", "indent" }
 o.laststatus = 3
 o.showcmd = true
 o.showcmdloc = "statusline"
-o.timeoutlen = 200
+o.ttimeoutlen = 10
+o.timeoutlen = 100
 o.colorcolumn = "100"
