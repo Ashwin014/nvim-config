@@ -98,7 +98,7 @@ hl.VisualNOS = { bg = c.bg_sel }
 hl.StatusLine = { fg = c.fg, bg = c.statusline_bg }
 -- hl.StatusLineNC = { fg = c.muted, bg = c.bg_alt }
 hl.WinSeparator = { fg = c.bg_alt }
-hl.WinBar = { fg = c.fg_alt, bg = c.bg }
+-- hl.WinBar = { fg = c.fg_alt, bg = c.bg }
 -- hl.WinBarNC = { fg = c.muted, bg = c.bg }
 -- hl.TabLine = { fg = c.muted, bg = c.bg_alt }
 -- hl.TabLineSel = { fg = c.fg, bg = c.bg_sel, bold = true }
@@ -129,7 +129,7 @@ hl.WinBar = { fg = c.fg_alt, bg = c.bg }
 -- hl.SpellLocal = { undercurl = true, sp = c.cyan }
 
 -- Syntax (classic groups; treesitter falls back to these) -----------
--- hl.Comment = { fg = c.comment, italic = true }
+hl.Comment = { fg = c.comment, italic = true }
 -- hl.Constant = { fg = c.variables }
 -- hl.String = { fg = c.strings }
 -- hl.Character = { fg = c.green }
@@ -177,7 +177,9 @@ hl.WinBar = { fg = c.fg_alt, bg = c.bg }
 -- hl["@punctuation.bracket"] = { fg = c.brackets }
 -- hl["@punctuation.delimiter"] = { fg = c.fg }
 -- hl["@punctuation.special"] = { fg = c.fg }
--- hl["@comment"] = { fg = c.comments, italic = true }
+
+hl["@comment"] = { fg = c.comments, italic = true }
+
 -- hl["@markup.heading"] = { fg = c.blue, bold = true }
 -- hl["@markup.bold"] = { bold = true }
 -- hl["@markup.italic"] = { italic = true }
@@ -195,6 +197,7 @@ hl.WinBar = { fg = c.fg_alt, bg = c.bg }
 -- hl["@lsp.mod.declaration"] = { fg = c.fg }
 -- hl["@lsp.type.class.markdown"] = { fg = c.purple }
 -- hl["@lsp.type.enumMember.markdown"] = { fg = c.purple }
+hl["@string"] = { fg = c.string }
 -- hl["@string.escape"] = { fg = c.cyan }
 -- hl["@string.regexp"] = { fg = c.cyan }
 -- hl["@keyword.function"] = { fg = c.keywords_alt }
