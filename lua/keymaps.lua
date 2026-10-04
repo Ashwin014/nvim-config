@@ -10,6 +10,10 @@ vim.g.mapleader = " "
 -- WINDOW
 -- ================================================================================================
 
+nmap("<leader>q", ":q<CR>", { desc = "Quit" })
+nmap("<leader>w", ":w<CR>", { desc = "Save" })
+nmap("<leader>R", ":restart<CR>", { desc = "Restart" })
+
 -- window navigation
 nmap("<C-h>", "<C-w>h")
 nmap("<C-l>", "<C-w>l")
