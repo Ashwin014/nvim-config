@@ -216,15 +216,18 @@ hl["@keyword.operator"] = { fg = c.keywords_alt }
 hl["@type"] = { fg = c.types }
 hl["@type.builtin"] = { fg = c.types }
 
--- hl["@constant.builtin"] = { fg = c.keywords_alt }
+hl["@constant.builtin"] = { fg = c.keywords_alt }
+
 -- hl["@operator"] = { fg = c.fg }
 
 hl["@function"] = { fg = c.functions }
 
+hl["@number"] = { fg = c.numbers }
+
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
 --   vim.lsp.semantic_tokens.enable(false)
 -- or silence specific ones here instead, e.g.:
--- hl["@lsp.type.variable"] = {}
+hl["@lsp.type.variable"] = {}
 
 -- Diagnostics (LSP) --------------------------------------------------
 -- hl.DiagnosticError = { fg = c.red }
