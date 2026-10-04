@@ -41,13 +41,18 @@ local c = {
 	red = "#b85860",
 	variables_ = bp.white,
 	variables = "#9cdcfe", --
+	variable_member = bp.white,
+	variable_property = bp.white,
 	strings = "#ce9178", --
 	brackets = "#ffd700", --
 	functions = "#dcdcaa",
 	types = "#4ec9b0", --
 	cyan = "#4a9da8",
 	keywords = "#c586c0", --
+
 	keywords_alt = "#569cd6",
+	operator = "#569cd6",
+
 	pink = "#da70d6",
 	comments = "#6a9955",
 	numbers = "#b5cea8",
@@ -135,7 +140,7 @@ hl.Repeat = { fg = c.purple }
 hl.Label = { fg = c.purple }
 hl.Keyword = { fg = c.keywords }
 hl.Exception = { fg = c.purple }
-hl.Operator = { fg = c.fg }
+hl.Operator = { fg = c.operator }
 hl.PreProc = { fg = c.cyan }
 hl.Include = { fg = c.cyan }
 hl.Define = { fg = c.cyan }
@@ -158,15 +163,15 @@ hl.Todo = { fg = c.bg, bg = c.yellow, bold = true }
 hl["@variable"] = { fg = c.variables }
 hl["@variable.builtin"] = { fg = c.red }
 hl["@variable.parameter"] = { fg = c.variables }
-hl["@variable.member"] = { fg = c.red }
-hl["@property"] = { fg = c.red }
+hl["@variable.member"] = { fg = c.variable_member }
+hl["@property"] = { fg = c.variable_property }
 hl["@field"] = { fg = c.red }
 hl["@constructor"] = { fg = c.yellow }
 hl["@tag"] = { fg = c.red }
 hl["@tag.attribute"] = { fg = c.orange }
 hl["@tag.delimiter"] = { fg = c.muted }
 hl["@punctuation.bracket"] = { fg = c.brackets }
-hl["@punctuation.delimiter"] = { fg = c.muted }
+hl["@punctuation.delimiter"] = { fg = c.fg }
 hl["@punctuation.special"] = { fg = c.cyan }
 hl["@comment"] = { fg = c.comments, italic = true }
 hl["@markup.heading"] = { fg = c.blue, bold = true }
