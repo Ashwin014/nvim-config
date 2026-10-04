@@ -210,9 +210,9 @@ hl["@keyword.type"] = { fg = c.keywords_alt }
 -- hl["@keyword.return"] = { fg = c.keywords }
 -- hl["@keyword.conditional"] = { fg = c.fg }
 -- hl["@keyword.directive.markdown"] = { fg = c.muted }
--- hl["@type.builtin"] = { fg = c.types }
 
 hl["@type"] = { fg = c.types }
+hl["@type.builtin"] = { fg = c.types }
 
 -- hl["@constant.builtin"] = { fg = c.keywords_alt }
 -- hl["@operator"] = { fg = c.fg }
