@@ -197,9 +197,12 @@ hl["@comment"] = { fg = c.comments, italic = true }
 -- hl["@lsp.mod.declaration"] = { fg = c.fg }
 -- hl["@lsp.type.class.markdown"] = { fg = c.purple }
 -- hl["@lsp.type.enumMember.markdown"] = { fg = c.purple }
-hl["@string"] = { fg = c.string }
+
+hl["@string"] = { fg = c.strings }
 -- hl["@string.escape"] = { fg = c.cyan }
 -- hl["@string.regexp"] = { fg = c.cyan }
+
+hl["@keyword"] = { fg = c.keywords }
 -- hl["@keyword.function"] = { fg = c.keywords_alt }
 -- hl["@keyword.return"] = { fg = c.keywords }
 -- hl["@keyword.operator"] = { fg = c.keywords_alt }
