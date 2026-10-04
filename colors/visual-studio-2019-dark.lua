@@ -214,8 +214,13 @@ hl["@keyword.operator"] = { fg = c.keywords_alt }
 -- hl["@keyword.directive.markdown"] = { fg = c.muted }
 
 hl["@type"] = { fg = c.types }
-hl["@type.builtin"] = { fg = c.types }
-hl["@lsp.type.interface"] = { fg = "#ff0000" }
+-- hl["@type.builtin"] = { fg = c.types }
+-- hl["@lsp.type.interface"] = { fg = "#ff0000" }
+
+hl["@lsp.type.interface"] = { fg = "#d3869b", italic = true }
+hl["@lsp.type.class"] = { fg = "#fabd2f" }
+hl["@lsp.type.enum"] = { fg = "#fe8019" }
+hl["@lsp.type.typeParameter"] = { fg = "#83a598" }
 
 hl["@constant.builtin"] = { fg = c.keywords_alt }
 
