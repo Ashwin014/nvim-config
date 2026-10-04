@@ -155,9 +155,9 @@ hl.Error = { fg = c.red }
 hl.Todo = { fg = c.bg, bg = c.yellow, bold = true }
 
 -- Treesitter overrides (only where you want to differ from classic) -
-hl["@variable"] = { fg = c.fg }
+hl["@variable"] = { fg = c.variables }
 hl["@variable.builtin"] = { fg = c.red }
-hl["@variable.parameter"] = { fg = c.fg }
+hl["@variable.parameter"] = { fg = c.variables }
 hl["@variable.member"] = { fg = c.red }
 hl["@property"] = { fg = c.red }
 hl["@field"] = { fg = c.red }
@@ -180,6 +180,9 @@ hl["@markup.link.label.markdown_inline"] = { fg = c.purple }
 hl["@markup.list"] = { fg = c.muted }
 hl["@markup.raw"] = { fg = c.fg } -- inline/fenced code
 hl["@markup.quote.markdown"] = { fg = c.fg }
+hl["@lsp.type.parameter"] = { fg = c.variables }
+hl["@lsp.typemod.parameter"] = { fg = c.variables }
+hl["@lsp.mod.declaration"] = { fg = c.variables }
 hl["@lsp.type.class.markdown"] = { fg = c.purple }
 hl["@lsp.type.enumMember.markdown"] = { fg = c.purple }
 hl["@string.escape"] = { fg = c.cyan }
