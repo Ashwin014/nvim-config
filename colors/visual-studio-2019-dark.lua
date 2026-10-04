@@ -172,7 +172,7 @@ hl["@tag.attribute"] = { fg = c.orange }
 hl["@tag.delimiter"] = { fg = c.muted }
 hl["@punctuation.bracket"] = { fg = c.brackets }
 hl["@punctuation.delimiter"] = { fg = c.fg }
-hl["@punctuation.special"] = { fg = c.cyan }
+hl["@punctuation.special"] = { fg = c.fg }
 hl["@comment"] = { fg = c.comments, italic = true }
 hl["@markup.heading"] = { fg = c.blue, bold = true }
 hl["@markup.bold"] = { bold = true }
@@ -186,8 +186,9 @@ hl["@markup.list"] = { fg = c.muted }
 hl["@markup.raw"] = { fg = c.fg } -- inline/fenced code
 hl["@markup.quote.markdown"] = { fg = c.fg }
 hl["@lsp.type.parameter"] = { fg = c.variables }
+hl["@lsp.type.variable"] = { fg = c.fg }
 hl["@lsp.typemod.parameter"] = { fg = c.variables }
-hl["@lsp.mod.declaration"] = { fg = c.variables }
+hl["@lsp.mod.declaration"] = { fg = c.fg }
 hl["@lsp.type.class.markdown"] = { fg = c.purple }
 hl["@lsp.type.enumMember.markdown"] = { fg = c.purple }
 hl["@string.escape"] = { fg = c.cyan }
@@ -196,8 +197,10 @@ hl["@keyword.function"] = { fg = c.functions }
 hl["@keyword.return"] = { fg = c.keywords }
 hl["@keyword.operator"] = { fg = c.keywords_alt }
 hl["@keyword.type"] = { fg = c.keywords_alt }
+hl["@keyword.conditional"] = { fg = c.fg }
 hl["@keyword.directive.markdown"] = { fg = c.muted }
 hl["@type.builtin"] = { fg = c.types }
+hl["@constant.builtin"] = { fg = c.keywords_alt }
 
 -- turn semantic tokens off instead, in init.lua, if colors keep "flipping":
 --   vim.lsp.semantic_tokens.enable(false)
