@@ -21,6 +21,7 @@ require("config.hop")
 require("config.grugfar")
 
 require("config.misc")
+require("config.which-key")
 require("config.harpoon")
 require("config.surround")
 require("config.lualine")
