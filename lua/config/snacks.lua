@@ -99,53 +99,28 @@ require("snacks").setup({
 })
 
 ---------------------------------------------------------------------
--- Keymaps (after setup so Snacks exists)
+-- Keymaps
 ---------------------------------------------------------------------
 local maps = {
-	ui = {
-		function()
-			Snacks.image.hover()
-		end,
-		"Preview image under cursor",
-	},
-	z = {
-		function()
-			Snacks.zen({ win = { width = 100 } })
-		end,
-		"Zen mode",
-	}, -- change 100 to set the text width
+	ui = { fn = Snacks.image.hover, desc = "Preview image under cursor" },
+	z = { fn = Snacks.zen, args = { win = { width = 100 } }, desc = "Zen mode" }, -- change 100 to set the text width
 	fi = {
-		function()
-			Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
-		end,
-		"Find images / pdfs (with preview)",
+		fn = Snacks.picker.files,
+		args = { ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } },
+		desc = "Find images / pdfs (with preview)",
 	},
-	d = {
-		function()
-			Snacks.dashboard()
-		end,
-		"Open dashboard",
-	},
-	e = {
-		function()
-			Snacks.explorer()
-		end,
-		"File tree",
-	},
-	gg = {
-		function()
-			Snacks.lazygit()
-		end,
-		"Lazygit",
-	},
-	un = {
-		function()
-			Snacks.notifier.show_history()
-		end,
-		"Notification history",
-	},
+	d = { fn = Snacks.dashboard, desc = "Open dashboard" },
+	e = { fn = Snacks.explorer, desc = "File tree" },
+	gg = { fn = Snacks.lazygit, desc = "Lazygit" },
+	un = { fn = Snacks.notifier.show_history, desc = "Notification history" },
 }
 
 for key, opts in pairs(maps) do
-	map("n", "<leader>" .. key, opts[1], { desc = "Snacks: " .. opts[2] })
+	map("n", "<leader>" .. key, function()
+		if opts.args then
+			opts.fn(opts.args)
+		else
+			opts.fn()
+		end
+	end, { desc = "Snacks: " .. opts.desc })
 end
