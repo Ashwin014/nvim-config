@@ -20,13 +20,13 @@ end, { desc = "Oil float" })
 -- oil.nvim dep
 require("nvim-web-devicons").setup({})
 
---
+----------------------------------------------------------------------------------------------------
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
 nmap("<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
 tmap("<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
 
---
+----------------------------------------------------------------------------------------------------
 
 -- Jump to errors specifically, skipping warnings
 nmap("]e", function()
@@ -42,6 +42,8 @@ nmap("[e", function()
 		severity = vim.diagnostic.severity.ERROR,
 	})
 end, { desc = "prev error" })
+
+----------------------------------------------------------------------------------------------------
 
 -- no-neck-pain.nvim
 require("no-neck-pain").setup({
