@@ -42,4 +42,5 @@ o.timeoutlen = 100
 o.colorcolumn = "100"
 o.list = true
 -- o.listchars:append("leadmultispace:·   ")
+o.listchars:append("leadmultispace:·")
 o.listchars:append("space:·")
