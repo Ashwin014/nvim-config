@@ -1,32 +1,59 @@
 local map = vim.keymap.set
 
-map("n", "<leader>ui", function()
-	Snacks.image.hover()
-end, { desc = "Snacks: Preview image under cursor" })
+-- map("n", "<leader>ui", function()
+-- 	Snacks.image.hover()
+-- end, { desc = "Snacks: Preview image under cursor" })
+--
+-- map("n", "<leader>z", function()
+-- 	Snacks.zen({ win = { width = 100 } }) -- change 100 to set the text width
+-- end, { desc = "Snacks: Zen mode" })
+--
+-- map("n", "<leader>fi", function()
+-- 	Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
+-- end, { desc = "Snacks: Find images / pdfs (with preview)" })
+--
+-- map("n", "<leader>d", function()
+-- 	Snacks.dashboard()
+-- end, { desc = "Snacks: Open dashboard" })
+--
+-- map("n", "<leader>e", function()
+-- 	Snacks.explorer()
+-- end, { desc = "Snacks: File tree" })
+--
+-- map("n", "<leader>gg", function()
+-- 	Snacks.lazygit()
+-- end, { desc = "Snacks: Lazygit" })
+--
+-- map("n", "<leader>un", function()
+-- 	Snacks.notifier.show_history()
+-- end, { desc = "Snacks: Notification history" })
+--
 
-map("n", "<leader>z", function()
-	Snacks.zen({ win = { width = 100 } }) -- change 100 to set the text width
-end, { desc = "Snacks: Zen mode" })
+-- local S = Snacks
 
-map("n", "<leader>fi", function()
-	Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
-end, { desc = "Snacks: Find images / pdfs (with preview)" })
+local maps = {
+	ui = { Snacks.image.hover, "Preview image under cursor" },
+	z = {
+		function()
+			Snacks.zen({ win = { width = 100 } })
+		end,
+		"Zen mode",
+	},
+	fi = {
+		function()
+			Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
+		end,
+		"Find images / pdfs",
+	},
+	d = { Snacks.dashboard, "Open dashboard" },
+	e = { Snacks.explorer, "File tree" },
+	gg = { Snacks.lazygit, "Lazygit" },
+	un = { Snacks.notifier.show_history, "Notification history" },
+}
 
-map("n", "<leader>d", function()
-	Snacks.dashboard()
-end, { desc = "Snacks: Open dashboard" })
-
-map("n", "<leader>e", function()
-	Snacks.explorer()
-end, { desc = "Snacks: File tree" })
-
-map("n", "<leader>gg", function()
-	Snacks.lazygit()
-end, { desc = "Snacks: Lazygit" })
-
-map("n", "<leader>un", function()
-	Snacks.notifier.show_history()
-end, { desc = "Snacks: Notification history" })
+for key, opts in pairs(maps) do
+	map("n", "<leader>" .. key, opts[1], { desc = "Snacks: " .. opts[2] })
+end
 
 ---------------------------------------------------------------------
 -- Images / media
