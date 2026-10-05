@@ -1,6 +1,6 @@
 -- vim.cmd.colorscheme("ember")
 
-vim.cmd.colorscheme("school")
+-- vim.cmd.colorscheme("school")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
@@ -22,7 +22,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-dark")
 -- vim.cmd.colorscheme("soviet-light")
 
--- vim.cmd.colorscheme("onedark-zed")
+vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
 
