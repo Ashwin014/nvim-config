@@ -3,6 +3,7 @@ local nmap = m.nmap
 local vmap = m.vmap
 local imap = m.imap
 local xmap = m.xmap
+local nvmap = m.nvmap
 
 vim.g.mapleader = " "
 
@@ -116,18 +117,18 @@ vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 
 --
 -- sourced from https://www.reddit.com/r/neovim/comments/1gryk36/what_are_some_of_your_favorite_small_custom/
-nmap("<left>", "zh")
-nmap("<down>", "<c-e>")
-nmap("<up>", "<c-y>")
-nmap("<right>", "zl")
+nvmap("<left>", "zh")
+nvmap("<down>", "<c-e>")
+nvmap("<up>", "<c-y>")
+nvmap("<right>", "zl")
 
-vmap("<left>", "zh")
-vmap("<down>", "<c-e>")
-vmap("<up>", "<c-y>")
-vmap("<right>", "zl")
+imap("<left>", "<Esc>zh")
+imap("<down>", "<Esc><c-e>")
+imap("<up>", "<Esc><c-y>")
+imap("<right>", "<Esc>zl")
 
-nmap("<S-left>", "zH")
-nmap("<S-right>", "zL")
+nvmap("<S-left>", "zH")
+nvmap("<S-right>", "zL")
 
 -- ================================================================================================
 -- UTILS
