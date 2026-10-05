@@ -86,9 +86,9 @@ imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
 
 nmap("<leader>a", "gg<S-v>G", { desc = "Select all text" })
 
-imap("<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
+-- imap("<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
 
-imap("<C-d>", "<Esc>ddi", { desc = "Delete line" })
+-- imap("<C-d>", "<Esc>ddi", { desc = "Delete line" })
 
 -- delete single character without copying into register/clipboard
 nmap("x", '"_x', { noremap = true, silent = true })
