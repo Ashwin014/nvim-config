@@ -27,34 +27,6 @@ local map = vim.keymap.set
 -- map("n", "<leader>un", function()
 -- 	Snacks.notifier.show_history()
 -- end, { desc = "Snacks: Notification history" })
-local S = Snacks
-
----------------------------------------------------------------------
--- Keymaps
----------------------------------------------------------------------
-local maps = {
-	ui = { S.image.hover, "Preview image under cursor" },
-	z = {
-		function()
-			S.zen({ win = { width = 100 } })
-		end,
-		"Zen mode",
-	}, -- change 100 to set the text width
-	fi = {
-		function()
-			S.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
-		end,
-		"Find images / pdfs (with preview)",
-	},
-	d = { S.dashboard, "Open dashboard" },
-	e = { S.explorer, "File tree" },
-	gg = { S.lazygit, "Lazygit" },
-	un = { S.notifier.show_history, "Notification history" },
-}
-
-for key, opts in pairs(maps) do
-	map("n", "<leader>" .. key, opts[1], { desc = "Snacks: " .. opts[2] })
-end
 
 ---------------------------------------------------------------------
 -- Images / media
@@ -125,3 +97,55 @@ require("snacks").setup({
 		style = "compact", -- also "fancy" and "minimal"
 	},
 })
+
+---------------------------------------------------------------------
+-- Keymaps (after setup so Snacks exists)
+---------------------------------------------------------------------
+local maps = {
+	ui = {
+		function()
+			Snacks.image.hover()
+		end,
+		"Preview image under cursor",
+	},
+	z = {
+		function()
+			Snacks.zen({ win = { width = 100 } })
+		end,
+		"Zen mode",
+	}, -- change 100 to set the text width
+	fi = {
+		function()
+			Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
+		end,
+		"Find images / pdfs (with preview)",
+	},
+	d = {
+		function()
+			Snacks.dashboard()
+		end,
+		"Open dashboard",
+	},
+	e = {
+		function()
+			Snacks.explorer()
+		end,
+		"File tree",
+	},
+	gg = {
+		function()
+			Snacks.lazygit()
+		end,
+		"Lazygit",
+	},
+	un = {
+		function()
+			Snacks.notifier.show_history()
+		end,
+		"Notification history",
+	},
+}
+
+for key, opts in pairs(maps) do
+	map("n", "<leader>" .. key, opts[1], { desc = "Snacks: " .. opts[2] })
+end
