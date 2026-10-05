@@ -121,6 +121,11 @@ nmap("<down>", "<c-e>")
 nmap("<up>", "<c-y>")
 nmap("<right>", "zl")
 
+vmap("<left>", "zh")
+vmap("<down>", "<c-e>")
+vmap("<up>", "<c-y>")
+vmap("<right>", "zl")
+
 nmap("<S-left>", "zH")
 nmap("<S-right>", "zL")
 
