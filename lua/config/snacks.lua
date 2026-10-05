@@ -27,28 +27,29 @@ local map = vim.keymap.set
 -- map("n", "<leader>un", function()
 -- 	Snacks.notifier.show_history()
 -- end, { desc = "Snacks: Notification history" })
---
+local S = Snacks
 
--- local S = Snacks
-
+---------------------------------------------------------------------
+-- Keymaps
+---------------------------------------------------------------------
 local maps = {
-	ui = { Snacks.image.hover, "Preview image under cursor" },
+	ui = { S.image.hover, "Preview image under cursor" },
 	z = {
 		function()
-			Snacks.zen({ win = { width = 100 } })
+			S.zen({ win = { width = 100 } })
 		end,
 		"Zen mode",
-	},
+	}, -- change 100 to set the text width
 	fi = {
 		function()
-			Snacks.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
+			S.picker.files({ ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } })
 		end,
-		"Find images / pdfs",
+		"Find images / pdfs (with preview)",
 	},
-	d = { Snacks.dashboard, "Open dashboard" },
-	e = { Snacks.explorer, "File tree" },
-	gg = { Snacks.lazygit, "Lazygit" },
-	un = { Snacks.notifier.show_history, "Notification history" },
+	d = { S.dashboard, "Open dashboard" },
+	e = { S.explorer, "File tree" },
+	gg = { S.lazygit, "Lazygit" },
+	un = { S.notifier.show_history, "Notification history" },
 }
 
 for key, opts in pairs(maps) do
