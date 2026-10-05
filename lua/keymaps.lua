@@ -11,11 +11,11 @@ vim.g.mapleader = " "
 -- WINDOW
 -- ================================================================================================
 
-nmap("<leader>q", ":q<CR>", { desc = "Quit" })
-nmap("<leader>Q", ":q!<CR>", { desc = "Quit (forced)" })
-nmap("<leader>w", ":w<CR>", { desc = "Save" })
-nmap("<leader>W", ":w!<CR>", { desc = "Save (forced)" })
-nmap("<leader>R", ":restart<CR>", { desc = "Restart" })
+-- nmap("<leader>q", ":q<CR>", { desc = "Quit" })
+-- nmap("<leader>Q", ":q!<CR>", { desc = "Quit (forced)" })
+-- nmap("<leader>w", ":w<CR>", { desc = "Save" })
+-- nmap("<leader>W", ":w!<CR>", { desc = "Save (forced)" })
+-- nmap("<leader>R", ":restart<CR>", { desc = "Restart" })
 
 -- window navigation
 nmap("<C-h>", "<C-w>h")
@@ -42,6 +42,7 @@ nmap("<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
 nmap("<leader>bn", ":bn<CR>", { desc = "Go to next buffer" })
 nmap("<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
 nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
+nmap("<leader>bs", ":b#<CR>", { desc = "Switch buffers" })
 
 ---------------------------------------------------------------------------------------------------
 
