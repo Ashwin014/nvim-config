@@ -40,3 +40,4 @@ o.showcmdloc = "statusline"
 o.ttimeoutlen = 10
 o.timeoutlen = 100
 o.colorcolumn = "100"
+o.listchars:append("leadmultispace:·   ")
