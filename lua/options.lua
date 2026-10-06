@@ -43,3 +43,4 @@ o.colorcolumn = "100"
 -- o.list = true
 -- o.listchars:append("leadmultispace:·")
 -- o.listchars:append("space:·")
+o.guicursor = "" -- consistent block cursor
