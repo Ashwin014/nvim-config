@@ -118,18 +118,18 @@ vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 
 --
 -- sourced from https://www.reddit.com/r/neovim/comments/1gryk36/what_are_some_of_your_favorite_small_custom/
-nvmap("<left>", "zh")
-nvmap("<down>", "<c-e>")
-nvmap("<up>", "<c-y>")
-nvmap("<right>", "zl")
+-- nvmap("<left>", "zh")
+-- nvmap("<down>", "<c-e>")
+-- nvmap("<up>", "<c-y>")
+-- nvmap("<right>", "zl")
 
-imap("<left>", "<Esc>zh")
-imap("<down>", "<Esc><c-e>")
-imap("<up>", "<Esc><c-y>")
-imap("<right>", "<Esc>zl")
+-- imap("<left>", "<Esc>zh")
+-- imap("<down>", "<Esc><c-e>")
+-- imap("<up>", "<Esc><c-y>")
+-- imap("<right>", "<Esc>zl")
 
-nvmap("<S-left>", "zH")
-nvmap("<S-right>", "zL")
+-- nvmap("<S-left>", "zH")
+-- nvmap("<S-right>", "zL")
 
 -- ================================================================================================
 -- UTILS

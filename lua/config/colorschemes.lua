@@ -1,6 +1,6 @@
 -- vim.cmd.colorscheme("ember")
 
-vim.cmd.colorscheme("school")
+-- vim.cmd.colorscheme("school")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
@@ -8,7 +8,7 @@ require("vscode").setup({
 	style = "dark", -- or "light"
 	italic_comments = true,
 })
--- vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vscode")
 
 -- vim.cmd.colorscheme("synth")
 
