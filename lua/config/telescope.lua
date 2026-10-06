@@ -26,6 +26,7 @@ local maps = {
 	fd = { tb.diagnostics, "Diagnostics" },
 	fR = { tb.lsp_references, "References" },
 	fk = { tb.keymaps, "Keymaps" },
+	fc = { tb.resume, "Resume" },
 }
 
 for key, spec in pairs(maps) do
