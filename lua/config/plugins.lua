@@ -88,6 +88,8 @@ vim.pack.add({
 
 	{ src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
 
+	{ src = "https://github.com/catgoose/nvim-colorizer.lua" },
+
 	-- prog-lanaguages
 	{ src = "https://github.com/mmikeww/autohotkey.vim" },
 })
