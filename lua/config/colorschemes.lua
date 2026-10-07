@@ -1,4 +1,4 @@
--- vim.cmd.colorscheme("ember")
+vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("school")
 
@@ -22,7 +22,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-dark")
 -- vim.cmd.colorscheme("soviet-light")
 
-vim.cmd.colorscheme("onedark-zed")
+-- vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
 
@@ -31,40 +31,41 @@ vim.cmd.colorscheme("onedark-zed")
 -- =================================================================================
 
 local set_hl = vim.api.nvim_set_hl
-local onedark_zed = {
-	fg = "#878787",
-	gray = "#2f343e",
-	light_gray = "#5d636f",
-	faint_gray = "#3b4048",
-
-	red = "#b85860",
-	orange = "#b58559",
-	yellow = "#ccab6e",
-	green = "#83a868",
-	cyan = "#4a9da8",
-	blue = "#589dd6",
-	purple = "#af6ac4",
-}
-
+-- local onedark_zed = {
+-- 	fg = "#878787",
+-- 	gray = "#2f343e",
+-- 	light_gray = "#5d636f",
+-- 	faint_gray = "#3b4048",
+--
+-- 	red = "#b85860",
+-- 	orange = "#b58559",
+-- 	yellow = "#ccab6e",
+-- 	green = "#83a868",
+-- 	cyan = "#4a9da8",
+-- 	blue = "#589dd6",
+-- 	purple = "#af6ac4",
+-- }
+--
 set_hl(0, "Normal", { bg = "none" })
 set_hl(0, "NormalNC", { bg = "none" })
 set_hl(0, "NormalFloat", { bg = "none" })
-set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
+-- set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
 set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
-set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
+-- set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
 set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
 
--- set_hl(0, "Pmenu", { bg = "#ad4212" })
-
--- Telescope
+-- -- set_hl(0, "Pmenu", { bg = "#ad4212" })
+--
+-- -- Telescope
 set_hl(0, "TelescopeNormal", { bg = "none" })
-set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "TelescopeBorder", { bg = "none" })
 set_hl(0, "TelescopePromptNormal", { bg = "none" })
 set_hl(0, "TelescopePromptBorder", { bg = "none" })
 set_hl(0, "TelescopeResultsNormal", { bg = "none" })
@@ -72,30 +73,30 @@ set_hl(0, "TelescopeResultsBorder", { bg = "none" })
 set_hl(0, "TelescopePreviewNormal", { bg = "none" })
 set_hl(0, "TelescopePreviewBorder", { bg = "none" })
 set_hl(0, "TelescopeSelection", { bg = "none" })
-
--- which-key
-set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "WhichKeyNormal", { bg = "none" })
-
--- Snacks
-set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
-set_hl(0, "SnacksPicker", { bg = "none" })
-set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
-
--- Blink
-set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
-set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
-
--- Diagnostics (LSP)
-set_hl(0, "DiagnosticVirtualTextError", { fg = onedark_zed.red, bg = "none" })
-set_hl(0, "DiagnosticVirtualTextWarn", { fg = onedark_zed.yellow, bg = "none" })
-set_hl(0, "DiagnosticVirtualTextInfo", { fg = onedark_zed.blue, bg = "none" })
-set_hl(0, "DiagnosticVirtualTextHint", { fg = onedark_zed.cyan, bg = "none" })
-set_hl(0, "LspInlayHint", { fg = onedark_zed.light_gray, bg = "none", italic = true })
-
--- Harpoon
-set_hl(0, "HarpoonNormal", { bg = "none" })
-set_hl(0, "HarpoonBorderX", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "HarpoonTitleX", { fg = onedark_zed.light_gray, bg = "none" })
+--
+-- -- which-key
+-- set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "WhichKeyNormal", { bg = "none" })
+--
+-- -- Snacks
+-- set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
+-- set_hl(0, "SnacksPicker", { bg = "none" })
+-- set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
+--
+-- -- Blink
+-- set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
+-- set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
+--
+-- -- Diagnostics (LSP)
+-- set_hl(0, "DiagnosticVirtualTextError", { fg = onedark_zed.red, bg = "none" })
+-- set_hl(0, "DiagnosticVirtualTextWarn", { fg = onedark_zed.yellow, bg = "none" })
+-- set_hl(0, "DiagnosticVirtualTextInfo", { fg = onedark_zed.blue, bg = "none" })
+-- set_hl(0, "DiagnosticVirtualTextHint", { fg = onedark_zed.cyan, bg = "none" })
+-- set_hl(0, "LspInlayHint", { fg = onedark_zed.light_gray, bg = "none", italic = true })
+--
+-- -- Harpoon
+-- set_hl(0, "HarpoonNormal", { bg = "none" })
+-- set_hl(0, "HarpoonBorderX", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "HarpoonTitleX", { fg = onedark_zed.light_gray, bg = "none" })
