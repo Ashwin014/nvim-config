@@ -87,3 +87,8 @@ set_hl(0, "DiagnosticVirtualTextWarn", { fg = onedark_zed.yellow, bg = "none" })
 set_hl(0, "DiagnosticVirtualTextInfo", { fg = onedark_zed.blue, bg = "none" })
 set_hl(0, "DiagnosticVirtualTextHint", { fg = onedark_zed.cyan, bg = "none" })
 set_hl(0, "LspInlayHint", { fg = onedark_zed.light_gray, bg = "none", italic = true })
+
+-- Harpoon
+set_hl(0, "HarpoonNormal", { bg = "none" })
+set_hl(0, "HarpoonBorderX", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "HarpoonTitleX", { fg = onedark_zed.light_gray, bg = "none" })
