@@ -131,10 +131,10 @@ vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 -- nvmap("<S-left>", "zH")
 -- nvmap("<S-right>", "zL")
 
-nmap("<up>", "^kzz")
-nmap("<down>", "^jzz")
-nmap("k", "^kzz")
-nmap("j", "^jzz")
+-- nmap("<up>", "^kzz")
+-- nmap("<down>", "^jzz")
+-- nmap("k", "^kzz")
+-- nmap("j", "^jzz")
 
 -- ================================================================================================
 -- UTILS
