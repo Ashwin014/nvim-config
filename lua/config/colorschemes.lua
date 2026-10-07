@@ -70,7 +70,8 @@ set_hl(0, "TabLineSel", { bg = "none", bold = true })
 --
 -- -- Telescope
 set_hl(0, "TelescopeNormal", { bg = "none" })
-set_hl(0, "TelescopeBorder", { fg = base.gray02, bg = "none" })
+-- set_hl(0, "TelescopeBorder", { fg = base.gray02, bg = "none" })
+set_hl(0, "TelescopeBorder", { fg = "none", bg = "none" })
 set_hl(0, "TelescopePromptTitle", { bg = "none" })
 set_hl(0, "TelescopePromptNormal", { bg = "none" })
 set_hl(0, "TelescopePromptBorder", { bg = "none" })
@@ -86,10 +87,10 @@ set_hl(0, "WhichKeyBorder", { fg = base.gray02, bg = "none" })
 set_hl(0, "WhichKeyNormal", { bg = "none" })
 --
 -- -- Snacks
-set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
+set_hl(0, "SnacksNormal", { fg = "none", bg = "none" })
 set_hl(0, "SnacksPicker", { bg = "none" })
 -- set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "SnacksPickerBorder", { fg = base.gray02, bg = "none" })
+-- set_hl(0, "SnacksPickerBorder", { fg = base.gray02, bg = "none" })
 --
 -- -- Blink
 -- set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
