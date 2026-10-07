@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "auto-save.nvim": {
+      "rev": "979b6c82f60cfa80f4cf437d77446d0ded0addf0",
+      "src": "https://github.com/pocco81/auto-save.nvim"
+    },
     "autohotkey.vim": {
       "rev": "59ab8e46f7e0d58619615aa1fcb313d9df4dda5c",
       "src": "https://github.com/mmikeww/autohotkey.vim"
