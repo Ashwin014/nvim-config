@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("ember")
+-- vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("school")
 
@@ -16,7 +16,7 @@ require("onedark").setup({ style = "warm" })
 -- vim.cmd.colorscheme("onedark")
 
 require("gruvbox").setup()
--- vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("gruvbox")
 
 require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-dark")
@@ -35,6 +35,7 @@ local base = {
 	gray = "#2f343e",
 	light_gray = "#5d636f",
 	faint_gray = "#3b4048",
+	gray02 = "#3e3c38",
 }
 -- local onedark_zed = {
 -- 	fg = "#878787",
@@ -69,8 +70,7 @@ set_hl(0, "TabLineSel", { bg = "none", bold = true })
 --
 -- -- Telescope
 set_hl(0, "TelescopeNormal", { bg = "none" })
-set_hl(0, "TelescopeBorder", { fg = base.light_gray, bg = "none" })
-set_hl(0, "TelescopeBorder", { bg = "none" })
+set_hl(0, "TelescopeBorder", { fg = base.gray02, bg = "none" })
 set_hl(0, "TelescopePromptTitle", { bg = "none" })
 set_hl(0, "TelescopePromptNormal", { bg = "none" })
 set_hl(0, "TelescopePromptBorder", { bg = "none" })
@@ -82,13 +82,14 @@ set_hl(0, "TelescopeSelection", { bg = "none" })
 --
 -- -- which-key
 -- set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "WhichKeyBorder", { fg = base.light_gray, bg = "none" })
+set_hl(0, "WhichKeyBorder", { fg = base.gray02, bg = "none" })
 set_hl(0, "WhichKeyNormal", { bg = "none" })
 --
 -- -- Snacks
--- set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
--- set_hl(0, "SnacksPicker", { bg = "none" })
+set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
+set_hl(0, "SnacksPicker", { bg = "none" })
 -- set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "SnacksPickerBorder", { fg = base.gray02, bg = "none" })
 --
 -- -- Blink
 -- set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
