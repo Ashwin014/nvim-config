@@ -48,51 +48,50 @@ local onedark_zed = {
 set_hl(0, "Normal", { bg = "none" })
 set_hl(0, "NormalNC", { bg = "none" })
 set_hl(0, "NormalFloat", { bg = "none" })
-set_hl(0, "FloatBorder", { fg = "#00ff00", bg = "none" })
-set_hl(0, "FloatBorder", { fg = onedark_zed.blue, bg = "none" })
+set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
 set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
 set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
-
 set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
 
--- -- Telescope
--- set_hl(0, "TelescopeNormal", { bg = "none" })
--- set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "TelescopePromptNormal", { bg = "none" })
--- set_hl(0, "TelescopePromptBorder", { bg = "none" })
--- set_hl(0, "TelescopeResultsNormal", { bg = "none" })
--- set_hl(0, "TelescopeResultsBorder", { bg = "none" })
--- set_hl(0, "TelescopePreviewNormal", { bg = "none" })
--- set_hl(0, "TelescopePreviewBorder", { bg = "none" })
--- set_hl(0, "TelescopeSelection", { bg = "none" })
+-- Telescope
+set_hl(0, "TelescopeNormal", { bg = "none" })
+set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "TelescopePromptNormal", { bg = "none" })
+set_hl(0, "TelescopePromptBorder", { bg = "none" })
+set_hl(0, "TelescopeResultsNormal", { bg = "none" })
+set_hl(0, "TelescopeResultsBorder", { bg = "none" })
+set_hl(0, "TelescopePreviewNormal", { bg = "none" })
+set_hl(0, "TelescopePreviewBorder", { bg = "none" })
+set_hl(0, "TelescopeSelection", { bg = "none" })
 
 -- which-key
--- set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "WhichKeyNormal", { bg = "none" })
---
--- -- Snacks
--- set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
--- set_hl(0, "SnacksBar", { fg = "#0000ff", bg = "none" })
---
--- -- Blink
--- set_hl(0, "BlinkCmpMenu", { fg = "#ffffff", bg = "none" })
--- set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
---
--- -- Diagnostics (LSP)
--- set_hl(0, "DiagnosticVirtualTextError", { fg = onedark_zed.red, bg = "none" })
--- set_hl(0, "DiagnosticVirtualTextWarn", { fg = onedark_zed.yellow, bg = "none" })
--- set_hl(0, "DiagnosticVirtualTextInfo", { fg = onedark_zed.blue, bg = "none" })
--- set_hl(0, "DiagnosticVirtualTextHint", { fg = onedark_zed.cyan, bg = "none" })
--- set_hl(0, "LspInlayHint", { fg = onedark_zed.light_gray, bg = "none", italic = true })
+set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "WhichKeyNormal", { bg = "none" })
 
--- -- Harpoon
--- set_hl(0, "HarpoonNormal", { bg = "none" })
--- set_hl(0, "HarpoonBorderX", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "HarpoonTitleX", { fg = onedark_zed.light_gray, bg = "none" })
+-- Snacks
+set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
+set_hl(0, "SnacksBar", { fg = "#0000ff", bg = "none" })
+
+-- Blink
+set_hl(0, "BlinkCmpMenu", { fg = "#ffffff", bg = "none" })
+set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
+
+-- Diagnostics (LSP)
+set_hl(0, "DiagnosticVirtualTextError", { fg = onedark_zed.red, bg = "none" })
+set_hl(0, "DiagnosticVirtualTextWarn", { fg = onedark_zed.yellow, bg = "none" })
+set_hl(0, "DiagnosticVirtualTextInfo", { fg = onedark_zed.blue, bg = "none" })
+set_hl(0, "DiagnosticVirtualTextHint", { fg = onedark_zed.cyan, bg = "none" })
+set_hl(0, "LspInlayHint", { fg = onedark_zed.light_gray, bg = "none", italic = true })
+
+-- Harpoon
+set_hl(0, "HarpoonNormal", { bg = "none" })
+set_hl(0, "HarpoonBorderX", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "HarpoonTitleX", { fg = onedark_zed.light_gray, bg = "none" })
