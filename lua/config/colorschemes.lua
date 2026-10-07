@@ -66,3 +66,9 @@ set_hl(0, "WhichKeyNormal", { bg = "none" })
 
 -- Snacks
 set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
+
+-- Blink
+set_hl(0, "BlinkCmpMenu", { fg = "#ffffff", bg = "none" })
+set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
