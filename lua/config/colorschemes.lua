@@ -1,6 +1,6 @@
 -- vim.cmd.colorscheme("ember")
 
--- vim.cmd.colorscheme("school")
+vim.cmd.colorscheme("school")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
@@ -25,9 +25,6 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
-
-require("rose-pine").setup()
-vim.cmd.colorscheme("rose-pine")
 
 -- =================================================================================
 -- Change background colors to none
