@@ -32,7 +32,7 @@ vim.cmd.colorscheme("onedark-zed")
 
 local set_hl = vim.api.nvim_set_hl
 local onedark_zed = {
-  fg="#878787",
+	fg = "#878787",
 	gray = "#2f343e",
 	light_gray = "#5d636f",
 	faint_gray = "#3b4048",
