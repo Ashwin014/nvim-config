@@ -35,7 +35,7 @@ local base = {
 	gray = "#2f343e",
 	light_gray = "#5d636f",
 	faint_gray = "#3b4048",
-	gray02 = "#3e3c38",
+	ember_border = "#3e3c38",
 }
 -- local onedark_zed = {
 -- 	fg = "#878787",
@@ -56,7 +56,9 @@ set_hl(0, "Normal", { bg = "none" })
 set_hl(0, "NormalNC", { bg = "none" })
 set_hl(0, "NormalFloat", { bg = "none" })
 -- set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "FloatBorder", { fg = base.ember_border, bg = "none" })
 -- set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
+set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
 set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
@@ -70,8 +72,8 @@ set_hl(0, "TabLineSel", { bg = "none", bold = true })
 --
 -- -- Telescope
 set_hl(0, "TelescopeNormal", { bg = "none" })
--- set_hl(0, "TelescopeBorder", { fg = base.gray02, bg = "none" })
-set_hl(0, "TelescopeBorder", { fg = "none", bg = "none" })
+-- set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "TelescopeBorder", { fg = base.ember_border, bg = "none", blend = 50 })
 set_hl(0, "TelescopePromptTitle", { bg = "none" })
 set_hl(0, "TelescopePromptNormal", { bg = "none" })
 set_hl(0, "TelescopePromptBorder", { bg = "none" })
@@ -83,7 +85,7 @@ set_hl(0, "TelescopeSelection", { bg = "none" })
 --
 -- -- which-key
 -- set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "WhichKeyBorder", { fg = base.gray02, bg = "none" })
+set_hl(0, "WhichKeyBorder", { fg = base.ember_border, bg = "none" })
 set_hl(0, "WhichKeyNormal", { bg = "none" })
 --
 -- -- Snacks
