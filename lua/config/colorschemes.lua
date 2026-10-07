@@ -41,11 +41,10 @@ set_hl(0, "Normal", { bg = "none" })
 set_hl(0, "NormalFloat", { bg = "none" })
 set_hl(0, "NormalNC", { bg = "none" })
 set_hl(0, "SignColumn", { bg = "none" })
--- set_hl(0, "StatusLine", { bg = "none" })
--- set_hl(0, "StatusLineNC", { bg = "none" })
+set_hl(0, "StatusLine", { bg = "none" })
+set_hl(0, "StatusLineNC", { bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
-
-set_hl(0, "WinSeparator", { bg = "none" })
+set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
 
 set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
@@ -64,3 +63,6 @@ set_hl(0, "TelescopeSelection", { bg = "none" })
 -- which-key
 set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
 set_hl(0, "WhichKeyNormal", { bg = "none" })
+
+-- Snacks
+set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
