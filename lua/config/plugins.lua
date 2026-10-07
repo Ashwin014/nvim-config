@@ -37,7 +37,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 	{ src = "https://github.com/folke/snacks.nvim" }, -- inline images
-	{ src = "https://github.com/smoka7/hop.nvim" }, -- Helix-style label jump
+	{ src = "https://github.com/smoka7/hop.nvim" },
 	{ src = "https://github.com/kylechui/nvim-surround" },
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 	--{ src = "https://github.com/akinsho/bufferline.nvim" },
