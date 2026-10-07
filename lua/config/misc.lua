@@ -7,7 +7,7 @@ require("oil").setup({
 	skip_confirm_for_simple_edits = true,
 })
 nmap("-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-nmap("<leader>_o", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
+nmap("<leader>-", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
 -- nmap("<leader>_f", function()
 -- 	require("oil").toggle_float()
 -- end, { desc = "Oil float" })
@@ -29,14 +29,14 @@ nmap("]e", function()
 		count = 1,
 		severity = vim.diagnostic.severity.ERROR,
 	})
-end, { desc = "next error" })
+end, { desc = "Next error" })
 
 nmap("[e", function()
 	vim.diagnostic.jump({
 		count = -1,
 		severity = vim.diagnostic.severity.ERROR,
 	})
-end, { desc = "prev error" })
+end, { desc = "Prev error" })
 
 ----------------------------------------------------------------------------------------------------
 
