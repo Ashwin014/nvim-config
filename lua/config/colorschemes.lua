@@ -1,4 +1,4 @@
--- vim.cmd.colorscheme("ember")
+vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("school")
 
@@ -16,7 +16,7 @@ require("onedark").setup({ style = "warm" })
 -- vim.cmd.colorscheme("onedark")
 
 require("gruvbox").setup()
-vim.cmd.colorscheme("gruvbox")
+-- vim.cmd.colorscheme("gruvbox")
 
 require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-dark")
