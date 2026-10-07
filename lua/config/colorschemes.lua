@@ -59,6 +59,8 @@ set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
 
+-- set_hl(0, "Pmenu", { bg = "#ad4212" })
+
 -- Telescope
 set_hl(0, "TelescopeNormal", { bg = "none" })
 set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
@@ -76,7 +78,7 @@ set_hl(0, "WhichKeyNormal", { bg = "none" })
 
 -- Snacks
 set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
-set_hl(0, "SnacksBar", { fg = "#0000ff", bg = "none" })
+set_hl(0, "SnacksPicker", { bg = "none" })
 
 -- Blink
 set_hl(0, "BlinkCmpMenu", { fg = "#ffffff", bg = "none" })
