@@ -32,6 +32,7 @@ vim.cmd.colorscheme("onedark-zed")
 
 local set_hl = vim.api.nvim_set_hl
 local onedark_zed = {
+  fg="#878787",
 	gray = "#2f343e",
 	light_gray = "#5d636f",
 	faint_gray = "#3b4048",
@@ -79,9 +80,10 @@ set_hl(0, "WhichKeyNormal", { bg = "none" })
 -- Snacks
 set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
 set_hl(0, "SnacksPicker", { bg = "none" })
+set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
 
 -- Blink
-set_hl(0, "BlinkCmpMenu", { fg = "#ffffff", bg = "none" })
+set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
 set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
 set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
 set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
