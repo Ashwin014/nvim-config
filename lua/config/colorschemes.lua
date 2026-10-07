@@ -57,5 +57,5 @@ set_hl(0, "TelescopePreviewBorder", { bg = "none" })
 set_hl(0, "TelescopeSelection", { bg = "none" })
 
 -- which-key
-set_hl(0, "WhichKeyBorder", { fg = "#ff0000", bg = "none" })
+set_hl(0, "WhichKeyBorder", { fg = "#2f343e", bg = "none" })
 set_hl(0, "WhichKeyNormal", { bg = "none" })
