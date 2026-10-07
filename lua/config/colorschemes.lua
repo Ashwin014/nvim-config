@@ -31,6 +31,11 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- =================================================================================
 
 local set_hl = vim.api.nvim_set_hl
+local base = {
+	gray = "#2f343e",
+	light_gray = "#5d636f",
+	faint_gray = "#3b4048",
+}
 -- local onedark_zed = {
 -- 	fg = "#878787",
 -- 	gray = "#2f343e",
@@ -64,8 +69,9 @@ set_hl(0, "TabLineSel", { bg = "none", bold = true })
 --
 -- -- Telescope
 set_hl(0, "TelescopeNormal", { bg = "none" })
--- set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
+set_hl(0, "TelescopeBorder", { fg = base.light_gray, bg = "none" })
 set_hl(0, "TelescopeBorder", { bg = "none" })
+set_hl(0, "TelescopePromptTitle", { bg = "none" })
 set_hl(0, "TelescopePromptNormal", { bg = "none" })
 set_hl(0, "TelescopePromptBorder", { bg = "none" })
 set_hl(0, "TelescopeResultsNormal", { bg = "none" })
@@ -76,7 +82,8 @@ set_hl(0, "TelescopeSelection", { bg = "none" })
 --
 -- -- which-key
 -- set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "WhichKeyNormal", { bg = "none" })
+set_hl(0, "WhichKeyBorder", { fg = base.light_gray, bg = "none" })
+set_hl(0, "WhichKeyNormal", { bg = "none" })
 --
 -- -- Snacks
 -- set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
