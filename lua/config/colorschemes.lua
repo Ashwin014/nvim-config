@@ -74,6 +74,7 @@ set_hl(0, "WhichKeyNormal", { bg = "none" })
 
 -- Snacks
 set_hl(0, "SnacksNormal", { fg = "#ff0000", bg = "none" })
+set_hl(0, "SnacksBar", { fg = "#0000ff", bg = "none" })
 
 -- Blink
 set_hl(0, "BlinkCmpMenu", { fg = "#ffffff", bg = "none" })

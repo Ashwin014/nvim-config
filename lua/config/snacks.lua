@@ -81,7 +81,7 @@ local maps = {
 		args = { ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } },
 		desc = "Find images / pdfs (with preview)",
 	},
-	d = { fn = Snacks.dashboard, desc = "Open dashboard" },
+	D = { fn = Snacks.dashboard, desc = "Open dashboard" },
 	e = { fn = Snacks.explorer, desc = "File tree" },
 	gg = { fn = Snacks.lazygit, desc = "Lazygit" },
 	un = { fn = Snacks.notifier.show_history, desc = "Notification history" },
