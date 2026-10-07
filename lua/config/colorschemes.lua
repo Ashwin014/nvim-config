@@ -72,3 +72,7 @@ set_hl(0, "BlinkCmpMenu", { fg = "#ffffff", bg = "none" })
 set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
 set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
 set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
+
+-- Diagnostics (LSP)
+set_hl(0, "DiagnosticSignError", { bg = "none" })
+set_hl(0, "LspInlayHint", { fg = onedark_zed.light_gray, bg = "none", italic = true })
