@@ -35,6 +35,14 @@ local onedark_zed = {
 	gray = "#2f343e",
 	light_gray = "#5d636f",
 	faint_gray = "#3b4048",
+
+	red = "#b85860",
+	orange = "#b58559",
+	yellow = "#ccab6e",
+	green = "#83a868",
+	cyan = "#4a9da8",
+	blue = "#589dd6",
+	purple = "#af6ac4",
 }
 
 set_hl(0, "Normal", { bg = "none" })
@@ -74,5 +82,5 @@ set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
 set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
 
 -- Diagnostics (LSP)
-set_hl(0, "DiagnosticSignError", { bg = "none" })
+set_hl(0, "DiagnosticVirtualTextError", { bg = "none" })
 set_hl(0, "LspInlayHint", { fg = onedark_zed.light_gray, bg = "none", italic = true })
