@@ -1,6 +1,7 @@
-vim.cmd.colorscheme("ember")
+-- vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("school")
+-- vim.cmd.colorscheme("ember")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
