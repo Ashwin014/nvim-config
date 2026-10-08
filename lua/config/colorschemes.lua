@@ -40,9 +40,9 @@ local base = {
 
 	default = "#424242",
 
-	vscGray = "#808080",
-	vscLineNr = "#5a5a5a",
-	vscSplitDark = "#444444",
+	-- vscGray = "#808080",
+	-- vscLineNr = "#5a5a5a",
+	-- vscSplitDark = "#444444",
 }
 -- local onedark_zed = {
 -- 	fg = "#878787",
@@ -76,9 +76,9 @@ set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "CursorColumn", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
 -- set_hl(0, "LineNr", { fg = base.vscLineNr, bg = "none" })
-set_hl(0, "LineNr", { fg = vsc.vscLightGreen, bg = "none" })
+set_hl(0, "LineNr", { fg = vsc.vscLightNr, bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
-set_hl(0, "WinSeparator", { fg = base.vscSplitDark, bg = "none" })
+set_hl(0, "WinSeparator", { fg = vsc.vscSplitDark, bg = "none" })
 set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
@@ -107,7 +107,7 @@ set_hl(0, "TabLineSel", { bg = "none", bold = true })
 -- set_hl(0, "SnacksNormal", { fg = "none", bg = "none" })
 -- set_hl(0, "SnacksPicker", { bg = "none" })
 -- set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "SnacksPickerBorder", { fg = base.vscGray, bg = "none" })
+set_hl(0, "SnacksPickerBorder", { fg = vsc.vscGray, bg = "none" })
 --
 -- -- Blink
 -- set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
