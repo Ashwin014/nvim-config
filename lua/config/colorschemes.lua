@@ -39,6 +39,9 @@ local base = {
 	ember_border = "#3e3c38",
 
 	default = "#424242",
+
+	vscLineNr = "#5a5a5a",
+	vscSplitDark = "#444444",
 }
 -- local onedark_zed = {
 -- 	fg = "#878787",
@@ -68,9 +71,9 @@ set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "CursorColumn", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
-set_hl(0, "LineNr", { bg = "none" })
+set_hl(0, "LineNr", { fg = base.vscLineNr, bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
-set_hl(0, "WinSeparator", { fg = base.default, bg = "none" })
+set_hl(0, "WinSeparator", { fg = base.vscSplitDark, bg = "none" })
 set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
