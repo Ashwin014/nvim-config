@@ -3,7 +3,6 @@ local nmap = m.nmap
 local vmap = m.vmap
 local imap = m.imap
 local xmap = m.xmap
-local nvmap = m.nvmap
 
 vim.g.mapleader = " "
 
