@@ -75,16 +75,14 @@ set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "CursorColumn", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
--- set_hl(0, "LineNr", { fg = base.vscLineNr, bg = "none" })
-set_hl(0, "LineNr", { fg = vsc.vscLightNr, bg = "none" })
+set_hl(0, "LineNr", { fg = vsc.vscLineNumber, bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
 set_hl(0, "WinSeparator", { fg = vsc.vscSplitDark, bg = "none" })
 set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
+set_hl(0, "Pmenu", { bg = "none" })
 
--- -- set_hl(0, "Pmenu", { bg = "#ad4212" })
---
 -- -- Telescope
 -- set_hl(0, "TelescopeNormal", { bg = "none" })
 -- set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
@@ -110,10 +108,10 @@ set_hl(0, "TabLineSel", { bg = "none", bold = true })
 set_hl(0, "SnacksPickerBorder", { fg = vsc.vscGray, bg = "none" })
 --
 -- -- Blink
--- set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
--- set_hl(0, "BlinkCmpMenuBorder", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "BlinkCmpDoc", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "BlinkCmpDocBorder", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "BlinkCmpMenu", { link = "Pmenu" })
+-- set_hl(0, "BlinkCmpMenuBorder", { link = "FloatBorder" })
+-- set_hl(0, "BlinkCmpDoc", { link = "NormalFloat" })
+-- set_hl(0, "BlinkCmpDocBorder", { link = "FloatBorder" })
 --
 -- -- Diagnostics (LSP)
 -- set_hl(0, "DiagnosticVirtualTextError", { fg = onedark_zed.red, bg = "none" })
