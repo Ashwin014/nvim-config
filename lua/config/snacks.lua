@@ -30,8 +30,8 @@ require("snacks").setup({
 		sections = {
 			{ section = "header" },
 			{ section = "keys", gap = 1, padding = 1 },
-			{ section = "recent_files", limit = 5, padding = 1 },
-			{ section = "projects", limit = 5, padding = 1 },
+			{ section = "recent_files", limit = 6, padding = 1 },
+			{ section = "projects", limit = 6, padding = 1 },
 		},
 	},
 	picker = {
