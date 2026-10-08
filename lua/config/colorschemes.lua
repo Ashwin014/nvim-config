@@ -37,6 +37,8 @@ local base = {
 	light_gray = "#5d636f",
 	faint_gray = "#3b4048",
 	ember_border = "#3e3c38",
+
+	default = "#424242",
 }
 -- local onedark_zed = {
 -- 	fg = "#878787",
@@ -61,14 +63,14 @@ set_hl(0, "NormalFloat", { bg = "none" })
 set_hl(0, "FloatBorder", { bg = "none" })
 -- -- set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
 -- set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
-set_hl(0, "FloatTitle", { bg = "none" })
+set_hl(0, "FloatTitle", { fg = base.default, bg = "none" })
 set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "CursorColumn", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
 -- set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
-set_hl(0, "WinSeparator", { fg = "NONE", bg = "none" })
+set_hl(0, "WinSeparator", { fg = base.default, bg = "none" })
 set_hl(0, "TabLineFill", { bg = "none" })
 set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
