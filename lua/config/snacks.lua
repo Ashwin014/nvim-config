@@ -75,7 +75,7 @@ require("snacks").setup({
 ---------------------------------------------------------------------
 local maps = {
 	ui = { fn = Snacks.image.hover, desc = "Preview image under cursor" },
-	z = { fn = Snacks.zen, args = { win = { width = 100 } }, desc = "Zen mode" }, -- change 100 to set the text width
+	z = { fn = Snacks.zen, args = { win = { width = 100 }, toggles = { dim = false } }, desc = "Zen mode" }, -- change 100 to set the text width
 	fi = {
 		fn = Snacks.picker.files,
 		args = { ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } },
