@@ -1,7 +1,6 @@
 -- vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("school")
--- vim.cmd.colorscheme("ember")
 
 -- vim.lsp.semantic_tokens.enable(false)
 
@@ -9,7 +8,7 @@ require("vscode").setup({
 	style = "dark", -- or "light"
 	italic_comments = true,
 })
--- vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vscode")
 
 -- vim.cmd.colorscheme("synth")
 
@@ -62,6 +61,7 @@ set_hl(0, "FloatBorder", { fg = base.ember_border, bg = "none" })
 set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
 set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
+set_hl(0, "CursorColumn", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
 -- set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
