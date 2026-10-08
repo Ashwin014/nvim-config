@@ -40,6 +40,7 @@ local base = {
 
 	default = "#424242",
 
+	vscGray = "#808080",
 	vscLineNr = "#5a5a5a",
 	vscSplitDark = "#444444",
 }
@@ -102,7 +103,7 @@ set_hl(0, "TabLineSel", { bg = "none", bold = true })
 -- set_hl(0, "SnacksNormal", { fg = "none", bg = "none" })
 -- set_hl(0, "SnacksPicker", { bg = "none" })
 -- set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "SnacksPickerBorder", { fg = base.gray02, bg = "none" })
+set_hl(0, "SnacksPickerBorder", { fg = base.vscGray, bg = "none" })
 --
 -- -- Blink
 -- set_hl(0, "BlinkCmpMenu", { fg = onedark_zed.fg, bg = "none" })
