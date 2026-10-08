@@ -59,6 +59,9 @@ local base = {
 -- 	purple = "#af6ac4",
 -- }
 --
+
+local vsc = require("vscode.colors").get_colors()
+
 set_hl(0, "Normal", { bg = "none" })
 set_hl(0, "NormalNC", { bg = "none" })
 set_hl(0, "NormalFloat", { bg = "none" })
@@ -72,7 +75,8 @@ set_hl(0, "SignColumn", { bg = "none" })
 set_hl(0, "StatusLine", { bg = "none" })
 set_hl(0, "CursorColumn", { bg = "none" })
 set_hl(0, "StatusLineNC", { bg = "none" })
-set_hl(0, "LineNr", { fg = base.vscLineNr, bg = "none" })
+-- set_hl(0, "LineNr", { fg = base.vscLineNr, bg = "none" })
+set_hl(0, "LineNr", { fg = vsc.vscLightGreen, bg = "none" })
 set_hl(0, "MsgArea", { bg = "none" })
 set_hl(0, "WinSeparator", { fg = base.vscSplitDark, bg = "none" })
 set_hl(0, "TabLineFill", { bg = "none" })
