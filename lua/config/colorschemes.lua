@@ -7,6 +7,7 @@
 require("vscode").setup({
 	style = "dark", -- or "light"
 	italic_comments = true,
+	transparency = true,
 })
 vim.cmd.colorscheme("vscode")
 
@@ -52,46 +53,46 @@ local base = {
 -- 	purple = "#af6ac4",
 -- }
 --
-set_hl(0, "Normal", { bg = "none" })
-set_hl(0, "NormalNC", { bg = "none" })
-set_hl(0, "NormalFloat", { bg = "none" })
--- set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "FloatBorder", { fg = base.ember_border, bg = "none" })
--- set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
-set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
-set_hl(0, "SignColumn", { bg = "none" })
-set_hl(0, "StatusLine", { bg = "none" })
-set_hl(0, "CursorColumn", { bg = "none" })
-set_hl(0, "StatusLineNC", { bg = "none" })
-set_hl(0, "MsgArea", { bg = "none" })
--- set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
-set_hl(0, "TabLineFill", { bg = "none" })
-set_hl(0, "TabLine", { bg = "none" })
-set_hl(0, "TabLineSel", { bg = "none", bold = true })
+-- set_hl(0, "Normal", { bg = "none" })
+-- set_hl(0, "NormalNC", { bg = "none" })
+-- set_hl(0, "NormalFloat", { bg = "none" })
+-- -- set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
+-- set_hl(0, "FloatBorder", { fg = base.ember_border, bg = "none" })
+-- -- set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
+-- set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
+-- set_hl(0, "SignColumn", { bg = "none" })
+-- set_hl(0, "StatusLine", { bg = "none" })
+-- set_hl(0, "CursorColumn", { bg = "none" })
+-- set_hl(0, "StatusLineNC", { bg = "none" })
+-- set_hl(0, "MsgArea", { bg = "none" })
+-- -- set_hl(0, "WinSeparator", { fg = onedark_zed.faint_gray, bg = "none" })
+-- set_hl(0, "TabLineFill", { bg = "none" })
+-- set_hl(0, "TabLine", { bg = "none" })
+-- set_hl(0, "TabLineSel", { bg = "none", bold = true })
 
 -- -- set_hl(0, "Pmenu", { bg = "#ad4212" })
 --
 -- -- Telescope
-set_hl(0, "TelescopeNormal", { bg = "none" })
+-- set_hl(0, "TelescopeNormal", { bg = "none" })
 -- set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "TelescopeBorder", { fg = base.ember_border, bg = "none", blend = 50 })
-set_hl(0, "TelescopePromptTitle", { bg = "none" })
-set_hl(0, "TelescopePromptNormal", { bg = "none" })
-set_hl(0, "TelescopePromptBorder", { bg = "none" })
-set_hl(0, "TelescopeResultsNormal", { bg = "none" })
-set_hl(0, "TelescopeResultsBorder", { bg = "none" })
-set_hl(0, "TelescopePreviewNormal", { bg = "none" })
-set_hl(0, "TelescopePreviewBorder", { bg = "none" })
-set_hl(0, "TelescopeSelection", { bg = "none" })
+-- set_hl(0, "TelescopeBorder", { fg = base.ember_border, bg = "none", blend = 50 })
+-- set_hl(0, "TelescopePromptTitle", { bg = "none" })
+-- set_hl(0, "TelescopePromptNormal", { bg = "none" })
+-- set_hl(0, "TelescopePromptBorder", { bg = "none" })
+-- set_hl(0, "TelescopeResultsNormal", { bg = "none" })
+-- set_hl(0, "TelescopeResultsBorder", { bg = "none" })
+-- set_hl(0, "TelescopePreviewNormal", { bg = "none" })
+-- set_hl(0, "TelescopePreviewBorder", { bg = "none" })
+-- set_hl(0, "TelescopeSelection", { bg = "none" })
 --
 -- -- which-key
 -- set_hl(0, "WhichKeyBorder", { fg = onedark_zed.light_gray, bg = "none" })
-set_hl(0, "WhichKeyBorder", { fg = base.ember_border, bg = "none" })
-set_hl(0, "WhichKeyNormal", { bg = "none" })
+-- set_hl(0, "WhichKeyBorder", { fg = base.ember_border, bg = "none" })
+-- set_hl(0, "WhichKeyNormal", { bg = "none" })
 --
 -- -- Snacks
-set_hl(0, "SnacksNormal", { fg = "none", bg = "none" })
-set_hl(0, "SnacksPicker", { bg = "none" })
+-- set_hl(0, "SnacksNormal", { fg = "none", bg = "none" })
+-- set_hl(0, "SnacksPicker", { bg = "none" })
 -- set_hl(0, "SnacksPickerBorder", { fg = onedark_zed.light_gray, bg = "none" })
 -- set_hl(0, "SnacksPickerBorder", { fg = base.gray02, bg = "none" })
 --
