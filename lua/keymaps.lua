@@ -77,8 +77,8 @@ xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yan
 -- keep last yanked when pasting
 vmap("p", '"_dP', { noremap = true, silent = true })
 
-nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
-vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- TEXT --------------------------------------------------------------------------------------
 
@@ -93,7 +93,16 @@ nmap("<leader>a", "gg<S-v>G", { desc = "Select all text" })
 -- delete single character without copying into register/clipboard
 nmap("x", '"_x', { noremap = true, silent = true })
 
-imap("<C-/>", "<Esc>gcci")
+-- imap("<C-/>", "<Esc>gccA")
+
+-- vim.keymap.set("i", "<C-/>", function()
+-- 	local pos = vim.api.nvim_win_get_cursor(0)
+-- 	vim.cmd("normal! gcc")
+-- 	vim.api.nvim_win_set_cursor(0, pos)
+-- 	vim.cmd("startinsert")
+-- end, { desc = "Toggle comment" })
+
+vim.keymap.set("i", "<C-_>", "<Esc>gccA", { desc = "Toggle comment" })
 
 -- LINES -------------------------------------------------------------------------------------
 
