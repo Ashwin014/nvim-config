@@ -34,27 +34,27 @@ require("snacks").setup({
 			{ section = "projects", limit = 6, padding = 1 },
 		},
 	},
-	picker = {
-		enabled = true,
-		sources = {
-			explorer = {
-				hidden = true,
-				ignored = true,
-				layout = {
-					layout = {
-						position = "left",
-						box = "vertical",
-						backdrop = false,
-						width = 30,
-						min_width = 30,
-						height = 0,
-						border = "none",
-						{ win = "list", border = "none" },
-					},
-				},
-			},
-		},
-	},
+	-- picker = {
+	-- 	enabled = true,
+	-- 	sources = {
+	-- 		explorer = {
+	-- 			hidden = true,
+	-- 			ignored = true,
+	-- 			layout = {
+	-- 				layout = {
+	-- 					position = "left",
+	-- 					box = "vertical",
+	-- 					backdrop = false,
+	-- 					width = 30,
+	-- 					min_width = 30,
+	-- 					height = 0,
+	-- 					border = "none",
+	-- 					{ win = "list", border = "none" },
+	-- 				},
+	-- 			},
+	-- 		},
+	-- 	},
+	-- },
 	image = {
 		enabled = true,
 		doc = { inline = true, float = true, max_width = 80, max_height = 40 },
@@ -82,7 +82,7 @@ local maps = {
 		desc = "Find images / pdfs (with preview)",
 	},
 	D = { fn = Snacks.dashboard, desc = "Open dashboard" },
-	e = { fn = Snacks.explorer, desc = "File tree" },
+	-- e = { fn = Snacks.explorer, desc = "File tree" },
 	gg = { fn = Snacks.lazygit, desc = "Lazygit" },
 	un = { fn = Snacks.notifier.show_history, desc = "Notification history" },
 }
