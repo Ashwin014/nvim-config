@@ -83,6 +83,7 @@ set_hl(0, "TabLine", { bg = "none" })
 set_hl(0, "TabLineSel", { bg = "none", bold = true })
 set_hl(0, "VertSplit", { fg = vsc.vscSplitDark, bg = "none" })
 set_hl(0, "Pmenu", { bg = "none" })
+set_hl(0, "Directory", { fg = vsc.vscBlue, bg = "none" })
 
 -- -- Telescope
 -- set_hl(0, "TelescopeNormal", { bg = "none" })
