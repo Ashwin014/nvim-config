@@ -13,6 +13,10 @@ nmap("<leader>ff", function()
 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 end, { desc = "Telescope: Find files in current buffer directory" })
 
+nmap("\\", function()
+	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
+end, { desc = "Telescope: Find files in current buffer directory" })
+
 -- All the simple ones
 local maps = {
 	fF = { tb.find_files, "Find files" },

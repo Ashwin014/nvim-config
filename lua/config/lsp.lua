@@ -75,7 +75,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		map("<leader>lq", vim.diagnostic.setqflist, "Diagnostics to quickfix")
 		map("gR", vim.lsp.buf.references, "Go to references")
 		map("gi", vim.lsp.buf.implementation, "Go to implementation")
-		map("<leader>ch", vim.lsp.buf.incoming_calls, "Incoming calls")
+		map("<leader>ci", vim.lsp.buf.incoming_calls, "Incoming calls")
 		map("<leader>co", vim.lsp.buf.outgoing_calls, "Outgoing calls")
 
 		if client and client:supports_method("textDocument/inlayHint") then

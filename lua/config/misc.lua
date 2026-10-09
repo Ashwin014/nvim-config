@@ -61,3 +61,5 @@ vim.api.nvim_create_autocmd({ "TextChanged", "InsertLeave", "FocusLost" }, {
 		end
 	end,
 })
+
+-- color hightlights ----------------------------------------------------------------
