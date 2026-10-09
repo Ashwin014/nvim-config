@@ -45,3 +45,24 @@ require("no-neck-pain").setup({
 	width = 100, -- text column width; 80-100 reads well for prose
 })
 nmap("<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })
+
+-- auto saving --------------------------------------------------------------------
+
+-- Create an augroup to manage auto-save autocommands cleanly
+local autosave_group = vim.api.nvim_create_augroup("AutoSaveGroup", { clear = true })
+
+vim.api.nvim_create_autocmd({ "TextChanged", "InsertLeave", "FocusLost" }, {
+	group = autosave_group,
+	pattern = "*",
+	callback = function()
+		-- Ensure the buffer is modifiable, has a file name, and has unsaved changes
+		if vim.bo.modifiable and vim.fn.empty(vim.fn.expand("%:t")) == 0 and vim.bo.modified then
+			-- Use silent! to prevent annoying errors for read-only or special files
+			vim.cmd("silent! update")
+		end
+	end,
+})
+
+
+
+
