@@ -15,13 +15,13 @@ nmap("<leader>-", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
 -- oil.nvim dep
 require("nvim-web-devicons").setup({})
 
-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
 nmap("<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
 tmap("<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
 
-----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 -- Jump to errors specifically, skipping warnings
 nmap("]e", function()
@@ -38,7 +38,7 @@ nmap("[e", function()
 	})
 end, { desc = "Prev error" })
 
-----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 -- no-neck-pain.nvim
 require("no-neck-pain").setup({
@@ -46,8 +46,7 @@ require("no-neck-pain").setup({
 })
 nmap("<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })
 
--- auto saving --------------------------------------------------------------------
-
+-- auto saving --------------------------------------------------------------------------
 -- Create an augroup to manage auto-save autocommands cleanly
 local autosave_group = vim.api.nvim_create_augroup("AutoSaveGroup", { clear = true })
 
@@ -62,7 +61,3 @@ vim.api.nvim_create_autocmd({ "TextChanged", "InsertLeave", "FocusLost" }, {
 		end
 	end,
 })
-
-
-
-
