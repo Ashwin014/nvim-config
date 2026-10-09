@@ -39,7 +39,7 @@ require("mason-lspconfig").setup({
 
 -- formatters / debuggers (non-LSP tools)
 require("mason-tool-installer").setup({
-	ensure_installed = { "stylua", "prettier", "debugpy", "js-debug-adapter" },
+	ensure_installed = { "stylua", "prettier", "debugpy", "js-debug-adapter", "codelldb" },
 })
 
 vim.diagnostic.config({
