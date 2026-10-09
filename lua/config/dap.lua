@@ -86,9 +86,20 @@ dap.configurations.rust = {
 dap.configurations.c = dap.configurations.rust
 dap.configurations.cpp = dap.configurations.rust
 
-vim.keymap.set("n", "<F5>", dap.continue, { desc = "Debug: continue" })
-vim.keymap.set("n", "<F10>", dap.step_over, { desc = "Debug: step over" })
-vim.keymap.set("n", "<F11>", dap.step_into, { desc = "Debug: step into" })
-vim.keymap.set("n", "<S-F11>", dap.step_out, { desc = "Debug: step out" })
-vim.keymap.set("n", "<F9>", dap.toggle_breakpoint, { desc = "breakpoint" })
-vim.keymap.set("n", "<leader>du", dapui.toggle, { desc = "Debug UI" })
+local map = vim.keymap.set
+
+map("n", "<F5>", dap.continue, { desc = "Debug: continue" })
+map("n", "<F10>", dap.step_over, { desc = "Debug: step over" })
+map("n", "<F11>", dap.step_into, { desc = "Debug: step into" })
+map("n", "<S-F11>", dap.step_out, { desc = "Debug: step out" })
+map("n", "<F9>", dap.toggle_breakpoint, { desc = "breakpoint" })
+map("n", "<leader>du", dapui.toggle, { desc = "Debug UI" })
+map("n", "<leader>dr", dap.restart, { desc = "Debug: restart" })
+map("n", "<leader>dt", dap.terminate, { desc = "Debug: terminate" })
+map("n", "<leader>dc", dap.run_to_cursor, { desc = "Debug: run to cursor" })
+map("n", "<leader>dB", function()
+	dap.set_breakpoint(vim.fn.input("Condition: "))
+end, { desc = "Debug: conditional breakpoint" })
+map("n", "<leader>de", function()
+	require("dapui").eval(nil, { enter = true })
+end, { desc = "Debug: eval expression under cursor" })
