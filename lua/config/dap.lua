@@ -1,6 +1,3 @@
----------------------------------------------------------------------
--- Debugging (Python out of the box)
----------------------------------------------------------------------
 local dap, dapui = require("dap"), require("dapui")
 dapui.setup()
 dap.listeners.after.event_initialized["dapui"] = dapui.open
@@ -58,6 +55,36 @@ for _, ft in ipairs({ "typescript", "typescriptreact" }) do
 		},
 	}
 end
+
+-- Rust / C / C++ via codelldb
+-- add "codelldb" to mason-tool-installer's ensure_installed
+local codelldb_path = vim.fn.stdpath("data")
+	.. "/mason/packages/codelldb/extension/adapter/codelldb"
+	.. (vim.fn.has("win32") == 1 and ".exe" or "")
+
+dap.adapters.codelldb = {
+	type = "server",
+	port = "${port}",
+	executable = {
+		command = codelldb_path,
+		args = { "--port", "${port}" },
+	},
+}
+
+dap.configurations.rust = {
+	{
+		name = "Launch",
+		type = "codelldb",
+		request = "launch",
+		program = function()
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/target/debug/", "file")
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = false,
+	},
+}
+dap.configurations.c = dap.configurations.rust
+dap.configurations.cpp = dap.configurations.rust
 
 vim.keymap.set("n", "<F5>", dap.continue, { desc = "Debug: continue" })
 vim.keymap.set("n", "<F10>", dap.step_over, { desc = "Debug: step over" })
