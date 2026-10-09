@@ -8,20 +8,20 @@ require("oil").setup({
 })
 nmap("-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 nmap("<leader>-", "<CMD>Oil --preview<CR>", { desc = "Oil with preview" })
--- nmap("<leader>_f", function()
+-- nmap("<leader>_f", function(
 -- 	require("oil").toggle_float()
 -- end, { desc = "Oil float" })
 
 -- oil.nvim dep
 require("nvim-web-devicons").setup({})
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
 nmap("<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
 tmap("<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 -- Jump to errors specifically, skipping warnings
 nmap("]e", function()
@@ -38,7 +38,7 @@ nmap("[e", function()
 	})
 end, { desc = "Prev error" })
 
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 -- no-neck-pain.nvim
 require("no-neck-pain").setup({
