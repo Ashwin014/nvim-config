@@ -77,8 +77,8 @@ xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yan
 -- keep last yanked when pasting
 vmap("p", '"_dP', { noremap = true, silent = true })
 
-nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
-vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- TEXT --------------------------------------------------------------------------------------
 
