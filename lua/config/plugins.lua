@@ -23,7 +23,7 @@ vim.api.nvim_create_autocmd("PackChanged", {
 })
 
 vim.pack.add({
-	-- UI / Theme
+	-- UI / Theme / Aesthetics
 	{ src = "https://github.com/ember-theme/nvim", name = "ember" },
 	{ src = "https://github.com/Mofiqul/vscode.nvim" },
 	{ src = "https://github.com/navarasu/onedark.nvim" },
@@ -41,6 +41,8 @@ vim.pack.add({
 	{ src = "https://github.com/kylechui/nvim-surround" },
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 	--{ src = "https://github.com/akinsho/bufferline.nvim" },
+
+	{ src = "https://github.com/sphamba/smear-cursor.nvim" },
 
 	--
 
