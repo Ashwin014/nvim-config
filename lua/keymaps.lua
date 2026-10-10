@@ -49,8 +49,8 @@ nmap("<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
 nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 nmap("<leader>bs", ":b#<CR>", { desc = "Switch buffers" })
 
-nmap("<A-Left", "<C-o>")
-nmap("<A-Right", "<C-i>")
+nmap("<A-Left>", "<C-o>")
+nmap("<A-Right>", "<C-i>")
 
 ----------------------------------------------------------------------------------------------
 
