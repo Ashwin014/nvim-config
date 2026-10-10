@@ -1,9 +1,5 @@
 require("smear_cursor").setup({
-	-- stiffness = 0.6, -- higher = snappier, less trailing
-	-- trailing_stiffness = 0.9,
-	-- distance_stop_animating = 0.6,
-
-  -- faster smear configuration
+	-- faster smear confiAn in the examples
 	stiffness = 0.8,
 	trailing_stiffness = 0.6,
 	stiffness_insert_mode = 0.7,
