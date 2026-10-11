@@ -32,18 +32,16 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- =================================================================================
 
 local set_hl = vim.api.nvim_set_hl
-local base = {
-	gray = "#2f343e",
-	light_gray = "#5d636f",
-	faint_gray = "#3b4048",
-	ember_border = "#3e3c38",
+-- local base = {
+-- 	gray = "#2f343e",
+-- 	light_gray = "#5d636f",
+-- 	faint_gray = "#3b4048",
+-- 	ember_border = "#3e3c38",
+--
+-- 	default = "#424242",
+--
+-- }
 
-	default = "#424242",
-
-	-- vscGray = "#808080",
-	-- vscLineNr = "#5a5a5a",
-	-- vscSplitDark = "#444444",
-}
 -- local onedark_zed = {
 -- 	fg = "#878787",
 -- 	gray = "#2f343e",
