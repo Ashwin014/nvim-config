@@ -6,7 +6,7 @@
 
 require("vscode").setup({
 	style = "dark", -- or "light"
-	-- italic_comments = true,
+	italic_comments = true,
 	transparency = true,
 })
 vim.cmd.colorscheme("vscode")
