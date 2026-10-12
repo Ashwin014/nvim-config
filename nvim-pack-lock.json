@@ -233,6 +233,10 @@
       "rev": "427b576c16792edad01a92b89721d923c19ad60f",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
+    "tender.vim": {
+      "rev": "b66dc330aff998dff9d44459d84bc1c5f4304fcc",
+      "src": "https://github.com/jacoborus/tender.vim"
+    },
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
       "src": "https://github.com/folke/tokyonight.nvim.git"
