@@ -175,6 +175,7 @@ vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 nmap("U", "<C-r>")
 
 imap("jk", "<Esc>")
+imap("jj", "<Esc>")
 
 -- Video, audio and everything else: open with the system app.
 -- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
