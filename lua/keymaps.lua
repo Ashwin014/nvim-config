@@ -52,6 +52,19 @@ nmap("<leader>bs", ":b#<CR>", { desc = "Switch buffers" })
 nmap("<A-Left>", "<C-o>")
 nmap("<A-Right>", "<C-i>")
 
+-- Create a user command :CloseOtherBuffers
+vim.api.nvim_create_user_command("CloseOtherBuffers", function()
+	local current_buf = vim.api.nvim_get_current_buf()
+	for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
+		if bufnr ~= current_buf and vim.api.nvim_buf_is_loaded(bufnr) then
+			vim.api.nvim_buf_delete(bufnr, {})
+		end
+	end
+end, {})
+
+-- Optional: Map it to <leader>bo (Buffer Only)
+vim.keymap.set("n", "<leader>bo", ":CloseOtherBuffers<CR>", { silent = true, desc = "Close all other buffers" })
+
 ----------------------------------------------------------------------------------------------
 
 -- tabs
