@@ -31,7 +31,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- Change background colors to none
 -- =================================================================================
 
-local set_hl = vim.api.nvim_set_hl
+-- local set_hl = vim.api.nvim_set_hl
 -- local base = {
 -- 	gray = "#2f343e",
 -- 	light_gray = "#5d636f",
@@ -58,31 +58,31 @@ local set_hl = vim.api.nvim_set_hl
 -- }
 --
 
-local vsc = require("vscode.colors").get_colors()
-
-set_hl(0, "Normal", { bg = "none" })
-set_hl(0, "NormalNC", { bg = "none" })
-set_hl(0, "NormalFloat", { bg = "none" })
--- -- set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
--- set_hl(0, "FloatBorder", { fg = base.ember_border, bg = "none" })
-set_hl(0, "FloatBorder", { fg = vsc.vscSplitDark, bg = "none" })
--- -- set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
--- set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
-set_hl(0, "FloatTitle", { bg = "none" })
-set_hl(0, "SignColumn", { bg = "none" })
-set_hl(0, "StatusLine", { bg = "none" })
-set_hl(0, "CursorColumn", { bg = "none" })
-set_hl(0, "StatusLineNC", { bg = "none" })
-set_hl(0, "LineNr", { fg = vsc.vscLineNumber, bg = "none" })
-set_hl(0, "MsgArea", { bg = "none" })
-set_hl(0, "WinSeparator", { link = "VertSplit" })
-set_hl(0, "TabLineFill", { bg = "none" })
-set_hl(0, "TabLine", { bg = "none" })
-set_hl(0, "TabLineSel", { bg = "none", bold = true })
-set_hl(0, "VertSplit", { fg = vsc.vscSplitDark, bg = "none" })
-set_hl(0, "Pmenu", { bg = "none" })
-set_hl(0, "Directory", { fg = vsc.vscBlue, bg = "none" })
-
+-- local vsc = require("vscode.colors").get_colors()
+--
+-- set_hl(0, "Normal", { bg = "none" })
+-- set_hl(0, "NormalNC", { bg = "none" })
+-- set_hl(0, "NormalFloat", { bg = "none" })
+-- -- -- set_hl(0, "FloatBorder", { fg = onedark_zed.light_gray, bg = "none" })
+-- -- set_hl(0, "FloatBorder", { fg = base.ember_border, bg = "none" })
+-- set_hl(0, "FloatBorder", { fg = vsc.vscSplitDark, bg = "none" })
+-- -- -- set_hl(0, "FloatTitle", { fg = onedark_zed.blue, bg = "none" })
+-- -- set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
+-- set_hl(0, "FloatTitle", { bg = "none" })
+-- set_hl(0, "SignColumn", { bg = "none" })
+-- set_hl(0, "StatusLine", { bg = "none" })
+-- set_hl(0, "CursorColumn", { bg = "none" })
+-- set_hl(0, "StatusLineNC", { bg = "none" })
+-- set_hl(0, "LineNr", { fg = vsc.vscLineNumber, bg = "none" })
+-- set_hl(0, "MsgArea", { bg = "none" })
+-- set_hl(0, "WinSeparator", { link = "VertSplit" })
+-- set_hl(0, "TabLineFill", { bg = "none" })
+-- set_hl(0, "TabLine", { bg = "none" })
+-- set_hl(0, "TabLineSel", { bg = "none", bold = true })
+-- set_hl(0, "VertSplit", { fg = vsc.vscSplitDark, bg = "none" })
+-- set_hl(0, "Pmenu", { bg = "none" })
+-- set_hl(0, "Directory", { fg = vsc.vscBlue, bg = "none" })
+--
 -- -- Telescope
 -- set_hl(0, "TelescopeNormal", { bg = "none" })
 -- set_hl(0, "TelescopeBorder", { fg = onedark_zed.light_gray, bg = "none" })
