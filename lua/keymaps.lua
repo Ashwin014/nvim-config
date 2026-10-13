@@ -18,7 +18,7 @@ xmap("<F13>", "<Esc>")
 
 -- nmap("<leader>q", ":q<CR>", { desc = "Quit" })
 -- nmap("<leader>Q", ":q!<CR>", { desc = "Quit (forced)" })
--- nmap("<leader>w", ":w<CR>", { desc = "Save" })
+nmap("<leader>w", ":w<CR>", { desc = "Save" })
 -- nmap("<leader>W", ":w!<CR>", { desc = "Save (forced)" })
 -- nmap("<leader>R", ":restart<CR>", { desc = "Restart" })
 
@@ -193,3 +193,20 @@ vim.api.nvim_create_user_command("ConfigReload", function()
 	vim.cmd("source $MYVIMRC")
 	print("Neovim configuration reloaded!")
 end, { desc = "Reload Neovim configuration" })
+
+-----------------------------------------------------------
+
+-- write + restart
+vim.api.nvim_create_user_command("Wr", function()
+	vim.cmd("write")
+	local current_file = vim.fn.expand("%:p")
+	if current_file ~= "" then
+		-- Spawn a new instance replacing the current process, loading the current file
+		vim.fn.jobstart({ "nvim", current_file }, { detach = true })
+	else
+		vim.fn.jobstart({ "nvim" }, { detach = true })
+	end
+	vim.cmd("quit")
+end, { desc = "Write current file and restart Neovim" })
+
+-----------------------------------------------------------
