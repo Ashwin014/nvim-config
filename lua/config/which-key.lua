@@ -6,7 +6,7 @@ require("which-key").setup({
 		width = { min = 30, max = 60 }, -- cap the width instead of full-width
 	},
 	layout = {
-		align = "right",
+		-- align = "right",
 	},
 })
 
