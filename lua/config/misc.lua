@@ -45,6 +45,7 @@ require("no-neck-pain").setup({
 	width = 100, -- text column width; 80-100 reads well for prose
 })
 nmap("<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })
+nmap("<A-`>", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })
 
 -- auto saving --------------------------------------------------------------------------
 -- Create an augroup to manage auto-save autocommands cleanly
