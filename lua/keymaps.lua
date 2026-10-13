@@ -197,16 +197,6 @@ end, { desc = "Reload Neovim configuration" })
 -----------------------------------------------------------
 
 -- write + restart
-vim.api.nvim_create_user_command("Wr", function()
-	vim.cmd("write")
-	local current_file = vim.fn.expand("%:p")
-	if current_file ~= "" then
-		-- Spawn a new instance replacing the current process, loading the current file
-		vim.fn.jobstart({ "nvim", current_file }, { detach = true })
-	else
-		vim.fn.jobstart({ "nvim" }, { detach = true })
-	end
-	vim.cmd("quit")
-end, { desc = "Write current file and restart Neovim" })
+vim.api.nvim_create_user_command("Wr", "write | source %", {})
 
 -----------------------------------------------------------
