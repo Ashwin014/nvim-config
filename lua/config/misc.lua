@@ -42,7 +42,7 @@ end, { desc = "Prev error" })
 
 -- no-neck-pain.nvim
 require("no-neck-pain").setup({
-	width = 90, -- text column width; 80-100 reads well for prose
+	width = 108, -- text column width; 80-100 reads well for prose
 })
 nmap("<leader>uc", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })
 nmap("<A-`>", "<cmd>NoNeckPain<cr>", { desc = "Center buffer" })
