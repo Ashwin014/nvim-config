@@ -24,6 +24,7 @@ nmap("<leader>w", ":w<CR>", { desc = "Save" })
 
 vim.api.nvim_create_user_command("W", "w", { nargs = "*" }) -- make :W equal to :w
 vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restart
+vim.api.nvim_create_user_command("R", "restart", {})
 
 -- window navigation
 nmap("<C-h>", "<C-w>h")
