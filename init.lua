@@ -1,11 +1,11 @@
 require("options")
 require("general")
 require("keymaps")
---
--- require("config.plugins")
---
--- require("config.colorschemes")
---
+
+require("config.plugins")
+
+require("config.colorschemes")
+
 -- require("config.treesitter")
 -- require("config.completion")
 -- require("config.lsp")
@@ -23,6 +23,6 @@ require("keymaps")
 -- require("config.which-key")
 -- require("config.harpoon")
 -- require("config.surround")
--- require("config.lualine")
+require("config.lualine")
 -- require("config.indent-blankline")
--- require("config.smear-cursor")
+require("config.smear-cursor")
