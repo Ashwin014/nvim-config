@@ -8,21 +8,42 @@ require("lualine").setup({
 			right = vim.fn.nr2char(0xe0be),
 		},
 	},
-	sections = {
-    lualine_a = { { "mode", separator = { left = "" }, right_padding = 2 } },
-		lualine_c = { { "filename", path = 1 } },
-		lualine_x = {
-			"%S",
-			function()
-				local r = vim.fn.reg_recording()
-				return r ~= "" and ("recording @" .. r) or ""
-			end,
-			"encoding",
-			"fileformat",
-			"filetype",
-		},
-    lualine_z = { { "location", separator = { right = "" }, left_padding = 2 } },
-	},
+	-- sections = {
+	-- 	lualine_c = { { "filename", path = 1 } },
+	-- 	lualine_x = {
+	-- 		"%S",
+	-- 		function()
+	-- 			local r = vim.fn.reg_recording()
+	-- 			return r ~= "" and ("recording @" .. r) or ""
+	-- 		end,
+	-- 		"encoding",
+	-- 		"fileformat",
+	-- 		"filetype",
+	-- 	},
+	-- },
+
+    sections = {
+    lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
+    lualine_b = { 'filename', 'branch' },
+    lualine_c = {
+      '%=', --[[ add your center components here in place of this comment ]]
+    },
+    lualine_x = {},
+    lualine_y = { 'filetype', 'progress' },
+    lualine_z = {
+      { 'location', separator = { right = '' }, left_padding = 2 },
+    },
+  },
+  inactive_sections = {
+    lualine_a = { 'filename' },
+    lualine_b = {},
+    lualine_c = {},
+    lualine_x = {},
+    lualine_y = {},
+    lualine_z = { 'location' },
+  },
+    tabline = {},
+  extensions = {},
 })
 
 vim.api.nvim_create_autocmd({ "RecordingEnter", "RecordingLeave" }, {
