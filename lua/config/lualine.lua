@@ -8,20 +8,6 @@ require("lualine").setup({
 			right = vim.fn.nr2char(0xe0be),
 		},
 	},
-	-- sections = {
-	-- 	lualine_c = { { "filename", path = 1 } },
-	-- 	lualine_x = {
-	-- 		"%S",
-	-- 		function()
-	-- 			local r = vim.fn.reg_recording()
-	-- 			return r ~= "" and ("recording @" .. r) or ""
-	-- 		end,
-	-- 		"encoding",
-	-- 		"fileformat",
-	-- 		"filetype",
-	-- 	},
-	-- },
-
 	sections = {
 		lualine_a = { { "mode", separator = { left = "" }, right_padding = 2 } },
 		lualine_b = { "filename", "branch" },
