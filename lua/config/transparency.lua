@@ -65,7 +65,18 @@ local function apply()
 		-- keep whatever fg/style the active theme already set; only clear bg
 		local ok, current = pcall(vim.api.nvim_get_hl, 0, { name = group, link = false })
 		if ok then
+			-- `bg = "none"` is valid at runtime (see :help nvim_set_hl()), but
+			-- lua_ls's stubs type `bg` as integer-only, so it flags this as a
+			-- mismatch. Scoped disable instead of a blanket one, so a real
+			-- type error elsewhere in this block still gets caught.
+			---@diagnostic disable-next-line: assign-type-mismatch
 			current.bg = "none"
+			-- `current` is typed as nvim_get_hl's OUTPUT shape
+			-- (vim.api.keyset.get_hl_info), not the INPUT shape nvim_set_hl
+			-- expects (vim.api.keyset.highlight). They overlap in practice,
+			-- but lua_ls treats them as distinct types, hence this second,
+			-- separate disable.
+			---@diagnostic disable-next-line: param-type-mismatch
 			vim.api.nvim_set_hl(0, group, current)
 		end
 	end
