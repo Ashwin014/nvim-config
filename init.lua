@@ -1,6 +1,6 @@
--- require("keymaps")
--- require("options")
--- require("general")
+require("options")
+require("general")
+require("keymaps")
 --
 -- require("config.plugins")
 --
