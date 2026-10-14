@@ -75,3 +75,44 @@ vim.api.nvim_create_autocmd("CursorHoldI", {
 })
 
 --#endregion
+
+-----------------------------------------------------------------------------------------
+
+-- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
+vim.keymap.set("n", "<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
+tmap("<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
+
+------------------------------------------------------------------------------------------
+
+-- Jump to errors specifically, skipping warnings
+vim.keymap.set("n", "]e", function()
+	vim.diagnostic.jump({
+		count = 1,
+		severity = vim.diagnostic.severity.ERROR,
+	})
+end, { desc = "Next error" })
+
+vim.keymap.set("n", "[e", function()
+	vim.diagnostic.jump({
+		count = -1,
+		severity = vim.diagnostic.severity.ERROR,
+	})
+end, { desc = "Prev error" })
+
+------------------------------------------------------------------------------------------
+
+-- auto saving --------------------------------------------------------------------------
+-- Create an augroup to manage auto-save autocommands cleanly
+-- local autosave_group = vim.api.nvim_create_augroup("AutoSaveGroup", { clear = true })
+--
+-- vim.api.nvim_create_autocmd({ "TextChanged", "InsertLeave", "FocusLost" }, {
+-- 	group = autosave_group,
+-- 	pattern = "*",
+-- 	callback = function()
+-- 		-- Ensure the buffer is modifiable, has a file name, and has unsaved changes
+-- 		if vim.bo.modifiable and vim.fn.empty(vim.fn.expand("%:t")) == 0 and vim.bo.modified then
+-- 			-- Use silent! to prevent annoying errors for read-only or special files
+-- 			vim.cmd("silent! update")
+-- 		end
+-- 	end,
+-- })
