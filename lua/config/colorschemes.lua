@@ -31,7 +31,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- Change background colors to none
 -- =================================================================================
 
--- local set_hl = vim.api.nvim_set_hl
+local set_hl = vim.api.nvim_set_hl
 -- local base = {
 -- 	gray = "#2f343e",
 -- 	light_gray = "#5d636f",
@@ -70,7 +70,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- -- set_hl(0, "FloatTitle", { fg = base.ember_border, bg = "none" })
 -- set_hl(0, "FloatTitle", { bg = "none" })
 -- set_hl(0, "SignColumn", { bg = "none" })
--- set_hl(0, "StatusLine", { bg = "none" })
+set_hl(0, "StatusLine", { bg = "none" })
 -- set_hl(0, "CursorColumn", { bg = "none" })
 -- set_hl(0, "StatusLineNC", { bg = "none" })
 -- set_hl(0, "LineNr", { fg = vsc.vscLineNumber, bg = "none" })
