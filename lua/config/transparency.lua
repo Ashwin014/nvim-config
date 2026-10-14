@@ -15,9 +15,12 @@ local function apply()
 		"NormalNC",
 		"NormalFloat",
 		"FloatBorder",
+		"FloatTitle",
 		"SignColumn",
 		"StatusLine",
 		"StatusLineNC",
+		"LineNr",
+		"CursorColumn",
 		"WinSeparator",
 		"WinBar",
 		"WinBarNC",
@@ -27,6 +30,9 @@ local function apply()
 		"MsgArea",
 		"Folded",
 		"FoldColumn",
+		"VertSplit",
+		"Pmenu",
+		"Directory",
 
 		-- Telescope
 		"TelescopeNormal",
@@ -59,6 +65,11 @@ local function apply()
 		"BlinkCmpMenuBorder",
 		"BlinkCmpDoc",
 		"BlinkCmpDocBorder",
+
+		-- Harpoon
+		"HarpoonNormal",
+		"HarpoonBorderX",
+		"HarpoonTitleX",
 	}
 
 	for _, group in ipairs(groups) do
