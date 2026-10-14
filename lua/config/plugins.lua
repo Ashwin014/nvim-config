@@ -1,4 +1,4 @@
- ---------------------------------------------------------------------
+---------------------------------------------------------------------
 -- Plugins (native vim.pack)
 ---------------------------------------------------------------------
 
@@ -40,7 +40,6 @@ vim.pack.add({
 	{ src = "https://github.com/smoka7/hop.nvim" },
 	{ src = "https://github.com/kylechui/nvim-surround" },
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
-	--{ src = "https://github.com/akinsho/bufferline.nvim" },
 
 	{ src = "https://github.com/sphamba/smear-cursor.nvim" },
 

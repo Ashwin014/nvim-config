@@ -80,7 +80,7 @@ vim.api.nvim_create_autocmd("CursorHoldI", {
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
 vim.keymap.set("n", "<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
-tmap("<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
 
 ------------------------------------------------------------------------------------------
 
