@@ -21,7 +21,7 @@ require("snacks").setup({
 			keys = {
 				{ icon = " ", key = "f", desc = "Find file", action = ":Telescope find_files" },
 				{ icon = " ", key = "n", desc = "New file", action = ":ene | startinsert" },
-				{ icon = " ", key = "g", desc = "Find text", action = ":Telescope live_grep" },
+				-- { icon = " ", key = "g", desc = "Find text", action = ":Telescope live_grep" },
 				{ icon = " ", key = "r", desc = "Recent files", action = ":Telescope oldfiles" },
 				{ icon = " ", key = "c", desc = "Config", action = ":e $MYVIMRC" },
 				{ icon = " ", key = "q", desc = "Quit", action = ":qa" },
@@ -59,15 +59,15 @@ require("snacks").setup({
 		enabled = true,
 		doc = { inline = true, float = true, max_width = 80, max_height = 40 },
 	},
-	scroll = {
-		enabled = true,
-		animate = { duration = { step = 10, total = 100 }, easing = "linear" },
-	},
-	notifier = {
-		enabled = true,
-		timeout = 5000, -- ms a notification stays visible
-		style = "compact", -- also "fancy" and "minimal"
-	},
+	-- scroll = {
+	-- 	enabled = true,
+	-- 	animate = { duration = { step = 10, total = 200 }, easing = "linear" },
+	-- },
+	-- notifier = {
+	-- 	enabled = true,
+	-- 	timeout = 5000, -- ms a notification stays visible
+	-- 	style = "compact", -- also "fancy" and "minimal"
+	-- },
 })
 
 ---------------------------------------------------------------------
