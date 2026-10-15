@@ -105,6 +105,8 @@ vmap("p", '"_dP', { noremap = true, silent = true })
 
 nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
 vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- TEXT --------------------------------------------------------------------------------------
 
