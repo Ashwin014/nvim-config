@@ -116,3 +116,15 @@ end, { desc = "Prev error" })
 -- 		end
 -- 	end,
 -- })
+
+-----------------------------------------------------------------------------------------
+
+-- Disable arrow keys to build hjkl muscle memory
+local modes = { "n", "v", "i" }
+local keys = { "<Up>", "<Down>", "<Left>", "<Right>" }
+
+for _, mode in ipairs(modes) do
+	for _, key in ipairs(keys) do
+		vim.keymap.set(mode, key, "<Nop>", { noremap = true, silent = true })
+	end
+end
