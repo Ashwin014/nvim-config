@@ -21,7 +21,6 @@ require("snacks").setup({
 			keys = {
 				{ icon = " ", key = "f", desc = "Find file", action = ":Telescope find_files" },
 				{ icon = " ", key = "n", desc = "New file", action = ":ene | startinsert" },
-				-- { icon = " ", key = "g", desc = "Find text", action = ":Telescope live_grep" },
 				{ icon = " ", key = "r", desc = "Recent files", action = ":Telescope oldfiles" },
 				{ icon = " ", key = "c", desc = "Config", action = ":e $MYVIMRC" },
 				{ icon = " ", key = "q", desc = "Quit", action = ":qa" },
