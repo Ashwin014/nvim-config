@@ -40,6 +40,3 @@ vim.o.foldlevelstart = 99 -- open all folds by default
 require("treesitter-context").setup({ max_lines = 3 })
 
 --
-
-vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#2e3440" }) -- any distinct bg
-vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { bg = "#2e3440" })
