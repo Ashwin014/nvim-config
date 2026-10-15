@@ -9,9 +9,9 @@ local tb = require("telescope.builtin")
 local nmap = require("map").nmap
 
 -- Custom one (the only special case)
-nmap("<leader>ff", function()
-	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
-end, { desc = "Telescope: Find files in current buffer directory" })
+-- nmap("<leader>ff", function()
+-- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
+-- end, { desc = "Telescope: Find files in current buffer directory" })
 
 nmap("\\", function()
 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
@@ -19,7 +19,7 @@ end, { desc = "Telescope: Find files in current buffer directory" })
 
 -- All the simple ones
 local maps = {
-	fF = { tb.find_files, "Find files" },
+	ff = { tb.find_files, "Find files" },
 	fg = { tb.live_grep, "Grep" },
 	fb = { tb.buffers, "Buffers" },
 	fr = { tb.oldfiles, "Recent files" },
