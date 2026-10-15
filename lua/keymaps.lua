@@ -18,13 +18,15 @@ xmap("<F13>", "<Esc>")
 
 -- nmap("<leader>q", ":q<CR>", { desc = "Quit" })
 -- nmap("<leader>Q", ":q!<CR>", { desc = "Quit (forced)" })
-nmap("<leader>w", ":w<CR>", { desc = "Save" })
+-- nmap("<leader>w", ":w<CR>", { desc = "Save" })
 -- nmap("<leader>W", ":w!<CR>", { desc = "Save (forced)" })
 -- nmap("<leader>R", ":restart<CR>", { desc = "Restart" })
 
 vim.api.nvim_create_user_command("W", "w", { nargs = "*" }) -- make :W equal to :w
 vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restart
 vim.api.nvim_create_user_command("R", "restart", {})
+
+nmap("<leader>w", "<C-w>")
 
 -- window navigation
 nmap("<C-h>", "<C-w>h")
