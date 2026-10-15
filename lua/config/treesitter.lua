@@ -38,5 +38,3 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.o.foldlevelstart = 99 -- open all folds by default
 
 require("treesitter-context").setup({ max_lines = 3 })
-
---
