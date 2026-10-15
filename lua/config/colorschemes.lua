@@ -20,10 +20,10 @@ require("gruvbox").setup()
 -- vim.cmd.colorscheme("gruvbox")
 
 require("soviet").setup({}) -- Optional; add your settings here.
-vim.cmd.colorscheme("soviet-dark")
+-- vim.cmd.colorscheme("soviet-dark")
 -- vim.cmd.colorscheme("soviet-light")
 
--- vim.cmd.colorscheme("onedark-zed")
+vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
 
