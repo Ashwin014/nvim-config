@@ -32,5 +32,6 @@ vim.api.nvim_create_autocmd("FileType", {
 		end
 	end,
 })
+vim.o.foldlevelstart = 999
 
 require("treesitter-context").setup({ max_lines = 3 })
