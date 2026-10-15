@@ -88,8 +88,8 @@ vim.pack.add({
 	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
 	{ src = "https://github.com/shortcuts/no-neck-pain.nvim" },
 	{ src = "https://github.com/kylechui/nvim-surround" },
-
 	{ src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
+	{ src = "https://github.com/rmagatti/goto-preview" },
 
 	-- prog-lanaguages
 	{ src = "https://github.com/mmikeww/autohotkey.vim" },

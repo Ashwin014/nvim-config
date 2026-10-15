@@ -1,5 +1,5 @@
 require("goto-preview").setup({
-	default_mappings = false, -- you set your own below, to match your gr* convention
+	default_mappings = false,
 	width = 120,
 	height = 25,
 	border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
@@ -7,7 +7,7 @@ require("goto-preview").setup({
 
 local map = vim.keymap.set
 
-map("<leader>pd", require("goto-preview").goto_preview_definition, "Preview definition")
-map("<leader>pi", require("goto-preview").goto_preview_implementation, "Preview implementation")
-map("<leader>pr", require("goto-preview").goto_preview_references, "Preview references")
-map("<leader>pc", require("goto-preview").close_all_win, "Close preview windows")
+map("n", "<leader>pd", require("goto-preview").goto_preview_definition, { desc = "Preview definition" })
+map("n", "<leader>pi", require("goto-preview").goto_preview_implementation, { desc = "Preview implementation" })
+map("n", "<leader>pr", require("goto-preview").goto_preview_references, { desc = "Preview references" })
+map("n", "<leader>pc", require("goto-preview").close_all_win, { desc = "Close preview windows" })
