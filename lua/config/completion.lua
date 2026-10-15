@@ -15,7 +15,7 @@ require("nvim-autopairs").setup({
 
 require("nvim-autopairs").disable()
 
-vim.keymap.set("n", "<leader>up", function()
+vim.keymap.set("n", "<leader>tp", function()
 	local npairs = require("nvim-autopairs")
 	if npairs.state.disabled then
 		npairs.enable()
