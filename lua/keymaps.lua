@@ -26,8 +26,6 @@ vim.api.nvim_create_user_command("W", "w", { nargs = "*" }) -- make :W equal to 
 vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restart
 vim.api.nvim_create_user_command("R", "restart", {})
 
-nmap("<leader>w", "<C-w>")
-
 -- window navigation
 nmap("<C-h>", "<C-w>h")
 nmap("<C-l>", "<C-w>l")
