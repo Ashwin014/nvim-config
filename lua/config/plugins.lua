@@ -43,8 +43,6 @@ vim.pack.add({
 
 	{ src = "https://github.com/sphamba/smear-cursor.nvim" },
 
-	{ src = "https://github.com/akinsho/bufferline.nvim", version = "*" },
-
 	--
 
 	{ src = "https://github.com/iamcco/markdown-preview.nvim" },

@@ -3,9 +3,7 @@ require("general")
 require("keymaps")
 
 require("config.plugins")
-
 require("config.colorschemes")
-
 require("config.oil")
 require("config.lsp")
 require("config.treesitter")
@@ -28,4 +26,3 @@ require("config.indent-blankline")
 require("config.smear-cursor")
 require("config.goto-preview")
 require("config.treejs")
-require("config.bufferline")
