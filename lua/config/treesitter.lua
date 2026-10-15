@@ -41,6 +41,5 @@ require("treesitter-context").setup({ max_lines = 3 })
 
 --
 
-vim.keymap.set("n", "[c", function()
-	require("treesitter-context").go_to_context(vim.v.count1)
-end, { desc = "Jump to context" })
+vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#2e3440" }) -- any distinct bg
+vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { bg = "#2e3440" })
