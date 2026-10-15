@@ -1,6 +1,3 @@
----------------------------------------------------------------------
--- Treesitter (highlight, indent, folds)
----------------------------------------------------------------------
 require("nvim-treesitter").install({
 	"lua",
 	"vim",
@@ -35,6 +32,5 @@ vim.api.nvim_create_autocmd("FileType", {
 		end
 	end,
 })
-vim.o.foldlevelstart = 99 -- open all folds by default
 
 require("treesitter-context").setup({ max_lines = 3 })
