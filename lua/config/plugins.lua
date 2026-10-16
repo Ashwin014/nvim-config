@@ -91,6 +91,7 @@ vim.pack.add({
 	{ src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
 	{ src = "https://github.com/rmagatti/goto-preview" },
 	{ src = "https://github.com/Wansmer/treesj" },
+	{ src = "https://github.com/HiPhish/rainbow-delimiters.nvim" },
 
 	-- prog-lanaguages
 	{ src = "https://github.com/mmikeww/autohotkey.vim" },
