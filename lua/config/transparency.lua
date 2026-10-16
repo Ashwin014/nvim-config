@@ -21,7 +21,7 @@ local function apply()
 		"StatusLineNC",
 		"LineNr",
 		"CursorColumn",
-		"WinSeparator",
+		-- "WinSeparator",
 		"WinBar",
 		"WinBarNC",
 		"TabLine",
