@@ -7,7 +7,6 @@ vim.g.rainbow_delimiters = {
 	},
 	query = {
 		[""] = "rainbow-delimiters",
-		lua = "rainbow-blocks",
 	},
 	highlight = {
 		"RainbowDelimiterRed",
@@ -18,15 +17,8 @@ vim.g.rainbow_delimiters = {
 		"RainbowDelimiterViolet",
 		"RainbowDelimiterCyan",
 	},
+	blacklist = { "markdown", "text" },
 }
-
--- vim.api.nvim_set_hl(0, "RainbowDelimiterRed", { fg = "#e06c75" })
--- vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", { fg = "#e5c07b" })
--- vim.api.nvim_set_hl(0, "RainbowDelimiterBlue", { fg = "#61afef" })
--- vim.api.nvim_set_hl(0, "RainbowDelimiterOrange", { fg = "#d19a66" })
--- vim.api.nvim_set_hl(0, "RainbowDelimiterGreen", { fg = "#98c379" })
--- vim.api.nvim_set_hl(0, "RainbowDelimiterViolet", { fg = "#c678dd" })
--- vim.api.nvim_set_hl(0, "RainbowDelimiterCyan", { fg = "#56b6c2" })
 
 vim.api.nvim_set_hl(0, "RainbowDelimiterRed", { fg = "#FFD700" }) -- gold
 vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", { fg = "#DA70D6" }) -- orchid
