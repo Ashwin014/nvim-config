@@ -27,7 +27,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 
 -- vim.cmd.colorscheme("retrobox")
 
--- require("config.transparency")
+require("config.transparency")
 
 -- =================================================================================
 -- Change background colors to none
