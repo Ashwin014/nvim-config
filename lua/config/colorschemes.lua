@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("ember")
+-- vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("school")
 
@@ -9,7 +9,7 @@ require("vscode").setup({
 	italic_comments = true,
 	transparency = true,
 })
--- vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vscode")
 
 -- vim.cmd.colorscheme("synth")
 
