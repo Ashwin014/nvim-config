@@ -6,16 +6,24 @@ require("telescope").setup({
 })
 
 local tb = require("telescope.builtin")
-local nmap = require("map").nmap
+local map = vim.keymap.set
 
 -- Custom one (the only special case)
--- nmap("<leader>ff", function()
+-- map("n", "<leader>ff", function()
 -- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 -- end, { desc = "Telescope: Find files in current buffer directory" })
 
-nmap("\\", function()
+map("n", "\\", function()
 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 end, { desc = "Telescope: Find files in current buffer directory" })
+
+map("v", "<leader>fw", function()
+	local saved = vim.fn.getreg("v")
+	vim.cmd('normal! "vy')
+	local selection = vim.fn.getreg("v")
+	vim.fn.setreg("v", saved)
+	require("telescope.builtin").grep_string({ search = selection })
+end, { desc = "Telescope: Grep selection" })
 
 -- All the simple ones
 local maps = {
@@ -34,7 +42,7 @@ local maps = {
 }
 
 for key, spec in pairs(maps) do
-	nmap("<leader>" .. key, spec[1], {
+	map("n", "<leader>" .. key, spec[1], {
 		desc = "Telescope: " .. spec[2],
 	})
 end
