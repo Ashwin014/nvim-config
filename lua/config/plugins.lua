@@ -30,6 +30,8 @@ vim.pack.add({
 	{ src = "https://github.com/ellisonleao/gruvbox.nvim" },
 	{ src = "https://github.com/rezniqov/soviet.nvim" },
 
+	{ src = "https://codeberg.org/navahas/sanzo.nvim" },
+
 	--
 
 	{ src = "https://github.com/folke/which-key.nvim" },
