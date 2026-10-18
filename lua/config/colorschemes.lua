@@ -9,7 +9,7 @@ require("vscode").setup({
 	italic_comments = true,
 	transparency = true,
 })
--- vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vscode")
 
 -- vim.cmd.colorscheme("synth")
 
@@ -27,9 +27,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 
 -- vim.cmd.colorscheme("retrobox")
 
--- require("config.transparency")
-
-vim.cmd.colorscheme("sanzo")
+require("config.transparency")
 
 -- =================================================================================
 -- Change background colors to none
