@@ -120,7 +120,7 @@ end, { desc = "Prev error" })
 -----------------------------------------------------------------------------------------
 
 -- Disable arrow keys to build hjkl muscle memory
-local modes = { "n", "v", "i" }
+local modes = { "n", "v" }
 local keys = { "<Up>", "<Down>", "<Left>", "<Right>" }
 
 for _, mode in ipairs(modes) do
