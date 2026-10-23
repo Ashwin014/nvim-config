@@ -81,8 +81,6 @@ vim.pack.add({
 
 	-- Tools
 	{ src = "https://github.com/MagicDuck/grug-far.nvim" },
-	{ src = "https://github.com/MunifTanjim/nui.nvim" }, -- noice dependency
-	{ src = "https://github.com/folke/noice.nvim" },
 
 	-- QoL
 	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
