@@ -57,8 +57,8 @@ nmap("<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
 nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 nmap("<leader>bs", ":b#<CR>", { desc = "Switch buffers" })
 
-nmap("<A-Left>", "<C-o>")
-nmap("<A-Right>", "<C-i>")
+-- nmap("<A-Left>", "<C-o>")
+-- nmap("<A-Right>", "<C-i>")
 
 -- Create a user command :CloseOtherBuffers
 vim.api.nvim_create_user_command("CloseOtherBuffers", function()
@@ -71,7 +71,7 @@ vim.api.nvim_create_user_command("CloseOtherBuffers", function()
 end, {})
 
 -- Optional: Map it to <leader>bo (Buffer Only)
-vim.keymap.set("n", "<leader>bo", ":CloseOtherBuffers<CR>", { silent = true, desc = "Close all other buffers" })
+nmap("<leader>bo", ":CloseOtherBuffers<CR>", { silent = true, desc = "Close all other buffers" })
 
 ----------------------------------------------------------------------------------------------
 
