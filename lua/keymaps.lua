@@ -134,7 +134,7 @@ nmap("x", '"_x', { noremap = true, silent = true })
 -- 	vim.cmd("startinsert")
 -- end, { desc = "Toggle comment" })
 
-vim.keymap.set("i", "<C-/>", "<Esc>gcc", { desc = "Toggle comment" })
+imap("<C-/>", "<Esc>gcc", { desc = "Toggle comment" })
 
 -- LINES -------------------------------------------------------------------------------------
 
