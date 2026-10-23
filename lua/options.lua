@@ -44,4 +44,4 @@ o.timeoutlen = 100
 -- o.listchars:append("leadmultispace:·")
 -- o.listchars:append("space:·")
 o.scrolloff = 999
--- o.cursorline = true
+o.cursorline = true

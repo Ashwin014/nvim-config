@@ -6,7 +6,7 @@ require("noice").setup({
 		},
 	},
 	presets = {
-		bottom_search = true,
+		-- bottom_search = true,
 		command_palette = true,
 		long_message_to_split = true,
 	},
@@ -17,7 +17,7 @@ require("noice").setup({
 				col = "50%",
 			},
 			size = {
-				width = 72,
+				width = 60,
 				height = "auto",
 			},
 		},
