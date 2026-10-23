@@ -49,8 +49,8 @@ nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 -- nmap("<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
 
 -- TEMP
-nmap("<Tab>", "<C-d>")
-nmap("<S-Tab>", "<C-u>")
+-- nmap("<Tab>", "<C-d>")
+-- nmap("<S-Tab>", "<C-u>")
 
 nmap("<leader>bn", ":bn<CR>", { desc = "Go to next buffer" })
 nmap("<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
