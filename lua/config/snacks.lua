@@ -41,7 +41,7 @@ require("snacks").setup({
 				ignored = true,
 				layout = {
 					layout = {
-						position = "right",
+						position = "left",
 						box = "vertical",
 						backdrop = false,
 						width = 30,
