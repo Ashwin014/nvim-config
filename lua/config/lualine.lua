@@ -9,8 +9,9 @@ require("lualine").setup({
 		},
 	},
 	sections = {
-		lualine_a = { { "mode", separator = { left = "", right = vim.fn.nr2char(0xe0b8) }, right_padding = 2 } },
-		lualine_b = { "filename", "branch" },
+		-- lualine_a = { { "mode", separator = { left = "", right = vim.fn.nr2char(0xe0b8) }, right_padding = 2 } },
+		lualine_a = { { "mode", separator = { left = "", right = "" }, right_padding = 2 } },
+		lualine_b = { { "filename", "branch", separator = { right = "" } } },
 		lualine_c = {
 			"%=", --[[ add your center components here in place of this comment ]]
 		},
@@ -26,7 +27,8 @@ require("lualine").setup({
 		},
 		lualine_y = { "filetype", "progress" },
 		lualine_z = {
-			{ "location", separator = { right = "", left = vim.fn.nr2char(0xe0be) }, left_padding = 2 },
+			-- { "location", separator = { right = "", left = vim.fn.nr2char(0xe0be) }, left_padding = 2 },
+			{ "location", separator = { right = "", left = "" }, left_padding = 2 },
 		},
 	},
 	inactive_sections = {
