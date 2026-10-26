@@ -11,7 +11,7 @@
 ---------------------------------------------------------------------
 -- 1. Settings
 ---------------------------------------------------------------------
-local VAULT = "~/Documents/STIC"
+local VAULT = "~/STIC"
 local NOTES_DIR = "notes" -- new notes go here (relative to the vault)
 local DAILY_NAME = "daily-notes"
 local DAILY_DIR = NOTES_DIR .. "/" .. DAILY_NAME
