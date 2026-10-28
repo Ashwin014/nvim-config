@@ -10,6 +10,7 @@ require("vscode").setup({
 	transparency = true,
 })
 vim.cmd.colorscheme("vscode")
+vim.api.nvim_set_hl(0, "@comment", { fg = "#606060" })
 
 -- vim.cmd.colorscheme("synth")
 
