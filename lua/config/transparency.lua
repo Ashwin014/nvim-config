@@ -70,6 +70,15 @@ local function apply()
 		"HarpoonNormal",
 		"HarpoonBorderX",
 		"HarpoonTitleX",
+
+		-- nvim-tree
+		"NvimTreeNormal",
+		"NvimTreeNormalNC",
+		"NvimTreeWinSeparator",
+		"NvimTreeEndOfBuffer",
+		"NvimTreeStatusLine",
+		"NvimTreeStatusLineNC",
+		"NvimTreeCursorLine",
 	}
 
 	for _, group in ipairs(groups) do

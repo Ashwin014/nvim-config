@@ -1,9 +1,6 @@
--- plugin list
-
--- setup
 require("nvim-tree").setup({
 	view = {
-		width = 32,
+		width = 30,
 		side = "left",
 	},
 	renderer = {
@@ -39,6 +36,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
 	callback = function()
 		vim.schedule(function()
 			require("nvim-tree.api").tree.open()
+			vim.cmd("wincmd p") -- jump focus back to prev (main) window
 		end)
 	end,
 })
