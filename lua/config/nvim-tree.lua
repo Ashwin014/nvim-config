@@ -1,6 +1,6 @@
 require("nvim-tree").setup({
 	view = {
-		width = 40,
+		width = 30,
 		side = "left",
 	},
 	renderer = {
@@ -37,16 +37,16 @@ require("nvim-tree").setup({
 	},
 })
 
-vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { desc = "File tree" })
+vim.keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<cr>", { desc = "File tree" })
 vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFile<cr>", { desc = "Find current file in tree" })
 
 -- always open on startup, alongside your dashboard
-vim.api.nvim_create_autocmd("VimEnter", {
-	nested = true, -- lets other VimEnter autocmds (like snacks dashboard) also run normally
-	callback = function()
-		vim.schedule(function()
-			require("nvim-tree.api").tree.open()
-			vim.cmd("wincmd p") -- jump focus back to prev (main) window
-		end)
-	end,
-})
+-- vim.api.nvim_create_autocmd("VimEnter", {
+-- 	nested = true, -- lets other VimEnter autocmds (like snacks dashboard) also run normally
+-- 	callback = function()
+-- 		vim.schedule(function()
+-- 			require("nvim-tree.api").tree.open()
+-- 			vim.cmd("wincmd p") -- jump focus back to prev (main) window
+-- 		end)
+-- 	end,
+-- })
