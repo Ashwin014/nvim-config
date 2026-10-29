@@ -95,13 +95,3 @@ for key, opts in pairs(maps) do
 		end
 	end, { desc = "Snacks: " .. opts.desc })
 end
-
------------------------------------------------------------
-
-vim.api.nvim_create_autocmd("VimEnter", {
-	callback = function()
-		vim.schedule(function()
-			Snacks.explorer()
-		end)
-	end,
-})
