@@ -29,7 +29,7 @@ vim.pack.add({
 	{ src = "https://github.com/navarasu/onedark.nvim" },
 	{ src = "https://github.com/ellisonleao/gruvbox.nvim" },
 	{ src = "https://github.com/rezniqov/soviet.nvim" },
-
+	{ src = "https://github.com/neanias/everforest-nvim" },
 	--
 
 	{ src = "https://github.com/folke/which-key.nvim" },

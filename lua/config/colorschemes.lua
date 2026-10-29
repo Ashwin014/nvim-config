@@ -9,8 +9,8 @@ require("vscode").setup({
 	italic_comments = false,
 	transparency = true,
 })
-vim.cmd.colorscheme("vscode")
-vim.api.nvim_set_hl(0, "@comment", { fg = "#606060" })
+-- vim.cmd.colorscheme("vscode")
+-- vim.api.nvim_set_hl(0, "@comment", { fg = "#606060" })
 
 -- vim.cmd.colorscheme("synth")
 
@@ -27,6 +27,9 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
+
+require("everforest").setup({})
+vim.cmd.colorscheme("everforest")
 
 require("config.transparency")
 
