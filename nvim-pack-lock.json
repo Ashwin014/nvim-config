@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "aerial.nvim": {
+      "rev": "28fe6e822ae344544c379d60fcb13c9519a1f08a",
+      "src": "https://github.com/stevearc/aerial.nvim"
+    },
     "auto-save.nvim": {
       "rev": "979b6c82f60cfa80f4cf437d77446d0ded0addf0",
       "src": "https://github.com/pocco81/auto-save.nvim"
