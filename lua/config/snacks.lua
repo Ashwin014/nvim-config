@@ -95,3 +95,12 @@ for key, opts in pairs(maps) do
 		end
 	end, { desc = "Snacks: " .. opts.desc })
 end
+
+vim.api.nvim_create_autocmd("VimEnter", {
+	nested = true, -- lets other VimEnter autocmds (like snacks dashboard) also run normally
+	callback = function()
+		vim.schedule(function()
+			require("nvim-tree.api").tree.open()
+		end)
+	end,
+})

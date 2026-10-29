@@ -35,7 +35,10 @@ vim.keymap.set("n", "<leader>ef", "<cmd>NvimTreeFindFile<cr>", { desc = "Find cu
 
 -- always open on startup, alongside your dashboard
 vim.api.nvim_create_autocmd("VimEnter", {
+	nested = true, -- lets other VimEnter autocmds (like snacks dashboard) also run normally
 	callback = function()
-		require("nvim-tree.api").tree.open()
+		vim.schedule(function()
+			require("nvim-tree.api").tree.open()
+		end)
 	end,
 })
