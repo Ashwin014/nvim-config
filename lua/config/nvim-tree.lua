@@ -5,6 +5,16 @@ require("nvim-tree").setup({
 	},
 	renderer = {
 		group_empty = true,
+		indent_markers = {
+			enable = true,
+			icons = {
+				corner = "└",
+				edge = "│",
+				item = "│",
+				bottom = "─",
+				none = " ",
+			},
+		},
 		icons = {
 			show = {
 				git = true,
