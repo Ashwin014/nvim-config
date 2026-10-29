@@ -29,12 +29,10 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("retrobox")
 
 require("everforest").setup({
-	options = {
-		theme = "auto",
-	},
 	background = "medium",
 	ui_contrast = "low",
 })
+vim.o.background = "light"
 vim.cmd.colorscheme("everforest")
 
 -- require("config.transparency")
