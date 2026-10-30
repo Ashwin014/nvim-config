@@ -5,7 +5,7 @@
 -- vim.lsp.semantic_tokens.enable(false)
 
 require("vscode").setup({
-	style = "dark", -- or "light"
+	style = "light", -- or "light"
 	italic_comments = false,
 	transparency = true,
 })
