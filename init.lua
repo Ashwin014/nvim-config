@@ -26,5 +26,5 @@ require("config.indent-blankline")
 -- require("config.goto-preview") -- lazy-loaded via lazy.nvim
 -- require("config.treejs") -- lazy-loaded via lazy.nvim
 -- require("config.rainbow-delimiters") -- lazy-loaded via lazy.nvim
--- require("config.nvim-tree") -- lazy-loaded via lazy.nvim
+    require("config.nvim-tree")
 -- require("config.aerial") -- lazy-loaded via lazy.nvim
