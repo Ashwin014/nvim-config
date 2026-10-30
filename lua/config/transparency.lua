@@ -79,6 +79,23 @@ local function apply()
 		"NvimTreeStatusLine",
 		"NvimTreeStatusLineNC",
 		"NvimTreeCursorLine",
+
+		-- Bufferline
+		"BufferLineFill",
+		"BufferLineBackground",
+		"BufferLineBuffer",
+		"BufferLineBufferSelected",
+		"BufferLineBufferVisible",
+		"BufferLineTab",
+		"BufferLineTabSelected",
+		"BufferLineTabClose",
+		"BufferLineCloseButton",
+		"BufferLineCloseButtonSelected",
+		"BufferLineCloseButtonVisible",
+		"BufferLineSeparator",
+		"BufferLineSeparatorSelected",
+		"BufferLineSeparatorVisible",
+		"BufferLineOffsetSeparator",
 	}
 
 	for _, group in ipairs(groups) do
