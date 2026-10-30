@@ -1,97 +1,117 @@
----------------------------------------------------------------------
--- Plugins (native vim.pack)
----------------------------------------------------------------------
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable",
+		lazypath,
+	})
+end
+vim.opt.rtp:prepend(lazypath)
 
--- Must be defined BEFORE vim.pack.add: keep treesitter parsers in sync
-vim.api.nvim_create_autocmd("PackChanged", {
-	callback = function(ev)
-		local d = ev.data
-		if d.spec.name == "nvim-treesitter" and (d.kind == "install" or d.kind == "update") then
-			if not d.active then
-				vim.cmd.packadd("nvim-treesitter")
-			end
-			vim.cmd("TSUpdate")
-		end
-		-- new: build markdown-preview after install/update
-		if d.spec.name == "markdown-preview.nvim" and (d.kind == "install" or d.kind == "update") then
-			if not d.active then
-				vim.cmd.packadd("markdown-preview.nvim")
-			end
-			vim.fn["mkdp#util#install"]()
-		end
-	end,
-})
-
-vim.pack.add({
+require("lazy").setup({
 	-- UI / Theme / Aesthetics
-	{ src = "https://github.com/ember-theme/nvim", name = "ember" },
-	{ src = "https://github.com/Mofiqul/vscode.nvim" },
-	{ src = "https://github.com/navarasu/onedark.nvim" },
-	{ src = "https://github.com/ellisonleao/gruvbox.nvim" },
-	{ src = "https://github.com/rezniqov/soviet.nvim" },
-	{ src = "https://github.com/neanias/everforest-nvim" },
-	--
+	{ "ember-theme/nvim", name = "ember" },
+	{ "Mofiqul/vscode.nvim" },
+	{ "navarasu/onedark.nvim" },
+	{ "ellisonleao/gruvbox.nvim" },
+	{ "rezniqov/soviet.nvim" },
+	{ "neanias/everforest-nvim" },
 
-	{ src = "https://github.com/folke/which-key.nvim" },
-	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
-	{ src = "https://github.com/nvim-lualine/lualine.nvim" },
-	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-	{ src = "https://github.com/folke/snacks.nvim" }, -- inline images
-	{ src = "https://github.com/smoka7/hop.nvim" },
-	{ src = "https://github.com/kylechui/nvim-surround" },
-	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
+	{ "folke/which-key.nvim", config = function() require("config.which-key") end },
+	{ "lewis6991/gitsigns.nvim", config = function() require("config.git") end },
+	{ "nvim-lualine/lualine.nvim", config = function() require("config.lualine") end },
+	{ "nvim-tree/nvim-web-devicons" },
+	{ "folke/snacks.nvim", config = function() require("config.snacks") end },
+	{ "smoka7/hop.nvim", config = function() require("config.hop") end },
+	{ "kylechui/nvim-surround", config = function() require("config.surround") end },
+	{ "MeanderingProgrammer/render-markdown.nvim", config = function() require("config.markdown") end },
 
-	{ src = "https://github.com/sphamba/smear-cursor.nvim" },
+	{ "sphamba/smear-cursor.nvim", config = function() require("config.smear-cursor") end },
 
-	{ src = "https://github.com/nvim-tree/nvim-tree.lua" },
-	{ src = "https://github.com/stevearc/aerial.nvim" },
-	--
+	{ "nvim-tree/nvim-tree.lua", config = function() require("config.nvim-tree") end },
+	{
+		"stevearc/aerial.nvim",
+		cmd = { "AerialToggle", "AerialOpen", "AerialClose" },
+		config = function() require("config.aerial") end,
+	},
 
-	{ src = "https://github.com/iamcco/markdown-preview.nvim" },
+	{
+		"iamcco/markdown-preview.nvim",
+		ft = "markdown",
+		build = function() vim.fn["mkdp#util#install"]() end,
+	},
 
 	-- LSP + installer
-	{ src = "https://github.com/neovim/nvim-lspconfig" },
-	{ src = "https://github.com/mason-org/mason.nvim" },
-	{ src = "https://github.com/mason-org/mason-lspconfig.nvim" },
-	{ src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
+	{ "neovim/nvim-lspconfig", config = function() require("config.lsp") end },
+	{ "mason-org/mason.nvim", config = function() require("mason").setup() end },
+	{ "mason-org/mason-lspconfig.nvim" },
+	{ "WhoIsSethDaniel/mason-tool-installer.nvim" },
 
 	-- Treesitter
-	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
-	{ src = "https://github.com/nvim-treesitter/nvim-treesitter-context" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+		version = "main",
+		build = ":TSUpdate",
+		config = function() require("config.treesitter") end,
+	},
+	{ "nvim-treesitter/nvim-treesitter-context" },
 
 	-- Completion + snippets
-	{ src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*") },
-	{ src = "https://github.com/rafamadriz/friendly-snippets" },
-	{ src = "https://github.com/windwp/nvim-autopairs" },
+	{
+		"saghen/blink.cmp",
+		version = vim.version.range("1.*"),
+		config = function() require("config.completion") end,
+	},
+	{ "rafamadriz/friendly-snippets" },
+	{ "windwp/nvim-autopairs", config = function() require("config.surround") end },
 
 	-- Formatting
-	{ src = "https://github.com/stevearc/conform.nvim" },
+	{ "stevearc/conform.nvim", config = function() require("config.formatting") end },
 
 	-- Find / files
-	{ src = "https://github.com/nvim-telescope/telescope.nvim" },
-	{ src = "https://github.com/nvim-lua/plenary.nvim" }, -- telescope dep
-	{ src = "https://github.com/stevearc/oil.nvim" },
+	{
+		"nvim-telescope/telescope.nvim",
+		cmd = "Telescope",
+		config = function() require("config.telescope") end,
+	},
+	{ "nvim-lua/plenary.nvim" },
+	{ "stevearc/oil.nvim", config = function() require("config.oil") end },
 
 	-- Debugging
-	{ src = "https://github.com/mfussenegger/nvim-dap" },
-	{ src = "https://github.com/rcarriga/nvim-dap-ui" },
-	{ src = "https://github.com/nvim-neotest/nvim-nio" }, -- dap-ui dep
-	{ src = "https://github.com/mfussenegger/nvim-dap-python" },
+	{ "mfussenegger/nvim-dap", config = function() require("config.dap") end },
+	{ "rcarriga/nvim-dap-ui" },
+	{ "nvim-neotest/nvim-nio" },
+	{ "mfussenegger/nvim-dap-python" },
 
 	-- Notes
-	{ src = "https://github.com/obsidian-nvim/obsidian.nvim", version = vim.version.range("*") },
+	{
+		"obsidian-nvim/obsidian.nvim",
+		version = "*",
+		ft = "markdown",
+		config = function() require("config.obsidian") end,
+	},
 
 	-- Tools
-	{ src = "https://github.com/MagicDuck/grug-far.nvim" },
+	{
+		"MagicDuck/grug-far.nvim",
+		cmd = "GrugFar",
+		config = function() require("config.grugfar") end,
+	},
 
 	-- QoL
-	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
-	{ src = "https://github.com/shortcuts/no-neck-pain.nvim" },
-	{ src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
-	{ src = "https://github.com/rmagatti/goto-preview" },
-	{ src = "https://github.com/Wansmer/treesj" },
-	{ src = "https://github.com/HiPhish/rainbow-delimiters.nvim" },
+	{ "ThePrimeagen/harpoon", branch = "harpoon2", config = function() require("config.harpoon") end },
+	{ "shortcuts/no-neck-pain.nvim", config = function() require("config.no-neck-pain") end },
+	{ "lukas-reineke/indent-blankline.nvim", config = function() require("config.indent-blankline") end },
+	{ "rmagatti/goto-preview", config = function() require("config.goto-preview") end },
+	{ "Wansmer/treesj", config = function() require("config.treejs") end },
+	{ "HiPhish/rainbow-delimiters.nvim", config = function() require("config.rainbow-delimiters") end },
 
 	-- prog-lanaguages
-	{ src = "https://github.com/mmikeww/autohotkey.vim" },
+	{ "mmikeww/autohotkey.vim" },
+}, {
+	ui = { border = "rounded" },
 })
