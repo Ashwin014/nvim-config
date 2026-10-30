@@ -42,10 +42,8 @@ vim.cmd.colorscheme("vscode")
 vim.api.nvim_create_autocmd("ColorScheme", {
 	callback = function()
 		vim.schedule(function()
-			local ok = pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/lualine.lua")
-			if not ok then
-				pcall(function() require("lualine").refresh() end)
-			end
+			pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/lualine.lua")
+			pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/indent-blankline.lua")
 		end)
 	end,
 })
@@ -58,10 +56,8 @@ vim.api.nvim_create_autocmd("FocusGained", {
 			require("vscode").setup({ style = new_style, italic_comments = false, transparency = true })
 			vim.cmd.colorscheme("vscode")
 			vim.schedule(function()
-				local ok = pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/lualine.lua")
-				if not ok then
-					pcall(function() require("lualine").refresh() end)
-				end
+				pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/lualine.lua")
+				pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/indent-blankline.lua")
 			end)
 		end
 	end,
