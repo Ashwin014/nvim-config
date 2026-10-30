@@ -21,7 +21,6 @@ require("config.which-key")
 -- require("config.harpoon") -- lazy-loaded via lazy.nvim
 require("config.surround")
 require("config.lualine")
--- require("config.no-neck-pain")
 require("config.indent-blankline")
 -- require("config.smear-cursor") -- lazy-loaded via lazy.nvim
 -- require("config.goto-preview") -- lazy-loaded via lazy.nvim

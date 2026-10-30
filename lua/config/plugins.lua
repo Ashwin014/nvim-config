@@ -205,13 +205,6 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"shortcuts/no-neck-pain.nvim",
-		cmd = "NoNeckPain",
-		config = function()
-			require("config.no-neck-pain")
-		end,
-	},
-	{
 		"lukas-reineke/indent-blankline.nvim",
 		config = function()
 			require("config.indent-blankline")
