@@ -232,6 +232,13 @@ require("lazy").setup({
 
 	-- prog-lanaguages
 	{ "mmikeww/autohotkey.vim" },
+  {
+    "akinsho/bufferline.nvim",
+    version = "*",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function() require("config.bufferline") end,
+  },
+
 }, {
 	ui = { border = "rounded" },
 })

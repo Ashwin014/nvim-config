@@ -28,3 +28,4 @@ require("config.indent-blankline")
 -- require("config.rainbow-delimiters") -- lazy-loaded via lazy.nvim
     require("config.nvim-tree")
 -- require("config.aerial") -- lazy-loaded via lazy.nvim
+require("config.bufferline")
