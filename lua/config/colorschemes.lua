@@ -9,7 +9,7 @@ require("vscode").setup({
 	italic_comments = false,
 	transparency = true,
 })
--- vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vscode")
 -- vim.api.nvim_set_hl(0, "@comment", { fg = "#606060" })
 
 -- vim.cmd.colorscheme("synth")
@@ -24,7 +24,7 @@ require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-dark")
 -- vim.cmd.colorscheme("soviet-light")
 
-vim.cmd.colorscheme("onedark-zed")
+-- vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
 
