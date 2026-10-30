@@ -134,7 +134,7 @@ require("lazy").setup({
 	{
 		"windwp/nvim-autopairs",
 		config = function()
-			require("config.surround")
+			require("config.autopairs")
 		end,
 	},
 
@@ -149,7 +149,6 @@ require("lazy").setup({
 	-- Find / files
 	{
 		"nvim-telescope/telescope.nvim",
-		cmd = "Telescope",
 		config = function()
 			require("config.telescope")
 		end,
