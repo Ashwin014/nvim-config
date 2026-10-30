@@ -67,13 +67,13 @@ vim.api.nvim_create_autocmd("FocusGained", {
 
 -- vim.cmd.colorscheme("synth")
 
-require("onedark").setup({ style = "warm" })
+-- require("onedark").setup({ style = "warm" })
 -- vim.cmd.colorscheme("onedark")
 
-require("gruvbox").setup()
+-- require("gruvbox").setup()
 -- vim.cmd.colorscheme("gruvbox")
 
-require("soviet").setup({}) -- Optional; add your settings here.
+-- require("soviet").setup({}) -- Optional; add your settings here.
 -- vim.cmd.colorscheme("soviet-dark")
 -- vim.cmd.colorscheme("soviet-light")
 

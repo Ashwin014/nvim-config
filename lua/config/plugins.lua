@@ -87,7 +87,6 @@ vim.pack.add({
 	-- QoL
 	{ src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2" },
 	{ src = "https://github.com/shortcuts/no-neck-pain.nvim" },
-	{ src = "https://github.com/kylechui/nvim-surround" },
 	{ src = "https://github.com/lukas-reineke/indent-blankline.nvim" },
 	{ src = "https://github.com/rmagatti/goto-preview" },
 	{ src = "https://github.com/Wansmer/treesj" },
