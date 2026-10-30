@@ -9,14 +9,14 @@ require("config.lsp")
 require("config.treesitter")
 require("config.completion")
 require("config.formatting")
-require("config.telescope")
+-- require("config.telescope") -- lazy-loaded via lazy.nvim
 require("config.git")
 require("config.dap")
 require("config.markdown")
-require("config.obsidian")
+-- require("config.obsidian") -- lazy-loaded via lazy.nvim
 require("config.snacks")
 require("config.hop")
-require("config.grugfar")
+-- require("config.grugfar") -- lazy-loaded via lazy.nvim
 require("config.which-key")
 require("config.harpoon")
 require("config.surround")
@@ -28,4 +28,4 @@ require("config.goto-preview")
 require("config.treejs")
 require("config.rainbow-delimiters")
 require("config.nvim-tree")
-require("config.aerial")
+-- require("config.aerial") -- lazy-loaded via lazy.nvim
