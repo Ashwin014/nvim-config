@@ -38,6 +38,18 @@ require("vscode").setup({
 })
 vim.cmd.colorscheme("vscode")
 
+-- Refresh lualine whenever the colorscheme changes
+vim.api.nvim_create_autocmd("ColorScheme", {
+	callback = function()
+		vim.schedule(function()
+			local ok = pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/lualine.lua")
+			if not ok then
+				pcall(function() require("lualine").refresh() end)
+			end
+		end)
+	end,
+})
+
 -- Optional: follow system theme changes while Neovim is open
 vim.api.nvim_create_autocmd("FocusGained", {
 	callback = function()
@@ -45,6 +57,12 @@ vim.api.nvim_create_autocmd("FocusGained", {
 		if vim.o.background ~= new_style then
 			require("vscode").setup({ style = new_style, italic_comments = false, transparency = true })
 			vim.cmd.colorscheme("vscode")
+			vim.schedule(function()
+				local ok = pcall(dofile, vim.fn.stdpath("config") .. "/lua/config/lualine.lua")
+				if not ok then
+					pcall(function() require("lualine").refresh() end)
+				end
+			end)
 		end
 	end,
 })
