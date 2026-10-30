@@ -4,6 +4,8 @@
 
 -- vim.lsp.semantic_tokens.enable(false)
 
+--
+
 local function is_dark_mode()
 	if vim.fn.has("win32") == 1 then
 		local handle = io.popen(
@@ -46,6 +48,8 @@ vim.api.nvim_create_autocmd("FocusGained", {
 		end
 	end,
 })
+
+--
 
 -- vim.cmd.colorscheme("synth")
 
