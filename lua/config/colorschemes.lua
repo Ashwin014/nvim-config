@@ -65,8 +65,6 @@ vim.api.nvim_create_autocmd("FocusGained", {
 
 --
 
--- vim.cmd.colorscheme("synth")
-
 -- require("onedark").setup({ style = "warm" })
 -- vim.cmd.colorscheme("onedark")
 

@@ -1,1 +1,0 @@
-require("synth").setup()
