@@ -1,8 +1,9 @@
 require("mason").setup({})
 
--- applies to every server; must run before servers start
+local ok, blink = pcall(require, "blink.cmp")
+local capabilities = ok and blink.get_lsp_capabilities() or vim.lsp.protocol.make_client_capabilities()
 vim.lsp.config("*", {
-	capabilities = require("blink.cmp").get_lsp_capabilities(),
+	capabilities = capabilities,
 })
 
 vim.lsp.config("lua_ls", {
