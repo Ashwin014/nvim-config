@@ -48,6 +48,7 @@ require("lazy").setup({
 	},
 	{
 		"smoka7/hop.nvim",
+		cmd = { "HopWord", "HopChar1", "HopLine" },
 		config = function()
 			require("config.hop")
 		end,
@@ -60,6 +61,7 @@ require("lazy").setup({
 	},
 	{
 		"MeanderingProgrammer/render-markdown.nvim",
+		ft = "markdown",
 		config = function()
 			require("config.markdown")
 		end,
@@ -67,6 +69,7 @@ require("lazy").setup({
 
 	{
 		"sphamba/smear-cursor.nvim",
+		event = "VeryLazy",
 		config = function()
 			require("config.smear-cursor")
 		end,
@@ -74,6 +77,7 @@ require("lazy").setup({
 
 	{
 		"nvim-tree/nvim-tree.lua",
+		cmd = { "NvimTreeToggle", "NvimTreeOpen", "NvimTreeFindFile" },
 		config = function()
 			require("config.nvim-tree")
 		end,
@@ -195,12 +199,14 @@ require("lazy").setup({
 	{
 		"ThePrimeagen/harpoon",
 		branch = "harpoon2",
+		cmd = { "Harpoon" },
 		config = function()
 			require("config.harpoon")
 		end,
 	},
 	{
 		"shortcuts/no-neck-pain.nvim",
+		cmd = "NoNeckPain",
 		config = function()
 			require("config.no-neck-pain")
 		end,
@@ -219,12 +225,14 @@ require("lazy").setup({
 	},
 	{
 		"Wansmer/treesj",
+		cmd = { "TSJToggle", "TSJ" },
 		config = function()
 			require("config.treejs")
 		end,
 	},
 	{
 		"HiPhish/rainbow-delimiters.nvim",
+		event = "BufReadPost",
 		config = function()
 			require("config.rainbow-delimiters")
 		end,
