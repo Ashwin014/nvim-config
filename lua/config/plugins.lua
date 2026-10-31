@@ -222,23 +222,24 @@ require("lazy").setup({
 			require("config.treejs")
 		end,
 	},
-	{
-		"HiPhish/rainbow-delimiters.nvim",
-		event = "BufReadPost",
-		config = function()
-			require("config.rainbow-delimiters")
-		end,
-	},
+	-- {
+	-- 	"HiPhish/rainbow-delimiters.nvim",
+	-- 	event = "BufReadPost",
+	-- 	config = function()
+	-- 		require("config.rainbow-delimiters")
+	-- 	end,
+	-- },
 
 	-- prog-lanaguages
 	{ "mmikeww/autohotkey.vim" },
-  {
-    "akinsho/bufferline.nvim",
-    version = "*",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function() require("config.bufferline") end,
-  },
-
+	{
+		"akinsho/bufferline.nvim",
+		version = "*",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("config.bufferline")
+		end,
+	},
 }, {
 	ui = { border = "rounded" },
 })
