@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	-- UI / Theme / Aesthetics
 	{ "ember-theme/nvim", name = "ember" },
-	{ "Mofiqul/vscode.nvim" },
+	-- { "Mofiqul/vscode.nvim" },
 	{ "navarasu/onedark.nvim" },
 	{ "ellisonleao/gruvbox.nvim" },
 	{ "rezniqov/soviet.nvim" },
