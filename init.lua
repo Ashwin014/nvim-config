@@ -20,12 +20,12 @@ require("config.snacks")
 require("config.which-key")
 -- require("config.harpoon") -- lazy-loaded via lazy.nvim
 require("config.surround")
-require("config.lualine")
+-- require("config.lualine")
 require("config.indent-blankline")
 -- require("config.smear-cursor") -- lazy-loaded via lazy.nvim
 -- require("config.goto-preview") -- lazy-loaded via lazy.nvim
 -- require("config.treejs") -- lazy-loaded via lazy.nvim
 -- require("config.rainbow-delimiters") -- lazy-loaded via lazy.nvim
-    require("config.nvim-tree")
+require("config.nvim-tree")
 -- require("config.aerial") -- lazy-loaded via lazy.nvim
 require("config.bufferline")
