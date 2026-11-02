@@ -19,7 +19,6 @@ require("lazy").setup({
 	{ "navarasu/onedark.nvim" },
 	{ "ellisonleao/gruvbox.nvim" },
 	{ "rezniqov/soviet.nvim" },
-	{ "neanias/everforest-nvim" },
 
 	{
 		"folke/which-key.nvim",
