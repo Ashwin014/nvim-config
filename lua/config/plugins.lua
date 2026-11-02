@@ -32,12 +32,12 @@ require("lazy").setup({
 			require("config.git")
 		end,
 	},
-	{
-		"nvim-lualine/lualine.nvim",
-		config = function()
-			require("config.lualine")
-		end,
-	},
+	-- {
+	-- 	"nvim-lualine/lualine.nvim",
+	-- 	config = function()
+	-- 		require("config.lualine")
+	-- 	end,
+	-- },
 	{ "nvim-tree/nvim-web-devicons" },
 	{
 		"folke/snacks.nvim",
