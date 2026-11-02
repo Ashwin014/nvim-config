@@ -6,6 +6,8 @@
 
 --
 
+-- #region vscode theme
+
 local function is_dark_mode()
 	if vim.fn.has("win32") == 1 then
 		local handle = io.popen(
@@ -63,6 +65,8 @@ vim.api.nvim_create_autocmd("FocusGained", {
 	end,
 })
 
+-- #endregion
+
 --
 
 -- require("onedark").setup({ style = "warm" })
@@ -78,12 +82,5 @@ vim.api.nvim_create_autocmd("FocusGained", {
 -- vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
-
--- require("everforest").setup({
--- 	background = "medium",
--- 	ui_contrast = "low",
--- })
--- vim.o.background = "light"
--- vim.cmd.colorscheme("everforest")
 
 require("config.transparency")
