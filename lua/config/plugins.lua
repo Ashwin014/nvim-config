@@ -67,13 +67,13 @@ require("lazy").setup({
 		end,
 	},
 
-	{
-		"sphamba/smear-cursor.nvim",
-		event = "VeryLazy",
-		config = function()
-			require("config.smear-cursor")
-		end,
-	},
+	-- {
+	-- 	"sphamba/smear-cursor.nvim",
+	-- 	event = "VeryLazy",
+	-- 	config = function()
+	-- 		require("config.smear-cursor")
+	-- 	end,
+	-- },
 
 	{
 		"nvim-tree/nvim-tree.lua",
