@@ -32,12 +32,12 @@ require("lazy").setup({
 			require("config.git")
 		end,
 	},
-	-- {
-	-- 	"nvim-lualine/lualine.nvim",
-	-- 	config = function()
-	-- 		require("config.lualine")
-	-- 	end,
-	-- },
+	{
+		"nvim-lualine/lualine.nvim",
+		config = function()
+			require("config.lualine")
+		end,
+	},
 	{ "nvim-tree/nvim-web-devicons" },
 	{
 		"folke/snacks.nvim",
@@ -66,8 +66,8 @@ require("lazy").setup({
 		end,
 	},
 
-	-- {
 	-- 	"sphamba/smear-cursor.nvim",
+	-- {
 	-- 	event = "VeryLazy",
 	-- 	config = function()
 	-- 		require("config.smear-cursor")
@@ -221,13 +221,13 @@ require("lazy").setup({
 			require("config.treejs")
 		end,
 	},
-	-- {
-	-- 	"HiPhish/rainbow-delimiters.nvim",
-	-- 	event = "BufReadPost",
-	-- 	config = function()
-	-- 		require("config.rainbow-delimiters")
-	-- 	end,
-	-- },
+	{
+		"HiPhish/rainbow-delimiters.nvim",
+		event = "BufReadPost",
+		config = function()
+			require("config.rainbow-delimiters")
+		end,
+	},
 
 	-- prog-lanaguages
 	{ "mmikeww/autohotkey.vim" },

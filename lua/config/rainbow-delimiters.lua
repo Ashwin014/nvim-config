@@ -10,10 +10,10 @@ vim.g.rainbow_delimiters = {
 	},
 	highlight = {
 		"RainbowDelimiterYellow",
+		"RainbowDelimiterPink",
 		"RainbowDelimiterBlue",
 		-- "RainbowDelimiterCyan",
 		-- "RainbowDelimiterPurple",
-		"RainbowDelimiterRed",
 		-- "RainbowDelimiterOrange",
 		-- "RainbowDelimiterGreen",
 	},
@@ -21,8 +21,8 @@ vim.g.rainbow_delimiters = {
 }
 
 -- map to vscode colorscheme
-vim.api.nvim_set_hl(0, "RainbowDelimiterRed", { fg = "#FFD700" }) -- gold
-vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", { fg = "#DA70D6" }) -- orchid
+vim.api.nvim_set_hl(0, "RainbowDelimiterYellow", { fg = "#FFD700" }) -- gold
+vim.api.nvim_set_hl(0, "RainbowDelimiterPink", { fg = "#DA70D6" }) -- orchid
 vim.api.nvim_set_hl(0, "RainbowDelimiterBlue", { fg = "#179fff" }) -- blue
 -- vim.api.nvim_set_hl(0, "RainbowDelimiterOrange", { fg = "#FA8072" }) -- salmon
 -- vim.api.nvim_set_hl(0, "RainbowDelimiterGreen", { fg = "#7CFC00" }) -- lawn green
