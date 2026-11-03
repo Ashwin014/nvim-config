@@ -38,7 +38,7 @@ require("vscode").setup({
 	italic_comments = false,
 	transparency = true,
 })
--- vim.cmd.colorscheme("vscode")
+vim.cmd.colorscheme("vscode")
 
 -- Refresh lualine whenever the colorscheme changes
 vim.api.nvim_create_autocmd("ColorScheme", {

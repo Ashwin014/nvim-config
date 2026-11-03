@@ -221,13 +221,13 @@ require("lazy").setup({
 			require("config.treejs")
 		end,
 	},
-	{
-		"HiPhish/rainbow-delimiters.nvim",
-		event = "BufReadPost",
-		config = function()
-			require("config.rainbow-delimiters")
-		end,
-	},
+	-- {
+	-- 	"HiPhish/rainbow-delimiters.nvim",
+	-- 	event = "BufReadPost",
+	-- 	config = function()
+	-- 		require("config.rainbow-delimiters")
+	-- 	end,
+	-- },
 
 	-- prog-lanaguages
 	{ "mmikeww/autohotkey.vim" },
