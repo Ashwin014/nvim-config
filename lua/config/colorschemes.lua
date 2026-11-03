@@ -38,7 +38,7 @@ require("vscode").setup({
 	italic_comments = false,
 	transparency = true,
 })
-vim.cmd.colorscheme("vscode")
+-- vim.cmd.colorscheme("vscode")
 
 -- Refresh lualine whenever the colorscheme changes
 vim.api.nvim_create_autocmd("ColorScheme", {
@@ -69,7 +69,7 @@ vim.api.nvim_create_autocmd("FocusGained", {
 
 --
 
--- require("onedark").setup({ style = "warm" })
+-- require("onedark").setup({ style = "dark" })
 -- vim.cmd.colorscheme("onedark")
 
 -- require("gruvbox").setup()
@@ -83,4 +83,4 @@ vim.api.nvim_create_autocmd("FocusGained", {
 
 -- vim.cmd.colorscheme("retrobox")
 
-require("config.transparency")
+-- require("config.transparency")
