@@ -97,11 +97,11 @@ vmap("<", "<gv")
 vmap(">", ">gv")
 
 -- keep cursor centered on scroll
-nmap("<C-d>", "<C-d>zz")
-nmap("<C-u>", "<C-u>zz")
--- same for search jumps
-nmap("n", "nzzzv")
-nmap("N", "Nzzzv")
+-- nmap("<C-d>", "<C-d>zz")
+-- nmap("<C-u>", "<C-u>zz")
+-- -- same for search jumps
+-- nmap("n", "nzzzv")
+-- nmap("N", "Nzzzv")
 
 xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 -- keep last yanked when pasting

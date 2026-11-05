@@ -43,5 +43,5 @@ o.colorcolumn = "80"
 -- o.list = true
 -- o.listchars:append("leadmultispace:·")
 -- o.listchars:append("space:·")
-o.scrolloff = 999
+-- o.scrolloff = 999
 o.cursorline = true
