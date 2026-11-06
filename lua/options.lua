@@ -39,9 +39,9 @@ o.showcmd = true
 o.showcmdloc = "statusline"
 o.ttimeoutlen = 10
 o.timeoutlen = 100
-o.colorcolumn = "80"
+-- o.colorcolumn = "80"
 -- o.list = true
 -- o.listchars:append("leadmultispace:·")
 -- o.listchars:append("space:·")
 -- o.scrolloff = 999
-o.cursorline = true
+-- o.cursorline = true
