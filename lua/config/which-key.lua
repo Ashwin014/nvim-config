@@ -1,5 +1,5 @@
 -- Pick a style: "right", "center", "bottom", "top", "titled"
-local style = "top"
+local style = "titled"
 
 local styles = {
 	right = {
@@ -11,12 +11,12 @@ local styles = {
 		layout = { align = "center" },
 	},
 	bottom = {
-		win = { border = "none", position = "bottom", height = { min = 4, max = 25 }, width = 1 },
-		layout = { align = "left", spacing = 4 },
+		win = { border = "none", row = math.huge, col = 0, padding = { 1, 2 }, title = true, title_pos = "center" },
+		layout = { width = { min = 20 }, spacing = 3 },
 	},
 	top = {
-		win = { border = "rounded", position = "top", width = { min = 40, max = 80 } },
-		layout = { align = "center" },
+		win = { border = "rounded", row = 0, col = 0, padding = { 1, 2 }, title = true, title_pos = "center" },
+		layout = { width = { min = 20 }, spacing = 3 },
 	},
 	titled = {
 		win = { border = "rounded", title = "Keymaps", title_pos = "center", width = { min = 40, max = 80 } },
