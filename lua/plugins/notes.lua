@@ -1,0 +1,24 @@
+return {
+	{
+		"MeanderingProgrammer/render-markdown.nvim",
+		ft = "markdown",
+		config = function()
+			require("config.markdown")
+		end,
+	},
+	{
+		"iamcco/markdown-preview.nvim",
+		ft = "markdown",
+		build = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	},
+	{
+		"obsidian-nvim/obsidian.nvim",
+		version = "*",
+		ft = "markdown",
+		config = function()
+			require("config.obsidian")
+		end,
+	},
+}

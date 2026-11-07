@@ -4,7 +4,8 @@ local vmap = m.vmap
 local imap = m.imap
 local xmap = m.xmap
 
-vim.g.mapleader = " "
+-- leader is set in init.lua before this module loads
+
 
 -- map CAPSLOCK (F13) as Esc
 nmap("<F13>", "<Esc>")
