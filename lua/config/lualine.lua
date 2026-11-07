@@ -4,12 +4,12 @@ require("lualine").setup({
 		globalstatus = true,
 		component_separators = { left = "", right = "" },
 		section_separators = {
-			left = vim.fn.nr2char(0xe0b8),
-			right = vim.fn.nr2char(0xe0be),
+			left = vim.fn.nr2char(0xe0bc),
+			right = vim.fn.nr2char(0xe0ba),
 		},
 	},
 	sections = {
-		lualine_a = { { "mode", separator = { right = vim.fn.nr2char(0xe0b8) }, right_padding = 2 } },
+		lualine_a = { { "mode", separator = { right = vim.fn.nr2char(0xe0bc) }, right_padding = 2 } },
 		lualine_b = { "filename", "branch" },
 		lualine_c = {
 			"%=", --[[ add your center components here in place of this comment ]]
@@ -25,7 +25,7 @@ require("lualine").setup({
 			"filetype",
 		},
 		lualine_y = { "filetype", "progress" },
-		lualine_z = { { "location", separator = { left = vim.fn.nr2char(0xe0be) }, left_padding = 2 } },
+		lualine_z = { { "location", separator = { left = vim.fn.nr2char(0xe0ba) }, left_padding = 2 } },
 	},
 	inactive_sections = {
 		lualine_a = { "filename" },
@@ -46,3 +46,4 @@ vim.api.nvim_create_autocmd({ "RecordingEnter", "RecordingLeave" }, {
 		end)
 	end,
 })
+
