@@ -12,9 +12,9 @@ imap("<F13>", "<Esc>")
 vmap("<F13>", "<Esc>")
 xmap("<F13>", "<Esc>")
 
--- ===========================================================================================
+-- ========================================================
 -- WINDOW
--- ===========================================================================================
+-- ========================================================
 
 -- nmap("<leader>q", ":q<CR>", { desc = "Quit" })
 -- nmap("<leader>Q", ":q!<CR>", { desc = "Quit (forced)" })
@@ -42,7 +42,7 @@ nmap("<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 nmap("<leader>|", "<C-w>v", { desc = "Split vertically" })
 nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 
-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------
 
 nmap("<leader>bn", ":bn<CR>", { desc = "Go to next buffer" })
 nmap("<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
@@ -65,7 +65,7 @@ end, {})
 -- Optional: Map it to <leader>bo (Buffer Only)
 nmap("<leader>bo", ":CloseOtherBuffers<CR>", { silent = true, desc = "Close all other buffers" })
 
-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------
 
 -- tabs
 nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
@@ -75,9 +75,9 @@ nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
 nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
 nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
 
--- ===========================================================================================
+-- ========================================================
 -- EDITOR
--- ===========================================================================================
+-- ========================================================
 -- clear search highlight
 nmap("<Esc>", "<cmd>nohlsearch<CR>")
 
@@ -104,7 +104,7 @@ vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" }
 nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
 vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
--- TEXT --------------------------------------------------------------------------------------
+-- TEXT ---------------------------------------------------
 
 imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
 
@@ -128,7 +128,7 @@ nmap("x", '"_x', { noremap = true, silent = true })
 
 imap("<C-/>", "<Esc>gcc", { desc = "Toggle comment" })
 
--- LINES -------------------------------------------------------------------------------------
+-- LINES --------------------------------------------------
 
 -- Move line(s) up/down — Alt+Up/Down and Alt+j/k
 nmap("<A-Down>", "<cmd>m .+1<cr>==", { desc = "Move line down" })
@@ -179,9 +179,9 @@ vmap("<S-Tab>", "<gv")
 
 --
 
--- ===========================================================================================
+-- ========================================================
 -- UTILS
--- ===========================================================================================
+-- ========================================================
 -- map undo "U"
 nmap("U", "<C-r>")
 
@@ -203,7 +203,7 @@ nmap("<leader>cf", function()
 	print("Copied relative path!")
 end)
 
--- Custom commands ---------------------------------------------------------------------------
+-- Custom commands ----------------------------------------
 
 -- 1. Edit Configuration (:EditConfig)
 -- Opens your main init.lua file from anywhere in Neovim
