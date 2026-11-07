@@ -44,19 +44,6 @@ nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 
 ----------------------------------------------------------------------------------------------
 
--- buffer
--- nmap("<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
--- nmap("<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
-
---
-
-nmap("<Tab>", ">>")
-vmap("<Tab>", ">>")
-nmap("<S-Tab>", "<<")
-vmap("<S-Tab>", "<<")
-
---
-
 nmap("<leader>bn", ":bn<CR>", { desc = "Go to next buffer" })
 nmap("<leader>bp", ":bp<CR>", { desc = "Go to prev buffer" })
 nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
@@ -183,6 +170,15 @@ vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 -- nmap("k", "^kzz")
 -- nmap("j", "^jzz")
 
+--
+
+nmap("<Tab>", ">>")
+vmap("<Tab>", ">gv")
+nmap("<S-Tab>", "<<")
+vmap("<S-Tab>", "<gv")
+
+--
+
 -- ===========================================================================================
 -- UTILS
 -- ===========================================================================================
@@ -190,6 +186,7 @@ vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 nmap("U", "<C-r>")
 
 imap("jk", "<Esc>")
+imap("jj", "<Esc>")
 
 -- Video, audio and everything else: open with the system app.
 -- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
