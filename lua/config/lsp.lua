@@ -34,6 +34,7 @@ require("mason-lspconfig").setup({
 		"yamlls",
 		"taplo",
 		"marksman",
+		"emmet-lanaguage-server",
 	},
 	automatic_enable = true,
 })
