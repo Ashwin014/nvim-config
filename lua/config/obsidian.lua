@@ -145,7 +145,13 @@ local function note_id(title)
 	return os.date("%Y-%m-%d-T%H%M%S")
 end
 
-require("obsidian").setup({
+local ok, obsidian = pcall(require, "obsidian")
+if not ok then
+	vim.notify("obsidian.nvim not installed; run :Lazy sync", vim.log.levels.WARN)
+	return
+end
+
+obsidian.setup({
 	legacy_commands = false, -- this will be removed in 4.0.0
 	frontmatter = { enabled = false }, -- don't auto-add id / aliases / tags
 	workspaces = {

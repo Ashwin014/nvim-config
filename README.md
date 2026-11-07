@@ -8,12 +8,15 @@ Refactored structure:
 - `lua/config/` — per-plugin setup modules.
 
 ## Adding a plugin
+
 1. Add spec to the appropriate `lua/plugins/<category>.lua`.
 2. Add setup in `lua/config/<name>.lua` and wire via `config = function() require("config.<name>").setup() end` (or current side-effect style).
 
 ## Formatting
+
 `stylua .` (config in `stylua.toml`).
 `selene .` (config in `selene.toml`).
 
 ## Health
+
 Run `:checkhealth` after changes.

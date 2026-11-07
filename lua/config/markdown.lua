@@ -1,7 +1,7 @@
 -- In-buffer rendering: headings, tables, code blocks, checkboxes.
 -- Toggle with :RenderMarkdown toggle
 require("render-markdown").setup({
-	heading = { icons = {} }, -- no Nerd Font needed
+	heading = { icons = {}, backgrounds = {} }, -- no Nerd Font needed; no header background
 	code = { sign = false },
 	latex = { enabled = false },
 	bullet = {
