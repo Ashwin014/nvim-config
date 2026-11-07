@@ -1,4 +1,4 @@
-local m = require("map")
+local m = require("core.map")
 local nmap = m.nmap
 local vmap = m.vmap
 local imap = m.imap
