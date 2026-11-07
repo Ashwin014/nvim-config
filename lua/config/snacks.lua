@@ -65,7 +65,7 @@ require("snacks").setup({
 	notifier = {
 		enabled = true,
 		timeout = 5000, -- ms a notification stays visible
-		style = "minimal", -- also "compact" and "minimal"
+		style = "fancy", -- also "compact" and "minimal"
 	},
 })
 
