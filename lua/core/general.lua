@@ -1,13 +1,15 @@
--- Flash text on yank
+local yank_group = vim.api.nvim_create_augroup("HighlightYank", { clear = true })
 vim.api.nvim_create_autocmd("TextYankPost", {
+	group = yank_group,
 	callback = function()
 		vim.hl.on_yank()
 	end,
 })
 
 --#region sourced from https://youtu.be/v36vLiFVOXY
--- restore cursor to file position in previous editing session
+local restore_cursor_group = vim.api.nvim_create_augroup("RestoreCursor", { clear = true })
 vim.api.nvim_create_autocmd("BufReadPost", {
+	group = restore_cursor_group,
 	callback = function(args)
 		local mark = vim.api.nvim_buf_get_mark(args.buf, '"')
 		local line_count = vim.api.nvim_buf_line_count(args.buf)
@@ -27,8 +29,9 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 -- 	command = "wincmd L",
 -- })
 
--- auto resize splits when the terminal's window is resized
+local resize_group = vim.api.nvim_create_augroup("ResizeSplits", { clear = true })
 vim.api.nvim_create_autocmd("VimResized", {
+	group = resize_group,
 	command = "wincmd =",
 })
 
@@ -128,3 +131,5 @@ for _, mode in ipairs(modes) do
 		vim.keymap.set(mode, key, "<Nop>", { noremap = true, silent = true })
 	end
 end
+
+
