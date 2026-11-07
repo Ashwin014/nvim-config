@@ -1,30 +1,14 @@
--- Pick a style: "right", "center", "bottom", "top", "titled"
-local style = "titled"
-
-local styles = {
-	right = {
-		win = { border = "rounded", col = 0.99, width = { min = 30, max = 60 } },
-		layout = { align = "right" },
+require("which-key").setup({
+	-- delay = 0,
+	win = {
+		border = "rounded", -- single | double | solid | rounded
+		col = 0.99, -- push the window to the right edge
+		width = { min = 30, max = 60 }, -- cap the width instead of full-width
 	},
-	center = {
-		win = { border = "rounded", width = { min = 40, max = 80 } },
-		layout = { align = "center" },
+	layout = {
+		align = "right",
 	},
-	bottom = {
-		win = { border = "none", row = math.huge, col = 0, padding = { 1, 2 }, title = true, title_pos = "center" },
-		layout = { width = { min = 20 }, spacing = 3 },
-	},
-	top = {
-		win = { border = "rounded", row = 0, col = 0, padding = { 1, 2 }, title = true, title_pos = "center" },
-		layout = { width = { min = 20 }, spacing = 3 },
-	},
-	titled = {
-		win = { border = "rounded", title = "Keymaps", title_pos = "center", width = { min = 40, max = 80 } },
-		layout = { align = "center" },
-	},
-}
-
-require("which-key").setup(vim.tbl_deep_extend("force", {}, styles[style]))
+})
 
 require("which-key").add({
 	{ "<leader>f", group = "Find" },

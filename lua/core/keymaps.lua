@@ -6,7 +6,6 @@ local xmap = m.xmap
 
 -- leader is set in init.lua before this module loads
 
-
 -- map CAPSLOCK (F13) as Esc
 nmap("<F13>", "<Esc>")
 imap("<F13>", "<Esc>")
@@ -46,8 +45,10 @@ nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 ----------------------------------------------------------------------------------------------
 
 -- buffer
-nmap("<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
-nmap("<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
+-- nmap("<Tab>", ":bn<CR>", { desc = "Go to next buffer" })
+-- nmap("<S-Tab>", ":bp<CR>", { desc = "Go to prev buffer" })
+
+nmap("<Tab>", ">")
 
 -- TEMP
 -- nmap("<Tab>", "<C-d>")
