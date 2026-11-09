@@ -83,4 +83,7 @@
 
 -- vim.cmd.colorscheme("retrobox")
 
-require("config.transparency")
+require("everforest").setup({})
+vim.cmd.colorscheme("everforest")
+
+-- require("config.transparency")
