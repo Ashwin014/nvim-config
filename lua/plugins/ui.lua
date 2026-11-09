@@ -10,6 +10,7 @@ return {
 	{ "navarasu/onedark.nvim" },
 	{ "ellisonleao/gruvbox.nvim" },
 	{ "rezniqov/soviet.nvim" },
+	{ "https://github.com/neanias/everforest-nvim" },
 
 	-- UI
 	{
