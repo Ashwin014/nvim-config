@@ -58,7 +58,17 @@ local theme_setup = {
 	end,
 
 	soviet = function(bg)
-		require("soviet").setup({})
+		require("soviet").setup({
+			styles = {
+				comments = { italic = false },
+				keywords = {},
+				functions = {},
+				strings = {},
+				variables = {},
+				-- sidebars = "dark", -- "dark", "normal", or "transparent"
+				-- floats = "dark", -- "dark", "normal", or "transparent"
+			},
+		})
 		require("soviet").load(bg)
 	end,
 }
