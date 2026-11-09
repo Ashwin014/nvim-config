@@ -139,5 +139,4 @@ M.apply("soviet")
 -- M.apply("school")
 -- M.apply("onedark-zed")
 
--- require("config.transparency")
-
+require("config.transparency")
