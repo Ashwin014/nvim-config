@@ -63,7 +63,7 @@ local theme_setup = {
 				keywords = { bold = false },
 				-- functions = {},
 				-- strings = {},
-				variables = { bold = false },
+				-- variables = { bold = false },
 			},
 		})
 		require("soviet").load(bg)
