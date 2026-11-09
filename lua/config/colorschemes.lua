@@ -60,11 +60,11 @@ local theme_setup = {
 	soviet = function(bg)
 		require("soviet").setup({
 			styles = {
-				comments = { italic = false },
-				keywords = {},
-				functions = {},
-				strings = {},
-				variables = {},
+				-- comments = { italic = false },
+				keywords = { bold = false },
+				-- functions = {},
+				-- strings = {},
+				types = { bold = false },
 				-- sidebars = "dark", -- "dark", "normal", or "transparent"
 				-- floats = "dark", -- "dark", "normal", or "transparent"
 			},
