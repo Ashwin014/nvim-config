@@ -64,6 +64,7 @@ local theme_setup = {
 local colorscheme_for = {
 	ember = "ember-auto",
 	vscode = "vscode",
+	school = "school",
 }
 -- #endregion
 
@@ -124,4 +125,8 @@ vim.api.nvim_create_autocmd("FocusGained", {
 M.apply("ember")
 -- M.apply("vscode")
 
--- require("config.transparency")
+-- NEEDS LIGHT THEMES, CURRENTLY JUST DARK
+-- M.apply("school")
+-- M.apply("onedark-zed")
+
+require("config.transparency")
