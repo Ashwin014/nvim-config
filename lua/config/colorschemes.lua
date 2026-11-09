@@ -123,4 +123,4 @@ vim.api.nvim_create_autocmd("FocusGained", {
 -- Activate ember at startup.
 M.apply("ember")
 
--- require("config.transparency")
+require("config.transparency")
