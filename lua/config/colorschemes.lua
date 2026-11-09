@@ -56,6 +56,14 @@ local theme_setup = {
 			transparency = true,
 		})
 	end,
+
+	soviet = function(bg)
+		require("soviet").setup({
+			-- style = bg,
+			-- italic_comments = false,
+			-- transparency = true,
+		})
+	end,
 }
 
 -- Map a theme key to the actual `:colorscheme` name.  Most themes load by
@@ -65,6 +73,7 @@ local colorscheme_for = {
 	ember = "ember-auto",
 	vscode = "vscode",
 	school = "school",
+	soviet = "soviet",
 }
 -- #endregion
 
@@ -123,7 +132,7 @@ vim.api.nvim_create_autocmd("FocusGained", {
 
 -- Activate ember at startup.
 -- M.apply("ember")
-M.apply("vscode")
+-- M.apply("vscode")
 M.apply("soviet")
 
 -- NEEDS LIGHT THEMES, CURRENTLY JUST DARK
