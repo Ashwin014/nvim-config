@@ -58,11 +58,11 @@ local theme_setup = {
 	end,
 
 	soviet = function(bg)
-		print(bg)
+		
 		require("soviet").setup({
 			-- dark_variant = "soviet-dark",
 			-- light_variant = "soviet-light",
-			vim.cmd.colorscheme("soviet-dark"),
+			vim.cmd.colorscheme("soviet-" .. bg),
 		})
 	end,
 }
