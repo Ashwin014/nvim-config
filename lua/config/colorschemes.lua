@@ -58,10 +58,10 @@ local theme_setup = {
 	end,
 
 	soviet = function(bg)
+		print(bg)
 		require("soviet").setup({
-			-- style = bg,
-			-- italic_comments = false,
-			-- transparency = true,
+			dark_variant = "soviet-dark",
+			light_variant = "soviet-light",
 		})
 	end,
 }
