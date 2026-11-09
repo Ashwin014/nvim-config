@@ -58,12 +58,8 @@ local theme_setup = {
 	end,
 
 	soviet = function(bg)
-		
-		require("soviet").setup({
-			-- dark_variant = "soviet-dark",
-			-- light_variant = "soviet-light",
-			vim.cmd.colorscheme("soviet-" .. bg),
-		})
+		require("soviet").setup({})
+		require("soviet").load(bg)
 	end,
 }
 
@@ -74,7 +70,6 @@ local colorscheme_for = {
 	ember = "ember-auto",
 	vscode = "vscode",
 	school = "school",
-	soviet = "soviet",
 }
 -- #endregion
 
@@ -92,8 +87,12 @@ function M.apply(name)
 		setup(bg)
 	end
 
-	local scheme = colorscheme_for[name] or name
-	vim.cmd.colorscheme(scheme)
+	local scheme = colorscheme_for[name]
+	if scheme then
+		-- Only call :colorscheme for themes that have a colorscheme file.
+		-- Themes like soviet self-load via require(...).load(style).
+		vim.cmd.colorscheme(scheme)
+	end
 
 	M.current_theme = name
 end
@@ -141,3 +140,4 @@ M.apply("soviet")
 -- M.apply("onedark-zed")
 
 -- require("config.transparency")
+
