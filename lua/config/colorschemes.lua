@@ -83,4 +83,4 @@ vim.api.nvim_create_autocmd("FocusGained", {
 
 -- vim.cmd.colorscheme("retrobox")
 
--- require("config.transparency")
+require("config.transparency")
