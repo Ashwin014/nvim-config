@@ -59,12 +59,15 @@ local theme_setup = {
 
 	soviet = function(bg)
 		require("soviet").setup({
-			styles = {
-				keywords = { bold = false },
-				-- functions = {},
-				-- strings = {},
-				-- variables = { bold = false },
-			},
+			-- remove boldness
+			lualine_bold = false,
+			on_highlights = function(hl, c)
+				for _, group in pairs(hl) do
+					if type(group) == "table" then
+						group.bold = false
+					end
+				end
+			end,
 		})
 		require("soviet").load(bg)
 	end,
