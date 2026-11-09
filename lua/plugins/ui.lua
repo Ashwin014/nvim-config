@@ -10,15 +10,6 @@ return {
 	{ "navarasu/onedark.nvim" },
 	{ "ellisonleao/gruvbox.nvim" },
 	{ "rezniqov/soviet.nvim" },
-	{
-		"https://github.com/neanias/everforest-nvim",
-		version = "false",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("config.colorschemes")
-		end,
-	},
 
 	-- UI
 	{

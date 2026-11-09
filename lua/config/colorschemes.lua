@@ -1,4 +1,4 @@
--- vim.cmd.colorscheme("ember")
+vim.cmd.colorscheme("ember")
 
 -- vim.cmd.colorscheme("school")
 
@@ -82,8 +82,5 @@
 -- vim.cmd.colorscheme("onedark-zed")
 
 -- vim.cmd.colorscheme("retrobox")
-
-require("everforest").setup({})
-vim.cmd.colorscheme("everforest")
 
 -- require("config.transparency")
