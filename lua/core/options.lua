@@ -51,7 +51,7 @@ vim.o.guifont = "JetBrains Mono:h10"
 if vim.g.neovide then
 	vim.g.neovide_opacity = 0.99
 	vim.g.neovide_cursor_animation_length = 0.05
-	vim.g.neovide_scroll_animation_length = 0.9
+	vim.g.neovide_scroll_animation_length = 0.2
 	vim.g.neovide_padding_top = 3
 	vim.g.neovide_padding_left = 3
 	vim.g.neovide_padding_bottom = 3
