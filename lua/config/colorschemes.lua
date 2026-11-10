@@ -52,7 +52,7 @@ local theme_setup = {
 	vscode = function(bg)
 		require("vscode").setup({
 			style = bg,
-			italic_comments = false,
+			italic_comments = true,
 			transparency = true,
 		})
 	end,
@@ -142,8 +142,8 @@ vim.api.nvim_create_autocmd("FocusGained", {
 
 -- Activate ember at startup.
 -- M.apply("ember")
--- M.apply("vscode")
-M.apply("soviet")
+M.apply("vscode")
+-- M.apply("soviet")
 
 -- NEEDS LIGHT THEMES, CURRENTLY JUST DARK
 -- M.apply("school")
