@@ -45,3 +45,5 @@ o.timeoutlen = 100
 -- o.listchars:append("space:·")
 -- o.scrolloff = 999
 -- o.cursorline = true
+
+vim.o.guifont = "JetBrains Mono:h11"
