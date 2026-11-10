@@ -89,11 +89,13 @@ vmap("<", "<gv")
 vmap(">", ">gv")
 
 -- keep cursor centered on scroll
--- nmap("<C-d>", "<C-d>zz")
--- nmap("<C-u>", "<C-u>zz")
--- -- same for search jumps
--- nmap("n", "nzzzv")
--- nmap("N", "Nzzzv")
+nmap("<C-d>", "<C-d>zz")
+nmap("<C-u>", "<C-u>zz")
+nmap("<C-f>", "<C-f>zz")
+nmap("<C-b>", "<C-b>zz")
+-- same for search jumps
+nmap("n", "nzzzv")
+nmap("N", "Nzzzv")
 
 xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 -- keep last yanked when pasting
@@ -202,22 +204,6 @@ nmap("<leader>cf", function()
 	vim.fn.setreg("+", vim.fn.expand("%"))
 	print("Copied relative path!")
 end)
-
--- Custom commands ----------------------------------------
-
--- 1. Edit Configuration (:EditConfig)
--- Opens your main init.lua file from anywhere in Neovim
-vim.api.nvim_create_user_command("ConfigEdit", function()
-	local config_file = vim.fn.stdpath("config") .. "/init.lua"
-	vim.cmd("edit " .. vim.fn.fnameescape(config_file))
-end, { desc = "Open Neovim init.lua configuration file" })
-
--- 2. Reload Configuration (:ReloadConfig)
--- Sources your init file and refreshes your runtime path
-vim.api.nvim_create_user_command("ConfigReload", function()
-	vim.cmd("source $MYVIMRC")
-	print("Neovim configuration reloaded!")
-end, { desc = "Reload Neovim configuration" })
 
 -----------------------------------------------------------
 
