@@ -225,3 +225,10 @@ end, { desc = "Reload Neovim configuration" })
 vim.api.nvim_create_user_command("Wr", "write | source %", {})
 
 -----------------------------------------------------------
+-- Mouse TEMP
+
+-- Ctrl+click: go to definition
+vim.keymap.set("n", "<C-LeftMouse>", "<LeftMouse><cmd>lua vim.lsp.buf.definition()<CR>")
+
+-- Right-click: hover docs
+vim.keymap.set("n", "<RightMouse>", "<LeftMouse><cmd>lua vim.lsp.buf.hover()<CR>")
