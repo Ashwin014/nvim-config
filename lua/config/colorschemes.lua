@@ -149,8 +149,8 @@ vim.api.nvim_create_autocmd("FocusGained", {
 -- #endregion
 
 -- Activate ember at startup.
--- M.apply("ember")
-M.apply("vscode")
+M.apply("ember")
+-- M.apply("vscode")
 -- M.apply("soviet")
 
 -- NEEDS LIGHT THEMES, CURRENTLY JUST DARK
