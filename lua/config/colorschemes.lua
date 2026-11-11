@@ -46,6 +46,14 @@ local theme_setup = {
 			variant = "ember-auto",
 			dark_variant = "ember",
 			light_variant = "ember-light",
+
+			on_highlights = function(hl, c)
+				for _, group in pairs(hl) do
+					if type(group) == "table" then
+						group.bold = false
+					end
+				end
+			end,
 		})
 	end,
 
