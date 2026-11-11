@@ -88,11 +88,11 @@ vmap("K", ":m '<-2<CR>gv=gv")
 vmap("<", "<gv")
 vmap(">", ">gv")
 
--- keep cursor centered on scroll
-nmap("<C-d>", "<C-d>zz")
-nmap("<C-u>", "<C-u>zz")
-nmap("<C-f>", "<C-f>zz")
-nmap("<C-b>", "<C-b>zz")
+-- -- keep cursor centered on scroll
+-- nmap("<C-d>", "<C-d>zz")
+-- nmap("<C-u>", "<C-u>zz")
+-- nmap("<C-f>", "<C-f>zz")
+-- nmap("<C-b>", "<C-b>zz")
 -- same for search jumps
 nmap("n", "nzzzv")
 nmap("N", "Nzzzv")
@@ -167,10 +167,10 @@ vmap("<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move selection up" })
 -- nvmap("<S-left>", "zH")
 -- nvmap("<S-right>", "zL")
 
-nmap("<up>", "^kzz")
-nmap("<down>", "^jzz")
-nmap("k", "^kzz")
-nmap("j", "^jzz")
+-- nmap("<up>", "^kzz")
+-- nmap("<down>", "^jzz")
+-- nmap("k", "^kzz")
+-- nmap("j", "^jzz")
 
 --
 
