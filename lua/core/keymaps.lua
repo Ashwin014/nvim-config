@@ -35,12 +35,8 @@ nmap("<C-k>", "<C-w>k")
 -- window resize
 nmap("<C-Up>", "<cmd>resize +5<cr>", { desc = "Resize up" })
 nmap("<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
-nmap("<C-Left>", "<cmd>vertical resize +5<cr>", { desc = "Resize left" })
-nmap("<C-Right>", "<cmd>vertical resize -5<cr>", { desc = "Resize right" })
-
--- window splits
--- nmap("<leader>|", "<C-w>v", { desc = "Split vertically" })
--- nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
+nmap("<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
+nmap("<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 
 -----------------------------------------------------------
 
@@ -150,15 +146,7 @@ nmap("<leader>ca", "gg<S-v>G", { desc = "Select all text" })
 -- delete single character without copying into register/clipboard
 nmap("x", '"_x', { noremap = true, silent = true })
 
--- vim.keymap.set("i", "<C-/>", function()
--- 	local pos = vim.api.nvim_win_get_cursor(0)
--- 	vim.cmd("normal! gcc")
--- 	vim.api.nvim_win_set_cursor(0, pos)
--- 	vim.cmd("startinsert")
--- end, { desc = "Toggle comment" })
-
--- nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
--- vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+-- comment
 nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
 vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 imap("<C-/>", "<Esc>gccA", { remap = true, desc = "Toggle comment" })
