@@ -44,6 +44,7 @@ local maps = {
 	b = { tb.buffers, "Buffers" },
 	o = { tb.oldfiles, "Recent files" },
 	-- sw = { tb.grep_string, "Grep word" },
+	h = { tb.help_tags, "Help" },
 	s = { tb.lsp_document_symbols, "Symbols (file)" },
 	S = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
 	d = { tb.diagnostics, "Diagnostics" },
@@ -59,4 +60,4 @@ end
 
 map("n", "<leader>'", tb.resume, { desc = "Telescope: Resume" })
 map("n", "<leader>/", tb.live_grep, { desc = "Telescope: Grep" })
-map("n", "<leader>?", tb.help_tags, { desc = "Telescope: Help" })
+-- map("n", "<leader>?", tb.help_tags, { desc = "Telescope: Help" })

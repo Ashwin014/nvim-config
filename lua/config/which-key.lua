@@ -32,6 +32,7 @@ require("which-key").add({
 	-- { "<leader>x", group = "Terminal" },
 	-- { "<leader>c", group = "Commands" },
 	-- { "<leader>m", group = "Miscellaneous" },
+  { "<leader>?", group = "Commands" },
 	{ "g", group = "Goto" },
 	{ "[", group = "Prev" },
 	{ "]", group = "Next" },

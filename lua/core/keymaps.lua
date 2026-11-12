@@ -138,9 +138,7 @@ vmap("p", '"_dP', { noremap = true, silent = true })
 
 -- TEXT ---------------------------------------------------
 
-nmap("<leader>ca", "gg<S-v>G", { desc = "Select all text" })
-
--- imap("<C-d>", "<Esc>ddi", { desc = "Delete line" })
+nmap("<leader>?a", "gg<S-v>G", { desc = "Select all text" })
 
 -- delete single character without copying into register/clipboard
 nmap("x", '"_x', { noremap = true, silent = true })
@@ -164,7 +162,7 @@ imap("<A-j>", "<Esc><cmd>m .+1<cr>==gi", { desc = "Move line down" })
 imap("<A-k>", "<Esc><cmd>m .-2<cr>==gi", { desc = "Move line up" })
 
 -- Duplicate a line and comment out the first line
--- nmap("<leader>yc", "yygccp", { remap = true })
+nmap("<leader>?d", "yygccp", { remap = true, desc="Duplicate + comment out line"})
 
 -- This solution flickers the cmdline
 vmap("<A-Down>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
