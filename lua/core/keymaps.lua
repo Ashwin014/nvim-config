@@ -149,7 +149,7 @@ vmap("p", '"_dP', { noremap = true, silent = true })
 
 imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
 
--- nmap("<leader>a", "gg<S-v>G", { desc = "Select all text" })
+nmap("<leader>ca", "gg<S-v>G", { desc = "Select all text" })
 
 -- imap("<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
 

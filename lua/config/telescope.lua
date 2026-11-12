@@ -40,9 +40,9 @@ local maps = {
 	-- fk = { tb.keymaps, "Keymaps" },
 	-- fc = { tb.resume, "Resume" },
 	--
-	-- o = { tb.find_files, "Find files" },
-	-- g = { tb.live_grep, "Grep" },
-	-- b = { tb.buffers, "Buffers" },
+	eo = { tb.find_files, "Find files" },
+	fg = { tb.live_grep, "Grep" },
+	bo = { tb.buffers, "Open buffers" },
 	-- r = { tb.oldfiles, "Recent files" },
 	-- w = { tb.grep_string, "Grep word" },
 	-- h = { tb.help_tags, "Help" },
