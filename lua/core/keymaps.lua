@@ -27,16 +27,16 @@ vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restar
 vim.api.nvim_create_user_command("R", "restart", {})
 
 -- window navigation
--- nmap("<C-h>", "<C-w>h")
--- nmap("<C-l>", "<C-w>l")
--- nmap("<C-j>", "<C-w>j")
--- nmap("<C-k>", "<C-w>k")
+nmap("<C-h>", "<C-w>h")
+nmap("<C-l>", "<C-w>l")
+nmap("<C-j>", "<C-w>j")
+nmap("<C-k>", "<C-w>k")
 
 -- window resize
--- nmap("<C-Up>", "<cmd>resize +5<cr>", { desc = "Resize up" })
--- nmap("<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
--- nmap("<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
--- nmap("<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
+nmap("<C-Up>", "<cmd>resize +5<cr>", { desc = "Resize up" })
+nmap("<C-Down>", "<cmd>resize -5<cr>", { desc = "Resize down" })
+nmap("<C-Left>", "<cmd>vertical resize +5<cr>", { desc = "Resize left" })
+nmap("<C-Right>", "<cmd>vertical resize -5<cr>", { desc = "Resize right" })
 
 -- window splits
 -- nmap("<leader>|", "<C-w>v", { desc = "Split vertically" })
