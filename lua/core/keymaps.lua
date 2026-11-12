@@ -94,10 +94,21 @@ nmap("[l", "<cmd>lprevious<CR>", { desc = "Previous location list" })
 nmap("]l", "<cmd>lnext<CR>", { desc = "Next location list" })
 
 -- Diagnostics
-nmap("[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
-nmap("]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
-nmap("[e", function() vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR }) end, { desc = "Previous error" })
-nmap("]e", function() vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR }) end, { desc = "Next error" })
+nmap("[d", function()
+	vim.diagnostic.jump({ count = -1 })
+end, { desc = "Previous diagnostic" })
+
+nmap("]d", function()
+	vim.diagnostic.jump({ count = 1 })
+end, { desc = "Next diagnostic" })
+
+nmap("[e", function()
+	vim.diagnostic.jump({ count = -1, severity = vim.diagnostic.severity.ERROR })
+end, { desc = "Previous error" })
+
+nmap("]e", function()
+	vim.diagnostic.jump({ count = 1, severity = vim.diagnostic.severity.ERROR })
+end, { desc = "Next error" })
 
 -- Search
 nmap("[/", "N", { desc = "Previous search match" })
