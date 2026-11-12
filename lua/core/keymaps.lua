@@ -218,7 +218,7 @@ imap("jj", "<Esc>")
 
 -- quickly jump to init.lua & wezterm.lua
 -- nmap("<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
-nmap("<leader>,", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
+nmap("<leader>$", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
 -- nmap("<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
 
 -- nmap("<leader>cf", function()
