@@ -18,5 +18,5 @@ require("which-key").add({
 	{ "<leader>t", group = "Tabs" },
 	{ "<leader>g", group = "Git" },
 	{ "<leader>gh", group = "Hunks" },
-	{ "g", group = "Go to" },
+	{ "g", group = "Goto" },
 })
