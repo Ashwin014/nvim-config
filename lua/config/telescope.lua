@@ -13,7 +13,7 @@ local map = vim.keymap.set
 -- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 -- end, { desc = "Telescope: Find files in current buffer directory" })
 --
-map("n", "<leader>F", function()
+map("n", "<leader>P", function()
 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 end, { desc = "Telescope: Find files in current buffer directory" })
 
@@ -28,10 +28,22 @@ end, { desc = "Telescope: Find files in current buffer directory" })
 -- All the simple ones
 local maps = {
 	-- ff = { tb.find_files, "Find files" },
-	f = { tb.find_files, "Find files" },
 	-- fg = { tb.live_grep, "Grep" },
 	-- fb = { tb.buffers, "Buffers" },
 	-- fr = { tb.oldfiles, "Recent files" },
+	-- fw = { tb.grep_string, "Grep word" },
+	-- fh = { tb.help_tags, "Help" },
+	-- fs = { tb.lsp_document_symbols, "Symbols (file)" },
+	-- fS = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
+	-- fd = { tb.diagnostics, "Diagnostics" },
+	-- fR = { tb.lsp_references, "References" },
+	-- fk = { tb.keymaps, "Keymaps" },
+	-- fc = { tb.resume, "Resume" },
+
+	p = { tb.find_files, "Find files" },
+	g = { tb.live_grep, "Grep" },
+	-- fb = { tb.buffers, "Buffers" },
+	r = { tb.oldfiles, "Recent files" },
 	-- fw = { tb.grep_string, "Grep word" },
 	-- fh = { tb.help_tags, "Help" },
 	-- fs = { tb.lsp_document_symbols, "Symbols (file)" },
