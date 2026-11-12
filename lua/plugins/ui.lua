@@ -10,6 +10,7 @@ return {
 	{ "navarasu/onedark.nvim" },
 	{ "ellisonleao/gruvbox.nvim" },
 	{ "rezniqov/soviet.nvim" },
+	{ "ramojus/mellifluous.nvim" },
 
 	-- UI
 	{
