@@ -201,26 +201,26 @@ vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
 -- 6. Keymaps
 ---------------------------------------------------------------------
 -- { key, :Obsidian subcommand, description }  ->  <leader>o<key>
-local commands = {
-	{ "n", "new", "New note" },
-	{ "t", "today", "Today's note" },
-	{ "y", "yesterday", "Yesterday's note" },
-	{ "m", "tomorrow", "Tomorrow's note" },
-	{ "d", "dailies", "Pick a daily note" },
-	{ "f", "quick_switch", "Find note" },
-	{ "s", "search", "Search notes" },
-	{ "b", "backlinks", "Backlinks" },
-	{ "l", "links", "Links in this note" },
-	{ "g", "tags", "Find by tag" },
-	{ "r", "rename", "Rename note" },
-	{ "T", "template", "Insert template" },
-	{ "i", "paste_img", "Paste image" },
-	{ "o", "open", "Open in Obsidian app" },
-}
-for _, c in ipairs(commands) do
-	-- vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = "obsd: " .. c[3] })
-	vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = c[3] })
-end
+-- local commands = {
+-- 	{ "n", "new", "New note" },
+-- 	{ "t", "today", "Today's note" },
+-- 	{ "y", "yesterday", "Yesterday's note" },
+-- 	{ "m", "tomorrow", "Tomorrow's note" },
+-- 	{ "d", "dailies", "Pick a daily note" },
+-- 	{ "f", "quick_switch", "Find note" },
+-- 	{ "s", "search", "Search notes" },
+-- 	{ "b", "backlinks", "Backlinks" },
+-- 	{ "l", "links", "Links in this note" },
+-- 	{ "g", "tags", "Find by tag" },
+-- 	{ "r", "rename", "Rename note" },
+-- 	{ "T", "template", "Insert template" },
+-- 	{ "i", "paste_img", "Paste image" },
+-- 	{ "o", "open", "Open in Obsidian app" },
+-- }
+-- for _, c in ipairs(commands) do
+-- 	-- vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = "obsd: " .. c[3] })
+-- 	vim.keymap.set("n", "<leader>o" .. c[1], "<cmd>Obsidian " .. c[2] .. "<cr>", { desc = c[3] })
+-- end
 
 -- these two work on a visual selection
 vim.keymap.set("v", "<leader>ok", ":Obsidian link<cr>", { desc = "Link selection" })

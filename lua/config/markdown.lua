@@ -50,4 +50,4 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- open browser with rendered markdown
-vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreviewToggle<cr>", { desc = "Markdown preview (browser)" })
+-- vim.keymap.set("n", "<leader>up", "<cmd>MarkdownPreviewToggle<cr>", { desc = "Markdown preview (browser)" })

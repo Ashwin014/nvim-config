@@ -67,24 +67,24 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(ev)
 		local buf = ev.buf
 		local client = vim.lsp.get_client_by_id(ev.data.client_id)
-		local map = function(lhs, rhs, desc)
-			vim.keymap.set("n", lhs, rhs, { buffer = buf, desc = desc })
-		end
-
-		map("gd", vim.lsp.buf.definition, "Goto definition")
-		map("gD", vim.lsp.buf.declaration, "Goto declaration")
-		map("<leader>ld", vim.diagnostic.open_float, "Line diagnostics")
-		map("<leader>lq", vim.diagnostic.setqflist, "Diagnostics to quickfix")
-		map("gR", vim.lsp.buf.references, "Goto references")
-		map("gi", vim.lsp.buf.implementation, "Goto implementation")
-		map("<leader>ci", vim.lsp.buf.incoming_calls, "Incoming calls")
-		map("<leader>co", vim.lsp.buf.outgoing_calls, "Outgoing calls")
+		-- local map = function(lhs, rhs, desc)
+		-- 	vim.keymap.set("n", lhs, rhs, { buffer = buf, desc = desc })
+		-- end
+		--
+		-- map("gd", vim.lsp.buf.definition, "Goto definition")
+		-- map("gD", vim.lsp.buf.declaration, "Goto declaration")
+		-- map("<leader>ld", vim.diagnostic.open_float, "Line diagnostics")
+		-- map("<leader>lq", vim.diagnostic.setqflist, "Diagnostics to quickfix")
+		-- map("gR", vim.lsp.buf.references, "Goto references")
+		-- map("gi", vim.lsp.buf.implementation, "Goto implementation")
+		-- map("<leader>ci", vim.lsp.buf.incoming_calls, "Incoming calls")
+		-- map("<leader>co", vim.lsp.buf.outgoing_calls, "Outgoing calls")
 
 		if client and client:supports_method("textDocument/inlayHint") then
 			vim.lsp.inlay_hint.enable(true, { bufnr = buf })
-			map("<leader>ti", function()
-				vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = buf }), { bufnr = buf })
-			end, "Toggle inlay hints")
+			-- map("<leader>ti", function()
+			-- 	vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = buf }), { bufnr = buf })
+			-- end, "Toggle inlay hints")
 		end
 
 		-- ruff = lint/format only; let pyright handle hover
