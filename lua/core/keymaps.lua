@@ -167,11 +167,11 @@ nmap("x", '"_x', { noremap = true, silent = true })
 -- 	vim.cmd("startinsert")
 -- end, { desc = "Toggle comment" })
 
-imap("<C-/>", "<Esc>gcc", { desc = "Toggle comment" })
+-- imap("<C-/>", "<Esc>gcc", { desc = "Toggle comment" })
 
 -- LINES --------------------------------------------------
 
--- Move line(s) up/down — Alt+Up/Down and Alt+j/k
+-- Move line(s) up/down — Alt+Up/Down and Alt+j/e
 nmap("<A-Down>", "<cmd>m .+1<cr>==", { desc = "Move line down" })
 nmap("<A-Up>", "<cmd>m .-2<cr>==", { desc = "Move line up" })
 nmap("<A-j>", "<cmd>m .+1<cr>==", { desc = "Move line down" })
@@ -183,7 +183,7 @@ imap("<A-j>", "<Esc><cmd>m .+1<cr>==gi", { desc = "Move line down" })
 imap("<A-k>", "<Esc><cmd>m .-2<cr>==gi", { desc = "Move line up" })
 
 -- Duplicate a line and comment out the first line
-nmap("<leader>yc", "yygccp", { remap = true })
+-- nmap("<leader>yc", "yygccp", { remap = true })
 
 -- This solution flickers the cmdline
 vmap("<A-Down>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
