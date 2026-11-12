@@ -139,20 +139,11 @@ vmap(">", ">gv")
 -- xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 -- keep last yanked when pasting
 vmap("p", '"_dP', { noremap = true, silent = true })
-
--- nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
--- vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
-nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
-vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
-imap("<C-/>", "<Esc>gccA", { remap = true, desc = "Toggle comment" })
-
 -- TEXT ---------------------------------------------------
 
 imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
 
 nmap("<leader>ca", "gg<S-v>G", { desc = "Select all text" })
-
--- imap("<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
 
 -- imap("<C-d>", "<Esc>ddi", { desc = "Delete line" })
 
@@ -165,6 +156,12 @@ nmap("x", '"_x', { noremap = true, silent = true })
 -- 	vim.api.nvim_win_set_cursor(0, pos)
 -- 	vim.cmd("startinsert")
 -- end, { desc = "Toggle comment" })
+
+-- nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+-- vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+imap("<C-/>", "<Esc>gccA", { remap = true, desc = "Toggle comment" })
 
 -- LINES --------------------------------------------------
 
