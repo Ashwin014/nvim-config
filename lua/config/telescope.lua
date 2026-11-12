@@ -13,9 +13,9 @@ local map = vim.keymap.set
 -- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 -- end, { desc = "Telescope: Find files in current buffer directory" })
 --
--- map("n", "<leader>P", function()
--- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
--- end, { desc = "Telescope: Find files in current buffer directory" })
+map("n", "<leader>E", function()
+	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
+end, { desc = "Telescope: Find files in current buffer directory" })
 
 -- map("v", "<leader>fw", function()
 -- 	local saved = vim.fn.getreg("v")
@@ -40,18 +40,18 @@ local maps = {
 	-- fk = { tb.keymaps, "Keymaps" },
 	-- fc = { tb.resume, "Resume" },
 	--
-	eo = { tb.find_files, "Find files" },
-	sg = { tb.live_grep, "Grep" },
-	bo = { tb.buffers, "List buffers" },
-	fr = { tb.oldfiles, "Recent files" },
-	sw = { tb.grep_string, "Grep word" },
-	sh = { tb.help_tags, "Help" },
-	fs = { tb.lsp_document_symbols, "Symbols (file)" },
-	fS = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
-	dl = { tb.diagnostics, "List Diagnostics" },
-	lr = { tb.lsp_references, "References" },
-	ck = { tb.keymaps, "Keymaps" },
-	sc = { tb.resume, "Resume" },
+	f = { tb.find_files, "Find files" },
+	-- sg = { tb.live_grep, "Grep" },
+	-- bo = { tb.buffers, "List buffers" },
+	-- fr = { tb.oldfiles, "Recent files" },
+	-- sw = { tb.grep_string, "Grep word" },
+	-- sh = { tb.help_tags, "Help" },
+	-- ls = { tb.lsp_document_symbols, "Symbols (file)" },
+	-- lS = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
+	-- dl = { tb.diagnostics, "List Diagnostics" },
+	-- lr = { tb.lsp_references, "References" },
+	-- ck = { tb.keymaps, "Keymaps" },
+	-- sc = { tb.resume, "Resume" },
 }
 
 for key, spec in pairs(maps) do
