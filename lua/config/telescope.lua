@@ -25,6 +25,8 @@ end, { desc = "Telescope: Find files in current buffer directory" })
 -- 	require("telescope.builtin").grep_string({ search = selection })
 -- end, { desc = "Telescope: Grep selection" })
 
+map("n", "<leader>'", tb.resume, { desc = "Telescope: Resume" })
+
 -- All the simple ones
 local maps = {
 	-- ff = { tb.find_files, "Find files" },
