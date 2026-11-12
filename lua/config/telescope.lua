@@ -13,9 +13,9 @@ local map = vim.keymap.set
 -- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 -- end, { desc = "Telescope: Find files in current buffer directory" })
 --
-map("n", "<leader>P", function()
-	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
-end, { desc = "Telescope: Find files in current buffer directory" })
+-- map("n", "<leader>P", function()
+-- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
+-- end, { desc = "Telescope: Find files in current buffer directory" })
 
 -- map("v", "<leader>fw", function()
 -- 	local saved = vim.fn.getreg("v")
