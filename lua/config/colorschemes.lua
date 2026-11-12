@@ -157,7 +157,7 @@ vim.api.nvim_create_autocmd("FocusGained", {
 -- M.apply("ember")
 -- M.apply("vscode")
 -- M.apply("soviet")
-M.apply("mellifluous")
+-- M.apply("mellifluous")
 
 -- NEEDS LIGHT THEMES, CURRENTLY JUST DARK
 -- M.apply("school")
