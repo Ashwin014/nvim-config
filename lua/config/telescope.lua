@@ -25,9 +25,6 @@ end, { desc = "Telescope: Find files in current buffer directory" })
 -- 	require("telescope.builtin").grep_string({ search = selection })
 -- end, { desc = "Telescope: Grep selection" })
 
-map("n", "<leader>'", tb.resume, { desc = "Telescope: Resume" })
-map("n", "<leader>/", tb.live_grep, { desc = "Telescope: Grep" })
-
 -- All the simple ones
 local maps = {
 	-- ff = { tb.find_files, "Find files" },
@@ -62,3 +59,7 @@ for key, spec in pairs(maps) do
 		desc = "Telescope: " .. spec[2],
 	})
 end
+
+map("n", "<leader>'", tb.resume, { desc = "Telescope: Resume" })
+map("n", "<leader>/", tb.live_grep, { desc = "Telescope: Grep" })
+map("n", "<leader>?", tb.help_tags, { desc = "Telescope: Help" })
