@@ -75,11 +75,11 @@ require("snacks").setup({
 local maps = {
 	ui = { fn = Snacks.image.hover, desc = "Preview image under cursor" },
 	z = { fn = Snacks.zen, args = { win = { width = 90 }, toggles = { dim = false } }, desc = "Zen mode" }, -- change 100 to set the text width
-	fi = {
-		fn = Snacks.picker.files,
-		args = { ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } },
-		desc = "Find images / pdfs (with preview)",
-	},
+	-- fi = {
+	-- 	fn = Snacks.picker.files,
+	-- 	args = { ft = { "png", "jpg", "jpeg", "gif", "webp", "bmp", "pdf" } },
+	-- 	desc = "Find images / pdfs (with preview)",
+	-- },
 	D = { fn = Snacks.dashboard, desc = "Open dashboard" },
 	-- e = { fn = Snacks.explorer, desc = "File tree" },
 	gg = { fn = Snacks.lazygit, desc = "Lazygit" },

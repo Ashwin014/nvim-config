@@ -7,12 +7,12 @@ function M.setup()
 	local pick = api.pick
 	local fuzzy_find_toggle = api.fuzzy_find_toggle
 
-	vim.keymap.set("n", "<leader>ed", function()
-		pick()
-	end, { desc = "Pick from dropbar" })
-	vim.keymap.set("n", "<leader>fd", function()
-		fuzzy_find_toggle()
-	end, { desc = "Fuzzy find in dropbar" })
+	-- vim.keymap.set("n", "<leader>ed", function()
+	-- 	pick()
+	-- end, { desc = "Pick from dropbar" })
+	-- vim.keymap.set("n", "<leader>fd", function()
+	-- 	fuzzy_find_toggle()
+	-- end, { desc = "Fuzzy find in dropbar" })
 end
 
 return M
