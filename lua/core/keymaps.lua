@@ -51,30 +51,30 @@ vim.api.nvim_create_user_command("R", "restart", {})
 
 -- nmap("<A-Left>", "<C-o>")
 -- nmap("<A-Right>", "<C-i>")
-
--- Create a user command :CloseOtherBuffers
-vim.api.nvim_create_user_command("CloseOtherBuffers", function()
-	local current_buf = vim.api.nvim_get_current_buf()
-	for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
-		if bufnr ~= current_buf and vim.api.nvim_buf_is_loaded(bufnr) then
-			vim.api.nvim_buf_delete(bufnr, {})
-		end
-	end
-end, {})
-
--- Optional: Map it to <leader>bo (Buffer Only)
-nmap("<leader>bo", ":CloseOtherBuffers<CR>", { silent = true, desc = "Close all other buffers" })
+--
+-- -- Create a user command :CloseOtherBuffers
+-- vim.api.nvim_create_user_command("CloseOtherBuffers", function()
+-- 	local current_buf = vim.api.nvim_get_current_buf()
+-- 	for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
+-- 		if bufnr ~= current_buf and vim.api.nvim_buf_is_loaded(bufnr) then
+-- 			vim.api.nvim_buf_delete(bufnr, {})
+-- 		end
+-- 	end
+-- end, {})
+--
+-- -- Optional: Map it to <leader>bo (Buffer Only)
+-- nmap("<leader>bo", ":CloseOtherBuffers<CR>", { silent = true, desc = "Close all other buffers" })
 
 -----------------------------------------------------------
 
 -- Tabs
-nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
-nmap("<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
-nmap("<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
-nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
-nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
-nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
-
+-- nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
+-- nmap("<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
+-- nmap("<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
+-- nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
+-- nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
+-- nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
+--
 -----------------------------------------------------------
 -- BRACKET-BASED NEXT/PREV NAVIGATION
 -----------------------------------------------------------
