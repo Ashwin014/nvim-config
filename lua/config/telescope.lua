@@ -26,6 +26,7 @@ end, { desc = "Telescope: Find files in current buffer directory" })
 -- end, { desc = "Telescope: Grep selection" })
 
 map("n", "<leader>'", tb.resume, { desc = "Telescope: Resume" })
+map("n", "<leader>/", tb.live_grep, { desc = "Telescope: Grep" })
 
 -- All the simple ones
 local maps = {
