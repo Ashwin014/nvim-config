@@ -11,12 +11,27 @@ require("which-key").setup({
 })
 
 require("which-key").add({
+	-- { "<leader>f", group = "Find" },
+	-- { "<leader>o", group = "Obsidian" },
+	-- { "<leader>oi", group = "Inserts" },
+	-- { "<leader>b", group = "Buffers" },
+	-- { "<leader>t", group = "Tabs" },
+	-- { "<leader>g", group = "Git" },
+	-- { "<leader>gh", group = "Hunks" },
+	-- { "g", group = "Goto" },
+
+	{ "<leader>e", group = "Explorer / Files" },
 	{ "<leader>f", group = "Find" },
-	{ "<leader>o", group = "Obsidian" },
-	{ "<leader>oi", group = "Inserts" },
+	{ "<leader>s", group = "Search" },
 	{ "<leader>b", group = "Buffers" },
-	{ "<leader>t", group = "Tabs" },
 	{ "<leader>g", group = "Git" },
-	{ "<leader>gh", group = "Hunks" },
+	{ "<leader>t", group = "Tabs" },
+	{ "<leader>d", group = "Diagnostics" },
+	{ "<leader>l", group = "LSP / Language" },
+	{ "<leader>x", group = "Terminal" },
+	{ "<leader>c", group = "Commands" },
+	{ "<leader>m", group = "Miscellaneous" },
 	{ "g", group = "Goto" },
+	{ "[", group = "Prev" },
+	{ "]", group = "Next" },
 })

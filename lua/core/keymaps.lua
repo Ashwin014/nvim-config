@@ -67,13 +67,13 @@ nmap("<leader>bo", ":CloseOtherBuffers<CR>", { silent = true, desc = "Close all 
 
 -----------------------------------------------------------
 
--- tabs
--- nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
--- nmap("<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
--- nmap("<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
--- nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
--- nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
--- nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
+-- Tabs
+nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
+nmap("<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
+nmap("<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
+nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
+nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
+nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
 
 -----------------------------------------------------------
 -- BRACKET-BASED NEXT/PREV NAVIGATION
