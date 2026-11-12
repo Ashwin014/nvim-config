@@ -145,7 +145,7 @@ nmap("<leader>ca", "gg<S-v>G", { desc = "Select all text" })
 -- delete single character without copying into register/clipboard
 nmap("x", '"_x', { noremap = true, silent = true })
 
--- comment
+-- Toggle comment
 nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
 vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 imap("<C-/>", "<Esc>gccA", { remap = true, silent = true, desc = "Toggle comment" })
