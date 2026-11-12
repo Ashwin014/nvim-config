@@ -75,6 +75,34 @@ nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
 nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
 nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
 
+-----------------------------------------------------------
+-- BRACKET-BASED NEXT/PREV NAVIGATION
+-----------------------------------------------------------
+
+-- Buffers
+nmap("[b", ":bprevious<CR>", { desc = "Previous buffer" })
+nmap("]b", ":bnext<CR>", { desc = "Next buffer" })
+
+-- Tabs
+nmap("[t", "<cmd>tabprevious<CR>", { desc = "Previous tab" })
+nmap("]t", "<cmd>tabnext<CR>", { desc = "Next tab" })
+
+-- Quickfix / Location list
+nmap("[q", "<cmd>cprevious<CR>", { desc = "Previous quickfix" })
+nmap("]q", "<cmd>cnext<CR>", { desc = "Next quickfix" })
+nmap("[l", "<cmd>lprevious<CR>", { desc = "Previous location list" })
+nmap("]l", "<cmd>lnext<CR>", { desc = "Next location list" })
+
+-- Diagnostics
+nmap("[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
+nmap("]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+nmap("[e", function() vim.diagnostic.goto_prev({ severity = vim.diagnostic.severity.ERROR }) end, { desc = "Previous error" })
+nmap("]e", function() vim.diagnostic.goto_next({ severity = vim.diagnostic.severity.ERROR }) end, { desc = "Next error" })
+
+-- Search
+nmap("[/", "N", { desc = "Previous search match" })
+nmap("]/", "n", { desc = "Next search match" })
+
 -- ========================================================
 -- EDITOR
 -- ========================================================
