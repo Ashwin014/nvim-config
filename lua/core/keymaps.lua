@@ -141,7 +141,7 @@ vmap(">", ">gv")
 vmap("p", '"_dP', { noremap = true, silent = true })
 -- TEXT ---------------------------------------------------
 
-imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
+-- imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
 
 nmap("<leader>ca", "gg<S-v>G", { desc = "Select all text" })
 
@@ -218,7 +218,7 @@ vmap("<S-Tab>", "<gv")
 -- UTILS
 -- ========================================================
 -- map undo "U"
-nmap("U", "<C-r>")
+-- nmap("U", "<C-r>")
 
 imap("jk", "<Esc>")
 imap("jj", "<Esc>")

@@ -41,17 +41,14 @@ local maps = {
 	-- fc = { tb.resume, "Resume" },
 	--
 	f = { tb.find_files, "Find files" },
-	-- sg = { tb.live_grep, "Grep" },
 	b = { tb.buffers, "List buffers" },
-	-- fr = { tb.oldfiles, "Recent files" },
+	o = { tb.oldfiles, "Recent files" },
 	-- sw = { tb.grep_string, "Grep word" },
-	-- sh = { tb.help_tags, "Help" },
 	s = { tb.lsp_document_symbols, "Symbols (file)" },
 	S = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
 	d = { tb.diagnostics, "List Diagnostics" },
 	-- lr = { tb.lsp_references, "References" },
 	-- ck = { tb.keymaps, "Keymaps" },
-	-- sc = { tb.resume, "Resume" },
 }
 
 for key, spec in pairs(maps) do
