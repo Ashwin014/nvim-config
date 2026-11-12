@@ -9,32 +9,37 @@ local tb = require("telescope.builtin")
 local map = vim.keymap.set
 
 -- Custom one (the only special case)
-map("n", "<leader>fF", function()
+-- map("n", "<leader>fF", function()
+-- 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
+-- end, { desc = "Telescope: Find files in current buffer directory" })
+--
+map("n", "<leader>F", function()
 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 end, { desc = "Telescope: Find files in current buffer directory" })
 
-map("v", "<leader>fw", function()
-	local saved = vim.fn.getreg("v")
-	vim.cmd('normal! "vy')
-	local selection = vim.fn.getreg("v")
-	vim.fn.setreg("v", saved)
-	require("telescope.builtin").grep_string({ search = selection })
-end, { desc = "Telescope: Grep selection" })
+-- map("v", "<leader>fw", function()
+-- 	local saved = vim.fn.getreg("v")
+-- 	vim.cmd('normal! "vy')
+-- 	local selection = vim.fn.getreg("v")
+-- 	vim.fn.setreg("v", saved)
+-- 	require("telescope.builtin").grep_string({ search = selection })
+-- end, { desc = "Telescope: Grep selection" })
 
 -- All the simple ones
 local maps = {
-	ff = { tb.find_files, "Find files" },
-	fg = { tb.live_grep, "Grep" },
-	fb = { tb.buffers, "Buffers" },
-	fr = { tb.oldfiles, "Recent files" },
-	fw = { tb.grep_string, "Grep word" },
-	fh = { tb.help_tags, "Help" },
-	fs = { tb.lsp_document_symbols, "Symbols (file)" },
-	fS = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
-	fd = { tb.diagnostics, "Diagnostics" },
-	fR = { tb.lsp_references, "References" },
-	fk = { tb.keymaps, "Keymaps" },
-	fc = { tb.resume, "Resume" },
+	-- ff = { tb.find_files, "Find files" },
+	f = { tb.find_files, "Find files" },
+	-- fg = { tb.live_grep, "Grep" },
+	-- fb = { tb.buffers, "Buffers" },
+	-- fr = { tb.oldfiles, "Recent files" },
+	-- fw = { tb.grep_string, "Grep word" },
+	-- fh = { tb.help_tags, "Help" },
+	-- fs = { tb.lsp_document_symbols, "Symbols (file)" },
+	-- fS = { tb.lsp_dynamic_workspace_symbols, "Symbols (project)" },
+	-- fd = { tb.diagnostics, "Diagnostics" },
+	-- fR = { tb.lsp_references, "References" },
+	-- fk = { tb.keymaps, "Keymaps" },
+	-- fc = { tb.resume, "Resume" },
 }
 
 for key, spec in pairs(maps) do
