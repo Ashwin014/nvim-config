@@ -44,10 +44,10 @@ vim.api.nvim_create_user_command("R", "restart", {})
 
 -----------------------------------------------------------
 
-nmap("<leader>bn", ":bn<CR>", { desc = "Goto next buffer" })
-nmap("<leader>bp", ":bp<CR>", { desc = "Goto prev buffer" })
-nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
-nmap("<leader>bs", ":b#<CR>", { desc = "Switch buffers" })
+-- nmap("<leader>bn", ":bn<CR>", { desc = "Goto next buffer" })
+-- nmap("<leader>bp", ":bp<CR>", { desc = "Goto prev buffer" })
+-- nmap("<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
+-- nmap("<leader>bs", ":b#<CR>", { desc = "Switch buffers" })
 
 -- nmap("<A-Left>", "<C-o>")
 -- nmap("<A-Right>", "<C-i>")

@@ -17,13 +17,13 @@ map("n", "<leader>F", function()
 	tb.find_files({ cwd = vim.fn.expand("%:p:h") })
 end, { desc = "Telescope: Find files in current buffer directory" })
 
--- map("v", "<leader>fw", function()
--- 	local saved = vim.fn.getreg("v")
--- 	vim.cmd('normal! "vy')
--- 	local selection = vim.fn.getreg("v")
--- 	vim.fn.setreg("v", saved)
--- 	require("telescope.builtin").grep_string({ search = selection })
--- end, { desc = "Telescope: Grep selection" })
+map("v", "<leader>/", function()
+	local saved = vim.fn.getreg("v")
+	vim.cmd('normal! "vy')
+	local selection = vim.fn.getreg("v")
+	vim.fn.setreg("v", saved)
+	require("telescope.builtin").grep_string({ search = selection })
+end, { desc = "Telescope: Grep selection" })
 
 -- All the simple ones
 local maps = {
