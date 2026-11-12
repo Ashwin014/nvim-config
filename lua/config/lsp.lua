@@ -71,12 +71,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.keymap.set("n", lhs, rhs, { buffer = buf, desc = desc })
 		end
 
-		map("gd", vim.lsp.buf.definition, "Go to definition")
-		map("gD", vim.lsp.buf.declaration, "Go to declaration")
+		map("gd", vim.lsp.buf.definition, "Definition")
+		map("gD", vim.lsp.buf.declaration, "Declaration")
 		map("<leader>ld", vim.diagnostic.open_float, "Line diagnostics")
 		map("<leader>lq", vim.diagnostic.setqflist, "Diagnostics to quickfix")
-		map("gR", vim.lsp.buf.references, "Go to references")
-		map("gi", vim.lsp.buf.implementation, "Go to implementation")
+		map("gR", vim.lsp.buf.references, "References")
+		map("gi", vim.lsp.buf.implementation, "Implementation")
 		map("<leader>ci", vim.lsp.buf.incoming_calls, "Incoming calls")
 		map("<leader>co", vim.lsp.buf.outgoing_calls, "Outgoing calls")
 
