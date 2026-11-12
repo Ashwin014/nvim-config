@@ -79,32 +79,15 @@ vim.api.nvim_create_autocmd("CursorHoldI", {
 
 --#endregion
 
------------------------------------------------------------------------------------------
+--
 
 -- Terminal: <leader>t opens a split, <Esc><Esc> leaves terminal mode
 -- vim.keymap.set("n", "<leader>`", "<cmd>botright 12split | terminal<cr>", { desc = "Terminal" })
 -- vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Exit terminal mode" })
 
-------------------------------------------------------------------------------------------
+--
 
--- Jump to errors specifically, skipping warnings
-vim.keymap.set("n", "]e", function()
-	vim.diagnostic.jump({
-		count = 1,
-		severity = vim.diagnostic.severity.ERROR,
-	})
-end, { desc = "Next error" })
-
-vim.keymap.set("n", "[e", function()
-	vim.diagnostic.jump({
-		count = -1,
-		severity = vim.diagnostic.severity.ERROR,
-	})
-end, { desc = "Prev error" })
-
-------------------------------------------------------------------------------------------
-
--- auto saving --------------------------------------------------------------------------
+-- auto saving --
 -- Create an augroup to manage auto-save autocommands cleanly
 -- local autosave_group = vim.api.nvim_create_augroup("AutoSaveGroup", { clear = true })
 --
@@ -120,7 +103,7 @@ end, { desc = "Prev error" })
 -- 	end,
 -- })
 
------------------------------------------------------------------------------------------
+--
 
 -- Disable arrow keys to build hjkl muscle memory
 local modes = { "n", "v" }
