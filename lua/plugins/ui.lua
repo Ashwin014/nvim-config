@@ -26,24 +26,24 @@ return {
 		end,
 	},
 	{ "nvim-tree/nvim-web-devicons" },
-	{
-		"folke/snacks.nvim",
-		config = function()
-			require("config.snacks")
-		end,
-	},
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		config = function()
-			require("config.indent-blankline")
-		end,
-	},
-	{
-		"akinsho/bufferline.nvim",
-		version = "*",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			require("config.bufferline")
-		end,
-	},
+	-- {
+	-- 	"folke/snacks.nvim",
+	-- 	config = function()
+	-- 		require("config.snacks")
+	-- 	end,
+	-- },
+	-- {
+	-- 	"lukas-reineke/indent-blankline.nvim",
+	-- 	config = function()
+	-- 		require("config.indent-blankline")
+	-- 	end,
+	-- },
+	-- {
+	-- 	"akinsho/bufferline.nvim",
+	-- 	version = "*",
+	-- 	dependencies = { "nvim-tree/nvim-web-devicons" },
+	-- 	config = function()
+	-- 		require("config.bufferline")
+	-- 	end,
+	-- },
 }
