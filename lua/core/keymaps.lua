@@ -135,9 +135,8 @@ vmap(">", ">gv")
 -- xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 -- keep last yanked when pasting
 vmap("p", '"_dP', { noremap = true, silent = true })
--- TEXT ---------------------------------------------------
 
--- imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
+-- TEXT ---------------------------------------------------
 
 nmap("<leader>ca", "gg<S-v>G", { desc = "Select all text" })
 
@@ -149,7 +148,7 @@ nmap("x", '"_x', { noremap = true, silent = true })
 -- comment
 nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
 vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
-imap("<C-/>", "<Esc>gccA", { remap = true, desc = "Toggle comment" })
+imap("<C-/>", "<Esc>gccA", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- LINES --------------------------------------------------
 
