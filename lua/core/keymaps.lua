@@ -39,8 +39,8 @@ nmap("<C-Left>", "<cmd>vertical resize -5<cr>", { desc = "Resize left" })
 nmap("<C-Right>", "<cmd>vertical resize +5<cr>", { desc = "Resize right" })
 
 -- window splits
-nmap("<leader>|", "<C-w>v", { desc = "Split vertically" })
-nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
+-- nmap("<leader>|", "<C-w>v", { desc = "Split vertically" })
+-- nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 
 -----------------------------------------------------------
 
@@ -68,12 +68,12 @@ nmap("<leader>\\", "<C-w>s", { desc = "Split horizontally" })
 -----------------------------------------------------------
 
 -- tabs
-nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
-nmap("<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
-nmap("<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
-nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
-nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
-nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
+-- nmap("<leader>tn", "<cmd>tabnew<cr>", { desc = "New tab" })
+-- nmap("<leader>tc", "<cmd>tabclose<cr>", { desc = "Close tab" })
+-- nmap("<leader>to", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
+-- nmap("<leader>tl", "<cmd>tabnext<cr>", { desc = "Next tab" })
+-- nmap("<leader>th", "<cmd>tabprevious<cr>", { desc = "Prev tab" })
+-- nmap("<leader>ti", "<cmd>tabs<cr>", { desc = "List tabs" }) -- was inlay hints toggle
 
 -----------------------------------------------------------
 -- BRACKET-BASED NEXT/PREV NAVIGATION
@@ -136,20 +136,20 @@ vmap(">", ">gv")
 nmap("n", "nzzzv")
 nmap("N", "Nzzzv")
 
-xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
+-- xmap("<leader>p", '"_dP', { desc = "paste over selection without losing your yank" })
 -- keep last yanked when pasting
 vmap("p", '"_dP', { noremap = true, silent = true })
 
-nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
-vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
-nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
-vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+-- nmap("<leader>/", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+-- vmap("<leader>/", "gc", { remap = true, silent = true, desc = "Toggle comment" })
+-- nmap("<C-/>", "gcc", { remap = true, silent = true, desc = "Toggle comment" })
+-- vmap("<C-/>", "gc", { remap = true, silent = true, desc = "Toggle comment" })
 
 -- TEXT ---------------------------------------------------
 
 imap("<C-BS>", "<C-w>", { desc = "Delete word back" })
 
-nmap("<leader>a", "gg<S-v>G", { desc = "Select all text" })
+-- nmap("<leader>a", "gg<S-v>G", { desc = "Select all text" })
 
 -- imap("<C-v>", "<Esc>pi", { desc = "Paste in insert mode" })
 
@@ -231,18 +231,18 @@ imap("jj", "<Esc>")
 
 -- Video, audio and everything else: open with the system app.
 -- `gx` (native) opens the URL/file under the cursor; in Oil, `gx` opens the file.
-nmap("<leader>E", function()
-	vim.ui.open(vim.fn.expand("%:p"))
-end, { desc = "Open current file externally" })
+-- nmap("<leader>E", function()
+-- 	vim.ui.open(vim.fn.expand("%:p"))
+-- end, { desc = "Open current file externally" })
 
 -- quickly jump to init.lua & wezterm.lua
-nmap("<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
-nmap("<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
+-- nmap("<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
+-- nmap("<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
 
-nmap("<leader>cf", function()
-	vim.fn.setreg("+", vim.fn.expand("%"))
-	print("Copied relative path!")
-end)
+-- nmap("<leader>cf", function()
+-- 	vim.fn.setreg("+", vim.fn.expand("%"))
+-- 	print("Copied relative path!")
+-- end)
 
 -----------------------------------------------------------
 
