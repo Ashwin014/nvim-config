@@ -78,10 +78,18 @@ local theme_setup = {
 			end,
 		})
 		require("soviet").load(bg)
+		end,
+
+	-- Mellifluous.nvim
+	mellifluous = function(bg)
+		require("mellifluous").setup({})
+	end,
 	end,
 }
 
 -- Map a theme key to the actual `:colorscheme` name.  Most themes load by
+	mellifluous = "mellifluous",
+}
 -- their own key, but ember must load "ember-auto" so the plugin can resolve
 -- dark_variant / light_variant at load time.
 local colorscheme_for = {
