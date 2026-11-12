@@ -16,12 +16,6 @@ xmap("<F13>", "<Esc>")
 -- WINDOW
 -- ========================================================
 
--- nmap("<leader>q", ":q<CR>", { desc = "Quit" })
--- nmap("<leader>Q", ":q!<CR>", { desc = "Quit (forced)" })
--- nmap("<leader>w", ":w<CR>", { desc = "Save" })
--- nmap("<leader>W", ":w!<CR>", { desc = "Save (forced)" })
--- nmap("<leader>R", ":restart<CR>", { desc = "Restart" })
-
 vim.api.nvim_create_user_command("W", "w", { nargs = "*" }) -- make :W equal to :w
 vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restart
 vim.api.nvim_create_user_command("R", "restart", {})
@@ -215,8 +209,8 @@ imap("jj", "<Esc>")
 -- end, { desc = "Open current file externally" })
 
 -- quickly jump to init.lua & wezterm.lua
--- nmap("<leader>vv", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
--- nmap("<leader>vw", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
+nmap("<leader>?c", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
+nmap("<leader>?w", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
 
 -- nmap("<leader>cf", function()
 -- 	vim.fn.setreg("+", vim.fn.expand("%"))
