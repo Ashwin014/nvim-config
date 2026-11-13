@@ -37,8 +37,8 @@ require("nvim-tree").setup({
 	},
 })
 
-vim.keymap.set("n", "<leader>e", "<cmd>nvimtreetoggle<cr>", { desc = "file tree" })
-vim.keymap.set("n", "<leader>E", "<cmd>NvimTreeFindFile<cr>", { desc = "Find current file in tree" })
+vim.keymap.set("n", "<leader>e", "<cmd>nvimtreetoggle<cr>", { desc = "NvimTree: file tree" })
+vim.keymap.set("n", "<leader>E", "<cmd>NvimTreeFindFile<cr>", { desc = "NvimTree: Find current file in tree" })
 
 -- -- always open on startup, alongside your dashboard
 -- vim.api.nvim_create_autocmd("VimEnter", {
