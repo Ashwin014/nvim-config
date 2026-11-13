@@ -14,7 +14,10 @@ xmap("<F13>", "<Esc>")
 
 -- ========================================================
 -- WINDOW
+
 -- ========================================================
+
+nmap("<leader>w", ":write", { desc="write to disk" })
 
 vim.api.nvim_create_user_command("W", "w", { nargs = "*" }) -- make :W equal to :w
 vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restart
