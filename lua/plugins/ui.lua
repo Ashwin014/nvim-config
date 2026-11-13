@@ -1,17 +1,17 @@
 return {
-	-- -- Themes
-	-- { "ember-theme/nvim", name = "ember" },
-	-- {
-	-- 	"Mofiqul/vscode.nvim",
-	-- 	config = function()
-	-- 		require("config.colorschemes")
-	-- 	end,
-	-- },
-	-- { "navarasu/onedark.nvim" },
-	-- { "ellisonleao/gruvbox.nvim" },
-	-- { "rezniqov/soviet.nvim" },
-	-- { "ramojus/mellifluous.nvim" },
-	--
+	-- Themes
+	{ "ember-theme/nvim", name = "ember" },
+	{
+		"Mofiqul/vscode.nvim",
+		config = function()
+			require("config.colorschemes")
+		end,
+	},
+	{ "navarasu/onedark.nvim" },
+	{ "ellisonleao/gruvbox.nvim" },
+	{ "rezniqov/soviet.nvim" },
+	{ "ramojus/mellifluous.nvim" },
+
 	-- UI
 	{
 		"folke/which-key.nvim",
