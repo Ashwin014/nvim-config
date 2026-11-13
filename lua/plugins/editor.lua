@@ -13,30 +13,30 @@ return {
 			require("config.surround")
 		end,
 	},
-	-- {
-	-- 	"stevearc/aerial.nvim",
-	-- 	cmd = { "AerialToggle", "AerialOpen", "AerialClose" },
-	-- 	config = function()
-	-- 		require("config.aerial")
-	-- 	end,
-	-- },
-	-- {
-	-- 	"nvim-tree/nvim-tree.lua",
-	-- 	config = function()
-	-- 		require("config.nvim-tree")
-	-- 	end,
-	-- },
-	-- {
-	-- 	"Wansmer/treesj",
-	-- 	cmd = { "TSJToggle", "TSJ" },
-	-- 	config = function()
-  -- 		require("config.treejs")
-	-- 	end,
-	-- },
-	-- {
-	-- 	"windwp/nvim-autopairs",
-	-- 	config = function()
-	-- 		require("config.autopairs")
-	-- 	end,
-	-- },
+	{
+		"stevearc/aerial.nvim",
+		cmd = { "AerialToggle", "AerialOpen", "AerialClose" },
+		config = function()
+			require("config.aerial")
+		end,
+	},
+	{
+		"nvim-tree/nvim-tree.lua",
+		config = function()
+			require("config.nvim-tree")
+		end,
+	},
+	{
+		"Wansmer/treesj",
+		cmd = { "TSJToggle", "TSJ" },
+		config = function()
+  		require("config.treejs")
+		end,
+	},
+	{
+		"windwp/nvim-autopairs",
+		config = function()
+			require("config.autopairs")
+		end,
+	},
 }
