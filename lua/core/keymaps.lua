@@ -17,7 +17,7 @@ xmap("<F13>", "<Esc>")
 
 -- ========================================================
 
-nmap("<leader>w", ":write", { desc="write to disk" })
+nmap("<leader>w", ":write<cr>", { desc = "write to disk" })
 
 vim.api.nvim_create_user_command("W", "w", { nargs = "*" }) -- make :W equal to :w
 vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restart
@@ -159,7 +159,7 @@ imap("<A-j>", "<Esc><cmd>m .+1<cr>==gi", { desc = "Move line down" })
 imap("<A-k>", "<Esc><cmd>m .-2<cr>==gi", { desc = "Move line up" })
 
 -- Duplicate a line and comment out the first line
-nmap("<leader>?d", "yygccp", { remap = true, desc="Duplicate + comment out line"})
+nmap("<leader>?d", "yygccp", { remap = true, desc = "Duplicate + comment out line" })
 
 -- This solution flickers the cmdline
 vmap("<A-Down>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
