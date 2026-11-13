@@ -60,4 +60,4 @@ end
 
 map("n", "<leader>'", tb.resume, { desc = "Telescope: Resume" })
 map("n", "<leader>/", tb.live_grep, { desc = "Telescope: Grep" })
--- map("n", "<leader>?", tb.help_tags, { desc = "Telescope: Help" })
+map("n", "<leader>?", tb.help_tags, { desc = "Telescope: Help" })
