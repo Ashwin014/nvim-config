@@ -1,6 +1,7 @@
 return {
 	{
 		"smoka7/hop.nvim",
+    lazy = false,
 		cmd = { "HopWord", "HopChar1", "HopLine" },
 		config = function()
 			require("config.hop")
