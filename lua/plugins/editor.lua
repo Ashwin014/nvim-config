@@ -6,12 +6,12 @@ return {
 	-- 		require("config.hop")
 	-- 	end,
 	-- },
-	-- {
-	-- 	"kylechui/nvim-surround",
-	-- 	config = function()
-	-- 		require("config.surround")
-	-- 	end,
-	-- },
+	{
+		"kylechui/nvim-surround",
+		config = function()
+			require("config.surround")
+		end,
+	},
 	-- {
 	-- 	"stevearc/aerial.nvim",
 	-- 	cmd = { "AerialToggle", "AerialOpen", "AerialClose" },
@@ -32,10 +32,10 @@ return {
 	--  		require("config.treejs")
 	-- 	end,
 	-- },
-	-- {
-	-- 	"windwp/nvim-autopairs",
-	-- 	config = function()
-	-- 		require("config.autopairs")
-	-- 	end,
-	-- },
+	{
+		"windwp/nvim-autopairs",
+		config = function()
+			require("config.autopairs")
+		end,
+	},
 }

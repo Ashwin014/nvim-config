@@ -12,20 +12,20 @@ return {
 	-- { "rezniqov/soviet.nvim" },
 	-- { "ramojus/mellifluous.nvim" },
 	--
-	-- -- UI
-	-- {
-	-- 	"folke/which-key.nvim",
-	-- 	config = function()
-	-- 		require("config.which-key")
-	-- 	end,
-	-- },
-	-- {
-	-- 	"nvim-lualine/lualine.nvim",
-	-- 	config = function()
-	-- 		require("config.lualine")
-	-- 	end,
-	-- },
-	-- { "nvim-tree/nvim-web-devicons" },
+	-- UI
+	{
+		"folke/which-key.nvim",
+		config = function()
+			require("config.which-key")
+		end,
+	},
+	{
+		"nvim-lualine/lualine.nvim",
+		config = function()
+			require("config.lualine")
+		end,
+	},
+	{ "nvim-tree/nvim-web-devicons" },
 	-- {
 	-- 	"folke/snacks.nvim",
 	-- 	config = function()

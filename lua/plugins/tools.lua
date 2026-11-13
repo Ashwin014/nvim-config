@@ -1,17 +1,17 @@
 return {
-	-- {
-	-- 	"nvim-telescope/telescope.nvim",
-	-- 	config = function()
-	-- 		require("config.telescope")
-	-- 	end,
-	-- },
-	-- { "nvim-lua/plenary.nvim" },
-	-- {
-	-- 	"stevearc/oil.nvim",
-	-- 	config = function()
-	-- 		require("config.oil")
-	-- 	end,
-	-- },
+	{
+		"nvim-telescope/telescope.nvim",
+		config = function()
+			require("config.telescope")
+		end,
+	},
+	{ "nvim-lua/plenary.nvim" },
+	{
+		"stevearc/oil.nvim",
+		config = function()
+			require("config.oil")
+		end,
+	},
 	-- {
 	-- 	"MagicDuck/grug-far.nvim",
 	-- 	cmd = "GrugFar",
