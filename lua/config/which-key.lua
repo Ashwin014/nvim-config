@@ -20,7 +20,7 @@ require("which-key").add({
 	-- { "<leader>gh", group = "Hunks" },
 	-- { "g", group = "Goto" },
 
-	{ "<leader>", group = "Space" },
+	-- { "<leader>", group = "Space" },
 	-- { "<leader>e", group = "Explorer / Files" },
 	-- { "<leader>f", group = "Find" },
 	-- { "<leader>s", group = "Search" },
@@ -32,6 +32,7 @@ require("which-key").add({
 	-- { "<leader>x", group = "Terminal" },
 	-- { "<leader>c", group = "Commands" },
 	-- { "<leader>m", group = "Miscellaneous" },
+	{ "<leader>D", group = "Debug" },
 	{ "<leader>?", group = "Commands" },
 	{ "<leader>?t", group = "Toggle" },
 	{ "g", group = "Goto" },
