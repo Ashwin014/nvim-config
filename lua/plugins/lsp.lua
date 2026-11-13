@@ -17,14 +17,12 @@ return {
 	-- Completion
 	{
 		"saghen/blink.cmp",
-		-- version = "1.*",
-		-- dependencies = { { "saghen/blink.lib", version = "1.*", build = "cargo build --release" } },
-		build = "cargo build --release", -- for delimiters
+		version = "1.*",
+		dependencies = { { "saghen/blink.lib", version = "1.*", build = "cargo build --release" } },
 		config = function()
 			require("config.completion")
 		end,
 	},
-
 	{ "rafamadriz/friendly-snippets" },
 
 	-- Formatting
