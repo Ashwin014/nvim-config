@@ -50,6 +50,7 @@ local maps = {
 	d = { tb.diagnostics, "Diagnostics" },
 	-- lr = { tb.lsp_references, "References" },
 	k = { tb.keymaps, "Keymaps" },
+	j = { tb.jumplist, "Jumplist" },
 }
 
 for key, spec in pairs(maps) do
