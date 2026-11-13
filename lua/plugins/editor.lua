@@ -1,11 +1,11 @@
 return {
-	-- {
-	-- 	"smoka7/hop.nvim",
-	-- 	cmd = { "HopWord", "HopChar1", "HopLine" },
-	-- 	config = function()
-	-- 		require("config.hop")
-	-- 	end,
-	-- },
+	{
+		"smoka7/hop.nvim",
+		cmd = { "HopWord", "HopChar1", "HopLine" },
+		config = function()
+			require("config.hop")
+		end,
+	},
 	-- {
 	-- 	"kylechui/nvim-surround",
 	-- 	config = function()
@@ -29,7 +29,7 @@ return {
 	-- 	"Wansmer/treesj",
 	-- 	cmd = { "TSJToggle", "TSJ" },
 	-- 	config = function()
-	-- 		require("config.treejs")
+  -- 		require("config.treejs")
 	-- 	end,
 	-- },
 	-- {
