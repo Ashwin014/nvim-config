@@ -7,12 +7,12 @@ return {
 			require("config.hop")
 		end,
 	},
-	-- {
-	-- 	"kylechui/nvim-surround",
-	-- 	config = function()
-	-- 		require("config.surround")
-	-- 	end,
-	-- },
+	{
+		"kylechui/nvim-surround",
+		config = function()
+			require("config.surround")
+		end,
+	},
 	-- {
 	-- 	"stevearc/aerial.nvim",
 	-- 	cmd = { "AerialToggle", "AerialOpen", "AerialClose" },
