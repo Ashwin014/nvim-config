@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------
 require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 local hop = require("hop")
-local map - vim.keymap.set
+local map = vim.keymap.set
 
 -- Note: `gw` shadows Vim's native format operator (rarely needed; use gq)
 map({ "n", "x", "o" }, "gw", function()

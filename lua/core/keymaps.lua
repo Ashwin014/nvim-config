@@ -135,7 +135,7 @@ vmap("p", '"_dP', { noremap = true, silent = true })
 
 -- TEXT ---------------------------------------------------
 
-nmap("<leader>?a", "gg<S-v>G", { desc = "Select all text" })
+nmap("<leader>.a", "gg<S-v>G", { desc = "Select all text" })
 
 -- delete single character without copying into register/clipboard
 nmap("x", '"_x', { noremap = true, silent = true })
@@ -159,7 +159,7 @@ imap("<A-j>", "<Esc><cmd>m .+1<cr>==gi", { desc = "Move line down" })
 imap("<A-k>", "<Esc><cmd>m .-2<cr>==gi", { desc = "Move line up" })
 
 -- Duplicate a line and comment out the first line
-nmap("<leader>?d", "yygccp", { remap = true, desc = "Duplicate + comment out line" })
+nmap("<leader>.d", "yygccp", { remap = true, desc = "Duplicate + comment out line" })
 
 -- This solution flickers the cmdline
 vmap("<A-Down>", ":m '>+1<cr>gv=gv", { desc = "Move selection down" })
@@ -212,8 +212,8 @@ imap("jj", "<Esc>")
 -- end, { desc = "Open current file externally" })
 
 -- quickly jump to init.lua & wezterm.lua
-nmap("<leader>?c", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
-nmap("<leader>?w", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
+nmap("<leader>.c", "<cmd>edit $MYVIMRC<cr>", { desc = "Edit init.lua" })
+nmap("<leader>.w", "<cmd>edit ~/.config/wezterm/wezterm.lua<cr>", { desc = "Edit wezterm.lua" })
 
 -- nmap("<leader>cf", function()
 -- 	vim.fn.setreg("+", vim.fn.expand("%"))

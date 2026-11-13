@@ -8,4 +8,4 @@ require("aerial").setup({
 	show_guides = true,
 })
 
-vim.keymap.set("n", "<leader>?o", "<cmd>AerialToggle<cr>", { desc = "Symbol outline" })
+vim.keymap.set("n", "<leader>.o", "<cmd>AerialToggle<cr>", { desc = "Symbol outline" })
