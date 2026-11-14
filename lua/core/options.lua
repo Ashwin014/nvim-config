@@ -43,18 +43,5 @@ o.timeoutlen = 100
 -- o.list = true
 -- o.listchars:append("leadmultispace:·")
 -- o.listchars:append("space:·")
--- o.scrolloff = 999
--- o.cursorline = true
-
--- Neovide
-vim.o.guifont = "JetBrains Mono:h10"
-if vim.g.neovide then
-	vim.g.neovide_opacity = 0.99
-	vim.g.neovide_cursor_animation_length = 0.05
-	vim.g.neovide_scroll_animation_length = 0.2
-	vim.g.neovide_padding_top = 3
-	vim.g.neovide_padding_left = 3
-	vim.g.neovide_padding_bottom = 3
-	vim.g.neovide_padding_right = 3
-	vim.g.neovide_cursor_vfx_mode = "" -- turns off cursor particles
-end
+o.scrolloff = 999
+o.cursorline = true
