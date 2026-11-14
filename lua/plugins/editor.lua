@@ -32,10 +32,10 @@ return {
 			require("config.treejs")
 		end,
 	},
-	-- {
-	-- 	"windwp/nvim-autopairs",
-	-- 	config = function()
-	-- 		require("config.autopairs")
-	-- 	end,
-	-- },
+	{
+		"windwp/nvim-autopairs",
+		config = function()
+			require("config.autopairs")
+		end,
+	},
 }
