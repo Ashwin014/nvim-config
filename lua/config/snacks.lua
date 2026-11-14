@@ -7,32 +7,32 @@ local map = vim.keymap.set
 -- and ImageMagick (`magick`) on PATH. PDFs also need Ghostscript.
 -- Check with :checkhealth snacks
 require("snacks").setup({
-	-- 	dashboard = {
-	-- 		enabled = true,
-	-- 		preset = {
-	-- 			header = [[
-	-- ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
-	-- ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
-	-- ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
-	-- ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
-	-- ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
-	-- ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
-	-- ]],
-	-- 			keys = {
-	-- 				{ icon = " ", key = "f", desc = "Find file", action = ":Telescope find_files" },
-	-- 				{ icon = " ", key = "n", desc = "New file", action = ":ene | startinsert" },
-	-- 				{ icon = " ", key = "r", desc = "Recent files", action = ":Telescope oldfiles" },
-	-- 				{ icon = " ", key = "c", desc = "Config", action = ":e $MYVIMRC" },
-	-- 				{ icon = " ", key = "q", desc = "Quit", action = ":qa" },
-	-- 			},
-	-- 		},
-	-- 		sections = {
-	-- 			{ section = "header" },
-	-- 			{ section = "keys", gap = 1, padding = 1 },
-	-- 			{ section = "recent_files", limit = 6, padding = 1 },
-	-- 			{ section = "projects", limit = 6, padding = 1 },
-	-- 		},
-	-- 	},
+	dashboard = {
+		enabled = true,
+		preset = {
+			header = [[
+	███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+	████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+	██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+	██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+	██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+	╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
+	]],
+			keys = {
+				{ icon = " ", key = "f", desc = "Find file", action = ":Telescope find_files" },
+				{ icon = " ", key = "n", desc = "New file", action = ":ene | startinsert" },
+				{ icon = " ", key = "r", desc = "Recent files", action = ":Telescope oldfiles" },
+				{ icon = " ", key = "c", desc = "Config", action = ":e $MYVIMRC" },
+				{ icon = " ", key = "q", desc = "Quit", action = ":qa" },
+			},
+		},
+		sections = {
+			{ section = "header" },
+			{ section = "keys", gap = 1, padding = 1 },
+			{ section = "recent_files", limit = 6, padding = 1 },
+			{ section = "projects", limit = 6, padding = 1 },
+		},
+	},
 	-- picker = {
 	-- 	enabled = true,
 	-- 	sources = {
@@ -58,10 +58,10 @@ require("snacks").setup({
 		enabled = true,
 		doc = { inline = true, float = true, max_width = 80, max_height = 40 },
 	},
-	scroll = {
-		enabled = true,
-		animate = { duration = { step = 10, total = 200 }, easing = "linear" },
-	},
+	-- scroll = {
+	-- 	enabled = true,
+	-- 	animate = { duration = { step = 10, total = 200 }, easing = "linear" },
+	-- },
 	notifier = {
 		enabled = true,
 		timeout = 5000, -- ms a notification stays visible
