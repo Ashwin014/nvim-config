@@ -1,24 +1,7 @@
 require("nvim-tree").setup({
-	-- view = {
-	-- 	width = 30,
-	-- 	side = "left",
-	-- },
 	view = {
-		float = {
-			enable = true,
-			quit_on_focus_loss = true,
-			open_win_config = function()
-				local w, h = 50, math.floor(vim.o.lines * 0.7)
-				return {
-					relative = "editor",
-					border = "rounded",
-					width = w,
-					height = h,
-					row = math.floor((vim.o.lines - h) / 2),
-					col = math.floor((vim.o.columns - w) / 2),
-				}
-			end,
-		},
+		width = 30,
+		side = "left",
 	},
 	renderer = {
 		group_empty = true,
