@@ -21,8 +21,6 @@ vmap("<C-c>", "<Esc>")
 
 -- ========================================================
 
-nmap("<leader>w", ":write<cr>", { desc = "write to disk" })
-
 vim.api.nvim_create_user_command("W", "w", { nargs = "*" }) -- make :W equal to :w
 vim.api.nvim_create_user_command("WR", "write | restart", {}) -- :write | restart
 vim.api.nvim_create_user_command("R", "restart", {})
