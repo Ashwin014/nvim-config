@@ -1,7 +1,13 @@
 require("telescope").setup({
 	defaults = {
 		sorting_strategy = "ascending",
-		layout_config = { prompt_position = "top" },
+		layout_strategy = "flex",
+		layout_config = {
+			prompt_position = "top",
+			flex = {
+				flip_columns = 210,
+			}
+		},
 	},
 })
 
